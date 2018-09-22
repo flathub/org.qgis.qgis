@@ -1,0 +1,567 @@
+diff --git a/debian/qgis.install b/debian/qgis.install
+index e952636d9f..3b4a222ff2 100644
+--- a/debian/qgis.install
++++ b/debian/qgis.install
+@@ -5,7 +5,7 @@ usr/lib/qgis/plugins/libevis.so
+ usr/lib/qgis/plugins/libofflineeditingplugin.so
+ usr/lib/qgis/plugins/libtopolplugin.so
+ usr/lib/qgis/plugins/libgeometrycheckerplugin.so
+-usr/share/pixmaps/
+ usr/share/applications/
++usr/share/metainfo/
+ usr/share/mime/packages/
+ usr/share/icons/hicolor/
+diff --git a/debian/rules b/debian/rules
+index 14dff505b6..8038cf6bd4 100755
+--- a/debian/rules
++++ b/debian/rules
+@@ -297,41 +297,6 @@ override_dh_auto_install:
+ 	# Don't ship srs.db, automatically updated in postinst with crssync
+ 	mv $(CURDIR)/debian/tmp/usr/share/qgis/resources/srs.db $(CURDIR)/debian/tmp/usr/share/qgis/resources/srs-template.db
+ 
+-	# Install menu pixmap
+-	install -o root -g root -d $(CURDIR)/debian/tmp/usr/share/pixmaps
+-	install -o root -g root -m 644 $(CURDIR)/images/icons/qgis_icon.svg $(CURDIR)/debian/tmp/usr/share/pixmaps/qgis.svg
+-	install -o root -g root -m 644 $(CURDIR)/images/icons/qgis-icon-512x512.png $(CURDIR)/debian/tmp/usr/share/pixmaps/qgis.png
+-	install -o root -g root -m 644 $(CURDIR)/images/icons/qgis-mime-icon.png $(CURDIR)/debian/tmp/usr/share/pixmaps/qgis-mime.png
+-
+-	# Install MIME type icon
+-	for size in 8x8 16x16 22x22 24x24 32x32 36x36 42x42 48x48 64x64 72x72 80x80 96x96 128x128; do \
+-		install -o root -g root -d $(CURDIR)/debian/tmp/usr/share/icons/hicolor/$${size}/mimetypes ; \
+-		install -o root -g root -m 644 $(CURDIR)/debian/icons/qgis-mime-icon$${size}.png $(CURDIR)/debian/tmp/usr/share/icons/hicolor/$${size}/mimetypes/qgis-mime.png ; \
+-	done
+-
+-	# Install QGIS file formats icons
+-	for file_type in qgs qlr qml qpt; do \
+-		for size in 8x8 16x16 22x22 24x24 32x32 36x36 42x42 48x48 64x64 72x72 80x80 96x96 128x128 192x192 256x256 512x512; do \
+-			install -o root -g root -d $(CURDIR)/debian/tmp/usr/share/icons/hicolor/$${size}/mimetypes ; \
+-			install -o root -g root -m 644 \
+-				$(CURDIR)/debian/icons/qgis-$${file_type}$${size}.png \
+-				$(CURDIR)/debian/tmp/usr/share/icons/hicolor/$${size}/mimetypes/qgis-$${file_type}.png ; \
+-		done ; \
+-	done
+-
+-	# Install application icon
+-	for size in 8x8 16x16 22x22 24x24 32x32 36x36 42x42 48x48 64x64 72x72 80x80 96x96 128x128 192x192 256x256 512x512; do \
+-		install -o root -g root -d $(CURDIR)/debian/tmp/usr/share/icons/hicolor/$${size}/apps ; \
+-		install -o root -g root -m 644 $(CURDIR)/debian/icons/qgis-icon$${size}.png $(CURDIR)/debian/tmp/usr/share/icons/hicolor/$${size}/apps/qgis.png ; \
+-	done
+-	
+-	install -o root -g root -d $(CURDIR)/debian/tmp/usr/share/icons/hicolor/scalable/apps
+-	install -o root -g root -m 644 $(CURDIR)/images/icons/qgis_icon.svg $(CURDIR)/debian/tmp/usr/share/icons/hicolor/scalable/apps/qgis.svg
+-
+-	# Install desktop files
+-	install -o root -g root -d $(CURDIR)/debian/tmp/usr/share/applications
+-	install -o root -g root -m 644 $(CURDIR)/debian/qgis.desktop $(CURDIR)/debian/tmp/usr/share/applications
+-
+ 	# Mime info
+ 	install -o root -g root -d $(CURDIR)/debian/tmp/usr/share/mime/packages
+ 	install -o root -g root -m 644 $(CURDIR)/debian/qgis.xml $(CURDIR)/debian/tmp/usr/share/mime/packages
+diff --git a/linux/CMakeLists.txt b/linux/CMakeLists.txt
+index cfee195068..5ce483d5db 100644
+--- a/linux/CMakeLists.txt
++++ b/linux/CMakeLists.txt
+@@ -1 +1,23 @@
++#metadata
++install(FILES org.qgis.qgis.desktop DESTINATION share/applications)
+ install(FILES org.qgis.qgis.appdata.xml DESTINATION share/metainfo)
++
++#icons
++## application icon
++install(FILES ${CMAKE_SOURCE_DIR}/images/icons/qgis_icon.svg RENAME qgis.svg DESTINATION share/icons/hicolor/scalable/apps)
++install(FILES ${CMAKE_SOURCE_DIR}/images/icons/qgis-icon-16x16.png RENAME qgis.png DESTINATION share/icons/hicolor/16x16/apps)
++install(FILES ${CMAKE_SOURCE_DIR}/images/icons/qgis-icon-512x512.png RENAME qgis.png DESTINATION share/icons/hicolor/512x512/apps)
++
++# Install MIME type icon
++install(FILES ${CMAKE_SOURCE_DIR}/images/icons/qgis_mime_icon.svg RENAME qgis-mime.svg DESTINATION share/icons/hicolor/scalable/mimetypes)
++foreach(size 8x8 16x16 22x22 24x24 32x32 36x36 42x42 48x48 64x64 72x72 80x80 96x96 128x128 192x192 256x256 512x512)
++  install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/icons//qgis-mime-icon${size}.png RENAME qgis-mime.png DESTINATION share/icons/hicolor/${size}/mimetypes/)
++endforeach()
++
++# Install QGIS file formats icons
++foreach(_type qgs qlr qml qpt)
++  install(FILES ${CMAKE_SOURCE_DIR}/images/icons/qgis_${_type}_icon.svg RENAME qgis_${_type}.svg DESTINATION share/icons/hicolor/scalable/mimetypes/)
++  foreach(size 8x8 16x16 22x22 24x24 32x32 36x36 42x42 48x48 64x64 72x72 80x80 96x96 128x128 192x192 256x256 512x512)
++    install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/icons/qgis-${_type}${size}.png RENAME qgis-${_type}.png DESTINATION share/icons/hicolor/${size}/mimetypes/)
++  endforeach()
++endforeach()
+diff --git a/debian/icons/qgis-icon128x128.png b/linux/icons/qgis-icon128x128.png
+similarity index 100%
+rename from debian/icons/qgis-icon128x128.png
+rename to linux/icons/qgis-icon128x128.png
+diff --git a/debian/icons/qgis-icon16x16.png b/linux/icons/qgis-icon16x16.png
+similarity index 100%
+rename from debian/icons/qgis-icon16x16.png
+rename to linux/icons/qgis-icon16x16.png
+diff --git a/debian/icons/qgis-icon192x192.png b/linux/icons/qgis-icon192x192.png
+similarity index 100%
+rename from debian/icons/qgis-icon192x192.png
+rename to linux/icons/qgis-icon192x192.png
+diff --git a/debian/icons/qgis-icon22x22.png b/linux/icons/qgis-icon22x22.png
+similarity index 100%
+rename from debian/icons/qgis-icon22x22.png
+rename to linux/icons/qgis-icon22x22.png
+diff --git a/debian/icons/qgis-icon24x24.png b/linux/icons/qgis-icon24x24.png
+similarity index 100%
+rename from debian/icons/qgis-icon24x24.png
+rename to linux/icons/qgis-icon24x24.png
+diff --git a/debian/icons/qgis-icon256x256.png b/linux/icons/qgis-icon256x256.png
+similarity index 100%
+rename from debian/icons/qgis-icon256x256.png
+rename to linux/icons/qgis-icon256x256.png
+diff --git a/debian/icons/qgis-icon32x32.png b/linux/icons/qgis-icon32x32.png
+similarity index 100%
+rename from debian/icons/qgis-icon32x32.png
+rename to linux/icons/qgis-icon32x32.png
+diff --git a/debian/icons/qgis-icon36x36.png b/linux/icons/qgis-icon36x36.png
+similarity index 100%
+rename from debian/icons/qgis-icon36x36.png
+rename to linux/icons/qgis-icon36x36.png
+diff --git a/debian/icons/qgis-icon42x42.png b/linux/icons/qgis-icon42x42.png
+similarity index 100%
+rename from debian/icons/qgis-icon42x42.png
+rename to linux/icons/qgis-icon42x42.png
+diff --git a/debian/icons/qgis-icon48x48.png b/linux/icons/qgis-icon48x48.png
+similarity index 100%
+rename from debian/icons/qgis-icon48x48.png
+rename to linux/icons/qgis-icon48x48.png
+diff --git a/debian/icons/qgis-icon512x512.png b/linux/icons/qgis-icon512x512.png
+similarity index 100%
+rename from debian/icons/qgis-icon512x512.png
+rename to linux/icons/qgis-icon512x512.png
+diff --git a/debian/icons/qgis-icon64x64.png b/linux/icons/qgis-icon64x64.png
+similarity index 100%
+rename from debian/icons/qgis-icon64x64.png
+rename to linux/icons/qgis-icon64x64.png
+diff --git a/debian/icons/qgis-icon72x72.png b/linux/icons/qgis-icon72x72.png
+similarity index 100%
+rename from debian/icons/qgis-icon72x72.png
+rename to linux/icons/qgis-icon72x72.png
+diff --git a/debian/icons/qgis-icon80x80.png b/linux/icons/qgis-icon80x80.png
+similarity index 100%
+rename from debian/icons/qgis-icon80x80.png
+rename to linux/icons/qgis-icon80x80.png
+diff --git a/debian/icons/qgis-icon8x8.png b/linux/icons/qgis-icon8x8.png
+similarity index 100%
+rename from debian/icons/qgis-icon8x8.png
+rename to linux/icons/qgis-icon8x8.png
+diff --git a/debian/icons/qgis-icon96x96.png b/linux/icons/qgis-icon96x96.png
+similarity index 100%
+rename from debian/icons/qgis-icon96x96.png
+rename to linux/icons/qgis-icon96x96.png
+diff --git a/debian/icons/qgis-mime-icon128x128.png b/linux/icons/qgis-mime-icon128x128.png
+similarity index 100%
+rename from debian/icons/qgis-mime-icon128x128.png
+rename to linux/icons/qgis-mime-icon128x128.png
+diff --git a/debian/icons/qgis-mime-icon16x16.png b/linux/icons/qgis-mime-icon16x16.png
+similarity index 100%
+rename from debian/icons/qgis-mime-icon16x16.png
+rename to linux/icons/qgis-mime-icon16x16.png
+diff --git a/debian/icons/qgis-mime-icon192x192.png b/linux/icons/qgis-mime-icon192x192.png
+similarity index 100%
+rename from debian/icons/qgis-mime-icon192x192.png
+rename to linux/icons/qgis-mime-icon192x192.png
+diff --git a/debian/icons/qgis-mime-icon22x22.png b/linux/icons/qgis-mime-icon22x22.png
+similarity index 100%
+rename from debian/icons/qgis-mime-icon22x22.png
+rename to linux/icons/qgis-mime-icon22x22.png
+diff --git a/debian/icons/qgis-mime-icon24x24.png b/linux/icons/qgis-mime-icon24x24.png
+similarity index 100%
+rename from debian/icons/qgis-mime-icon24x24.png
+rename to linux/icons/qgis-mime-icon24x24.png
+diff --git a/debian/icons/qgis-mime-icon256x256.png b/linux/icons/qgis-mime-icon256x256.png
+similarity index 100%
+rename from debian/icons/qgis-mime-icon256x256.png
+rename to linux/icons/qgis-mime-icon256x256.png
+diff --git a/debian/icons/qgis-mime-icon32x32.png b/linux/icons/qgis-mime-icon32x32.png
+similarity index 100%
+rename from debian/icons/qgis-mime-icon32x32.png
+rename to linux/icons/qgis-mime-icon32x32.png
+diff --git a/debian/icons/qgis-mime-icon36x36.png b/linux/icons/qgis-mime-icon36x36.png
+similarity index 100%
+rename from debian/icons/qgis-mime-icon36x36.png
+rename to linux/icons/qgis-mime-icon36x36.png
+diff --git a/debian/icons/qgis-mime-icon42x42.png b/linux/icons/qgis-mime-icon42x42.png
+similarity index 100%
+rename from debian/icons/qgis-mime-icon42x42.png
+rename to linux/icons/qgis-mime-icon42x42.png
+diff --git a/debian/icons/qgis-mime-icon48x48.png b/linux/icons/qgis-mime-icon48x48.png
+similarity index 100%
+rename from debian/icons/qgis-mime-icon48x48.png
+rename to linux/icons/qgis-mime-icon48x48.png
+diff --git a/debian/icons/qgis-mime-icon512x512.png b/linux/icons/qgis-mime-icon512x512.png
+similarity index 100%
+rename from debian/icons/qgis-mime-icon512x512.png
+rename to linux/icons/qgis-mime-icon512x512.png
+diff --git a/debian/icons/qgis-mime-icon64x64.png b/linux/icons/qgis-mime-icon64x64.png
+similarity index 100%
+rename from debian/icons/qgis-mime-icon64x64.png
+rename to linux/icons/qgis-mime-icon64x64.png
+diff --git a/debian/icons/qgis-mime-icon72x72.png b/linux/icons/qgis-mime-icon72x72.png
+similarity index 100%
+rename from debian/icons/qgis-mime-icon72x72.png
+rename to linux/icons/qgis-mime-icon72x72.png
+diff --git a/debian/icons/qgis-mime-icon80x80.png b/linux/icons/qgis-mime-icon80x80.png
+similarity index 100%
+rename from debian/icons/qgis-mime-icon80x80.png
+rename to linux/icons/qgis-mime-icon80x80.png
+diff --git a/debian/icons/qgis-mime-icon8x8.png b/linux/icons/qgis-mime-icon8x8.png
+similarity index 100%
+rename from debian/icons/qgis-mime-icon8x8.png
+rename to linux/icons/qgis-mime-icon8x8.png
+diff --git a/debian/icons/qgis-mime-icon96x96.png b/linux/icons/qgis-mime-icon96x96.png
+similarity index 100%
+rename from debian/icons/qgis-mime-icon96x96.png
+rename to linux/icons/qgis-mime-icon96x96.png
+diff --git a/debian/icons/qgis-qgs128x128.png b/linux/icons/qgis-qgs128x128.png
+similarity index 100%
+rename from debian/icons/qgis-qgs128x128.png
+rename to linux/icons/qgis-qgs128x128.png
+diff --git a/debian/icons/qgis-qgs16x16.png b/linux/icons/qgis-qgs16x16.png
+similarity index 100%
+rename from debian/icons/qgis-qgs16x16.png
+rename to linux/icons/qgis-qgs16x16.png
+diff --git a/debian/icons/qgis-qgs192x192.png b/linux/icons/qgis-qgs192x192.png
+similarity index 100%
+rename from debian/icons/qgis-qgs192x192.png
+rename to linux/icons/qgis-qgs192x192.png
+diff --git a/debian/icons/qgis-qgs22x22.png b/linux/icons/qgis-qgs22x22.png
+similarity index 100%
+rename from debian/icons/qgis-qgs22x22.png
+rename to linux/icons/qgis-qgs22x22.png
+diff --git a/debian/icons/qgis-qgs24x24.png b/linux/icons/qgis-qgs24x24.png
+similarity index 100%
+rename from debian/icons/qgis-qgs24x24.png
+rename to linux/icons/qgis-qgs24x24.png
+diff --git a/debian/icons/qgis-qgs256x256.png b/linux/icons/qgis-qgs256x256.png
+similarity index 100%
+rename from debian/icons/qgis-qgs256x256.png
+rename to linux/icons/qgis-qgs256x256.png
+diff --git a/debian/icons/qgis-qgs32x32.png b/linux/icons/qgis-qgs32x32.png
+similarity index 100%
+rename from debian/icons/qgis-qgs32x32.png
+rename to linux/icons/qgis-qgs32x32.png
+diff --git a/debian/icons/qgis-qgs36x36.png b/linux/icons/qgis-qgs36x36.png
+similarity index 100%
+rename from debian/icons/qgis-qgs36x36.png
+rename to linux/icons/qgis-qgs36x36.png
+diff --git a/debian/icons/qgis-qgs42x42.png b/linux/icons/qgis-qgs42x42.png
+similarity index 100%
+rename from debian/icons/qgis-qgs42x42.png
+rename to linux/icons/qgis-qgs42x42.png
+diff --git a/debian/icons/qgis-qgs48x48.png b/linux/icons/qgis-qgs48x48.png
+similarity index 100%
+rename from debian/icons/qgis-qgs48x48.png
+rename to linux/icons/qgis-qgs48x48.png
+diff --git a/debian/icons/qgis-qgs512x512.png b/linux/icons/qgis-qgs512x512.png
+similarity index 100%
+rename from debian/icons/qgis-qgs512x512.png
+rename to linux/icons/qgis-qgs512x512.png
+diff --git a/debian/icons/qgis-qgs64x64.png b/linux/icons/qgis-qgs64x64.png
+similarity index 100%
+rename from debian/icons/qgis-qgs64x64.png
+rename to linux/icons/qgis-qgs64x64.png
+diff --git a/debian/icons/qgis-qgs72x72.png b/linux/icons/qgis-qgs72x72.png
+similarity index 100%
+rename from debian/icons/qgis-qgs72x72.png
+rename to linux/icons/qgis-qgs72x72.png
+diff --git a/debian/icons/qgis-qgs80x80.png b/linux/icons/qgis-qgs80x80.png
+similarity index 100%
+rename from debian/icons/qgis-qgs80x80.png
+rename to linux/icons/qgis-qgs80x80.png
+diff --git a/debian/icons/qgis-qgs8x8.png b/linux/icons/qgis-qgs8x8.png
+similarity index 100%
+rename from debian/icons/qgis-qgs8x8.png
+rename to linux/icons/qgis-qgs8x8.png
+diff --git a/debian/icons/qgis-qgs96x96.png b/linux/icons/qgis-qgs96x96.png
+similarity index 100%
+rename from debian/icons/qgis-qgs96x96.png
+rename to linux/icons/qgis-qgs96x96.png
+diff --git a/debian/icons/qgis-qlr128x128.png b/linux/icons/qgis-qlr128x128.png
+similarity index 100%
+rename from debian/icons/qgis-qlr128x128.png
+rename to linux/icons/qgis-qlr128x128.png
+diff --git a/debian/icons/qgis-qlr16x16.png b/linux/icons/qgis-qlr16x16.png
+similarity index 100%
+rename from debian/icons/qgis-qlr16x16.png
+rename to linux/icons/qgis-qlr16x16.png
+diff --git a/debian/icons/qgis-qlr192x192.png b/linux/icons/qgis-qlr192x192.png
+similarity index 100%
+rename from debian/icons/qgis-qlr192x192.png
+rename to linux/icons/qgis-qlr192x192.png
+diff --git a/debian/icons/qgis-qlr22x22.png b/linux/icons/qgis-qlr22x22.png
+similarity index 100%
+rename from debian/icons/qgis-qlr22x22.png
+rename to linux/icons/qgis-qlr22x22.png
+diff --git a/debian/icons/qgis-qlr24x24.png b/linux/icons/qgis-qlr24x24.png
+similarity index 100%
+rename from debian/icons/qgis-qlr24x24.png
+rename to linux/icons/qgis-qlr24x24.png
+diff --git a/debian/icons/qgis-qlr256x256.png b/linux/icons/qgis-qlr256x256.png
+similarity index 100%
+rename from debian/icons/qgis-qlr256x256.png
+rename to linux/icons/qgis-qlr256x256.png
+diff --git a/debian/icons/qgis-qlr32x32.png b/linux/icons/qgis-qlr32x32.png
+similarity index 100%
+rename from debian/icons/qgis-qlr32x32.png
+rename to linux/icons/qgis-qlr32x32.png
+diff --git a/debian/icons/qgis-qlr36x36.png b/linux/icons/qgis-qlr36x36.png
+similarity index 100%
+rename from debian/icons/qgis-qlr36x36.png
+rename to linux/icons/qgis-qlr36x36.png
+diff --git a/debian/icons/qgis-qlr42x42.png b/linux/icons/qgis-qlr42x42.png
+similarity index 100%
+rename from debian/icons/qgis-qlr42x42.png
+rename to linux/icons/qgis-qlr42x42.png
+diff --git a/debian/icons/qgis-qlr48x48.png b/linux/icons/qgis-qlr48x48.png
+similarity index 100%
+rename from debian/icons/qgis-qlr48x48.png
+rename to linux/icons/qgis-qlr48x48.png
+diff --git a/debian/icons/qgis-qlr512x512.png b/linux/icons/qgis-qlr512x512.png
+similarity index 100%
+rename from debian/icons/qgis-qlr512x512.png
+rename to linux/icons/qgis-qlr512x512.png
+diff --git a/debian/icons/qgis-qlr64x64.png b/linux/icons/qgis-qlr64x64.png
+similarity index 100%
+rename from debian/icons/qgis-qlr64x64.png
+rename to linux/icons/qgis-qlr64x64.png
+diff --git a/debian/icons/qgis-qlr72x72.png b/linux/icons/qgis-qlr72x72.png
+similarity index 100%
+rename from debian/icons/qgis-qlr72x72.png
+rename to linux/icons/qgis-qlr72x72.png
+diff --git a/debian/icons/qgis-qlr80x80.png b/linux/icons/qgis-qlr80x80.png
+similarity index 100%
+rename from debian/icons/qgis-qlr80x80.png
+rename to linux/icons/qgis-qlr80x80.png
+diff --git a/debian/icons/qgis-qlr8x8.png b/linux/icons/qgis-qlr8x8.png
+similarity index 100%
+rename from debian/icons/qgis-qlr8x8.png
+rename to linux/icons/qgis-qlr8x8.png
+diff --git a/debian/icons/qgis-qlr96x96.png b/linux/icons/qgis-qlr96x96.png
+similarity index 100%
+rename from debian/icons/qgis-qlr96x96.png
+rename to linux/icons/qgis-qlr96x96.png
+diff --git a/debian/icons/qgis-qml128x128.png b/linux/icons/qgis-qml128x128.png
+similarity index 100%
+rename from debian/icons/qgis-qml128x128.png
+rename to linux/icons/qgis-qml128x128.png
+diff --git a/debian/icons/qgis-qml16x16.png b/linux/icons/qgis-qml16x16.png
+similarity index 100%
+rename from debian/icons/qgis-qml16x16.png
+rename to linux/icons/qgis-qml16x16.png
+diff --git a/debian/icons/qgis-qml192x192.png b/linux/icons/qgis-qml192x192.png
+similarity index 100%
+rename from debian/icons/qgis-qml192x192.png
+rename to linux/icons/qgis-qml192x192.png
+diff --git a/debian/icons/qgis-qml22x22.png b/linux/icons/qgis-qml22x22.png
+similarity index 100%
+rename from debian/icons/qgis-qml22x22.png
+rename to linux/icons/qgis-qml22x22.png
+diff --git a/debian/icons/qgis-qml24x24.png b/linux/icons/qgis-qml24x24.png
+similarity index 100%
+rename from debian/icons/qgis-qml24x24.png
+rename to linux/icons/qgis-qml24x24.png
+diff --git a/debian/icons/qgis-qml256x256.png b/linux/icons/qgis-qml256x256.png
+similarity index 100%
+rename from debian/icons/qgis-qml256x256.png
+rename to linux/icons/qgis-qml256x256.png
+diff --git a/debian/icons/qgis-qml32x32.png b/linux/icons/qgis-qml32x32.png
+similarity index 100%
+rename from debian/icons/qgis-qml32x32.png
+rename to linux/icons/qgis-qml32x32.png
+diff --git a/debian/icons/qgis-qml36x36.png b/linux/icons/qgis-qml36x36.png
+similarity index 100%
+rename from debian/icons/qgis-qml36x36.png
+rename to linux/icons/qgis-qml36x36.png
+diff --git a/debian/icons/qgis-qml42x42.png b/linux/icons/qgis-qml42x42.png
+similarity index 100%
+rename from debian/icons/qgis-qml42x42.png
+rename to linux/icons/qgis-qml42x42.png
+diff --git a/debian/icons/qgis-qml48x48.png b/linux/icons/qgis-qml48x48.png
+similarity index 100%
+rename from debian/icons/qgis-qml48x48.png
+rename to linux/icons/qgis-qml48x48.png
+diff --git a/debian/icons/qgis-qml512x512.png b/linux/icons/qgis-qml512x512.png
+similarity index 100%
+rename from debian/icons/qgis-qml512x512.png
+rename to linux/icons/qgis-qml512x512.png
+diff --git a/debian/icons/qgis-qml64x64.png b/linux/icons/qgis-qml64x64.png
+similarity index 100%
+rename from debian/icons/qgis-qml64x64.png
+rename to linux/icons/qgis-qml64x64.png
+diff --git a/debian/icons/qgis-qml72x72.png b/linux/icons/qgis-qml72x72.png
+similarity index 100%
+rename from debian/icons/qgis-qml72x72.png
+rename to linux/icons/qgis-qml72x72.png
+diff --git a/debian/icons/qgis-qml80x80.png b/linux/icons/qgis-qml80x80.png
+similarity index 100%
+rename from debian/icons/qgis-qml80x80.png
+rename to linux/icons/qgis-qml80x80.png
+diff --git a/debian/icons/qgis-qml8x8.png b/linux/icons/qgis-qml8x8.png
+similarity index 100%
+rename from debian/icons/qgis-qml8x8.png
+rename to linux/icons/qgis-qml8x8.png
+diff --git a/debian/icons/qgis-qml96x96.png b/linux/icons/qgis-qml96x96.png
+similarity index 100%
+rename from debian/icons/qgis-qml96x96.png
+rename to linux/icons/qgis-qml96x96.png
+diff --git a/debian/icons/qgis-qpt128x128.png b/linux/icons/qgis-qpt128x128.png
+similarity index 100%
+rename from debian/icons/qgis-qpt128x128.png
+rename to linux/icons/qgis-qpt128x128.png
+diff --git a/debian/icons/qgis-qpt16x16.png b/linux/icons/qgis-qpt16x16.png
+similarity index 100%
+rename from debian/icons/qgis-qpt16x16.png
+rename to linux/icons/qgis-qpt16x16.png
+diff --git a/debian/icons/qgis-qpt192x192.png b/linux/icons/qgis-qpt192x192.png
+similarity index 100%
+rename from debian/icons/qgis-qpt192x192.png
+rename to linux/icons/qgis-qpt192x192.png
+diff --git a/debian/icons/qgis-qpt22x22.png b/linux/icons/qgis-qpt22x22.png
+similarity index 100%
+rename from debian/icons/qgis-qpt22x22.png
+rename to linux/icons/qgis-qpt22x22.png
+diff --git a/debian/icons/qgis-qpt24x24.png b/linux/icons/qgis-qpt24x24.png
+similarity index 100%
+rename from debian/icons/qgis-qpt24x24.png
+rename to linux/icons/qgis-qpt24x24.png
+diff --git a/debian/icons/qgis-qpt256x256.png b/linux/icons/qgis-qpt256x256.png
+similarity index 100%
+rename from debian/icons/qgis-qpt256x256.png
+rename to linux/icons/qgis-qpt256x256.png
+diff --git a/debian/icons/qgis-qpt32x32.png b/linux/icons/qgis-qpt32x32.png
+similarity index 100%
+rename from debian/icons/qgis-qpt32x32.png
+rename to linux/icons/qgis-qpt32x32.png
+diff --git a/debian/icons/qgis-qpt36x36.png b/linux/icons/qgis-qpt36x36.png
+similarity index 100%
+rename from debian/icons/qgis-qpt36x36.png
+rename to linux/icons/qgis-qpt36x36.png
+diff --git a/debian/icons/qgis-qpt42x42.png b/linux/icons/qgis-qpt42x42.png
+similarity index 100%
+rename from debian/icons/qgis-qpt42x42.png
+rename to linux/icons/qgis-qpt42x42.png
+diff --git a/debian/icons/qgis-qpt48x48.png b/linux/icons/qgis-qpt48x48.png
+similarity index 100%
+rename from debian/icons/qgis-qpt48x48.png
+rename to linux/icons/qgis-qpt48x48.png
+diff --git a/debian/icons/qgis-qpt512x512.png b/linux/icons/qgis-qpt512x512.png
+similarity index 100%
+rename from debian/icons/qgis-qpt512x512.png
+rename to linux/icons/qgis-qpt512x512.png
+diff --git a/debian/icons/qgis-qpt64x64.png b/linux/icons/qgis-qpt64x64.png
+similarity index 100%
+rename from debian/icons/qgis-qpt64x64.png
+rename to linux/icons/qgis-qpt64x64.png
+diff --git a/debian/icons/qgis-qpt72x72.png b/linux/icons/qgis-qpt72x72.png
+similarity index 100%
+rename from debian/icons/qgis-qpt72x72.png
+rename to linux/icons/qgis-qpt72x72.png
+diff --git a/debian/icons/qgis-qpt80x80.png b/linux/icons/qgis-qpt80x80.png
+similarity index 100%
+rename from debian/icons/qgis-qpt80x80.png
+rename to linux/icons/qgis-qpt80x80.png
+diff --git a/debian/icons/qgis-qpt8x8.png b/linux/icons/qgis-qpt8x8.png
+similarity index 100%
+rename from debian/icons/qgis-qpt8x8.png
+rename to linux/icons/qgis-qpt8x8.png
+diff --git a/debian/icons/qgis-qpt96x96.png b/linux/icons/qgis-qpt96x96.png
+similarity index 100%
+rename from debian/icons/qgis-qpt96x96.png
+rename to linux/icons/qgis-qpt96x96.png
+diff --git a/linux/org.qgis.qgis.appdata.xml b/linux/org.qgis.qgis.appdata.xml
+index 7eb2738265..3e94fa21a7 100644
+--- a/linux/org.qgis.qgis.appdata.xml
++++ b/linux/org.qgis.qgis.appdata.xml
+@@ -22,7 +22,7 @@
+     <release version="3.2.1" date="2018-07-20" />
+     <release version="3.2.0" date="2018-06-22" />
+   </releases>
+-  <launchable type="desktop-id">qgis.desktop</launchable>
++  <launchable type="desktop-id">org.qgis.qgis.desktop</launchable>
+   <provides>
+     <binary>qgis</binary>
+   </provides>
+diff --git a/debian/qgis.desktop b/linux/org.qgis.qgis.desktop
+similarity index 99%
+rename from debian/qgis.desktop
+rename to linux/org.qgis.qgis.desktop
+index edd2409047..ab09667d7a 100644
+--- a/debian/qgis.desktop
++++ b/linux/org.qgis.qgis.desktop
+@@ -1,7 +1,6 @@
+ [Desktop Entry]
+ Type=Application
+ Name=QGIS Desktop
+-Version=1.0
+ GenericName=Geographic Information System
+ GenericName[ar]=نظام المعلومات الجغرافي
+ GenericName[az]=Coğrafi informasiya sistemi
+diff --git a/rpm/qgis.spec.template b/rpm/qgis.spec.template
+index 086d04a477..498073f15b 100644
+--- a/rpm/qgis.spec.template
++++ b/rpm/qgis.spec.template
+@@ -8,7 +8,7 @@
+ 
+ # Force the python interpreter to python3:
+ # brp-python-bytecompile is unable to identify
+-# the proper required version of python for 
++# the proper required version of python for
+ # py files located under /usr/share/qgis/python/plugins
+ %global __python %{__python3}
+ 
+@@ -227,46 +227,11 @@ make %{?_smp_mflags}
+ #export LD_LIBRARY_PATH=%{_builddir}%{name}-%{version}/output/%{_lib}
+ make install DESTDIR=%{buildroot}
+ 
+-# Install desktop file without connecting proprietary file types
+-desktop-file-install \
+-    --vendor="fedora" \
+-    --remove-mime-type="application/x-raster-ecw" \
+-    --remove-mime-type="application/x-raster-mrsid" \
+-    --dir=%{buildroot}%{_datadir}/applications \
+-    debian/qgis.desktop
+-
+ # Install MIME type definitions
+ install -d %{buildroot}%{_datadir}/mime/packages
+ install -pm0644 %{SOURCE5} \
+     %{buildroot}%{_datadir}/mime/packages/%{name}.xml
+ 
+-# Install application and MIME icons
+-for size in 8x8 16x16 22x22 24x24 32x32 36x36 42x42 48x48 64x64 72x72 80x80 96x96 128x128 192x192 256x256 512x512; do
+-    install -pd %{buildroot}%{_datadir}/icons/hicolor/$size/apps
+-    install -pm0644 debian/icons/%{name}-icon${size}.png %{buildroot}%{_datadir}/icons/hicolor/${size}/apps/%{name}.png
+-done
+-
+-for ext in qgs qlr qml qpt; do
+-    for size in 8x8 16x16 22x22 24x24 32x32 36x36 42x42 48x48 64x64 72x72 80x80 96x96 128x128 192x192 256x256 512x512; do
+-        install -pd %{buildroot}%{_datadir}/icons/hicolor/$size/apps
+-        install -pm0644 debian/icons/%{name}-${ext}${size}.png %{buildroot}%{_datadir}/icons/hicolor/${size}/apps/%{name}-${ext}.png
+-    done
+-done
+-
+-for size in 8x8 16x16 22x22 24x24 32x32 36x36 42x42 48x48 64x64 72x72 80x80 96x96 128x128 192x192 256x256 512x512; do
+-    install -pd %{buildroot}%{_datadir}/icons/hicolor/$size/mimetypes
+-    install -pm0644 debian/icons/qgis-mime-icon${size}.png %{buildroot}%{_datadir}/icons/hicolor/${size}/mimetypes/qgis-mime.png
+-done
+-
+-install -pd %{buildroot}%{_datadir}/pixmaps
+-install -pd %{buildroot}%{_datadir}/icons/hicolor/scalable/apps
+-
+-install -pm0644 images/icons/%{name}-icon-512x512.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
+-install -pm0644 images/icons/%{name}_icon.svg %{buildroot}%{_datadir}/pixmaps/%{name}.svg
+-install -pm0644 images/icons/%{name}_icon.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
+-install -pm0644 images/icons/%{name}-mime-icon.png %{buildroot}%{_datadir}/pixmaps/%{name}-mime.png
+-install -pm0644 images/icons/%{name}_mime_icon.svg %{buildroot}%{_datadir}/pixmaps/%{name}-mime.png
+-
+ # Install basic QGIS Mapserver configuration for Apache
+ install -pd %{buildroot}%{_sysconfdir}/httpd/conf.d
+ install -pm0644 %{SOURCE2} \
+@@ -328,7 +293,6 @@ update-mime-database %{?fedora:-n} %{_datadir}/mime &> /dev/null || :
+ %dir %{_datadir}/%{name}/
+ %{_datadir}/mime/packages/qgis.xml
+ %{_datadir}/metainfo/org.qgis.qgis.appdata.xml
+-%{_datadir}/pixmaps/
+ %{_datadir}/icons/hicolor/*/apps/*
+ %{_datadir}/icons/hicolor/*/mimetypes/*
+ %{_datadir}/applications/*%{name}.desktop

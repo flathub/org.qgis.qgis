@@ -33,6 +33,10 @@
                     "type" : "patch",
                     "//source" : "https://issues.qgis.org/attachments/download/13041/qgis-3.2.1-fix-sip-name.patch",
                     "path" : "qgis-3.2.1-fix-sip-name.patch"
+                },
+                {
+                    "type" : "patch",
+                    "path" : "qgis-3.2.3-metadata.patch"
                 }
             ],
             "config-opts" : [
