@@ -235,17 +235,18 @@
                         "--disable-static",
                         "--enable-x11"
                     ],
-                    "buildsystem" : "simple",
-                    "build-commands" : [
-                        "python3 configure.py --assume-shared --confirm-license --no-designer-plugin --no-qml-plugin --sysroot=/app --verbose --qsci-api --qsci-api-destdir=/app/qsci --sipdir=/app/share/sip --sip=/app/bin/sip --sip-incdir=/app/include QMAKE_CFLAGS_RELEASE='-I/usr/include/python3.5m/' QMAKE_CXXFLAGS_RELEASE='-I/usr/include/python3.5m/'",
-                        "make -j $FLATPAK_BUILDER_N_JOBS",
-                        "make install"
-                    ],
                     "sources" : [
                         {
                             "type" : "archive",
                             "url" : "https://sourceforge.net/projects/pyqt/files/PyQt5/PyQt-5.11.2/PyQt5_gpl-5.11.2.zip",
                             "sha256" : "4a83de09fb8e5b094c14a5900c6f1f117c00798a24eaf09377cf469ddd016009"
+                        },
+                        {
+                            "type": "script",
+                            "commands": [
+                                "python3 configure.py --assume-shared --confirm-license --no-designer-plugin --no-qml-plugin --sysroot=/app --verbose --qsci-api --qsci-api-destdir=/app/qsci --sipdir=/app/share/sip --sip=/app/bin/sip --sip-incdir=/app/include QMAKE_CFLAGS_RELEASE='-I/usr/include/python3.5m/' QMAKE_CXXFLAGS_RELEASE='-I/usr/include/python3.5m/'"
+                            ],
+                            "dest-filename": "configure"
                         }
                     ],
                     "modules" : [
@@ -256,13 +257,14 @@
                                     "type" : "archive",
                                     "url" : "https://sourceforge.net/projects/pyqt/files/sip/sip-4.19.12/sip-4.19.12.tar.gz",
                                     "sha256" : "24617fc31b983df075500ecac0e99d2fb48bf63ba82d4a17518659e571923822"
+                                },
+                                {
+                                    "type": "script",
+                                    "commands": [
+                                        "python3 configure.py --sip-module PyQt5.sip -b ${FLATPAK_DEST}/bin -d ${FLATPAK_DEST}/lib/python3.5/site-packages -e ${FLATPAK_DEST}/include -v ${FLATPAK_DEST}/share/sip --stubsdir=${FLATPAK_DEST}/lib/python3.5/site-packages"
+                                    ],
+                                    "dest-filename": "configure"
                                 }
-                            ],
-                            "buildsystem" : "simple",
-                            "build-commands" : [
-                                "python3 configure.py --sip-module PyQt5.sip -b ${FLATPAK_DEST}/bin -d ${FLATPAK_DEST}/lib/python3.5/site-packages -e ${FLATPAK_DEST}/include -v ${FLATPAK_DEST}/share/sip --stubsdir=${FLATPAK_DEST}/lib/python3.5/site-packages",
-                                "make",
-                                "make install"
                             ],
                             "cleanup" : [
                                 "/bin",
@@ -288,8 +290,8 @@
                         "sed -e 's|\\(qsci.path\\) = .*|\\1 = /app/share/qt5|' -i Qt4Qt5/qscintilla.pro",
                         "sed -e 's|\\(features.path\\) = .*|\\1 = /app/lib/qt5/mkspecs/features|' -i Qt4Qt5/qscintilla.pro",
                         "sed -e \"s|qmake = {'CONFIG': 'qscintilla2'}|qmake = {'CONFIG': 'qscintilla2', 'QT': 'widgets printsupport'}|\" -i Python/configure.py",
-                        "cd Qt4Qt5 && qmake && make -j $FLATPAK_BUILDER_N_JOBS",
-                        "cd Python && python3 configure.py --pyqt=PyQt5 -n ../Qt4Qt5/ -o ../Qt4Qt5/ --pyqt-sipdir=/app/share/sip --destdir=/app/lib/python3.5/site-packages/PyQt5 --apidir=/app/qsci/api/python --no-stubs && make -j $FLATPAK_BUILDER_N_JOBS && make install",
+                        "cd Qt4Qt5 && qmake && make -j ${FLATPAK_BUILDER_N_JOBS:-`nproc`}",
+                        "cd Python && python3 configure.py --pyqt=PyQt5 -n ../Qt4Qt5/ -o ../Qt4Qt5/ --pyqt-sipdir=/app/share/sip --destdir=/app/lib/python3.5/site-packages/PyQt5 --apidir=/app/qsci/api/python --no-stubs && make -j ${FLATPAK_BUILDER_N_JOBS:-`nproc`} && make install",
                         "cd Qt4Qt5 && make install"
                     ]
                 },
@@ -403,7 +405,7 @@
                 }
             ],
             "build-commands" : [
-                "python3 setup.py build -j $FLATPAK_BUILDER_N_JOBS",
+                "python3 setup.py build -j ${FLATPAK_BUILDER_N_JOBS:-`nproc`}",
                 "python3 setup.py install --prefix /app"
             ]
         },
