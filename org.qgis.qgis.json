@@ -27,7 +27,7 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/qgis/QGIS.git",
-                    "branch" : "final-3_2_1"
+                    "branch" : "final-3_2_3"
                 },
                 {
                     "type" : "patch",
@@ -115,8 +115,8 @@
                     "sources" : [
                         {
                             "type" : "archive",
-                            "url" : "https://ftp.postgresql.org/pub/source/v9.6.0/postgresql-9.6.0.tar.bz2",
-                            "sha256" : "3b5fe9634b80a4511aac1832a087586a7caa8c3413619562bdda009a015863ce"
+                            "url" : "https://ftp.postgresql.org/pub/source/v10.5/postgresql-10.5.tar.bz2",
+                            "sha256" : "6c8e616c91a45142b85c0aeb1f29ebba4a361309e86469e0fb4617b6a73c4011"
                         }
                     ]
                 },
@@ -128,8 +128,8 @@
                     "sources" : [
                         {
                             "type" : "archive",
-                            "url" : "http://download.osgeo.org/gdal/2.3.0/gdal-2.3.0.tar.gz",
-                            "sha256" : "2944bbfee009bf1ca092716e4fd547cb4ae2a1e8816186236110c22f11c7e1e9"
+                            "url" : "http://download.osgeo.org/gdal/2.3.1/gdal-2.3.1.tar.xz",
+                            "sha256" : "9c4625c45a3ee7e49a604ef221778983dd9fd8104922a87f20b99d9bedb7725a"
                         }
                     ],
                     "modules" : [
@@ -304,8 +304,8 @@
                     "sources" : [
                         {
                             "type" : "archive",
-                            "url" : "https://github.com/frankosterfeld/qtkeychain/archive/v0.8.0.tar.gz",
-                            "sha256" : "b492f603197538bc04b2714105b1ab2b327a9a98d400d53d9a7cb70edd2db12f"
+                            "url" : "https://github.com/frankosterfeld/qtkeychain/archive/v0.9.1.tar.gz",
+                            "sha256" : "9c2762d9d0759a65cdb80106d547db83c6e9fdea66f1973c6e9014f867c6f28e"
                         }
                     ]
                 },
