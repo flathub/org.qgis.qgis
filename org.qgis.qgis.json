@@ -43,6 +43,7 @@
             ],
             "config-opts" : [
                 "-DWITH_3D=TRUE",
+                "-DGRASS_PREFIX7=/app/grass-7.4.1",
                 "-DQWT_LIBRARY=/app/lib/libqwt.so"
             ],
             "modules" : [
@@ -382,6 +383,60 @@
                             "type" : "archive",
                             "url" : "http://initd.org/psycopg/tarballs/PSYCOPG-2-7/psycopg2-2.7.5.tar.gz",
                             "sha256" : "eccf962d41ca46e6326b97c8fe0a6687b58dfc1a5f6540ed071ff1474cea749e"
+                        }
+                    ]
+                },
+                {
+                    "name" : "gisgrass",
+                    "cleanup" : [
+                        "/bin",
+                        "/include",
+                        "/lib/pkgconfig",
+                        "/share/man",
+                        "/lib/*.la"
+                    ],
+                    "config-opts" : [
+                        "--prefix=/app",
+                        "--with-freetype-includes=/usr/include/freetype2",
+                        "--with-readline",
+                        "--with-pthread",
+                        "--with-nls",
+                        "--with-geos",
+                        "--with-sqlite=yes",
+                        "--with-python=yes",
+                        "--with-postgres"
+                    ],
+                    "sources" : [
+                        {
+                            "type" : "archive",
+                            "url" : "https://grass.osgeo.org/grass74/source/grass-7.4.1.tar.gz",
+                            "sha256" : "560b8669caaafa9e8dbd4bbf2b4b4bbab7dca1cc46ee828eaf26c744fe0635fc"
+                        }
+                    ],
+                    "modules": [
+                        "shared-modules/glu/glu-9.0.0.json",
+                        {
+                            "name": "fftw",
+                            "config-opts" : [
+                                "--enable-shared",
+                                "--disable-static"
+                            ],
+                            "cleanup" : [
+                                "/bin",
+                                "/include",
+                                "/lib/*.la",
+                                "/lib/cmake",
+                                "/lib/pkgconfig",
+                                "/share/info",
+                                "/share/man"
+                            ],
+                            "sources" : [
+                                {
+                                    "type" : "archive",
+                                    "url" : "http://www.fftw.org/fftw-3.3.7.tar.gz",
+                                    "sha1": "2ae980a8d44c161ce4a09c6e2d1c79243ecbabb2"
+                                }
+                            ]
                         }
                     ]
                 }
