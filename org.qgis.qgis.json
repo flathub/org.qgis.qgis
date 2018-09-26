@@ -42,6 +42,7 @@
                 }
             ],
             "config-opts" : [
+                "-DWITH_3D=TRUE",
                 "-DQWT_LIBRARY=/app/lib/libqwt.so"
             ],
             "modules" : [
