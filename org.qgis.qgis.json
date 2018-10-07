@@ -439,6 +439,61 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "name" : "saga-gis",
+                    "subdir": "saga-gis",
+                    "config-opts": [
+                        "--enable-python"
+                    ],
+                    "sources" : [
+                        {
+                            "type" : "git",
+                            "url" : "git://git.code.sf.net/p/saga-gis/code",
+                            "branch" : "release-5-0-1"
+                        },
+                        {
+                            "type": "script",
+                            "dest-filename": "saga-gis/autogen.sh",
+                            "commands": [
+                                "AUTOMAKE=\"automake --foreign\" autoreconf -vfi"
+                            ]
+                        }
+                    ],
+                    "modules": [
+                        {
+                            "name": "wxWidgets",
+                            "cleanup": [
+                                "/bin",
+                                "/share/bakefile"
+                            ],
+                            "config-opts": [
+                                "--with-opengl",
+                                "--with-libjpeg",
+                                "--with-libtiff",
+                                "--with-libpng",
+                                "--with-zlib",
+                                "--disable-sdltest",
+                                "--enable-unicode",
+                                "--enable-display",
+                                "--enable-propgrid",
+                                "--disable-webkit",
+                                "--disable-webview",
+                                "--disable-webviewwebkit",
+                                "--with-expat=builtin",
+                                "--with-libiconv=/usr" ],
+                            "build-options" : {
+                                "cxxflags":"-std=c++0x"
+                            },
+                            "sources": [
+                                {
+                                    "type": "archive",
+                                    "url": "https://github.com/wxWidgets/wxWidgets/releases/download/v3.0.4/wxWidgets-3.0.4.tar.bz2",
+                                    "sha256":"96157f988d261b7368e5340afa1a0cad943768f35929c22841f62c25b17bf7f0"
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         },
