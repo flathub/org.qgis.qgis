@@ -435,13 +435,14 @@
                     "name" : "saga-gis",
                     "subdir": "saga-gis",
                     "config-opts": [
-                        "--enable-python"
+                        "--enable-python",
+                        "--disable-odbc"
                     ],
                     "sources" : [
                         {
                             "type" : "git",
                             "url" : "git://git.code.sf.net/p/saga-gis/code",
-                            "branch" : "release-5-0-1"
+                            "branch" : "release-7.0.0"
                         },
                         {
                             "type": "script",
