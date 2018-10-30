@@ -486,81 +486,81 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "name" : "PyYAML",
-            "buildsystem" : "simple",
-            "build-commands" : [
-                "python3 setup.py install --prefix=/app --root=/"
-            ],
-            "sources" : [
+                },
                 {
-                    "type" : "archive",
-                    "url" : "https://pypi.python.org/packages/4a/85/db5a2df477072b2902b0eb892feb37d88ac635d36245a72a6a69b23b383a/PyYAML-3.12.tar.gz#md5=4c129761b661d181ebf7ff4eb2d79950",
-                    "sha256" : "592766c6303207a20efc445587778322d7f73b161bd994f227adaa341ba212ab"
-                }
-            ]
-        },
-        {
-            "name" : "numpy",
-            "buildsystem" : "simple",
-            "sources" : [
+                    "name" : "PyYAML",
+                    "buildsystem" : "simple",
+                    "build-commands" : [
+                        "python3 setup.py install --prefix=/app --root=/"
+                    ],
+                    "sources" : [
+                        {
+                            "type" : "archive",
+                            "url" : "https://pypi.python.org/packages/4a/85/db5a2df477072b2902b0eb892feb37d88ac635d36245a72a6a69b23b383a/PyYAML-3.12.tar.gz#md5=4c129761b661d181ebf7ff4eb2d79950",
+                            "sha256" : "592766c6303207a20efc445587778322d7f73b161bd994f227adaa341ba212ab"
+                        }
+                    ]
+                },
                 {
-                    "type" : "archive",
-                    "url" : "https://downloads.sourceforge.net/project/numpy/NumPy/1.11.2/numpy-1.11.2.tar.gz",
-                    "sha256" : "04db2fbd64e2e7c68e740b14402b25af51418fc43a59d9e54172b38b906b0f69"
-                }
-            ],
-            "build-commands" : [
-                "python3 setup.py build -j ${FLATPAK_BUILDER_N_JOBS:-`nproc`}",
-                "python3 setup.py install --prefix /app"
-            ]
-        },
-        {
-            "name" : "python3-markupsafe",
-            "buildsystem" : "simple",
-            "ensure-writable" : [
-                "/lib/python*/site-packages/easy-install.pth"
-            ],
-            "sources" : [
+                    "name" : "numpy",
+                    "buildsystem" : "simple",
+                    "sources" : [
+                        {
+                            "type" : "archive",
+                            "url" : "https://downloads.sourceforge.net/project/numpy/NumPy/1.11.2/numpy-1.11.2.tar.gz",
+                            "sha256" : "04db2fbd64e2e7c68e740b14402b25af51418fc43a59d9e54172b38b906b0f69"
+                        }
+                    ],
+                    "build-commands" : [
+                        "python3 setup.py build -j ${FLATPAK_BUILDER_N_JOBS:-`nproc`}",
+                        "python3 setup.py install --prefix /app"
+                    ]
+                },
                 {
-                    "type" : "archive",
-                    "url" : "https://pypi.python.org/packages/4d/de/32d741db316d8fdb7680822dd37001ef7a448255de9699ab4bfcbdf4172b/MarkupSafe-1.0.tar.gz",
-                    "sha256" : "a6be69091dac236ea9c6bc7d012beab42010fa914c459791d627dad4910eb665"
-                }
-            ],
-            "build-commands" : [
-                "python3 setup.py build",
-                "python3 setup.py install --prefix /app"
-            ]
-        },
-        {
-            "name" : "python3-jinja2",
-            "buildsystem" : "simple",
-            "build-commands" : [
-                "pip3 install --prefix=/app Jinja2-2.9.5-py2.py3-none-any.whl"
-            ],
-            "sources" : [
+                    "name" : "python3-markupsafe",
+                    "buildsystem" : "simple",
+                    "ensure-writable" : [
+                        "/lib/python*/site-packages/easy-install.pth"
+                    ],
+                    "sources" : [
+                        {
+                            "type" : "archive",
+                            "url" : "https://pypi.python.org/packages/4d/de/32d741db316d8fdb7680822dd37001ef7a448255de9699ab4bfcbdf4172b/MarkupSafe-1.0.tar.gz",
+                            "sha256" : "a6be69091dac236ea9c6bc7d012beab42010fa914c459791d627dad4910eb665"
+                        }
+                    ],
+                    "build-commands" : [
+                        "python3 setup.py build",
+                        "python3 setup.py install --prefix /app"
+                    ]
+                },
                 {
-                    "type" : "file",
-                    "url" : "https://pypi.python.org/packages/3c/d1/49d69bc23d0e0c7612248dd8f5391bd043648865132309616c280ca1c837/Jinja2-2.9.5-py2.py3-none-any.whl",
-                    "sha256" : "a7b7438120dbe76a8e735ef7eba6048eaf4e0b7dbc530e100812f8ec462a4d50"
-                }
-            ]
-        },
-        {
-            "name" : "python3-pygments",
-            "buildsystem" : "simple",
-            "build-commands" : [
-                "pip3.5 install --prefix=/app Pygments-2.2.0-py2.py3-none-any.whl"
-            ],
-            "sources" : [
+                    "name" : "python3-jinja2",
+                    "buildsystem" : "simple",
+                    "build-commands" : [
+                        "pip3 install --prefix=/app Jinja2-2.9.5-py2.py3-none-any.whl"
+                    ],
+                    "sources" : [
+                        {
+                            "type" : "file",
+                            "url" : "https://pypi.python.org/packages/3c/d1/49d69bc23d0e0c7612248dd8f5391bd043648865132309616c280ca1c837/Jinja2-2.9.5-py2.py3-none-any.whl",
+                            "sha256" : "a7b7438120dbe76a8e735ef7eba6048eaf4e0b7dbc530e100812f8ec462a4d50"
+                        }
+                    ]
+                },
                 {
-                    "type" : "file",
-                    "url" : "https://pypi.python.org/packages/02/ee/b6e02dc6529e82b75bb06823ff7d005b141037cb1416b10c6f00fc419dca/Pygments-2.2.0-py2.py3-none-any.whl",
-                    "sha256" : "78f3f434bcc5d6ee09020f92ba487f95ba50f1e3ef83ae96b9d5ffa1bab25c5d"
+                    "name" : "python3-pygments",
+                    "buildsystem" : "simple",
+                    "build-commands" : [
+                        "pip3.5 install --prefix=/app Pygments-2.2.0-py2.py3-none-any.whl"
+                    ],
+                    "sources" : [
+                        {
+                            "type" : "file",
+                            "url" : "https://pypi.python.org/packages/02/ee/b6e02dc6529e82b75bb06823ff7d005b141037cb1416b10c6f00fc419dca/Pygments-2.2.0-py2.py3-none-any.whl",
+                            "sha256" : "78f3f434bcc5d6ee09020f92ba487f95ba50f1e3ef83ae96b9d5ffa1bab25c5d"
+                        }
+                    ]
                 }
             ]
         }
