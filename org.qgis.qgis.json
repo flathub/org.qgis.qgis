@@ -9,6 +9,7 @@
     "command" : "qgis",
     "rename-icon": "qgis",
     "finish-args" : [
+        "--env=PATH=/app/bin:/usr/bin:/app/grass-7.4.1/bin",
         "--share=ipc",
         "--share=network",
         "--socket=x11",
