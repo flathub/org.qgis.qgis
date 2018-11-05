@@ -9,7 +9,7 @@
     "command" : "qgis",
     "rename-icon": "qgis",
     "finish-args" : [
-        "--env=PATH=/app/bin:/usr/bin:/app/grass-7.4.1/bin",
+        "--env=LD_LIBRARY_PATH=/app/grass-7.4.1/lib",
         "--share=ipc",
         "--share=network",
         "--socket=x11",
@@ -381,7 +381,6 @@
                 {
                     "name" : "gisgrass",
                     "cleanup" : [
-                        "/bin",
                         "/include",
                         "/lib/pkgconfig",
                         "/share/man",
@@ -443,7 +442,7 @@
                         {
                             "type" : "git",
                             "url" : "git://git.code.sf.net/p/saga-gis/code",
-                            "branch" : "release-7.0.0"
+                            "branch" : "release-2-3-1"
                         },
                         {
                             "type": "script",
