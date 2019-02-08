@@ -152,7 +152,29 @@
                                     "sha256" : "7cf9f447ae7ed1c51722efc45e7f14418d15d7a1e143ac9f09a668999f4fc94d"
                                 }
                             ]
-                        }
+                        },
+		        {
+			    "name" : "hdf5",
+		            "no-autogen" : true,
+			    "sources" : [
+			        {
+				    "type" : "archive",
+			            "url" : "https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.10/hdf5-1.10.4/src/hdf5-1.10.4.tar.bz2",
+				    "sha256" : "1267ff06aaedc04ca25f7c6026687ea2884b837043431195f153401d942b28df"
+				}
+		            ]
+		        },
+		        {
+			    "name" : "netcdf",
+		            "no-autogen" : true,
+			    "sources" : [
+			        {
+			            "type" : "archive",
+				    "url" : "https://github.com/Unidata/netcdf-c/archive/v4.6.2.tar.gz",
+				    "sha256" : "673936c76ae0c496f6dde7e077f5be480afc1e300adb2c200bf56fbe22e5a82a"
+			        }
+			    ]
+			}
                     ]
                 },
                 {
