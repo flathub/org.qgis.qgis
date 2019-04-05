@@ -353,6 +353,20 @@
                     ]
                 },
                 {
+                    "name": "python-future",
+                    "buildsystem": "simple",
+                    "build-commands": [
+                        "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} six"
+                    ],
+                    "sources": [
+                        {
+                            "type": "file",
+                            "url": "https://files.pythonhosted.org/packages/00/2b/8d082ddfed935f3608cc61140df6dcbf0edea1bc3ab52fb6c29ae3e81e85/future-0.16.0.tar.gz",
+                            "sha256": "e39ced1ab767b5936646cedba8bcce582398233d6a627067d4c6a454c90cfedb"
+                        }
+                    ]
+                },
+                {
                     "name" : "python-owslib",
                     "buildsystem" : "simple",
                     "build-commands" : [
