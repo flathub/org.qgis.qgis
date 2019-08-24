@@ -9,7 +9,7 @@
     "command" : "qgis",
     "rename-icon": "qgis",
     "finish-args" : [
-        "--env=LD_LIBRARY_PATH=/app/lib:/app/grass-7.4.1/lib",
+        "--env=LD_LIBRARY_PATH=/app/lib:/app/grass-7.6.1/lib",
         "--share=ipc",
         "--share=network",
         "--socket=x11",
@@ -35,7 +35,7 @@
             ],
             "config-opts" : [
                 "-DWITH_3D=TRUE",
-                "-DGRASS_PREFIX7=/app/grass-7.4.1",
+                "-DGRASS_PREFIX7=/app/grass-7.6.1",
                 "-DQWT_LIBRARY=/app/lib/libqwt.so"
             ],
             "modules" : [
@@ -435,8 +435,8 @@
                     "sources" : [
                         {
                             "type" : "archive",
-                            "url" : "https://grass.osgeo.org/grass74/source/grass-7.4.4.tar.gz",
-                            "sha256" : "96a39e273103f7375a670eba94fa3e5dad2819c5c5664c9aee8f145882a94e8c"
+                            "url" : "https://grass.osgeo.org/grass76/source/grass-7.6.1.tar.gz",
+                            "sha256" : "9e25c99cafd16ed8f5e2dca75b5a10dc2af0568dbedf3fc39f1c5a0a9c840b0b"
                         }
                     ],
                     "modules": [
