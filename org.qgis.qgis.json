@@ -128,8 +128,8 @@
                     "sources" : [
                         {
                             "type" : "archive",
-                            "url" : "http://download.osgeo.org/gdal/2.4.2/gdal-2.4.2.tar.xz",
-                            "sha256" : "dcc132e469c5eb76fa4aaff238d32e45a5d947dc5b6c801a123b70045b618e0c"
+                            "url" : "http://download.osgeo.org/gdal/3.0.2/gdal-3.0.2.tar.xz",
+                            "sha256" : "c3765371ce391715c8f28bd6defbc70b57aa43341f6e94605f04fe3c92468983"
                         }
                     ],
                     "modules" : [
