@@ -455,7 +455,11 @@
                         {
                             "type" : "git",
                             "url" : "git://git.code.sf.net/p/saga-gis/code",
-                            "branch" : "release-2-3-1"
+                            "branch" : "release-7.5.0"
+                        },
+                        {
+                            "type": "patch",
+                            "path": "patches/saga-gis.patch"
                         },
                         {
                             "type": "script",
