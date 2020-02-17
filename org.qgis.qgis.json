@@ -597,6 +597,13 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "env-python",
+            "buildsystem": "simple",
+            "build-commands": [
+                "ln -s /usr/bin/python3 /app/bin/python"
+            ]
         }
     ]
 }
