@@ -35,7 +35,7 @@
             ],
             "config-opts" : [
                 "-DWITH_3D=TRUE",
-                "-DGRASS_PREFIX7=/app/grass-7.6.1",
+                "-DGRASS_PREFIX7=/app/grass76",
                 "-DQWT_LIBRARY=/app/lib/libqwt.so"
             ],
             "modules" : [
