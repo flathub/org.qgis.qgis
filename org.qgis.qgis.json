@@ -257,6 +257,11 @@
                         "--disable-static",
                         "--enable-x11"
                     ],
+                    "build-options":{
+                        "env":{
+                            "QMAKEPATH": "/app/lib"
+                        }
+                    },
                     "sources" : [
                         {
                             "type" : "archive",
