@@ -265,8 +265,8 @@
                     "sources" : [
                         {
                             "type" : "archive",
-                            "url" : "https://sourceforge.net/projects/pyqt/files/PyQt5/PyQt-5.11.3/PyQt5_gpl-5.11.3.zip",
-                            "sha256" : "7cacf0712d76a702e0e2102a65f411fd72e7f64a851a47a72c03fbafbe447aae"
+                            "url" : "https://www.riverbankcomputing.com/static/Downloads/PyQt5/5.13.2/PyQt5-5.13.2.tar.gz",
+                            "sha256" : "adc17c077bf233987b8e43ada87d1e0deca9bd71a13e5fd5fc377482ed69c827"
                         },
                         {
                             "type": "script",
@@ -282,8 +282,8 @@
                             "sources" : [
                                 {
                                     "type" : "archive",
-                                    "url" : "https://sourceforge.net/projects/pyqt/files/sip/sip-4.19.13/sip-4.19.13.tar.gz",
-                                    "sha256" : "e353a7056599bf5fbd5d3ff9842a6ab2ea3cf4e0304a0f925ec5862907c0d15e"
+                                    "url" : "https://www.riverbankcomputing.com/static/Downloads/sip/4.19.22/sip-4.19.22.tar.gz",
+                                    "sha256" : "e1b768824ec1a2ee38dd536b6b6b3d06de27b00a2f5f55470d1b512306e3be45"
                                 },
                                 {
                                     "type": "script",
@@ -446,7 +446,7 @@
                         }
                     ],
                     "modules": [
-                        "shared-modules/glu/glu-9.0.0.json"
+                        "shared-modules/glu/glu-9.json"
                     ]
                 },
                 {
