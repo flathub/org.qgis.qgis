@@ -2,9 +2,9 @@
     "id" : "org.qgis.qgis",
     "branch" : "stable",
     "base": "io.qt.qtwebkit.BaseApp",
-    "base-version": "5.12",
+    "base-version": "5.14",
     "runtime" : "org.kde.Platform",
-    "runtime-version" : "5.12",
+    "runtime-version" : "5.14",
     "sdk" : "org.kde.Sdk",
     "command" : "qgis",
     "rename-icon": "qgis",
@@ -30,7 +30,7 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/qgis/QGIS.git",
-                    "branch" : "final-3_12_1"
+                    "branch" : "final-3_12_2"
                 }
             ],
             "config-opts" : [
@@ -54,8 +54,8 @@
                     "sources" : [
                         {
                             "type" : "archive",
-                            "url" : "http://download.osgeo.org/geos/geos-3.7.3.tar.bz2",
-                            "sha256" : "02035ae4e0ad711fa5a5556d7712530029edacac364b5b9c3ade0ded865fca7e"
+                            "url" : "http://download.osgeo.org/geos/geos-3.8.1.tar.bz2",
+                            "sha256" : "4258af4308deb9dbb5047379026b4cd9838513627cb943a44e16c40e42ae17f7"
                         }
                     ]
                 },
@@ -154,28 +154,28 @@
                                 }
                             ]
                         },
-		        {
-			    "name" : "hdf5",
-		            "no-autogen" : true,
-			    "sources" : [
-			        {
-				    "type" : "archive",
-                    "url" : "https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.10/hdf5-1.10.6/src/hdf5-1.10.6.tar.bz2",
-				    "sha256" : "09d6301901685201bb272a73e21c98f2bf7e044765107200b01089104a47c3bd"
-				}
-		            ]
-		        },
-		        {
-			    "name" : "netcdf",
-		            "no-autogen" : true,
-			    "sources" : [
-			        {
-			            "type" : "archive",
-				    "url" : "https://github.com/Unidata/netcdf-c/archive/v4.7.3.tar.gz",
-				    "sha256" : "05d064a2d55147b83feff3747bea13deb77bef390cb562df4f9f9f1ce147840d"
-			        }
-			    ]
-			}
+                        {
+                        "name" : "hdf5",
+                        "no-autogen" : true,
+                        "sources" : [
+                            {
+                            "type" : "archive",
+                            "url" : "https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.10/hdf5-1.10.6/src/hdf5-1.10.6.tar.bz2",
+                            "sha256" : "09d6301901685201bb272a73e21c98f2bf7e044765107200b01089104a47c3bd"
+                        }
+                            ]
+                        },
+                        {
+                        "name" : "netcdf",
+                        "no-autogen" : true,
+                        "sources" : [
+                            {
+                                "type" : "git",
+                                "url" : "https://github.com/Unidata/netcdf-c.git",
+                                "branch": "v4.7.4"
+                            }
+                        ]
+                    }
                     ]
                 },
                 {
@@ -440,13 +440,26 @@
                     ],
                     "sources" : [
                         {
-                            "type" : "archive",
-                            "url" : "https://grass.osgeo.org/grass76/source/grass-7.6.1.tar.gz",
-                            "sha256" : "9e25c99cafd16ed8f5e2dca75b5a10dc2af0568dbedf3fc39f1c5a0a9c840b0b"
+                            "type" : "git",
+                            "url" : "https://github.com/OSGeo/grass.git",
+                            "branch" : "7.8.2"
                         }
                     ],
                     "modules": [
-                        "shared-modules/glu/glu-9.json"
+                        "shared-modules/glu/glu-9.json",
+                        {
+                            "name": "zstd",
+                            "buildsystem": "cmake-ninja",
+                            "config-opts": [ "-DCMAKE_BUILD_TYPE=Release" ],
+                            "subdir": "build/cmake",
+                            "sources": [
+                                {
+                                    "type": "git",
+                                    "url": "https://github.com/facebook/zstd.git",
+                                    "branch" : "v1.4.4"
+                                }
+                            ]
+                        }
                     ]
                 },
                 {
@@ -460,11 +473,7 @@
                         {
                             "type" : "git",
                             "url" : "git://git.code.sf.net/p/saga-gis/code",
-                            "branch" : "release-7.5.0"
-                        },
-                        {
-                            "type": "patch",
-                            "path": "patches/saga-gis.patch"
+                            "branch" : "release-7.6.3"
                         },
                         {
                             "type": "script",
