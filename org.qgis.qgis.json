@@ -124,7 +124,8 @@
                 {
                     "name" : "gdal",
                     "config-opts" : [
-                        "--with-python=python3"
+                        "--with-python=python3",
+                        "--with-libtiff=internal"
                     ],
                     "sources" : [
                         {
