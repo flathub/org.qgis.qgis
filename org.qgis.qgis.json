@@ -125,7 +125,18 @@
                     "name" : "gdal",
                     "config-opts" : [
                         "--with-python=python3",
-                        "--with-libtiff=internal"
+                        "--with-libtiff=internal",
+                        "--with-netcdf",
+                        "--with-sqlite3",
+                        "--with-geotiff",
+                        "--with-mysql",
+                        "--with-curl",
+                        "--with-hdf5",
+                        "--with-geos",
+                        "--with-png",
+                        "--with-poppler",
+                        "--with-spatialite",
+                        "--with-openjpeg"
                     ],
                     "sources" : [
                         {
