@@ -223,8 +223,8 @@
                     "sources" : [
                         {
                             "type" : "archive",
-                            "url" : "https://sourceforge.net/projects/qwt/files/qwt/6.1.4/qwt-6.1.4.zip",
-                            "sha256" : "77a5d17972865a45ca2f77b16aecd4fc7d7f913f9c705530eb586de51079abaa"
+                            "url" : "https://sourceforge.net/projects/qwt/files/qwt/6.1.5/qwt-6.1.5.zip",
+                            "sha256" : "a1208783c2639101b11a9f359d98eaf007e95f7292f1c1df5514884dd8b4373d"
                         },
                         {
                             "type" : "shell",
