@@ -19,7 +19,7 @@
     "separate-locales" : false,
     "build-options" : {
         "env" : {
-            "PYTHONPATH" : "/app/lib/python3.7/site-packages:/usr/lib/python3.7/site-packages"
+            "PYTHONPATH" : "/app/lib/python/site-packages:/usr/lib/python/site-packages"
         }
     },
     "modules" : [
@@ -277,13 +277,13 @@
                     "sources" : [
                         {
                             "type" : "archive",
-                            "url" : "https://www.riverbankcomputing.com/static/Downloads/PyQt5/5.13.2/PyQt5-5.13.2.tar.gz",
-                            "sha256" : "adc17c077bf233987b8e43ada87d1e0deca9bd71a13e5fd5fc377482ed69c827"
+                            "url" : "https://files.pythonhosted.org/packages/1d/31/896dc3dfb6c81c70164019a6cbba6ab037e3af7653d9ca60ccc874ee4c27/PyQt5-5.15.1.tar.gz",
+                            "sha256" : "d9a76b850246d08da9863189ecb98f6c2aa9b4d97a3e85e29330a264aed0f9a1"
                         },
                         {
                             "type": "script",
                             "commands": [
-                                "python3 configure.py --assume-shared --confirm-license --no-designer-plugin --no-qml-plugin --sysroot=/app --qsci-api --qsci-api-destdir=/app/qsci --sipdir=/app/share/sip --sip=/app/bin/sip --sip-incdir=/app/include QMAKE_CFLAGS_RELEASE='-I/usr/include/python3.7m/' QMAKE_CXXFLAGS_RELEASE='-I/usr/include/python3.7m/'"
+                                "python3 configure.py --assume-shared --confirm-license --no-designer-plugin --no-qml-plugin --sysroot=/app --qsci-api --qsci-api-destdir=/app/qsci --sipdir=/app/share/sip --sip=/app/bin/sip --sip-incdir=/app/include QMAKE_CFLAGS_RELEASE='-I/usr/include/python3.8/' QMAKE_CXXFLAGS_RELEASE='-I/usr/include/python3.8/'"
                             ],
                             "dest-filename": "configure"
                         }
@@ -294,13 +294,13 @@
                             "sources" : [
                                 {
                                     "type" : "archive",
-                                    "url" : "https://www.riverbankcomputing.com/static/Downloads/sip/4.19.22/sip-4.19.22.tar.gz",
-                                    "sha256" : "e1b768824ec1a2ee38dd536b6b6b3d06de27b00a2f5f55470d1b512306e3be45"
+                                    "url" : "https://www.riverbankcomputing.com/static/Downloads/sip/4.19.24/sip-4.19.24.tar.gz",
+                                    "sha256" : "edcd3790bb01938191eef0f6117de0bf56d1136626c0ddb678f3a558d62e41e5"
                                 },
                                 {
                                     "type": "script",
                                     "commands": [
-                                        "python3 configure.py --sip-module PyQt5.sip -b ${FLATPAK_DEST}/bin -d ${FLATPAK_DEST}/lib/python3.7/site-packages -e ${FLATPAK_DEST}/include -v ${FLATPAK_DEST}/share/sip --stubsdir=${FLATPAK_DEST}/lib/python3.7/site-packages"
+                                        "python3 configure.py --sip-module PyQt5.sip -b ${FLATPAK_DEST}/bin -d ${FLATPAK_DEST}/lib/python/site-packages -e ${FLATPAK_DEST}/include -v ${FLATPAK_DEST}/share/sip --stubsdir=${FLATPAK_DEST}/lib/python3.8/site-packages"
                                     ],
                                     "dest-filename": "configure"
                                 }
@@ -318,8 +318,8 @@
                     "sources" : [
                         {
                             "type" : "archive",
-                            "url" : "https://sourceforge.net/projects/pyqt/files/QScintilla2/QScintilla-2.10.8/QScintilla_gpl-2.10.8.tar.gz",
-                            "sha256" : "46cd5b4e609ca5e13130ba8cc7028d44fd1dc5b037f97c492899006ed0c992eb"
+                            "url" : "https://www.riverbankcomputing.com/static/Downloads/QScintilla/2.11.5/QScintilla-2.11.5.tar.gz",
+                            "sha256" : "9361e26fd7fb7b5819a7eb92c5c1880a18de9bd3ed9dd2eb008e57388696716b"
                         }
                     ],
                     "build-commands" : [
@@ -330,7 +330,7 @@
                         "sed -e 's|\\(features.path\\) = .*|\\1 = /app/lib/qt5/mkspecs/features|' -i Qt4Qt5/qscintilla.pro",
                         "sed -e \"s|qmake = {'CONFIG': 'qscintilla2'}|qmake = {'CONFIG': 'qscintilla2', 'QT': 'widgets printsupport'}|\" -i Python/configure.py",
                         "cd Qt4Qt5 && qmake && make -j ${FLATPAK_BUILDER_N_JOBS:-`nproc`}",
-                        "cd Python && python3 configure.py --pyqt=PyQt5 -n ../Qt4Qt5/ -o ../Qt4Qt5/ --pyqt-sipdir=/app/share/sip --destdir=/app/lib/python3.7/site-packages/PyQt5 --apidir=/app/qsci/api/python --no-stubs --no-dist-info && make -j ${FLATPAK_BUILDER_N_JOBS:-`nproc`} && make install",
+                        "cd Python && python3 configure.py --pyqt=PyQt5 -n ../Qt4Qt5/ -o ../Qt4Qt5/ --pyqt-sipdir=/app/share/sip --destdir=/app/lib/python/site-packages/PyQt5 --apidir=/app/qsci/api/python --no-stubs --no-dist-info && make -j ${FLATPAK_BUILDER_N_JOBS:-`nproc`} && make install",
                         "cd Qt4Qt5 && make install"
                     ]
                 },
@@ -426,8 +426,8 @@
                     "sources" : [
                         {
                             "type" : "archive",
-                            "url" : "http://initd.org/psycopg/tarballs/PSYCOPG-2-7/psycopg2-2.7.5.tar.gz",
-                            "sha256" : "eccf962d41ca46e6326b97c8fe0a6687b58dfc1a5f6540ed071ff1474cea749e"
+                            "url" : "http://initd.org/psycopg/tarballs/PSYCOPG-2-8/psycopg2-2.8.6.tar.gz",
+                            "sha256" : "fb23f6c71107c37fd667cb4ea363ddeb936b348bbd6449278eb92c189699f543"
                         }
                     ]
                 },
@@ -523,8 +523,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://github.com/wxWidgets/wxWidgets/releases/download/v3.1.3/wxWidgets-3.1.3.tar.bz2",
-                                    "sha256":"fffc1d34dac54ff7008df327907984b156c50cff5a2f36ee3da6052744ab554a"
+                                    "url": "https://github.com/wxWidgets/wxWidgets/releases/download/v3.1.4/wxWidgets-3.1.4.tar.bz2",
+                                    "sha256":"3ca3a19a14b407d0cdda507a7930c2e84ae1c8e74f946e0144d2fa7d881f1a94"
                                 }
                             ]
                         }
@@ -539,8 +539,8 @@
                     "sources" : [
                         {
                             "type" : "archive",
-                            "url" : "https://pypi.python.org/packages/4a/85/db5a2df477072b2902b0eb892feb37d88ac635d36245a72a6a69b23b383a/PyYAML-3.12.tar.gz#md5=4c129761b661d181ebf7ff4eb2d79950",
-                            "sha256" : "592766c6303207a20efc445587778322d7f73b161bd994f227adaa341ba212ab"
+                            "url" : "https://files.pythonhosted.org/packages/64/c2/b80047c7ac2478f9501676c988a5411ed5572f35d1beff9cae07d321512c/PyYAML-5.3.1.tar.gz",
+                            "sha256" : "b8eac752c5e14d3eca0e6dd9199cd627518cb5ec06add0de9d32baeee6fe645d"
                         }
                     ]
                 },
@@ -550,8 +550,8 @@
                     "sources": [
                             {
                                 "type": "archive",
-                                "url": "https://github.com/numpy/numpy/releases/download/v1.14.3/numpy-1.14.3.tar.gz",
-                                "sha256": "cfcfc7a9a8ba4275c60a815c683d59ac5e7aa9362d76573b6cc4324ffb1235fa"
+                                "url": "https://github.com/numpy/numpy/releases/download/v1.19.2/numpy-1.19.2.tar.gz",
+                                "sha256": "74d0cf50aa28af81874aca3e67560945afd783b2a006913577d6cddc35a824a6"
                             }
                     ],
                     "build-commands": [
@@ -568,8 +568,8 @@
                     "sources" : [
                         {
                             "type" : "archive",
-                            "url" : "https://pypi.python.org/packages/4d/de/32d741db316d8fdb7680822dd37001ef7a448255de9699ab4bfcbdf4172b/MarkupSafe-1.0.tar.gz",
-                            "sha256" : "a6be69091dac236ea9c6bc7d012beab42010fa914c459791d627dad4910eb665"
+                            "url" : "https://files.pythonhosted.org/packages/b9/2e/64db92e53b86efccfaea71321f597fa2e1b2bd3853d8ce658568f7a13094/MarkupSafe-1.1.1.tar.gz",
+                            "sha256" : "29872e92839765e546828bb7754a68c418d927cd064fd4708fab9fe9c8bb116b"
                         }
                     ],
                     "build-commands" : [
@@ -581,27 +581,13 @@
                     "name" : "python3-jinja2",
                     "buildsystem" : "simple",
                     "build-commands" : [
-                        "pip3 install --prefix=/app Jinja2-2.9.5-py2.py3-none-any.whl"
+                        "pip3 install --prefix=/app Jinja2-2.11.2-py2.py3-none-any.whl"
                     ],
                     "sources" : [
                         {
                             "type" : "file",
-                            "url" : "https://pypi.python.org/packages/3c/d1/49d69bc23d0e0c7612248dd8f5391bd043648865132309616c280ca1c837/Jinja2-2.9.5-py2.py3-none-any.whl",
-                            "sha256" : "a7b7438120dbe76a8e735ef7eba6048eaf4e0b7dbc530e100812f8ec462a4d50"
-                        }
-                    ]
-                },
-                {
-                    "name" : "python3-pygments",
-                    "buildsystem" : "simple",
-                    "build-commands" : [
-                        "pip3.7 install --prefix=/app Pygments-2.2.0-py2.py3-none-any.whl"
-                    ],
-                    "sources" : [
-                        {
-                            "type" : "file",
-                            "url" : "https://pypi.python.org/packages/02/ee/b6e02dc6529e82b75bb06823ff7d005b141037cb1416b10c6f00fc419dca/Pygments-2.2.0-py2.py3-none-any.whl",
-                            "sha256" : "78f3f434bcc5d6ee09020f92ba487f95ba50f1e3ef83ae96b9d5ffa1bab25c5d"
+                            "url" : "https://files.pythonhosted.org/packages/30/9e/f663a2aa66a09d838042ae1a2c5659828bb9b41ea3a6efa20a20fd92b121/Jinja2-2.11.2-py2.py3-none-any.whl",
+                            "sha256" : "f0a4641d3cf955324a89c04f3d94663aa4d638abe8f733ecd3582848e1c37035"
                         }
                     ]
                 },
@@ -632,9 +618,9 @@
                     ],
                     "sources": [
                         {
-                        "type": "archive",
-                        "url": "https://github.com/protocolbuffers/protobuf/releases/download/v3.12.3/protobuf-cpp-3.12.3.tar.gz",
-                        "sha256": "4ef97ec6a8e0570d22ad8c57c99d2055a61ea2643b8e1a0998d2c844916c4968"
+                            "type": "archive",
+                            "url": "https://github.com/protocolbuffers/protobuf/releases/download/v3.13.0/protobuf-cpp-3.13.0.tar.gz",
+                            "sha256": "f8a547dfe143a9f61fadafba47fa6573713a33cb80909307c1502e26e1102298"
                         }
                     ]
                 }
