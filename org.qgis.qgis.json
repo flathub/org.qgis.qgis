@@ -194,15 +194,13 @@
                     "name" : "qca",
                     "buildsystem" : "cmake-ninja",
                     "config-opts" : [
-                        "-DBUILD_TESTS=OFF",
-                        "-DQT4_BUILD=OFF",
-                        "-DQCA_SUFFIX=qt5"
+                        "-DBUILD_TESTS=OFF"
                     ],
                     "sources" : [
                         {
                             "type" : "archive",
-                            "url" : "http://download.kde.org/stable/qca/2.2.1/qca-2.2.1.tar.xz",
-                            "sha256" : "d716d2d8e3ed8d95bbdb061f03081d7d032206f746a30a4d29d72196f50e7b02"
+                            "url" : "https://download.kde.org/stable/qca/2.3.1/qca-2.3.1.tar.xz",
+                            "sha256" : "c13851109abefc4623370989fae3a745bf6b1acb3c2a13a8958539823e974e4b"
                         }
                     ]
                 },
