@@ -1,6 +1,5 @@
 {
     "id" : "org.qgis.qgis",
-    "branch" : "stable",
     "base": "io.qt.qtwebkit.BaseApp",
     "base-version": "5.15",
     "runtime" : "org.kde.Platform",
