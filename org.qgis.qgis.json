@@ -44,7 +44,7 @@
                         {
                             "type" : "git",
                             "url" : "https://github.com/OSGeo/PROJ.git",
-                            "branch" : "6.3.1"
+                            "branch" : "6.3.2"
                         }
                     ]
                 },
