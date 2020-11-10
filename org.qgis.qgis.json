@@ -589,6 +589,20 @@
                     ]
                 },
                 {
+                    "name" : "python3-pygments",
+                    "buildsystem" : "simple",
+                    "build-commands" : [
+                        "python3 setup.py install --prefix=/app --root=/ --optimize=1"
+                    ],
+                    "sources" : [
+                        {
+                            "type" : "git",
+                            "url" : "https://github.com/pygments/pygments.git",
+                            "branch" : "2.7.2"
+                        }
+                    ]
+                },
+                {
                     "name": "exiv2",
                     "cleanup": [ "/bin" ],
                     "buildsystem": "cmake-ninja",
