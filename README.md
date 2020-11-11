@@ -7,7 +7,7 @@ Often you will need extra python modules to run extra plugins. We can't possibly
 the application. To get them in your system, you can install them locally as follows:
 
 ```
-flatpak run --command=pip3 org.qgis.qgis install scipy --user
+flatpak run --devel --command=pip3 org.qgis.qgis install scipy --user
 ```
 
 Where `scipy` is the package you want, replace it with whatever you think it might be necessary.
