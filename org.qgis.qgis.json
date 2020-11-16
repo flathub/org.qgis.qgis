@@ -326,9 +326,10 @@
                         "sed -e 's|\\(qsci.path\\) = .*|\\1 = /app/share/qt5|' -i Qt4Qt5/qscintilla.pro",
                         "sed -e 's|\\(features.path\\) = .*|\\1 = /app/lib/qt5/mkspecs/features|' -i Qt4Qt5/qscintilla.pro",
                         "sed -e \"s|qmake = {'CONFIG': 'qscintilla2'}|qmake = {'CONFIG': 'qscintilla2', 'QT': 'widgets printsupport'}|\" -i Python/configure.py",
-                        "cd Qt4Qt5 && qmake && make -j ${FLATPAK_BUILDER_N_JOBS:-`nproc`}",
-                        "cd Python && python3 configure.py --pyqt=PyQt5 -n ../Qt4Qt5/ -o ../Qt4Qt5/ --pyqt-sipdir=/app/share/sip --destdir=/app/lib/python3.8/site-packages/PyQt5 --apidir=/app/qsci/api/python --no-stubs --no-dist-info && make -j ${FLATPAK_BUILDER_N_JOBS:-`nproc`} && make install",
-                        "cd Qt4Qt5 && make install"
+                        "cd Qt4Qt5 && qmake && make -j ${FLATPAK_BUILDER_N_JOBS:-`nproc`} && make install",
+                        "cd Python && python3 configure.py --pyqt=PyQt5 -n ../Qt4Qt5/ -o ../Qt4Qt5/ --pyqt-sipdir=/app/share/sip --destdir=/app/lib/python3.8/site-packages/PyQt5 --apidir=/app/qsci/api/python --no-stubs --no-dist-info",
+                        "echo \"LIBS += /app/lib/libqscintilla2_qt5.so\" >> Python/Qsci/Qsci.pro",
+                        "cd Python && make -j ${FLATPAK_BUILDER_N_JOBS:-`nproc`} && make install"
                     ]
                 },
                 {
