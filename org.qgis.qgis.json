@@ -8,7 +8,7 @@
     "command" : "qgis",
     "rename-icon": "qgis",
     "finish-args" : [
-        "--env=LD_LIBRARY_PATH=/app/lib:/app/grass76/lib",
+        "--env=LD_LIBRARY_PATH=/app/lib:/app/grass78/lib",
         "--share=ipc",
         "--share=network",
         "--socket=x11",
@@ -34,7 +34,7 @@
             ],
             "config-opts" : [
                 "-DWITH_3D=TRUE",
-                "-DGRASS_PREFIX7=/app/grass76",
+                "-DGRASS_PREFIX7=/app/grass78",
                 "-DQWT_LIBRARY=/app/lib/libqwt.so"
             ],
             "modules" : [
