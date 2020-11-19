@@ -357,8 +357,8 @@
                     "sources": [
                         {
                             "type": "file",
-                            "url": "https://pypi.python.org/packages/16/d8/bc6316cf98419719bd59c91742194c111b6f2e85abac88e496adefaf7afe/six-1.11.0.tar.gz",
-                            "sha256": "70e8a77beed4562e7f14fe23a786b54f6296e34344c23bc42f07b15018ff98e9"
+                            "url": "https://files.pythonhosted.org/packages/ee/ff/48bde5c0f013094d729fe4b0316ba2a24774b3ff1c52d924a8a4cb04078a/six-1.15.0-py2.py3-none-any.whl",
+                            "sha256": "8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"
                         }
                     ]
                 },
@@ -380,11 +380,11 @@
                     "name" : "python-owslib",
                     "buildsystem" : "simple",
                     "build-commands" : [
-                        "pip3 install --prefix=/app python_dateutil-2.6.1-py2.py3-none-any.whl",
-                        "pip3 install --prefix=/app pytz-2018.4-py2.py3-none-any.whl",
-                        "pip3 install --prefix=/app requests-2.14.2-py2.py3-none-any.whl",
-                        "pip3 install --prefix=/app pyproj-1.9.6.tar.gz",
-                        "pip3 install --prefix=/app OWSLib-0.16.0.tar.gz"
+                        "pip3 install --prefix=/app python_dateutil-*",
+                        "pip3 install --prefix=/app pytz-*",
+                        "pip3 install --prefix=/app requests-*",
+                        "pip3 install --prefix=/app pyproj-*",
+                        "pip3 install --prefix=/app OWSLib-*"
                     ],
                     "sources" : [
                         {
@@ -398,9 +398,9 @@
                             "sha256" : "65ae0c8101309c45772196b21b74c46b2e5d11b6275c45d251b150d5da334555"
                         },
                         {
-                            "type" : "file",
-                            "url" : "https://pypi.python.org/packages/e4/b0/286e8a936158e5cc5791d5fa3bc4b1d5a7e1ff4e5b3f3766b63d8e97708a/requests-2.14.2-py2.py3-none-any.whl",
-                            "sha256" : "3b39cde35be51762885631cf586f4dc2284951b44d479a4454020758d767cc2f"
+                            "type": "file",
+                            "url": "https://files.pythonhosted.org/packages/39/fc/f91eac5a39a65f75a7adb58eac7fa78871ea9872283fb9c44e6545998134/requests-2.25.0-py2.py3-none-any.whl",
+                            "sha256": "e786fa28d8c9154e6a4de5d46a1d921b8749f8b74e28bde23768e5e16eece998"
                         },
                         {
                             "type" : "file",
