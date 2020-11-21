@@ -29,7 +29,7 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/qgis/QGIS.git",
-                    "branch" : "final-3_16_0"
+                    "branch" : "final-3_16_1"
                 }
             ],
             "config-opts" : [
