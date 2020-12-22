@@ -344,8 +344,8 @@
                     "sources" : [
                         {
                             "type" : "archive",
-                            "url" : "https://github.com/frankosterfeld/qtkeychain/archive/v0.10.0.tar.gz",
-                            "sha256" : "5f916cd97843de550467db32d2e10f218b904af5b21cfdfcc7c6425d7dfc3ec2"
+                            "url" : "https://github.com/frankosterfeld/qtkeychain/archive/v0.12.0.tar.gz",
+                            "sha256" : "cc547d58c1402f6724d3ff89e4ca83389d9e2bdcfd9ae3d695fcdffa50a625a8"
                         }
                     ]
                 },
@@ -453,7 +453,7 @@
                         {
                             "type" : "git",
                             "url" : "https://github.com/OSGeo/grass.git",
-                            "branch" : "7.8.2"
+                            "branch" : "7.8.5"
                         }
                     ],
                     "modules": [
@@ -467,7 +467,7 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/facebook/zstd.git",
-                                    "branch" : "v1.4.4"
+                                    "branch" : "v1.4.8"
                                 }
                             ]
                         }
@@ -632,8 +632,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/protocolbuffers/protobuf/releases/download/v3.13.0/protobuf-cpp-3.13.0.tar.gz",
-                            "sha256": "f8a547dfe143a9f61fadafba47fa6573713a33cb80909307c1502e26e1102298"
+                            "url": "https://github.com/protocolbuffers/protobuf/releases/download/v3.14.0/protobuf-cpp-3.14.0.tar.gz",
+                            "sha256": "50ec5a07c0c55d4ec536dd49021f2e194a26bfdbc531d03d1e9d4d3e27175659"
                         }
                     ]
                 }
