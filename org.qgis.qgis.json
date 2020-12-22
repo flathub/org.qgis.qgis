@@ -113,6 +113,10 @@
                 },
                 {
                     "name" : "postgresql",
+                    "config-opts" : [
+                        "--disable-rpath",
+                        "--with-openssl"
+                    ],
                     "sources" : [
                         {
                             "type" : "archive",
