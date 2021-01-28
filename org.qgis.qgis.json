@@ -145,7 +145,7 @@
                         {
                             "type": "git",
                             "url": "https://github.com/facebook/zstd.git",
-                            "branch" : "v1.4.4"
+                            "branch" : "v1.4.8"
                         }
                     ]
                 },
@@ -180,6 +180,7 @@
                         "--with-cfitsio",
                         "--with-xerces=/app",
                         "--with-odbc",
+                        "--with-proj",
                         "--with-rename-internal-libtiff-symbols",
                         "--with-rename-internal-libgeotiff-symbols",
                         "--with-jpeg12",
@@ -189,8 +190,8 @@
                     "sources" : [
                         {
                             "type" : "archive",
-                            "url" : "http://download.osgeo.org/gdal/3.0.4/gdal-3.0.4.tar.xz",
-                            "sha256" : "5569a4daa1abcbba47a9d535172fc335194d9214fdb96cd0f139bb57329ae277"
+                            "url" : "http://download.osgeo.org/gdal/3.2.1/gdal-3.2.1.tar.xz",
+                            "sha256" : "6c588b58fcb63ff3f288eb9f02d76791c0955ba9210d98c3abd879c770ae28ea"
                         }
                     ],
                     "modules" : [
@@ -242,8 +243,8 @@
                             "sources" : [
                                 {
                                     "type" : "archive",
-                                    "url" : "https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.10/hdf5-1.10.6/src/hdf5-1.10.6.tar.bz2",
-                                    "sha256" : "09d6301901685201bb272a73e21c98f2bf7e044765107200b01089104a47c3bd"
+                                    "url" : "https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.12/hdf5-1.12.0/src/hdf5-1.12.0.tar.bz2",
+                                    "sha256" : "97906268640a6e9ce0cde703d5a71c9ac3092eded729591279bf2e3ca9765f61"
                                 }
                             ]
                         },
@@ -269,8 +270,8 @@
                             "sources" : [
                                 {
                                     "type" : "archive",
-                                    "url" : "https://github.com/uriparser/uriparser/releases/download/uriparser-0.9.3/uriparser-0.9.3.tar.bz2",
-                                    "sha256" : "28af4adb05e811192ab5f04566bebc5ebf1c30d9ec19138f944963d52419e28f"
+                                    "url" : "https://github.com/uriparser/uriparser/releases/download/uriparser-0.9.4/uriparser-0.9.4.tar.bz2",
+                                    "sha256" : "b7cdabe5611408fc2c3a10f8beecb881a0c7e93ff669c578cd9e3e6d64b8f87b"
                                 }
                             ]
                         },
@@ -303,8 +304,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-3.47.tar.gz",
-                                    "sha256": "418516f10ee1e0f1b520926eeca6b77ce639bed88804c7c545e74f26b3edf4ef"
+                                    "url": "https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-3.48.tar.gz",
+                                    "sha256": "91b48ffef544eb8ea3908543052331072c99bf09ceb139cb3c6977fc3e47aac1"
                                 }
                             ]
                         },
@@ -318,8 +319,8 @@
                             "sources" : [
                                 {
                                     "type" : "archive",
-                                    "url" : "https://downloads.sourceforge.net/project/arma/armadillo-9.850.1.tar.xz",
-                                    "sha256" : "d4c389b9597a5731500ad7a2656c11a6031757aaaadbcafdea5cc8ac0fd2c01f"
+                                    "url" : "https://sourceforge.net/projects/arma/files/armadillo-10.2.0.tar.xz",
+                                    "sha256" : "82f84d526c8da72240ab05cb12b3f3f1e674d20ccb38e008e4bf53355b1aa68a"
                                 }
                             ]
                         },
@@ -333,8 +334,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://github.com/weidai11/cryptopp/archive/CRYPTOPP_8_1_0.tar.gz",
-                                    "sha256": "8a4e4773a39b0c07d7cea1b8be7a3f7a9d126bd3ac9a9f072f82d3a53a474a87"
+                                    "url": "https://github.com/weidai11/cryptopp/archive/CRYPTOPP_8_4_0.tar.gz",
+                                    "sha256": "6687dfc1e33b084aeab48c35a8550b239ee5f73a099a3b6a0918d70b8a89e654"
                                 }
                             ]
                         },
@@ -372,8 +373,8 @@
                             "sources" : [
                                 {
                                     "type" : "archive",
-                                    "url" : "https://github.com/Unidata/netcdf-c/archive/v4.7.3.tar.gz",
-                                    "sha256" : "05d064a2d55147b83feff3747bea13deb77bef390cb562df4f9f9f1ce147840d"
+                                    "url" : "https://github.com/Unidata/netcdf-c/archive/v4.7.4.tar.gz",
+                                    "sha256" : "99930ad7b3c4c1a8e8831fb061cb02b2170fc8e5ccaeda733bd99c3b9d31666b"
                                 }
                             ]
                         },
@@ -381,7 +382,7 @@
                             "name": "openjpeg2",
                             "buildsystem": "cmake-ninja",
                             "builddir": true,
-                            "sources": [ { "type": "git", "url": "https://github.com/uclouvain/openjpeg.git", "branch": "v2.3.1" } ],
+                            "sources": [ { "type": "git", "url": "https://github.com/uclouvain/openjpeg.git", "branch": "v2.4.0" } ],
                             "cleanup": [ "/bin", "/include", "/lib/openjpeg-*", "/lib/pkgconfig" ]
                         },
 
@@ -651,7 +652,7 @@
                     "name" : "python-owslib",
                     "buildsystem" : "simple",
                     "build-commands" : [
-                        "pip3 install --prefix=/app python_dateutil-2.6.1-py2.py3-none-any.whl",
+                        "pip3 install --prefix=/app python_dateutil-*",
                         "pip3 install --prefix=/app pytz-2018.4-py2.py3-none-any.whl",
                         "pip3 install --prefix=/app requests-2.14.2-py2.py3-none-any.whl",
                         "pip3 install --prefix=/app pyproj-1.9.6.tar.gz",
@@ -660,8 +661,8 @@
                     "sources" : [
                         {
                             "type" : "file",
-                            "url" : "https://pypi.python.org/packages/4b/0d/7ed381ab4fe80b8ebf34411d14f253e1cf3e56e2820ffa1d8844b23859a2/python_dateutil-2.6.1-py2.py3-none-any.whl",
-                            "sha256" : "95511bae634d69bc7329ba55e646499a842bc4ec342ad54a8cdb65645a0aad3c"
+                            "url" : "https://files.pythonhosted.org/packages/d4/70/d60450c3dd48ef87586924207ae8907090de0b306af2bce5d134d78615cb/python_dateutil-2.8.1-py2.py3-none-any.whl",
+                            "sha256" : "75bb3f31ea686f1197762692a9ee6a7550b59fc6ca3a1f4b5d7e32fb98e2da2a"
                         },
                         {
                             "type" : "file",
@@ -808,8 +809,8 @@
                     "sources" : [
                         {
                             "type" : "archive",
-                            "url" : "https://files.pythonhosted.org/packages/64/c2/b80047c7ac2478f9501676c988a5411ed5572f35d1beff9cae07d321512c/PyYAML-5.3.1.tar.gz",
-                            "sha256" : "b8eac752c5e14d3eca0e6dd9199cd627518cb5ec06add0de9d32baeee6fe645d"
+                            "url" : "https://files.pythonhosted.org/packages/a0/a4/d63f2d7597e1a4b55aa3b4d6c5b029991d3b824b5bd331af8d4ab1ed687d/PyYAML-5.4.1.tar.gz",
+                            "sha256" : "607774cbba28732bfa802b54baa7484215f530991055bb562efbed5b2f20a45e"
                         }
                     ]
                 },
@@ -819,8 +820,8 @@
                     "sources": [
                             {
                                 "type": "archive",
-                                "url": "https://github.com/numpy/numpy/releases/download/v1.19.2/numpy-1.19.2.tar.gz",
-                                "sha256": "74d0cf50aa28af81874aca3e67560945afd783b2a006913577d6cddc35a824a6"
+                                "url": "https://github.com/numpy/numpy/releases/download/v1.19.5/numpy-1.19.5.tar.gz",
+                                "sha256": "d1654047d75fb9d55cc3d46f312d5247eec5f4999039874d2f571bb8021d8f0b"
                             }
                     ],
                     "build-commands": [
@@ -870,7 +871,7 @@
                         {
                             "type" : "git",
                             "url" : "https://github.com/pygments/pygments.git",
-                            "branch" : "2.7.2"
+                            "branch" : "2.7.4"
                         }
                     ]
                 },
@@ -886,8 +887,8 @@
                     "sources": [
                         {
                             "type": "git",
-                            "url": "https://github.com/Exiv2/exiv2/",
-                            "branch" : "0.27"
+                            "url": "https://github.com/Exiv2/exiv2",
+                            "branch" : "v0.27.2"
                         }
                     ]
                 },
