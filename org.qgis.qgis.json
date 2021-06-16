@@ -36,7 +36,8 @@
             "config-opts" : [
                 "-DWITH_3D=TRUE",
                 "-DGRASS_PREFIX7=/app/grass78",
-                "-DQWT_LIBRARY=/app/lib/libqwt.so"
+                "-DQWT_LIBRARY=/app/lib/libqwt.so",
+                "-DUSE_OPENCL=ON"
             ],
             "modules" : [
                 {
