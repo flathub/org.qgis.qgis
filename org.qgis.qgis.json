@@ -70,6 +70,24 @@
                     ]
                 },
                 {
+                    "name": "minizip",
+                    "subdir": "contrib/minizip",
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://zlib.net/zlib-1.2.11.tar.gz",
+                            "sha256": "c3e5e9fdd5004dcb542feda5ee4f0ff0744628baf8ed2dd5d66f8ca1197cb1a1"
+                        },
+                        {
+                            "type": "shell",
+                            "commands": [
+                                "echo \"autoreconf -ifv $@\" > contrib/minizip/autogen.sh",
+                                "chmod a+x contrib/minizip/autogen.sh"
+                            ]
+                        }
+                    ]
+                },
+                {
                     "name" : "spatialite",
                     "config-opts" : [
                         "prefix=/app",
@@ -272,24 +290,6 @@
                                     "type" : "archive",
                                     "url" : "https://github.com/uriparser/uriparser/releases/download/uriparser-0.9.4/uriparser-0.9.4.tar.bz2",
                                     "sha256" : "b7cdabe5611408fc2c3a10f8beecb881a0c7e93ff669c578cd9e3e6d64b8f87b"
-                                }
-                            ]
-                        },
-                        {
-                            "name": "minizip",
-                            "subdir": "contrib/minizip",
-                            "sources": [
-                                {
-                                    "type": "archive",
-                                    "url": "https://zlib.net/zlib-1.2.11.tar.gz",
-                                    "md5": "1c9f62f0778697a09d36121ead88e08e"
-                                },
-                                {
-                                    "type": "script",
-                                    "dest-filename": "contrib/minizip/autogen.sh",
-                                    "commands": [
-                                        "autoreconf -ifv"
-                                    ]
                                 }
                             ]
                         },
@@ -758,10 +758,10 @@
                             "branch" : "release-7.6.3"
                         },
                         {
-                            "type": "script",
-                            "dest-filename": "saga-gis/autogen.sh",
+                            "type": "shell",
                             "commands": [
-                                "AUTOMAKE=\"automake --foreign\" autoreconf -vfi"
+                                "echo \"autoreconf -vfi $@\" > saga-gis/autogen.sh",
+                                "chmod a+x saga-gis/autogen.sh"
                             ]
                         }
                     ],
