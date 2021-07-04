@@ -30,13 +30,15 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/qgis/QGIS.git",
-                    "branch" : "final-3_18_3"
+                    "branch" : "final-3_20_0"
                 }
             ],
             "config-opts" : [
                 "-DWITH_3D=TRUE",
                 "-DGRASS_PREFIX7=/app/grass78",
-                "-DQWT_LIBRARY=/app/lib/libqwt.so"
+                "-DQWT_LIBRARY=/app/lib/libqwt.so",
+                "-DSQLITE3_INCLUDE_DIR=/app/include",
+                "-DSQLITE3_LIBRARY=/app/lib/libsqlite3.so"
             ],
             "modules" : [
                 {
@@ -98,14 +100,14 @@
                     "sources" : [
                         {
                             "type" : "archive",
-                            "url" : "http://www.gaia-gis.it/gaia-sins/libspatialite-sources/libspatialite-4.3.0a.tar.gz",
-                            "sha256" : "88900030a4762904a7880273f292e5e8ca6b15b7c6c3fb88ffa9e67ee8a5a499"
+                            "url" : "http://www.gaia-gis.it/gaia-sins/libspatialite-sources/libspatialite-5.0.1.tar.gz",
+                            "sha256" : "eecbc94311c78012d059ebc0fae86ea5ef6eecb13303e6e82b3753c1b3409e98"
                         },
                         {
                             "type": "script",
                             "dest-filename": "autogen.sh",
                             "commands": [
-                                "AUTOMAKE=\"automake --foreign\" autoreconf -vfi"
+                                "autoreconf -vfi"
                             ]
                         }
                     ],
@@ -125,6 +127,28 @@
                                     "commands": [
                                         "AUTOMAKE=\"automake --foreign\" autoreconf -vfi"
                                     ]
+                                }
+                            ]
+                        },
+                        {
+                            "name" : "rttopo",
+                            "sources" : [
+                                {
+                                    "type" : "git",
+                                    "url" : "https://git.osgeo.org/gitea/rttopo/librttopo.git",
+                                    /*"branch" : " librttopo-1.1.0",*/
+                                    "commit": "98a8bdd0b2d13f6b685d0658b4bce15d46606a1a"
+                                }
+                            ]
+                        },
+                        {
+                            "name" : "sqlite3",
+                            "config-opts": [ "--disable-static", "--disable-amalgamation", "--enable-rtree", "--enable-json1", "CFLAGS=-DSQLITE_ENABLE_COLUMN_METADATA=1" ],
+                            "sources" : [
+                                {
+                                    "type": "archive",
+                                    "url": "https://www.sqlite.org/2021/sqlite-autoconf-3360000.tar.gz",
+                                    "sha256": "bd90c3eb96bee996206b83be7065c9ce19aef38c3f4fb53073ada0d0b69bbce3"
                                 }
                             ]
                         }
@@ -163,7 +187,7 @@
                         {
                             "type": "git",
                             "url": "https://github.com/facebook/zstd.git",
-                            "branch" : "v1.4.8"
+                            "branch" : "v1.5.0"
                         }
                     ]
                 },
@@ -267,17 +291,6 @@
                             ]
                         },
                         {
-                            "name" : "netcdf",
-                            "no-autogen" : true,
-                            "sources" : [
-                                {
-                                    "type" : "git",
-                                    "url" : "https://github.com/Unidata/netcdf-c.git",
-                                    "branch": "v4.7.4"
-                                }
-                            ]
-                        },
-                        {
                             "name" : "uriparser",
                             "buildsystem": "cmake-ninja",
                             "config-opts": [ 
@@ -288,8 +301,8 @@
                             "sources" : [
                                 {
                                     "type" : "archive",
-                                    "url" : "https://github.com/uriparser/uriparser/releases/download/uriparser-0.9.4/uriparser-0.9.4.tar.bz2",
-                                    "sha256" : "b7cdabe5611408fc2c3a10f8beecb881a0c7e93ff669c578cd9e3e6d64b8f87b"
+                                    "url" : "https://github.com/uriparser/uriparser/releases/download/uriparser-0.9.5/uriparser-0.9.5.tar.bz2",
+                                    "sha256" : "dd8061eba7f2e66c151722e6db0b27c972baa6215cf16f135dbe0f0a4bc6606c"
                                 }
                             ]
                         },
@@ -334,8 +347,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://github.com/weidai11/cryptopp/archive/CRYPTOPP_8_4_0.tar.gz",
-                                    "sha256": "6687dfc1e33b084aeab48c35a8550b239ee5f73a099a3b6a0918d70b8a89e654"
+                                    "url": "https://github.com/weidai11/cryptopp/archive/CRYPTOPP_8_5_0.tar.gz",
+                                    "sha256": "8f64cf09cf4f61d5d74bca53574b8cc9959186cc0f072a2e6597e4999d6ad5db"
                                 }
                             ]
                         },
@@ -425,7 +438,7 @@
                         },
                         {
                             "name": "mysql-boost",
-                            "config-opts": [ 
+                            "config-opts": [
                                 "-DCMAKE_BUILD_TYPE=Release",
                                 "-DFORCE_INSOURCE_BUILD=1",
                                 "-DWITH_EDITLINE=bundled",
@@ -438,8 +451,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-boost-8.0.22.tar.gz",
-                                    "sha256": "ba765f74367c638d7cd1c546c05c14382fd997669bcd9680278e907f8d7eb484"
+                                    "url": "https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-boost-8.0.25.tar.gz",
+                                    "sha256": "93c5f57cbd69573a8d9798725edec52e92830f70c398a1afaaea2227db331728"
                                 }
                             ]
                         },
