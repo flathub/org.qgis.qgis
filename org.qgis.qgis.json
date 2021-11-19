@@ -30,7 +30,7 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/qgis/QGIS.git",
-                    "tag" : "final-3_16_13"
+                    "tag" : "final-3_16_14"
                 }
             ],
             "config-opts" : [
