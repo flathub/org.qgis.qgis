@@ -196,6 +196,7 @@
                     "config-opts" : [
                         "--with-python=python3",
                         "--with-libtiff=internal",
+                        "--with-jpeg=internal",
                         "--with-netcdf",
                         "--with-sqlite3",
                         "--with-geotiff=internal",
