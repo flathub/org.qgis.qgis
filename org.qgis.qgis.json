@@ -713,20 +713,7 @@
                         }
                     ],
                     "modules": [
-                        "shared-modules/glu/glu-9.json",
-                        {
-                            "name": "zstd",
-                            "buildsystem": "cmake-ninja",
-                            "config-opts": [ "-DCMAKE_BUILD_TYPE=Release" ],
-                            "subdir": "build/cmake",
-                            "sources": [
-                                {
-                                    "type": "git",
-                                    "url": "https://github.com/facebook/zstd.git",
-                                    "branch" : "v1.4.8"
-                                }
-                            ]
-                        }
+                        "shared-modules/glu/glu-9.json"
                     ]
                 },
                 {
