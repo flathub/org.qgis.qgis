@@ -233,8 +233,8 @@
                     "sources" : [
                         {
                             "type" : "archive",
-                            "url" : "http://download.osgeo.org/gdal/3.2.1/gdal-3.2.1.tar.xz",
-                            "sha256" : "6c588b58fcb63ff3f288eb9f02d76791c0955ba9210d98c3abd879c770ae28ea"
+                            "url" : "http://download.osgeo.org/gdal/3.4.0/gdal-3.4.0.tar.xz",
+                            "sha256" : "ac7bd2bb9436f3fc38bc7309704672980f82d64b4d57627d27849259b8f71d5c"
                         }
                     ],
                     "modules" : [
@@ -253,8 +253,8 @@
                             "sources" : [
                                 {
                                     "type" : "archive",
-                                    "url" : "http://prdownloads.sourceforge.net/swig/swig-3.0.12.tar.gz",
-                                    "sha256" : "7cf9f447ae7ed1c51722efc45e7f14418d15d7a1e143ac9f09a668999f4fc94d"
+                                    "url" : "http://prdownloads.sourceforge.net/swig/swig-4.0.2.tar.gz",
+                                    "sha256" : "d53be9730d8d58a16bf0cbd1f8ac0c0c3e1090573168bfa151b01eb47fa906fc"
                                 }
                             ]
                         },
@@ -264,8 +264,8 @@
                             "sources" : [
                                 {
                                     "type" : "archive",
-                                    "url" : "https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-3.2.2.tar.gz",
-                                    "sha256" : "dd6191f8aa256d3b4686b64b0544eea2b450d98b4254996ffdfe630e0c610413"
+                                    "url" : "https://dlcdn.apache.org//xerces/c/3/sources/xerces-c-3.2.3.tar.xz",
+                                    "sha256" : "12fc99a9fc1d1a79bd0e927b8b5637a576d6656f45b0d5e70ee3694d379cc149"
                                 }
                             ]
                         },
@@ -286,8 +286,8 @@
                             "sources" : [
                                 {
                                     "type" : "archive",
-                                    "url" : "https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.12/hdf5-1.12.0/src/hdf5-1.12.0.tar.bz2",
-                                    "sha256" : "97906268640a6e9ce0cde703d5a71c9ac3092eded729591279bf2e3ca9765f61"
+                                    "url" : "https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.12/hdf5-1.12.1/src/hdf5-1.12.1.tar.bz2",
+                                    "sha256" : "aaf9f532b3eda83d3d3adc9f8b40a9b763152218fa45349c3bc77502ca1f8f1c"
                                 }
                             ]
                         },
@@ -318,8 +318,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-3.48.tar.gz",
-                                    "sha256": "91b48ffef544eb8ea3908543052331072c99bf09ceb139cb3c6977fc3e47aac1"
+                                    "url": "https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-3.49.tar.gz",
+                                    "sha256": "5b65a20d5c53494ec8f638267fca4a629836b7ac8dd0ef0266834eab270ed4b3"
                                 }
                             ]
                         },
@@ -333,8 +333,8 @@
                             "sources" : [
                                 {
                                     "type" : "archive",
-                                    "url" : "https://sourceforge.net/projects/arma/files/armadillo-10.2.0.tar.xz",
-                                    "sha256" : "82f84d526c8da72240ab05cb12b3f3f1e674d20ccb38e008e4bf53355b1aa68a"
+                                    "url" : "https://sourceforge.net/projects/arma/files/armadillo-10.7.4.tar.xz",
+                                    "sha256" : "2c1b32c5b259b05e34bc2dcde1cab589cfcbb58179c72a93c5daaea1e3950652"
                                 }
                             ]
                         },
@@ -348,8 +348,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://github.com/weidai11/cryptopp/archive/CRYPTOPP_8_5_0.tar.gz",
-                                    "sha256": "8f64cf09cf4f61d5d74bca53574b8cc9959186cc0f072a2e6597e4999d6ad5db"
+                                    "url": "https://github.com/weidai11/cryptopp/archive/CRYPTOPP_8_6_0.tar.gz",
+                                    "sha256": "9304625f4767a13e0a5f26d0f019d78cf9375604a33e5391c3bf2e81399dfeb8"
                                 }
                             ]
                         },
@@ -387,8 +387,8 @@
                             "sources" : [
                                 {
                                     "type" : "archive",
-                                    "url" : "https://github.com/Unidata/netcdf-c/archive/v4.7.4.tar.gz",
-                                    "sha256" : "99930ad7b3c4c1a8e8831fb061cb02b2170fc8e5ccaeda733bd99c3b9d31666b"
+                                    "url" : "https://github.com/Unidata/netcdf-c/archive/v4.8.1.tar.gz",
+                                    "sha256" : "bc018cc30d5da402622bf76462480664c6668b55eb16ba205a0dfb8647161dd0"
                                 }
                             ]
                         },
@@ -410,8 +410,8 @@
                                     "sources": [
                                         {
                                             "type": "archive",
-                                            "url": "https://poppler.freedesktop.org/poppler-data-0.4.9.tar.gz",
-                                            "sha256": "1f9c7e7de9ecd0db6ab287349e31bf815ca108a5a175cf906a90163bdbe32012"
+                                            "url": "https://poppler.freedesktop.org/poppler-data-0.4.11.tar.gz",
+                                            "sha256": "2cec05cd1bb03af98a8b06a1e22f6e6e1a65b1e2f3816cb3069bb0874825f08c"
                                         }
                                     ]
                                 }
@@ -432,8 +432,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-0.86.0.tar.xz",
-                                    "sha256": "6ae8a0b9fde8718025e0034448329efe5fd38194a32ac38f84a1528203c1f9bc"
+                                    "url": "https://poppler.freedesktop.org/poppler-21.11.0.tar.xz",
+                                    "sha256": "31b76b5cac0a48612fdd154c02d9eca01fd38fb8eaa77c1196840ecdeb53a584"
                                 }
                             ]
                         },
@@ -452,24 +452,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-boost-8.0.25.tar.gz",
-                                    "sha256": "93c5f57cbd69573a8d9798725edec52e92830f70c398a1afaaea2227db331728"
-                                }
-                            ]
-                        },
-                        {
-                            "name": "libjpeg-turbo",
-                            "config-opts": [ 
-                                "-DWITH_JPEG8=1"
-                             ],
-                            "cleanup": [ "/bin", "/share" ],
-                            "buildsystem": "cmake-ninja",
-                            "builddir": true,
-                            "sources": [
-                                {
-                                    "type": "archive",
-                                    "url": "https://downloads.sourceforge.net/project/libjpeg-turbo/2.0.4/libjpeg-turbo-2.0.4.tar.gz",
-                                    "sha256": "33dd8547efd5543639e890efbf2ef52d5a21df81faf41bb940657af916a23406"
+                                    "url": "https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-boost-8.0.27.tar.gz",
+                                    "md5": "80310c5a1b24145fa072927ab99a4c0d"
                                 }
                             ]
                         }
@@ -738,24 +722,11 @@
                         {
                             "type" : "git",
                             "url" : "https://github.com/OSGeo/grass.git",
-                            "branch" : "7.8.5"
+                            "branch" : "7.8.6"
                         }
                     ],
                     "modules": [
-                        "shared-modules/glu/glu-9.json",
-                        {
-                            "name": "zstd",
-                            "buildsystem": "cmake-ninja",
-                            "config-opts": [ "-DCMAKE_BUILD_TYPE=Release" ],
-                            "subdir": "build/cmake",
-                            "sources": [
-                                {
-                                    "type": "git",
-                                    "url": "https://github.com/facebook/zstd.git",
-                                    "branch" : "v1.4.8"
-                                }
-                            ]
-                        }
+                        "shared-modules/glu/glu-9.json"
                     ]
                 },
                 {
