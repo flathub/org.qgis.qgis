@@ -765,9 +765,14 @@
                     ],
                     "sources" : [
                         {
-                            "type" : "git",
-                            "url" : "https://github.com/OSGeo/grass.git",
-                            "branch" : "7.8.6"
+                            "type" : "archive",
+                            "url" : "https://grass.osgeo.org/grass78/source/grass-7.8.6.tar.gz",
+                            "sha256" : "d85e17b0a717e344cdda8f6c5bdeb86763e48d1ee74a62ab471dc8e1293993be",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 8826,
+                                "url-template": "https://grass.osgeo.org/grass$major$minor/source/grass-$version.tar.gz"
+                            }
                         }
                     ],
                     "modules": [
