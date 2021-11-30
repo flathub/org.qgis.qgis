@@ -57,7 +57,12 @@
                         {
                             "type" : "archive",
                             "url" : "http://download.osgeo.org/geos/geos-3.8.1.tar.bz2",
-                            "sha256" : "4258af4308deb9dbb5047379026b4cd9838513627cb943a44e16c40e42ae17f7"
+                            "sha256" : "4258af4308deb9dbb5047379026b4cd9838513627cb943a44e16c40e42ae17f7",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 13493,
+                                "url-template": "http://download.osgeo.org/geos/geos-$version.tar.bz2"
+                            }
                         }
                     ]
                 },
