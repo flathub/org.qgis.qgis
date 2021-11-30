@@ -428,7 +428,12 @@
                                 {
                                     "type" : "archive",
                                     "url" : "https://github.com/Unidata/netcdf-c/archive/v4.8.1.tar.gz",
-                                    "sha256" : "bc018cc30d5da402622bf76462480664c6668b55eb16ba205a0dfb8647161dd0"
+                                    "sha256" : "bc018cc30d5da402622bf76462480664c6668b55eb16ba205a0dfb8647161dd0",
+                                    "x-checker-data": {
+                                        "type": "anitya",
+                                        "project-id": 10354,
+                                        "url-template": "https://github.com/Unidata/netcdf-c/archive/v$version.tar.gz"
+                                    }
                                 }
                             ]
                         },
