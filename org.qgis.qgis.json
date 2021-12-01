@@ -28,9 +28,14 @@
             "buildsystem" : "cmake-ninja",
             "sources" : [
                 {
-                    "type" : "git",
-                    "url" : "https://github.com/qgis/QGIS.git",
-                    "branch" : "final-3_22_1"
+                    "type" : "archive",
+                    "url" : "https://qgis.org/downloads/qgis-3.22.1.tar.bz2",
+                    "sha256" : "bc0292cf63b15731107aec8a0deb9d961d4a22727ad8248a7d334ffc8e3fc748",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 236235,
+                        "url-template": "https://qgis.org/downloads/qgis-$major.$version2.$version4.tar.bz2"
+                    }
                 }
             ],
             "config-opts" : [
