@@ -443,6 +443,20 @@
                                     "sha256": "ba765f74367c638d7cd1c546c05c14382fd997669bcd9680278e907f8d7eb484"
                                 }
                             ]
+                        },
+                        {
+                            "name": "python3-numpy",
+                            "buildsystem": "simple",
+                            "build-commands": [
+                                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"numpy\" --no-build-isolation"
+                            ],
+                            "sources": [
+                                {
+                                    "type": "file",
+                                    "url": "https://files.pythonhosted.org/packages/fb/48/b0708ebd7718a8933f0d3937513ef8ef2f4f04529f1f66ca86d873043921/numpy-1.21.4.zip",
+                                    "sha256": "e6c76a87633aa3fa16614b61ccedfae45b91df2767cf097aa9c933932a7ed1e0"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -784,21 +798,6 @@
                             "url" : "https://files.pythonhosted.org/packages/a0/a4/d63f2d7597e1a4b55aa3b4d6c5b029991d3b824b5bd331af8d4ab1ed687d/PyYAML-5.4.1.tar.gz",
                             "sha256" : "607774cbba28732bfa802b54baa7484215f530991055bb562efbed5b2f20a45e"
                         }
-                    ]
-                },
-                {
-                    "name": "numpy",
-                    "buildsystem": "simple",
-                    "sources": [
-                            {
-                                "type": "archive",
-                                "url": "https://github.com/numpy/numpy/releases/download/v1.19.5/numpy-1.19.5.tar.gz",
-                                "sha256": "d1654047d75fb9d55cc3d46f312d5247eec5f4999039874d2f571bb8021d8f0b"
-                            }
-                    ],
-                    "build-commands": [
-                        "python3 setup.py build",
-                        "python3 setup.py install --prefix /app"
                     ]
                 },
                 {
