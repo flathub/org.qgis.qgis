@@ -1,9 +1,9 @@
 {
     "id": "org.qgis.qgis",
     "base": "io.qt.qtwebkit.BaseApp",
-    "base-version": "5.15",
+    "base-version": "5.15-21.08",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15",
+    "runtime-version": "5.15-21.08",
     "sdk": "org.kde.Sdk",
     "command": "qgis",
     "rename-icon": "qgis",
@@ -19,7 +19,7 @@
     "separate-locales": false,
     "build-options": {
         "env": {
-            "PYTHONPATH": "/app/lib/python3.8/site-packages:/usr/lib/python3.8/site-packages"
+            "PYTHONPATH": "/app/lib/python3.9/site-packages:/usr/lib/python3.9/site-packages"
         }
     },
     "modules": [
@@ -640,7 +640,7 @@
                         {
                             "type": "script",
                             "commands": [
-                                "python3 configure.py --assume-shared --confirm-license --no-designer-plugin --no-qml-plugin --sysroot=/app --qsci-api --qsci-api-destdir=/app/qsci --sipdir=/app/share/sip --sip=/app/bin/sip --sip-incdir=/app/include QMAKE_CFLAGS_RELEASE='-I/usr/include/python3.8/' QMAKE_CXXFLAGS_RELEASE='-I/usr/include/python3.8/'"
+                                "python3 configure.py --assume-shared --confirm-license --no-designer-plugin --no-qml-plugin --sysroot=/app --qsci-api --qsci-api-destdir=/app/qsci --sipdir=/app/share/sip --sip=/app/bin/sip --sip-incdir=/app/include QMAKE_CFLAGS_RELEASE='-I/usr/include/python3.9/' QMAKE_CXXFLAGS_RELEASE='-I/usr/include/python3.9/'"
                             ],
                             "dest-filename": "configure"
                         }
@@ -657,7 +657,7 @@
                                 {
                                     "type": "script",
                                     "commands": [
-                                        "python3 configure.py --sip-module PyQt5.sip -b ${FLATPAK_DEST}/bin -d ${FLATPAK_DEST}/lib/python3.8/site-packages -e ${FLATPAK_DEST}/include -v ${FLATPAK_DEST}/share/sip --stubsdir=${FLATPAK_DEST}/lib/python3.8/site-packages"
+                                        "python3 configure.py --sip-module PyQt5.sip -b ${FLATPAK_DEST}/bin -d ${FLATPAK_DEST}/lib/python3.9/site-packages -e ${FLATPAK_DEST}/include -v ${FLATPAK_DEST}/share/sip --stubsdir=${FLATPAK_DEST}/lib/python3.9/site-packages"
                                     ],
                                     "dest-filename": "configure"
                                 }
@@ -687,25 +687,9 @@
                         "sed -e 's|\\(features.path\\) = .*|\\1 = /app/lib/qt5/mkspecs/features|' -i Qt4Qt5/qscintilla.pro",
                         "sed -e \"s|qmake = {'CONFIG': 'qscintilla2'}|qmake = {'CONFIG': 'qscintilla2', 'QT': 'widgets printsupport'}|\" -i Python/configure.py",
                         "cd Qt4Qt5 && qmake && make -j ${FLATPAK_BUILDER_N_JOBS:-`nproc`} && make install",
-                        "cd Python && python3 configure.py --pyqt=PyQt5 -n ../Qt4Qt5/ -o ../Qt4Qt5/ --pyqt-sipdir=/app/share/sip --destdir=/app/lib/python3.8/site-packages/PyQt5 --apidir=/app/qsci/api/python --no-stubs --no-dist-info",
+                        "cd Python && python3 configure.py --pyqt=PyQt5 -n ../Qt4Qt5/ -o ../Qt4Qt5/ --pyqt-sipdir=/app/share/sip --destdir=/app/lib/python3.9/site-packages/PyQt5 --apidir=/app/qsci/api/python --no-stubs --no-dist-info",
                         "echo \"LIBS += /app/lib/libqscintilla2_qt5.so\" >> Python/Qsci/Qsci.pro",
                         "cd Python && make -j ${FLATPAK_BUILDER_N_JOBS:-`nproc`} && make install"
-                    ]
-                },
-                {
-                    "name": "qtkeychain",
-                    "buildsystem": "cmake-ninja",
-                    "config-opts": [
-                        "-DCMAKE_INSTALL_LIBDIR=/app/lib",
-                        "-DLIB_INSTALL_DIR=/app/lib",
-                        "-DBUILD_TRANSLATIONS=NO"
-                    ],
-                    "sources": [
-                        {
-                            "type": "archive",
-                            "url": "https://github.com/frankosterfeld/qtkeychain/archive/v0.12.0.tar.gz",
-                            "sha256": "cc547d58c1402f6724d3ff89e4ca83389d9e2bdcfd9ae3d695fcdffa50a625a8"
-                        }
                     ]
                 },
                 {
