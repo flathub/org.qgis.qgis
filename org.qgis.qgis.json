@@ -61,8 +61,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "http://download.osgeo.org/geos/geos-3.8.1.tar.bz2",
-                            "sha256": "4258af4308deb9dbb5047379026b4cd9838513627cb943a44e16c40e42ae17f7",
+                            "url": "http://download.osgeo.org/geos/geos-3.10.1.tar.bz2",
+                            "sha256": "a8148eec9636814c8ab0f8f5266ce6f9b914ed65b0d083fc43bb0bbb01f83648",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 13493,
@@ -380,8 +380,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-10.7.4.tar.xz",
-                                    "sha256": "2c1b32c5b259b05e34bc2dcde1cab589cfcbb58179c72a93c5daaea1e3950652",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-10.7.5.tar.xz",
+                                    "sha256": "5d0d9fd6b34efcba6a6fceff54c0d2d13fcbe915d7af8a30c5e72cf317d2094f",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
