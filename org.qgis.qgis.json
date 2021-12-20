@@ -172,6 +172,7 @@
                     "config-opts" : [
                         "--with-python=python3",
                         "--with-libtiff=internal",
+                        "--with-jpeg=internal",
                         "--with-netcdf",
                         "--with-sqlite3",
                         "--with-geotiff=internal",
@@ -208,8 +209,8 @@
                     "sources" : [
                         {
                             "type" : "archive",
-                            "url" : "http://download.osgeo.org/gdal/3.2.1/gdal-3.2.1.tar.xz",
-                            "sha256" : "6c588b58fcb63ff3f288eb9f02d76791c0955ba9210d98c3abd879c770ae28ea"
+                            "url" : "http://download.osgeo.org/gdal/3.4.0/gdal-3.4.0.tar.xz",
+                            "sha256" : "ac7bd2bb9436f3fc38bc7309704672980f82d64b4d57627d27849259b8f71d5c"
                         }
                     ],
                     "modules" : [
@@ -444,18 +445,16 @@
                             ]
                         },
                         {
-                            "name": "libjpeg-turbo",
-                            "config-opts": [ 
-                                "-DWITH_JPEG8=1"
-                             ],
-                            "cleanup": [ "/bin", "/share" ],
-                            "buildsystem": "cmake-ninja",
-                            "builddir": true,
+                            "name": "python3-numpy",
+                            "buildsystem": "simple",
+                            "build-commands": [
+                                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"numpy\" --no-build-isolation"
+                            ],
                             "sources": [
                                 {
-                                    "type": "archive",
-                                    "url": "https://downloads.sourceforge.net/project/libjpeg-turbo/2.0.4/libjpeg-turbo-2.0.4.tar.gz",
-                                    "sha256": "33dd8547efd5543639e890efbf2ef52d5a21df81faf41bb940657af916a23406"
+                                    "type": "file",
+                                    "url": "https://files.pythonhosted.org/packages/fb/48/b0708ebd7718a8933f0d3937513ef8ef2f4f04529f1f66ca86d873043921/numpy-1.21.4.zip",
+                                    "sha256": "e6c76a87633aa3fa16614b61ccedfae45b91df2767cf097aa9c933932a7ed1e0"
                                 }
                             ]
                         }
@@ -724,24 +723,11 @@
                         {
                             "type" : "git",
                             "url" : "https://github.com/OSGeo/grass.git",
-                            "branch" : "7.8.5"
+                            "branch" : "7.8.6"
                         }
                     ],
                     "modules": [
-                        "shared-modules/glu/glu-9.json",
-                        {
-                            "name": "zstd",
-                            "buildsystem": "cmake-ninja",
-                            "config-opts": [ "-DCMAKE_BUILD_TYPE=Release" ],
-                            "subdir": "build/cmake",
-                            "sources": [
-                                {
-                                    "type": "git",
-                                    "url": "https://github.com/facebook/zstd.git",
-                                    "branch" : "v1.4.8"
-                                }
-                            ]
-                        }
+                        "shared-modules/glu/glu-9.json"
                     ]
                 },
                 {
@@ -812,21 +798,6 @@
                             "url" : "https://files.pythonhosted.org/packages/a0/a4/d63f2d7597e1a4b55aa3b4d6c5b029991d3b824b5bd331af8d4ab1ed687d/PyYAML-5.4.1.tar.gz",
                             "sha256" : "607774cbba28732bfa802b54baa7484215f530991055bb562efbed5b2f20a45e"
                         }
-                    ]
-                },
-                {
-                    "name": "numpy",
-                    "buildsystem": "simple",
-                    "sources": [
-                            {
-                                "type": "archive",
-                                "url": "https://github.com/numpy/numpy/releases/download/v1.19.5/numpy-1.19.5.tar.gz",
-                                "sha256": "d1654047d75fb9d55cc3d46f312d5247eec5f4999039874d2f571bb8021d8f0b"
-                            }
-                    ],
-                    "build-commands": [
-                        "python3 setup.py build",
-                        "python3 setup.py install --prefix /app"
                     ]
                 },
                 {
