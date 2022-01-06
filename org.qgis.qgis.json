@@ -255,8 +255,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "http://download.osgeo.org/gdal/3.4.0/gdal-3.4.0.tar.xz",
-                            "sha256": "ac7bd2bb9436f3fc38bc7309704672980f82d64b4d57627d27849259b8f71d5c",
+                            "url": "http://download.osgeo.org/gdal/3.4.1/gdal-3.4.1.tar.xz",
+                            "sha256": "332f053516ca45101ef0f7fa96309b64242688a8024780a5d93be0230e42173d",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -344,8 +344,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://github.com/uriparser/uriparser/releases/download/uriparser-0.9.5/uriparser-0.9.5.tar.bz2",
-                                    "sha256": "dd8061eba7f2e66c151722e6db0b27c972baa6215cf16f135dbe0f0a4bc6606c",
+                                    "url": "https://github.com/uriparser/uriparser/releases/download/uriparser-0.9.6/uriparser-0.9.6.tar.bz2",
+                                    "sha256": "9ce4c3f151e78579f23937b44abecb428126863ad02e594e115e882353de905b",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 10160,
