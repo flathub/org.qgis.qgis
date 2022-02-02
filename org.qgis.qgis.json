@@ -44,7 +44,8 @@
                 "-DQWT_LIBRARY=/app/lib/libqwt.so",
                 "-DSQLITE3_INCLUDE_DIR=/app/include",
                 "-DSQLITE3_LIBRARY=/app/lib/libsqlite3.so",
-                "-DUSE_OPENCL=ON"
+                "-DUSE_OPENCL=ON",
+                "-DWITH_PDAL=TRUE"
             ],
             "modules": [
                 {
@@ -546,6 +547,22 @@
                                     "sha256": "e6c76a87633aa3fa16614b61ccedfae45b91df2767cf097aa9c933932a7ed1e0"
                                 }
                             ]
+                        }
+                    ]
+                },
+                {
+                    "name": "pdal",
+                    "buildsystem": "cmake-ninja",
+                    "config-opts": [
+                        "-DBUILD_PLUGIN_PGPOINTCLOUD=ON",
+                        "-DWITH_LAZPERF=ON",
+                        "-DWITH_LASZIP=ON"
+                    ],
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://github.com/PDAL/PDAL/releases/download/2.3.0/PDAL-2.3.0-src.tar.gz",
+                            "sha256": "5b0b92258874ef722b5027054d64c8b318b524e7a9b2b250d0330d76e19b8618"
                         }
                     ]
                 },
