@@ -49,11 +49,13 @@
             "modules": [
                 {
                     "name": "proj",
+                    "buildsystem": "cmake-ninja",
+                    "config-opts": [ "-DBUILD_TESTING=OFF" ],
                     "sources": [
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/PROJ.git",
-                            "branch": "6.3.2"
+                            "tag": "8.2.0"
                         }
                     ]
                 },
@@ -104,8 +106,7 @@
                     "name": "spatialite",
                     "config-opts": [
                         "prefix=/app",
-                        "--enable-libxml2",
-                        "CFLAGS=-DACCEPT_USE_OF_DEPRECATED_PROJ_API_H=1"
+                        "--enable-libxml2"
                     ],
                     "rm-configure": true,
                     "sources": [
@@ -542,8 +543,8 @@
                             "sources": [
                                 {
                                     "type": "file",
-                                    "url": "https://files.pythonhosted.org/packages/fb/48/b0708ebd7718a8933f0d3937513ef8ef2f4f04529f1f66ca86d873043921/numpy-1.21.4.zip",
-                                    "sha256": "e6c76a87633aa3fa16614b61ccedfae45b91df2767cf097aa9c933932a7ed1e0"
+                                    "url": "https://github.com/numpy/numpy/releases/download/v1.22.1/numpy-1.22.1.tar.gz",
+                                    "sha256": "dd1968402ae20dfd59b34acd799b494be340c774f6295e9bf1c2b9842a5e416d"
                                 }
                             ]
                         }
@@ -721,14 +722,61 @@
                     ]
                 },
                 {
+                    "name": "python-setuptools",
+                    "buildsystem": "simple",
+                    "build-commands": [
+                        "python3 setup.py build",
+                        "python3 setup.py install --prefix=/app --root=/ --optimize=1"
+                    ],
+                    "sources": [
+                        {
+                            "type": "git",
+                            "url": "https://github.com/pypa/setuptools.git",
+                            "tag": "v60.7.1"
+                        }
+                    ]
+                },
+                {
+                    "name": "pyproj",
+                    "buildsystem": "simple",
+                    "build-commands": [
+                        "python3 setup.py build",
+                        "python3 setup.py install --prefix=/app --root=/ --optimize=1"
+                    ],
+                    "sources": [
+                        {
+                            "type": "git",
+                            "url": "https://github.com/pyproj4/pyproj.git",
+                            "tag": "3.3.0"
+                        }
+                    ]
+                },
+                {
+                    "name": "PyYAML",
+                    "buildsystem": "simple",
+                    "build-commands": [
+                        "python3 setup.py install --prefix=/app --root=/"
+                    ],
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://files.pythonhosted.org/packages/a0/a4/d63f2d7597e1a4b55aa3b4d6c5b029991d3b824b5bd331af8d4ab1ed687d/PyYAML-5.4.1.tar.gz",
+                            "sha256": "607774cbba28732bfa802b54baa7484215f530991055bb562efbed5b2f20a45e"
+                        }
+                    ]
+                },
+                {
                     "name": "python-owslib",
                     "buildsystem": "simple",
                     "build-commands": [
-                        "pip3 install --prefix=/app python_dateutil-*",
-                        "pip3 install --prefix=/app pytz-2018.4-py2.py3-none-any.whl",
-                        "pip3 install --prefix=/app requests-2.14.2-py2.py3-none-any.whl",
-                        "pip3 install --prefix=/app pyproj-1.9.6.tar.gz",
-                        "pip3 install --prefix=/app OWSLib-0.16.0.tar.gz"
+                        "pip3 install --prefix=/app *dateutil-*",
+                        "pip3 install --prefix=/app pytz-*",
+                        "pip3 install --prefix=/app urllib3-*",
+                        "pip3 install --prefix=/app idna-*",
+                        "pip3 install --prefix=/app certifi-*",
+                        "pip3 install --prefix=/app charset-normalizer-*",
+                        "pip3 install --prefix=/app requests-*",
+                        "pip3 install --prefix=/app owslib*"
                     ],
                     "sources": [
                         {
@@ -743,18 +791,34 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://pypi.python.org/packages/e4/b0/286e8a936158e5cc5791d5fa3bc4b1d5a7e1ff4e5b3f3766b63d8e97708a/requests-2.14.2-py2.py3-none-any.whl",
-                            "sha256": "3b39cde35be51762885631cf586f4dc2284951b44d479a4454020758d767cc2f"
+                            "url": "https://pypi.io/packages/source/c/certifi/certifi-2021.10.8.tar.gz",
+                            "sha256": "78884e7c1d4b00ce3cea67b44566851c4343c120abd683433ce934a68ea58872"
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/26/8c/1da0580f334718e04f8bbf74f0515a7fb8185ff96b2560ce080c11aa145b/pyproj-1.9.6.tar.gz",
-                            "sha256": "e0c02b1554b20c710d16d673817b2a89ff94738b0b537aead8ecb2edc4c4487b"
+                            "url": "https://pypi.io/packages/source/i/idna/idna-3.3.tar.gz",
+                            "sha256": "9d643ff0a55b762d5cdb124b8eaa99c66322e2157b69160bc32796e824360e6d"
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/ac/71/ff2fbfa64fca17069ce30fac324533aa686c5cb64e6b5f522faed558848f/OWSLib-0.16.0.tar.gz",
-                            "sha256": "ec95a5e93c145a5d84b0074b9ea27570943486552a669151140debf08a100554"
+                            "url": "https://pypi.io/packages/source/c/charset-normalizer/charset-normalizer-2.0.11.tar.gz",
+                            "sha256": "98398a9d69ee80548c762ba991a4728bfc3836768ed226b3945908d1a688371c"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://files.pythonhosted.org/packages/23/fc/8a49991f7905261f9ca9df5aa9b58363c3c821ce3e7f671895442b7100f2/urllib3-1.26.3-py2.py3-none-any.whl",
+                            "sha256": "1b465e494e3e0d8939b50680403e3aedaa2bc434b7d5af64dfd3c958d7f5ae80"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/psf/requests/releases/download/v2.27.1/requests-2.27.1-py2.py3-none-any.whl",
+                            "sha256": "f22fa1e554c9ddfd16e6e41ac79759e17be9e492b3587efa038054674760e72d"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/geopython/OWSLib/archive/refs/tags/0.24.1.tar.gz",
+                            "sha256": "e511ffbba7bdc9fa9169d4acb3029c846fd1292554f13563fe0d97ba4ab63972",
+                            "dest-filename": "owslib.tar.gz"
                         }
                     ]
                 },
@@ -813,13 +877,14 @@
                     "subdir": "saga-gis",
                     "config-opts": [
                         "--enable-python",
+                        "--with-python_exec_prefix=/app",
                         "--disable-odbc"
                     ],
                     "sources": [
                         {
                             "type": "git",
                             "url": "git://git.code.sf.net/p/saga-gis/code",
-                            "branch": "release-7.6.3"
+                            "tag": "release-8.2.0"
                         },
                         {
                             "type": "shell",
@@ -862,20 +927,6 @@
                                     "sha256": "3ca3a19a14b407d0cdda507a7930c2e84ae1c8e74f946e0144d2fa7d881f1a94"
                                 }
                             ]
-                        }
-                    ]
-                },
-                {
-                    "name": "PyYAML",
-                    "buildsystem": "simple",
-                    "build-commands": [
-                        "python3 setup.py install --prefix=/app --root=/"
-                    ],
-                    "sources": [
-                        {
-                            "type": "archive",
-                            "url": "https://files.pythonhosted.org/packages/a0/a4/d63f2d7597e1a4b55aa3b4d6c5b029991d3b824b5bd331af8d4ab1ed687d/PyYAML-5.4.1.tar.gz",
-                            "sha256": "607774cbba28732bfa802b54baa7484215f530991055bb562efbed5b2f20a45e"
                         }
                     ]
                 },
@@ -957,6 +1008,17 @@
                             "type": "archive",
                             "url": "https://github.com/protocolbuffers/protobuf/releases/download/v3.14.0/protobuf-cpp-3.14.0.tar.gz",
                             "sha256": "50ec5a07c0c55d4ec536dd49021f2e194a26bfdbc531d03d1e9d4d3e27175659"
+                        }
+                    ]
+                },
+                {
+                    "name": "qtkeychain",
+                    "buildsystem": "cmake-ninja",
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://github.com/frankosterfeld/qtkeychain/archive/v0.12.0.tar.gz",
+                            "sha256": "cc547d58c1402f6724d3ff89e4ca83389d9e2bdcfd9ae3d695fcdffa50a625a8"
                         }
                     ]
                 }
