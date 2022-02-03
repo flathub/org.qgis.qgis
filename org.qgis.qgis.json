@@ -44,7 +44,8 @@
                 "-DQWT_LIBRARY=/app/lib/libqwt.so",
                 "-DSQLITE3_INCLUDE_DIR=/app/include",
                 "-DSQLITE3_LIBRARY=/app/lib/libsqlite3.so",
-                "-DUSE_OPENCL=ON"
+                "-DUSE_OPENCL=ON",
+                "-DWITH_PDAL=TRUE"
             ],
             "modules": [
                 {
@@ -544,6 +545,39 @@
                                     "type": "file",
                                     "url": "https://files.pythonhosted.org/packages/fb/48/b0708ebd7718a8933f0d3937513ef8ef2f4f04529f1f66ca86d873043921/numpy-1.21.4.zip",
                                     "sha256": "e6c76a87633aa3fa16614b61ccedfae45b91df2767cf097aa9c933932a7ed1e0"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "pdal",
+                    "buildsystem": "cmake-ninja",
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://github.com/PDAL/PDAL/releases/download/2.3.0/PDAL-2.3.0-src.tar.gz",
+                            "sha256": "5b0b92258874ef722b5027054d64c8b318b524e7a9b2b250d0330d76e19b8618",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 138228,
+                                "url-template": "https://github.com/PDAL/PDAL/releases/download/$version/PDAL-$version-src.tar.bz2"
+                            }
+                        }
+                    ],
+                    "modules": [
+                        {
+                            "name": "libgeotiff",
+                            "sources": [
+                                {
+                                    "type": "archive",
+                                    "url": "https://github.com/OSGeo/libgeotiff/releases/download/1.7.0/libgeotiff-1.7.0.tar.gz",
+                                    "sha256": "fc304d8839ca5947cfbeb63adb9d1aa47acef38fc6d6689e622926e672a99a7e",
+                                    "x-checker-data": {
+                                        "type": "anitya",
+                                        "project-id": 21361,
+                                        "url-template": "https://github.com/OSGeo/libgeotiff/releases/download/$version/libgeotiff-$version.tar.gz"
+                                    }
                                 }
                             ]
                         }
