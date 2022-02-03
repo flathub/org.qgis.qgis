@@ -252,7 +252,7 @@
                         "--with-rename-internal-libtiff-symbols",
                         "--with-rename-internal-libgeotiff-symbols",
                         "--with-jpeg12",
-                        "--with-armadillo",
+                        "--with-armadillo=/app",
                         "--with-libkml=/app"
                     ],
                     "sources": [
