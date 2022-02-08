@@ -553,6 +553,10 @@
                 },
                 {
                     "name": "pdal",
+                    "config-opts": [
+                        "-DCMAKE_BUILD_TYPE=Release",
+                        "-DWITH_TESTS=OFF"
+                    ],
                     "buildsystem": "cmake-ninja",
                     "sources": [
                         {
