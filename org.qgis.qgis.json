@@ -51,7 +51,9 @@
                 {
                     "name": "proj",
                     "buildsystem": "cmake-ninja",
-                    "config-opts": [ "-DBUILD_TESTING=OFF" ],
+                    "config-opts": [
+                        "-DBUILD_TESTING=OFF"
+                    ],
                     "sources": [
                         {
                             "type": "git",
@@ -383,8 +385,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-10.8.1.tar.xz",
-                                    "sha256": "5087ab5a2268e5ce71798c1afcb6d1fb246463f8dc88a60db49a083600f98332",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-10.8.2.tar.xz",
+                                    "sha256": "89fdd898bf6bff75f6efc3a301817e4ede752b9a80927fb07ee358b13e353922",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -557,8 +559,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/PDAL/PDAL/releases/download/2.3.0/PDAL-2.3.0-src.tar.gz",
-                            "sha256": "5b0b92258874ef722b5027054d64c8b318b524e7a9b2b250d0330d76e19b8618",
+                            "url": "https://github.com/PDAL/PDAL/releases/download/2.3.0/PDAL-2.3.0-src.tar.bz2",
+                            "sha256": "63d8d4fee491675f0fa3dca58c26d57fb2afcaa37c24b10f595b3fbff174996e",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 138228,
@@ -893,8 +895,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://grass.osgeo.org/grass78/source/grass-7.8.6.tar.gz",
-                            "sha256": "d85e17b0a717e344cdda8f6c5bdeb86763e48d1ee74a62ab471dc8e1293993be",
+                            "url": "https://grass.osgeo.org/grass80/source/grass-8.0.0.tar.gz",
+                            "sha256": "43231ae62874ace92b35d1457950749046aae374e4d9af9d9da22cf9c55d22a1",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 8826,
@@ -1048,7 +1050,11 @@
                 {
                     "name": "qtkeychain",
                     "buildsystem": "cmake-ninja",
-                    "config-opts": [ "-DCMAKE_INSTALL_LIBDIR=/app/lib", "-DLIB_INSTALL_DIR=/app/lib", "-DBUILD_TRANSLATIONS=NO" ],
+                    "config-opts": [
+                        "-DCMAKE_INSTALL_LIBDIR=/app/lib",
+                        "-DLIB_INSTALL_DIR=/app/lib",
+                        "-DBUILD_TRANSLATIONS=NO"
+                    ],
                     "sources": [
                         {
                             "type": "archive",
