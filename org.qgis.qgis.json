@@ -29,8 +29,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.22.3.tar.bz2",
-                    "sha256": "e7430c3d9cb5782257916834c7898f3d3a5fc7c359b12d5def7cdb437d757893",
+                    "url": "https://qgis.org/downloads/qgis-3.22.4.tar.bz2",
+                    "sha256": "80e93f55e3afaa951eac2b7298c96e92ef3ded35882fcb3c1442a3d05de3808d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 236235,
