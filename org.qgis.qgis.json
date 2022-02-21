@@ -58,7 +58,7 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/PROJ.git",
-                            "tag": "8.2.0"
+                            "tag": "8.2.1"
                         }
                     ]
                 },
@@ -467,7 +467,7 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/uclouvain/openjpeg.git",
-                                    "branch": "v2.4.0"
+                                    "tag": "v2.4.0"
                                 }
                             ],
                             "cleanup": [
@@ -772,7 +772,7 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v60.7.1"
+                            "tag": "v60.9.3"
                         }
                     ]
                 },
@@ -951,7 +951,6 @@
                                 "--enable-unicode",
                                 "--enable-display",
                                 "--enable-propgrid",
-                                "--disable-webkit",
                                 "--disable-webview",
                                 "--disable-webviewwebkit",
                                 "--with-expat=builtin",
@@ -963,8 +962,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://github.com/wxWidgets/wxWidgets/releases/download/v3.1.4/wxWidgets-3.1.4.tar.bz2",
-                                    "sha256": "3ca3a19a14b407d0cdda507a7930c2e84ae1c8e74f946e0144d2fa7d881f1a94"
+                                    "url": "https://github.com/wxWidgets/wxWidgets/releases/download/v3.1.5/wxWidgets-3.1.5.tar.bz2",
+                                    "sha256": "d7b3666de33aa5c10ea41bb9405c40326e1aeb74ee725bb88f90f1d50270a224"
                                 }
                             ]
                         }
@@ -979,8 +978,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://files.pythonhosted.org/packages/b9/2e/64db92e53b86efccfaea71321f597fa2e1b2bd3853d8ce658568f7a13094/MarkupSafe-1.1.1.tar.gz",
-                            "sha256": "29872e92839765e546828bb7754a68c418d927cd064fd4708fab9fe9c8bb116b"
+                            "url": "https://files.pythonhosted.org/packages/62/0f/52c009332fdadd484e898dc8f2acca0663c1031b3517070fd34ad9c1b64e/MarkupSafe-2.1.0.tar.gz",
+                            "sha256": "80beaf63ddfbc64a0452b841d8036ca0611e049650e20afcb882f5d3c266d65f"
                         }
                     ],
                     "build-commands": [
@@ -1012,7 +1011,7 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pygments/pygments.git",
-                            "branch": "2.7.4"
+                            "tag": "2.11.2"
                         }
                     ]
                 },
@@ -1031,7 +1030,7 @@
                         {
                             "type": "git",
                             "url": "https://github.com/Exiv2/exiv2",
-                            "branch": "v0.27.2"
+                            "tag": "v0.27.2"
                         }
                     ]
                 },
@@ -1046,8 +1045,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/protocolbuffers/protobuf/releases/download/v3.14.0/protobuf-cpp-3.14.0.tar.gz",
-                            "sha256": "50ec5a07c0c55d4ec536dd49021f2e194a26bfdbc531d03d1e9d4d3e27175659"
+                            "url": "https://github.com/protocolbuffers/protobuf/releases/download/v3.19.4/protobuf-cpp-3.19.4.tar.gz",
+                            "sha256": "89ac31a93832e204db6d73b1e80f39f142d5747b290f17340adce5be5b122f94"
                         }
                     ]
                 },
@@ -1062,8 +1061,32 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/frankosterfeld/qtkeychain/archive/v0.12.0.tar.gz",
-                            "sha256": "cc547d58c1402f6724d3ff89e4ca83389d9e2bdcfd9ae3d695fcdffa50a625a8"
+                            "url": "https://github.com/frankosterfeld/qtkeychain/archive/v0.13.2.tar.gz",
+                            "sha256": "20beeb32de7c4eb0af9039b21e18370faf847ac8697ab3045906076afbc4caa5"
+                        }
+                    ],
+                    "modules": [
+                        {
+                            "name": "libsecret",
+                            "buildsystem": "meson",
+                            "config-opts": [
+                                "-Dmanpage=false",
+                                "-Dvapi=false",
+                                "-Dgtk_doc=false",
+                                "-Dintrospection=false"
+                            ],
+                            "sources": [
+                                {
+                                    "type": "archive",
+                                    "url": "https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.20.4/libsecret-0.20.4.tar.gz",
+                                    "sha256": "ca34e69b210df221ae5da6692c2cb15ef169bb4daf42e204442f24fdb0520d4b",
+                                    "x-checker-data": {
+                                        "type": "anitya",
+                                        "project-id": 13150,
+                                        "url-template": "https://gitlab.gnome.org/GNOME/libsecret/-/archive/$version/libsecret-$version.tar.gz"
+                                    }
+                                }
+                            ]
                         }
                     ]
                 }
