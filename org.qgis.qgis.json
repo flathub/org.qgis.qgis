@@ -899,8 +899,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://grass.osgeo.org/grass78/source/grass-7.8.6.tar.gz",
-                            "sha256": "d85e17b0a717e344cdda8f6c5bdeb86763e48d1ee74a62ab471dc8e1293993be",
+                            "url": "https://grass.osgeo.org/grass80/source/grass-8.0.0.tar.gz",
+                            "sha256": "43231ae62874ace92b35d1457950749046aae374e4d9af9d9da22cf9c55d22a1",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 8826,
