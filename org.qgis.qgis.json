@@ -33,8 +33,9 @@
                     "sha256": "b923d50d53bac0bb9e059396b95ea69ac904234ba83c5cf2584d9d4fbcedc6ba",
                     "x-checker-data": {
                         "type": "anitya",
-                        "project-id": 236235,
-                        "url-template": "https://qgis.org/downloads/qgis-$major.$version2.$version4.tar.bz2"
+                        "project-id": 5779,
+                        "url-template": "https://qgis.org/downloads/qgis-$version.tar.bz2",
+                        "stable-only": true
                     }
                 }
             ],
@@ -72,7 +73,8 @@
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 13493,
-                                "url-template": "http://download.osgeo.org/geos/geos-$version.tar.bz2"
+                                "url-template": "http://download.osgeo.org/geos/geos-$version.tar.bz2",
+                                "stable-only": true
                             }
                         }
                     ]
@@ -213,7 +215,8 @@
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 12083,
-                                "url-template": "https://github.com/facebook/zstd/releases/download/v$version/zstd-$version.tar.gz"
+                                "url-template": "https://github.com/facebook/zstd/releases/download/v$version/zstd-$version.tar.gz",
+                                "stable-only": true
                             }
                         }
                     ]
@@ -265,7 +268,8 @@
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
-                                "url-template": "http://download.osgeo.org/gdal/$version/gdal-$version.tar.xz"
+                                "url-template": "http://download.osgeo.org/gdal/$version/gdal-$version.tar.xz",
+                                "stable-only": true
                             }
                         }
                     ],
@@ -290,7 +294,8 @@
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 4919,
-                                        "url-template": "http://prdownloads.sourceforge.net/swig/swig-$version.tar.gz"
+                                        "url-template": "http://prdownloads.sourceforge.net/swig/swig-$version.tar.gz",
+                                        "stable-only": true
                                     }
                                 }
                             ]
@@ -306,7 +311,8 @@
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 5182,
-                                        "url-template": "https://dlcdn.apache.org//xerces/c/$major/sources/xerces-c-$version.tar.xz"
+                                        "url-template": "https://dlcdn.apache.org//xerces/c/$major/sources/xerces-c-$version.tar.xz",
+                                        "stable-only": true
                                     }
                                 }
                             ]
@@ -322,7 +328,8 @@
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 13633,
-                                        "url-template": "https://support.hdfgroup.org/ftp/lib-external/szip/$version/src/szip-$version.tar.gz"
+                                        "url-template": "https://support.hdfgroup.org/ftp/lib-external/szip/$version/src/szip-$version.tar.gz",
+                                        "stable-only": true
                                     }
                                 }
                             ]
@@ -354,7 +361,8 @@
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 10160,
-                                        "url-template": "https://github.com/uriparser/uriparser/releases/download/uriparser-$version/uriparser-$version.tar.bz2"
+                                        "url-template": "https://github.com/uriparser/uriparser/releases/download/uriparser-$version/uriparser-$version.tar.bz2",
+                                        "stable-only": true
                                     }
                                 }
                             ]
@@ -390,7 +398,8 @@
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
-                                        "url-template": "https://sourceforge.net/projects/arma/files/armadillo-$version.tar.xz"
+                                        "url-template": "https://sourceforge.net/projects/arma/files/armadillo-$version.tar.xz",
+                                        "stable-only": true
                                     }
                                 }
                             ]
@@ -438,7 +447,8 @@
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 10558,
-                                        "url-template": "https://github.com/libkml/libkml/archive/$version.tar.gz"
+                                        "url-template": "https://github.com/libkml/libkml/archive/$version.tar.gz",
+                                        "stable-only": true
                                     }
                                 }
                             ]
@@ -454,7 +464,8 @@
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 10354,
-                                        "url-template": "https://github.com/Unidata/netcdf-c/archive/v$version.tar.gz"
+                                        "url-template": "https://github.com/Unidata/netcdf-c/archive/v$version.tar.gz",
+                                        "stable-only": true
                                     }
                                 }
                             ]
@@ -568,7 +579,8 @@
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 138228,
-                                "url-template": "https://github.com/PDAL/PDAL/releases/download/$version/PDAL-$version-src.tar.bz2"
+                                "url-template": "https://github.com/PDAL/PDAL/releases/download/$version/PDAL-$version-src.tar.bz2",
+                                "stable-only": true
                             }
                         }
                     ],
@@ -583,7 +595,8 @@
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 21361,
-                                        "url-template": "https://github.com/OSGeo/libgeotiff/releases/download/$version/libgeotiff-$version.tar.gz"
+                                        "url-template": "https://github.com/OSGeo/libgeotiff/releases/download/$version/libgeotiff-$version.tar.gz",
+                                        "stable-only": true
                                     }
                                 }
                             ]
@@ -900,12 +913,7 @@
                         {
                             "type": "archive",
                             "url": "https://grass.osgeo.org/grass78/source/grass-7.8.6.tar.gz",
-                            "sha256": "d85e17b0a717e344cdda8f6c5bdeb86763e48d1ee74a62ab471dc8e1293993be",
-                            "x-checker-data": {
-                                "type": "anitya",
-                                "project-id": 8826,
-                                "url-template": "https://grass.osgeo.org/grass$major$minor/source/grass-$version.tar.gz"
-                            }
+                            "sha256": "d85e17b0a717e344cdda8f6c5bdeb86763e48d1ee74a62ab471dc8e1293993be"
                         }
                     ],
                     "modules": [
@@ -1078,12 +1086,12 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.20.5/libsecret-0.20.5.tar.gz",
-                                    "sha256": "b33b9542222ea8866f6ff2d31c0ad373877c2277db546ca00cc7fdda9cbab1c3",
+                                    "url": "https://download.gnome.org/sources/libsecret/0.20/libsecret-0.20.5.tar.xz",
+                                    "sha256": "3fb3ce340fcd7db54d87c893e69bfc2b1f6e4d4b279065ffe66dac9f0fd12b4d",
                                     "x-checker-data": {
-                                        "type": "anitya",
-                                        "project-id": 13150,
-                                        "url-template": "https://gitlab.gnome.org/GNOME/libsecret/-/archive/$version/libsecret-$version.tar.gz"
+                                        "type": "gnome",
+                                        "name": "libsecret",
+                                        "stable-only": true
                                     }
                                 }
                             ]
