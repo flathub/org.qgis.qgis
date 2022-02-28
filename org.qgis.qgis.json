@@ -912,8 +912,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://grass.osgeo.org/grass78/source/grass-7.8.6.tar.gz",
-                            "sha256": "d85e17b0a717e344cdda8f6c5bdeb86763e48d1ee74a62ab471dc8e1293993be"
+                            "url": "https://grass.osgeo.org/grass78/source/grass-7.8.7.tar.gz",
+                            "sha256": "4fff7be556d820ed81704bb27fe3ed913c173076bb3ed036bcc3a49bd4027f69"
                         }
                     ],
                     "modules": [
