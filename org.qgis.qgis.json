@@ -393,8 +393,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-10.8.2.tar.xz",
-                                    "sha256": "89fdd898bf6bff75f6efc3a301817e4ede752b9a80927fb07ee358b13e353922",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-11.0.0.tar.xz",
+                                    "sha256": "7fdd4f041a624cd9bf23c9d84982d9188ec70352fa8ea03461a9d4da1165f0d3",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
