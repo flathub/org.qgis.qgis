@@ -22,7 +22,7 @@
             "PYTHONPATH": "/app/lib/python3.9/site-packages:/usr/lib/python3.9/site-packages"
         }
     },
-    "cleanup" : [
+    "cleanup": [
         "/lib/pkgconfig",
         "/include",
         "*.la",
@@ -582,8 +582,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/PDAL/PDAL/releases/download/2.4.0/PDAL-2.4.0-src.tar.bz2",
-                            "sha256": "8dda872ae6c08973125757be8ba5591b7cf7304c58943447fc3df9c9ac2cdc42",
+                            "url": "https://github.com/PDAL/PDAL/releases/download/2.4.1/PDAL-2.4.1-src.tar.bz2",
+                            "sha256": "2428fb05814b753e918f70bb933b58aa21ccfaa358aedbbcb3e4662112c9a51f",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 138228,
