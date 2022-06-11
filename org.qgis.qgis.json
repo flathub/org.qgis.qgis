@@ -401,8 +401,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-11.1.1.tar.xz",
-                                    "sha256": "bfa6154a5fefd832d28d530a58221fe4a2cff2a3bbdbd82e109bde53fb29dcdb",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-11.2.0.tar.xz",
+                                    "sha256": "df5ca215901c68c63467c0bfee14f08e34d875a47ab0f095082ab32ddff4f243",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -467,8 +467,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://github.com/Unidata/netcdf-c/archive/v4.8.1.tar.gz",
-                                    "sha256": "bc018cc30d5da402622bf76462480664c6668b55eb16ba205a0dfb8647161dd0",
+                                    "url": "https://github.com/Unidata/netcdf-c/archive/v4.9.0.tar.gz",
+                                    "sha256": "9f4cb864f3ab54adb75409984c6202323d2fc66c003e5308f3cdf224ed41c0a6",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 10354,
