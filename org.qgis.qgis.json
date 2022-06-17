@@ -37,8 +37,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.24.3.tar.bz2",
-                    "sha256": "fc9fa28e10c32773f49f1de0c52a35a393060acd6f799d6926f08e96fbaf2b4e",
+                    "url": "https://qgis.org/downloads/qgis-3.26.0.tar.bz2",
+                    "sha256": "3a41466ca7c9a80205c09083fdad18c5d9b56024073f65aa5c3997b76a6d2a75",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
