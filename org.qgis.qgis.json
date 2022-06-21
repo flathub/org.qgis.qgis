@@ -29,8 +29,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.22.6.tar.bz2",
-                    "sha256": "c5885b16a6d5655aa6127bc5abefb0294c40c3b5b89e597087c16a127dd066b4",
+                    "url": "https://qgis.org/downloads/qgis-3.22.8.tar.bz2",
+                    "sha256": "9a73c0116c196289ae4ae3deb4e876231212e75b648b7e50a676102b550d533d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 236235,
@@ -787,7 +787,7 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pyproj4/pyproj.git",
-                            "tag": "3.3.0"
+                            "tag": "3.3.1"
                         }
                     ]
                 },
@@ -924,7 +924,7 @@
                         {
                             "type": "git",
                             "url": "git://git.code.sf.net/p/saga-gis/code",
-                            "tag": "release-8.2.0"
+                            "tag": "release-8.2.3"
                         },
                         {
                             "type": "shell",
