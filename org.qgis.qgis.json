@@ -808,7 +808,7 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pyproj4/pyproj.git",
-                            "tag": "3.3.0"
+                            "tag": "3.3.1"
                         }
                     ]
                 },
@@ -1061,8 +1061,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/protocolbuffers/protobuf/releases/download/v21.1/protobuf-cpp-3.21.1.tar.gz",
-                            "sha256": "9ccabf07bd087bca3bb37067e04bf1d7377f0d60311cf3d2aa88e7af4c49a177"
+                            "url": "https://github.com/protocolbuffers/protobuf/releases/download/v21.4/protobuf-cpp-3.21.4.tar.gz",
+                            "sha256": "a9fd8043fef746e8d8cca9f023fb7ba6d3d102eab6dd35a04ce7157d1928726b"
                         }
                     ]
                 },
