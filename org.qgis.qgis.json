@@ -980,9 +980,6 @@
                 {
                     "name": "python3-markupsafe",
                     "buildsystem": "simple",
-                    "ensure-writable": [
-                        "/lib/python*/site-packages/easy-install.pth"
-                    ],
                     "sources": [
                         {
                             "type": "archive",
@@ -991,7 +988,6 @@
                         }
                     ],
                     "build-commands": [
-                        "python3 setup.py build",
                         "python3 setup.py install --prefix /app --root=/"
                     ]
                 },
