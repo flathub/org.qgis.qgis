@@ -582,8 +582,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/PDAL/PDAL/releases/download/2.4.2/PDAL-2.4.2-src.tar.bz2",
-                            "sha256": "0552e9907032c62353e0dc020753abde1fe2484eb0909cb7d945a80861b0138f",
+                            "url": "https://github.com/PDAL/PDAL/releases/download/2.4.3/PDAL-2.4.3-src.tar.bz2",
+                            "sha256": "3d2b00e87d177f6d01fee3dd3436cd9fc1f6d821fae40f36dccc07469d0d8226",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 138228,
