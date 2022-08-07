@@ -1007,13 +1007,13 @@
                     "name": "python3-jinja2",
                     "buildsystem": "simple",
                     "build-commands": [
-                        "pip3 install --prefix=/app Jinja2-2.11.2-py2.py3-none-any.whl"
+                        "pip3 install --prefix=/app Jinja2-3.1.2-py3-none-any.whl"
                     ],
                     "sources": [
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/30/9e/f663a2aa66a09d838042ae1a2c5659828bb9b41ea3a6efa20a20fd92b121/Jinja2-2.11.2-py2.py3-none-any.whl",
-                            "sha256": "f0a4641d3cf955324a89c04f3d94663aa4d638abe8f733ecd3582848e1c37035"
+                            "url": "https://files.pythonhosted.org/packages/bc/c3/f068337a370801f372f2f8f6bad74a5c140f6fda3d9de154052708dd3c65/Jinja2-3.1.2-py3-none-any.whl",
+                            "sha256": "6088930bfe239f0e6710546ab9c19c9ef35e29792895fed6e6e31a023a182a61"
                         }
                     ]
                 },
