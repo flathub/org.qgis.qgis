@@ -1045,8 +1045,8 @@
                     "sources": [
                         {
                             "type": "git",
-                            "url": "https://github.com/Exiv2/exiv2",
-                            "tag": "v0.27.2"
+                            "url": "https://github.com/Exiv2/exiv2.git",
+                            "tag": "v0.27.5"
                         }
                     ]
                 },
