@@ -892,9 +892,9 @@
                     ],
                     "sources": [
                         {
-                            "type": "archive",
-                            "url": "http://initd.org/psycopg/tarballs/PSYCOPG-2-8/psycopg2-2.8.6.tar.gz",
-                            "sha256": "fb23f6c71107c37fd667cb4ea363ddeb936b348bbd6449278eb92c189699f543"
+                            "type": "git",
+                            "url": "https://github.com/psycopg/psycopg2.git",
+                            "tag": "2_9_3"
                         }
                     ]
                 },
