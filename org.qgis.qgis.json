@@ -261,7 +261,7 @@
                         "--with-cfitsio",
                         "--with-xerces=/app",
                         "--with-odbc",
-                        "--with-proj",
+                        "--with-proj=/app/share/proj/proj.db",
                         "--with-rename-internal-libtiff-symbols",
                         "--with-rename-internal-libgeotiff-symbols",
                         "--with-jpeg12",
