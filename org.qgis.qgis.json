@@ -143,8 +143,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "http://www.gaia-gis.it/gaia-sins/freexl-sources/freexl-1.0.5.tar.gz",
-                                    "sha256": "3dc9b150d218b0e280a3d6a41d93c1e45f4d7155829d75f1e5bf3e0b0de6750d"
+                                    "url": "http://www.gaia-gis.it/gaia-sins/freexl-sources/freexl-1.0.6.tar.gz",
+                                    "sha256": "3de8b57a3d130cb2881ea52d3aa9ce1feedb1b57b7daa4eb37f751404f90fc22"
                                 },
                                 {
                                     "type": "script",
@@ -386,8 +386,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-3.49.tar.gz",
-                                    "sha256": "5b65a20d5c53494ec8f638267fca4a629836b7ac8dd0ef0266834eab270ed4b3"
+                                    "url": "https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-4.1.0.tar.gz",
+                                    "sha256": "b367c695d2831958e7166921c3b356d5dfa51b1ecee505b97416ba39d1b6c17a"
                                 }
                             ]
                         },
@@ -422,8 +422,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://github.com/weidai11/cryptopp/archive/CRYPTOPP_8_6_0.tar.gz",
-                                    "sha256": "9304625f4767a13e0a5f26d0f019d78cf9375604a33e5391c3bf2e81399dfeb8"
+                                    "url": "https://github.com/weidai11/cryptopp/archive/CRYPTOPP_8_7_0.tar.gz",
+                                    "sha256": "8d6a4064b8e9f34cd3e838f5a12c40067ee7b95ee37d9173ec273cb0913e7ca2"
                                 }
                             ]
                         },
@@ -565,8 +565,8 @@
                             "sources": [
                                 {
                                     "type": "file",
-                                    "url": "https://github.com/numpy/numpy/releases/download/v1.22.1/numpy-1.22.1.tar.gz",
-                                    "sha256": "dd1968402ae20dfd59b34acd799b494be340c774f6295e9bf1c2b9842a5e416d"
+                                    "url": "https://github.com/numpy/numpy/releases/download/v1.23.2/numpy-1.23.2.tar.gz",
+                                    "sha256": "b78d00e48261fbbd04aa0d7427cf78d18401ee0abd89c7559bbf422e5b1c7d01"
                                 }
                             ]
                         }
@@ -763,8 +763,8 @@
                     "sources": [
                         {
                             "type": "file",
-                            "url": "https://pypi.python.org/packages/16/d8/bc6316cf98419719bd59c91742194c111b6f2e85abac88e496adefaf7afe/six-1.11.0.tar.gz",
-                            "sha256": "70e8a77beed4562e7f14fe23a786b54f6296e34344c23bc42f07b15018ff98e9"
+                            "url": "https://files.pythonhosted.org/packages/71/39/171f1c67cd00715f190ba0b100d606d440a28c93c7714febeca8b79af85e/six-1.16.0.tar.gz",
+                            "sha256": "1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"
                         }
                     ]
                 },
@@ -777,8 +777,8 @@
                     "sources": [
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/00/2b/8d082ddfed935f3608cc61140df6dcbf0edea1bc3ab52fb6c29ae3e81e85/future-0.16.0.tar.gz",
-                            "sha256": "e39ced1ab767b5936646cedba8bcce582398233d6a627067d4c6a454c90cfedb"
+                            "url": "https://files.pythonhosted.org/packages/45/0b/38b06fd9b92dc2b68d58b75f900e97884c45bedd2ff83203d933cf5851c9/future-0.18.2.tar.gz",
+                            "sha256": "b1bead90b70cf6ec3f0710ae53a525360fa360d306a86583adc6bf83a4db537d"
                         }
                     ]
                 },
@@ -793,7 +793,7 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v60.9.3"
+                            "tag": "v65.3.0"
                         }
                     ]
                 },
@@ -821,8 +821,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://files.pythonhosted.org/packages/a0/a4/d63f2d7597e1a4b55aa3b4d6c5b029991d3b824b5bd331af8d4ab1ed687d/PyYAML-5.4.1.tar.gz",
-                            "sha256": "607774cbba28732bfa802b54baa7484215f530991055bb562efbed5b2f20a45e"
+                            "url": "https://files.pythonhosted.org/packages/36/2b/61d51a2c4f25ef062ae3f74576b01638bebad5e045f747ff12643df63844/PyYAML-6.0.tar.gz",
+                            "sha256": "68fb519c14306fec9720a2a5b45bc9f0c8d1b9c72adf45c37baedfcd949c35a2"
                         }
                     ]
                 },
@@ -842,18 +842,18 @@
                     "sources": [
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/d4/70/d60450c3dd48ef87586924207ae8907090de0b306af2bce5d134d78615cb/python_dateutil-2.8.1-py2.py3-none-any.whl",
-                            "sha256": "75bb3f31ea686f1197762692a9ee6a7550b59fc6ca3a1f4b5d7e32fb98e2da2a"
+                            "url": "https://files.pythonhosted.org/packages/36/7a/87837f39d0296e723bb9b62bbb257d0355c7f6128853c78955f57342a56d/python_dateutil-2.8.2-py2.py3-none-any.whl",
+                            "sha256": "961d03dc3453ebbc59dbdea9e4e11c5651520a876d0f4db161e8674aae935da9"
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/dc/83/15f7833b70d3e067ca91467ca245bae0f6fe56ddc7451aa0dc5606b120f2/pytz-2018.4-py2.py3-none-any.whl",
-                            "sha256": "65ae0c8101309c45772196b21b74c46b2e5d11b6275c45d251b150d5da334555"
+                            "url": "https://files.pythonhosted.org/packages/d5/50/54451e88e3da4616286029a3a17fc377de817f66a0f50e1faaee90161724/pytz-2022.2.1-py2.py3-none-any.whl",
+                            "sha256": "220f481bdafa09c3955dfbdddb7b57780e9a94f5127e35456a48589b9e0c0197"
                         },
                         {
                             "type": "file",
-                            "url": "https://pypi.io/packages/source/c/certifi/certifi-2021.10.8.tar.gz",
-                            "sha256": "78884e7c1d4b00ce3cea67b44566851c4343c120abd683433ce934a68ea58872"
+                            "url": "https://pypi.io/packages/source/c/certifi/certifi-2022.6.15.tar.gz",
+                            "sha256": "84c85a9078b11105f04f3036a9482ae10e4621616db313fe045dd24743a0820d"
                         },
                         {
                             "type": "file",
@@ -862,23 +862,23 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://pypi.io/packages/source/c/charset-normalizer/charset-normalizer-2.0.11.tar.gz",
-                            "sha256": "98398a9d69ee80548c762ba991a4728bfc3836768ed226b3945908d1a688371c"
+                            "url": "https://pypi.io/packages/source/c/charset-normalizer/charset-normalizer-2.1.1.tar.gz",
+                            "sha256": "5a3d016c7c547f69d6f81fb0db9449ce888b418b5b9952cc5e6e66843e9dd845"
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/23/fc/8a49991f7905261f9ca9df5aa9b58363c3c821ce3e7f671895442b7100f2/urllib3-1.26.3-py2.py3-none-any.whl",
-                            "sha256": "1b465e494e3e0d8939b50680403e3aedaa2bc434b7d5af64dfd3c958d7f5ae80"
+                            "url": "https://files.pythonhosted.org/packages/6f/de/5be2e3eed8426f871b170663333a0f627fc2924cc386cd41be065e7ea870/urllib3-1.26.12-py2.py3-none-any.whl",
+                            "sha256": "b930dd878d5a8afb066a637fbb35144fe7901e3b209d1cd4f524bd0e9deee997"
                         },
                         {
                             "type": "file",
-                            "url": "https://github.com/psf/requests/releases/download/v2.27.1/requests-2.27.1-py2.py3-none-any.whl",
-                            "sha256": "f22fa1e554c9ddfd16e6e41ac79759e17be9e492b3587efa038054674760e72d"
+                            "url": "https://github.com/psf/requests/releases/download/v2.28.1/requests-2.28.1-py3-none-any.whl",
+                            "sha256": "8fefa2a1a1365bf5520aac41836fbee479da67864514bdb821f31ce07ce65349"
                         },
                         {
                             "type": "file",
-                            "url": "https://github.com/geopython/OWSLib/archive/refs/tags/0.24.1.tar.gz",
-                            "sha256": "e511ffbba7bdc9fa9169d4acb3029c846fd1292554f13563fe0d97ba4ab63972",
+                            "url": "https://github.com/geopython/OWSLib/archive/refs/tags/0.27.2.tar.gz",
+                            "sha256": "3a8461e39fb9c5be5abb1f5a07fffbf688300c970ec553f256c9e664603657b1",
                             "dest-filename": "owslib.tar.gz"
                         }
                     ]
@@ -919,9 +919,9 @@
                     ],
                     "sources": [
                         {
-                            "type": "archive",
-                            "url": "https://grass.osgeo.org/grass78/source/grass-7.8.7.tar.gz",
-                            "sha256": "4fff7be556d820ed81704bb27fe3ed913c173076bb3ed036bcc3a49bd4027f69"
+                            "type": "git",
+                            "url": "https://github.com/OSGeo/grass.git",
+                            "tag": "7.8.7"
                         }
                     ],
                     "modules": [
@@ -994,8 +994,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://files.pythonhosted.org/packages/62/0f/52c009332fdadd484e898dc8f2acca0663c1031b3517070fd34ad9c1b64e/MarkupSafe-2.1.0.tar.gz",
-                            "sha256": "80beaf63ddfbc64a0452b841d8036ca0611e049650e20afcb882f5d3c266d65f"
+                            "url": "https://files.pythonhosted.org/packages/1d/97/2288fe498044284f39ab8950703e88abbac2abbdf65524d576157af70556/MarkupSafe-2.1.1.tar.gz",
+                            "sha256": "7f91197cc9e48f989d12e4e6fbc46495c446636dfc81b9ccf50bb0ec74b91d4b"
                         }
                     ],
                     "build-commands": [
@@ -1061,8 +1061,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/protocolbuffers/protobuf/releases/download/v21.4/protobuf-cpp-3.21.4.tar.gz",
-                            "sha256": "a9fd8043fef746e8d8cca9f023fb7ba6d3d102eab6dd35a04ce7157d1928726b"
+                            "url": "https://github.com/protocolbuffers/protobuf/releases/download/v21.5/protobuf-cpp-3.21.5.tar.gz",
+                            "sha256": "58c8a18b4ec22655535c493155c5465a8903e8249094ceead87e00763bdbc44f"
                         }
                     ]
                 },
