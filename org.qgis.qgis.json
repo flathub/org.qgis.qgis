@@ -364,8 +364,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://github.com/uriparser/uriparser/releases/download/uriparser-0.9.6/uriparser-0.9.6.tar.bz2",
-                                    "sha256": "9ce4c3f151e78579f23937b44abecb428126863ad02e594e115e882353de905b",
+                                    "url": "https://github.com/uriparser/uriparser/releases/download/uriparser-0.9.7/uriparser-0.9.7.tar.bz2",
+                                    "sha256": "d27dea0c8b6f6fb9798f07caedef1cd96a6e3fc5c6189596774e19afa7ddded7",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 10160,
@@ -401,8 +401,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-11.2.4.tar.xz",
-                                    "sha256": "dc4c91954ab11490bf64d2dfcc54a802f14393c756a8d545ac155eeeffa7fd93",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-11.4.0.tar.xz",
+                                    "sha256": "016531152c02729a602aa6f16f4ba3b0475740d5c1bd28d34edd7264f476461c",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
