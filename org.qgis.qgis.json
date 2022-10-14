@@ -401,8 +401,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-11.2.4.tar.xz",
-                                    "sha256": "dc4c91954ab11490bf64d2dfcc54a802f14393c756a8d545ac155eeeffa7fd93",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-11.4.1.tar.xz",
+                                    "sha256": "dadb5fd35bc4dc251b36f5dd80729c3c588d65e2ecbcd4e4e359ad9cb04523fb",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
