@@ -103,8 +103,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://zlib.net/zlib-1.2.12.tar.gz",
-                            "sha256": "91844808532e5ce316b3c010929493c0244f3d37593afd6de04f71821d5136d9"
+                            "url": "https://zlib.net/zlib-1.2.13.tar.gz",
+                            "sha256": "b3a24de97a8fdbc835b9833169501030b8977031bcb54b3b3ac13740f846ab30"
                         },
                         {
                             "type": "shell",
@@ -364,8 +364,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://github.com/uriparser/uriparser/releases/download/uriparser-0.9.6/uriparser-0.9.6.tar.bz2",
-                                    "sha256": "9ce4c3f151e78579f23937b44abecb428126863ad02e594e115e882353de905b",
+                                    "url": "https://github.com/uriparser/uriparser/releases/download/uriparser-0.9.7/uriparser-0.9.7.tar.bz2",
+                                    "sha256": "d27dea0c8b6f6fb9798f07caedef1cd96a6e3fc5c6189596774e19afa7ddded7",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 10160,
@@ -401,8 +401,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-11.2.4.tar.xz",
-                                    "sha256": "dc4c91954ab11490bf64d2dfcc54a802f14393c756a8d545ac155eeeffa7fd93",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-11.4.1.tar.xz",
+                                    "sha256": "dadb5fd35bc4dc251b36f5dd80729c3c588d65e2ecbcd4e4e359ad9cb04523fb",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -565,8 +565,8 @@
                             "sources": [
                                 {
                                     "type": "file",
-                                    "url": "https://github.com/numpy/numpy/releases/download/v1.23.2/numpy-1.23.2.tar.gz",
-                                    "sha256": "b78d00e48261fbbd04aa0d7427cf78d18401ee0abd89c7559bbf422e5b1c7d01"
+                                    "url": "https://github.com/numpy/numpy/releases/download/v1.23.4/numpy-1.23.4.tar.gz",
+                                    "sha256": "ed2cc92af0efad20198638c69bb0fc2870a58dabfba6eb722c933b48556c686c"
                                 }
                             ]
                         }
@@ -793,7 +793,7 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v65.3.0"
+                            "tag": "v65.4.1"
                         }
                     ]
                 },
@@ -808,7 +808,7 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pyproj4/pyproj.git",
-                            "tag": "3.3.1"
+                            "tag": "3.4.0"
                         }
                     ]
                 },
@@ -847,13 +847,13 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/d5/50/54451e88e3da4616286029a3a17fc377de817f66a0f50e1faaee90161724/pytz-2022.2.1-py2.py3-none-any.whl",
-                            "sha256": "220f481bdafa09c3955dfbdddb7b57780e9a94f5127e35456a48589b9e0c0197"
+                            "url": "https://files.pythonhosted.org/packages/d8/66/309545413162bc8271c73e622499a41cdc37217b499febe26155ff9f93ed/pytz-2022.4-py2.py3-none-any.whl",
+                            "sha256": "2c0784747071402c6e99f0bafdb7da0fa22645f06554c7ae06bf6358897e9c91"
                         },
                         {
                             "type": "file",
-                            "url": "https://pypi.io/packages/source/c/certifi/certifi-2022.6.15.tar.gz",
-                            "sha256": "84c85a9078b11105f04f3036a9482ae10e4621616db313fe045dd24743a0820d"
+                            "url": "https://pypi.io/packages/source/c/certifi/certifi-2022.9.24.tar.gz",
+                            "sha256": "0d9c601124e5a6ba9712dbc60d9c53c21e34f5f641fe83002317394311bdce14"
                         },
                         {
                             "type": "file",
@@ -894,7 +894,7 @@
                         {
                             "type": "git",
                             "url": "https://github.com/psycopg/psycopg2.git",
-                            "tag": "2_9_3"
+                            "tag": "2_9_4"
                         }
                     ]
                 },
@@ -939,7 +939,7 @@
                     "sources": [
                         {
                             "type": "git",
-                            "url": "git://git.code.sf.net/p/saga-gis/code",
+                            "url": "https://git.code.sf.net/p/saga-gis/code",
                             "tag": "release-8.2.0"
                         },
                         {
@@ -978,8 +978,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://github.com/wxWidgets/wxWidgets/releases/download/v3.1.7/wxWidgets-3.1.7.tar.bz2",
-                                    "sha256": "3d666e47d86192f085c84089b850c90db7a73a5d26b684b617298d89dce84f19"
+                                    "url": "https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.1/wxWidgets-3.2.1.tar.bz2",
+                                    "sha256": "c229976bb413eb88e45cb5dfb68b27890d450149c09b331abd751e7ae0f5fa66"
                                 }
                             ]
                         }
@@ -1027,7 +1027,7 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pygments/pygments.git",
-                            "tag": "2.11.2"
+                            "tag": "2.13.0"
                         }
                     ]
                 },
@@ -1061,8 +1061,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/protocolbuffers/protobuf/releases/download/v21.5/protobuf-cpp-3.21.5.tar.gz",
-                            "sha256": "58c8a18b4ec22655535c493155c5465a8903e8249094ceead87e00763bdbc44f"
+                            "url": "https://github.com/protocolbuffers/protobuf/releases/download/v21.7/protobuf-cpp-3.21.7.tar.gz",
+                            "sha256": "70de993af0b4f2ddacce59e62ba6d7b7e48faf48beb1b0d5f1ac0e1fb0a68423"
                         }
                     ]
                 },
