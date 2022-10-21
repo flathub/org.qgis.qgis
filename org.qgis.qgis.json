@@ -22,7 +22,7 @@
             "PYTHONPATH": "/app/lib/python3.9/site-packages:/usr/lib/python3.9/site-packages"
         }
     },
-    "cleanup" : [
+    "cleanup": [
         "/lib/pkgconfig",
         "/include",
         "*.la",
@@ -70,12 +70,13 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "http://download.osgeo.org/geos/geos-3.10.2.tar.bz2",
-                            "sha256": "50bbc599ac386b4c2b3962dcc411f0040a61f204aaef4eba7225ecdd0cf45715",
+                            "url": "http://download.osgeo.org/geos/geos-3.11.0.tar.bz2",
+                            "sha256": "79ab8cabf4aa8604d161557b52e3e4d84575acdc0d08cb09ab3f7aaefa4d858a",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 13493,
-                                "url-template": "http://download.osgeo.org/geos/geos-$version.tar.bz2"
+                                "url-template": "http://download.osgeo.org/geos/geos-$version.tar.bz2",
+                                "stable-only": true
                             }
                         }
                     ]
@@ -96,8 +97,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://zlib.net/zlib-1.2.12.tar.gz",
-                            "sha256": "91844808532e5ce316b3c010929493c0244f3d37593afd6de04f71821d5136d9"
+                            "url": "https://zlib.net/zlib-1.2.13.tar.gz",
+                            "sha256": "b3a24de97a8fdbc835b9833169501030b8977031bcb54b3b3ac13740f846ab30"
                         },
                         {
                             "type": "shell",
@@ -136,8 +137,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "http://www.gaia-gis.it/gaia-sins/freexl-sources/freexl-1.0.5.tar.gz",
-                                    "sha256": "3dc9b150d218b0e280a3d6a41d93c1e45f4d7155829d75f1e5bf3e0b0de6750d"
+                                    "url": "http://www.gaia-gis.it/gaia-sins/freexl-sources/freexl-1.0.6.tar.gz",
+                                    "sha256": "3de8b57a3d130cb2881ea52d3aa9ce1feedb1b57b7daa4eb37f751404f90fc22"
                                 },
                                 {
                                     "type": "script",
@@ -216,7 +217,8 @@
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 12083,
-                                "url-template": "https://github.com/facebook/zstd/releases/download/v$version/zstd-$version.tar.gz"
+                                "url-template": "https://github.com/facebook/zstd/releases/download/v$version/zstd-$version.tar.gz",
+                                "stable-only": true
                             }
                         }
                     ]
@@ -263,12 +265,13 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "http://download.osgeo.org/gdal/3.4.1/gdal-3.4.1.tar.xz",
-                            "sha256": "332f053516ca45101ef0f7fa96309b64242688a8024780a5d93be0230e42173d",
+                            "url": "http://download.osgeo.org/gdal/3.5.2/gdal-3.5.2.tar.xz",
+                            "sha256": "0874dfdeb9ac42e53c37be4184b19350be76f0530e1f4fa8004361635b9030c2",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
-                                "url-template": "http://download.osgeo.org/gdal/$version/gdal-$version.tar.xz"
+                                "url-template": "http://download.osgeo.org/gdal/$version/gdal-$version.tar.xz",
+                                "stable-only": true
                             }
                         }
                     ],
@@ -293,7 +296,8 @@
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 4919,
-                                        "url-template": "http://prdownloads.sourceforge.net/swig/swig-$version.tar.gz"
+                                        "url-template": "http://prdownloads.sourceforge.net/swig/swig-$version.tar.gz",
+                                        "stable-only": true
                                     }
                                 }
                             ]
@@ -304,12 +308,13 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://dlcdn.apache.org//xerces/c/3/sources/xerces-c-3.2.3.tar.xz",
-                                    "sha256": "12fc99a9fc1d1a79bd0e927b8b5637a576d6656f45b0d5e70ee3694d379cc149",
+                                    "url": "https://dlcdn.apache.org//xerces/c/3/sources/xerces-c-3.2.4.tar.xz",
+                                    "sha256": "075bc57940da0f9be6dd183c550c8ce0b9833e4550dc382048377a1a5e3b2bd9",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 5182,
-                                        "url-template": "https://dlcdn.apache.org//xerces/c/$major/sources/xerces-c-$version.tar.xz"
+                                        "url-template": "https://dlcdn.apache.org//xerces/c/$major/sources/xerces-c-$version.tar.xz",
+                                        "stable-only": true
                                     }
                                 }
                             ]
@@ -325,7 +330,8 @@
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 13633,
-                                        "url-template": "https://support.hdfgroup.org/ftp/lib-external/szip/$version/src/szip-$version.tar.gz"
+                                        "url-template": "https://support.hdfgroup.org/ftp/lib-external/szip/$version/src/szip-$version.tar.gz",
+                                        "stable-only": true
                                     }
                                 }
                             ]
@@ -352,12 +358,13 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://github.com/uriparser/uriparser/releases/download/uriparser-0.9.6/uriparser-0.9.6.tar.bz2",
-                                    "sha256": "9ce4c3f151e78579f23937b44abecb428126863ad02e594e115e882353de905b",
+                                    "url": "https://github.com/uriparser/uriparser/releases/download/uriparser-0.9.7/uriparser-0.9.7.tar.bz2",
+                                    "sha256": "d27dea0c8b6f6fb9798f07caedef1cd96a6e3fc5c6189596774e19afa7ddded7",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 10160,
-                                        "url-template": "https://github.com/uriparser/uriparser/releases/download/uriparser-$version/uriparser-$version.tar.bz2"
+                                        "url-template": "https://github.com/uriparser/uriparser/releases/download/uriparser-$version/uriparser-$version.tar.bz2",
+                                        "stable-only": true
                                     }
                                 }
                             ]
@@ -373,8 +380,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-3.49.tar.gz",
-                                    "sha256": "5b65a20d5c53494ec8f638267fca4a629836b7ac8dd0ef0266834eab270ed4b3"
+                                    "url": "https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-4.1.0.tar.gz",
+                                    "sha256": "b367c695d2831958e7166921c3b356d5dfa51b1ecee505b97416ba39d1b6c17a"
                                 }
                             ]
                         },
@@ -388,12 +395,13 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-10.8.2.tar.xz",
-                                    "sha256": "89fdd898bf6bff75f6efc3a301817e4ede752b9a80927fb07ee358b13e353922",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-11.4.2.tar.xz",
+                                    "sha256": "e6860134f1ac9656c6a1ccc74c74b75f8c5966ac8612841f2fbf0c91ce39f4e9",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
-                                        "url-template": "https://sourceforge.net/projects/arma/files/armadillo-$version.tar.xz"
+                                        "url-template": "https://sourceforge.net/projects/arma/files/armadillo-$version.tar.xz",
+                                        "stable-only": true
                                     }
                                 }
                             ]
@@ -408,8 +416,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://github.com/weidai11/cryptopp/archive/CRYPTOPP_8_6_0.tar.gz",
-                                    "sha256": "9304625f4767a13e0a5f26d0f019d78cf9375604a33e5391c3bf2e81399dfeb8"
+                                    "url": "https://github.com/weidai11/cryptopp/archive/CRYPTOPP_8_7_0.tar.gz",
+                                    "sha256": "8d6a4064b8e9f34cd3e838f5a12c40067ee7b95ee37d9173ec273cb0913e7ca2"
                                 }
                             ]
                         },
@@ -441,7 +449,8 @@
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 10558,
-                                        "url-template": "https://github.com/libkml/libkml/archive/$version.tar.gz"
+                                        "url-template": "https://github.com/libkml/libkml/archive/$version.tar.gz",
+                                        "stable-only": true
                                     }
                                 }
                             ]
@@ -452,12 +461,13 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://github.com/Unidata/netcdf-c/archive/v4.8.1.tar.gz",
-                                    "sha256": "bc018cc30d5da402622bf76462480664c6668b55eb16ba205a0dfb8647161dd0",
+                                    "url": "https://github.com/Unidata/netcdf-c/archive/v4.9.0.tar.gz",
+                                    "sha256": "9f4cb864f3ab54adb75409984c6202323d2fc66c003e5308f3cdf224ed41c0a6",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 10354,
-                                        "url-template": "https://github.com/Unidata/netcdf-c/archive/v$version.tar.gz"
+                                        "url-template": "https://github.com/Unidata/netcdf-c/archive/v$version.tar.gz",
+                                        "stable-only": true
                                     }
                                 }
                             ]
@@ -549,8 +559,8 @@
                             "sources": [
                                 {
                                     "type": "file",
-                                    "url": "https://github.com/numpy/numpy/releases/download/v1.22.1/numpy-1.22.1.tar.gz",
-                                    "sha256": "dd1968402ae20dfd59b34acd799b494be340c774f6295e9bf1c2b9842a5e416d"
+                                    "url": "https://github.com/numpy/numpy/releases/download/v1.23.4/numpy-1.23.4.tar.gz",
+                                    "sha256": "ed2cc92af0efad20198638c69bb0fc2870a58dabfba6eb722c933b48556c686c"
                                 }
                             ]
                         }
@@ -566,12 +576,13 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/PDAL/PDAL/releases/download/2.3.0/PDAL-2.3.0-src.tar.bz2",
-                            "sha256": "63d8d4fee491675f0fa3dca58c26d57fb2afcaa37c24b10f595b3fbff174996e",
+                            "url": "https://github.com/PDAL/PDAL/releases/download/2.4.3/PDAL-2.4.3-src.tar.bz2",
+                            "sha256": "3d2b00e87d177f6d01fee3dd3436cd9fc1f6d821fae40f36dccc07469d0d8226",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 138228,
-                                "url-template": "https://github.com/PDAL/PDAL/releases/download/$version/PDAL-$version-src.tar.bz2"
+                                "url-template": "https://github.com/PDAL/PDAL/releases/download/$version/PDAL-$version-src.tar.bz2",
+                                "stable-only": true
                             }
                         }
                     ],
@@ -581,12 +592,13 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://github.com/OSGeo/libgeotiff/releases/download/1.7.0/libgeotiff-1.7.0.tar.gz",
-                                    "sha256": "fc304d8839ca5947cfbeb63adb9d1aa47acef38fc6d6689e622926e672a99a7e",
+                                    "url": "https://github.com/OSGeo/libgeotiff/releases/download/1.7.1/libgeotiff-1.7.1.tar.gz",
+                                    "sha256": "05ab1347aaa471fc97347d8d4269ff0c00f30fa666d956baba37948ec87e55d6",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 21361,
-                                        "url-template": "https://github.com/OSGeo/libgeotiff/releases/download/$version/libgeotiff-$version.tar.gz"
+                                        "url-template": "https://github.com/OSGeo/libgeotiff/releases/download/$version/libgeotiff-$version.tar.gz",
+                                        "stable-only": true
                                     }
                                 }
                             ]
@@ -745,8 +757,8 @@
                     "sources": [
                         {
                             "type": "file",
-                            "url": "https://pypi.python.org/packages/16/d8/bc6316cf98419719bd59c91742194c111b6f2e85abac88e496adefaf7afe/six-1.11.0.tar.gz",
-                            "sha256": "70e8a77beed4562e7f14fe23a786b54f6296e34344c23bc42f07b15018ff98e9"
+                            "url": "https://files.pythonhosted.org/packages/71/39/171f1c67cd00715f190ba0b100d606d440a28c93c7714febeca8b79af85e/six-1.16.0.tar.gz",
+                            "sha256": "1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"
                         }
                     ]
                 },
@@ -759,8 +771,8 @@
                     "sources": [
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/00/2b/8d082ddfed935f3608cc61140df6dcbf0edea1bc3ab52fb6c29ae3e81e85/future-0.16.0.tar.gz",
-                            "sha256": "e39ced1ab767b5936646cedba8bcce582398233d6a627067d4c6a454c90cfedb"
+                            "url": "https://files.pythonhosted.org/packages/45/0b/38b06fd9b92dc2b68d58b75f900e97884c45bedd2ff83203d933cf5851c9/future-0.18.2.tar.gz",
+                            "sha256": "b1bead90b70cf6ec3f0710ae53a525360fa360d306a86583adc6bf83a4db537d"
                         }
                     ]
                 },
@@ -775,7 +787,7 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v60.9.3"
+                            "tag": "v65.4.1"
                         }
                     ]
                 },
@@ -790,7 +802,7 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pyproj4/pyproj.git",
-                            "tag": "3.3.1"
+                            "tag": "3.4.0"
                         }
                     ]
                 },
@@ -803,8 +815,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://files.pythonhosted.org/packages/a0/a4/d63f2d7597e1a4b55aa3b4d6c5b029991d3b824b5bd331af8d4ab1ed687d/PyYAML-5.4.1.tar.gz",
-                            "sha256": "607774cbba28732bfa802b54baa7484215f530991055bb562efbed5b2f20a45e"
+                            "url": "https://files.pythonhosted.org/packages/36/2b/61d51a2c4f25ef062ae3f74576b01638bebad5e045f747ff12643df63844/PyYAML-6.0.tar.gz",
+                            "sha256": "68fb519c14306fec9720a2a5b45bc9f0c8d1b9c72adf45c37baedfcd949c35a2"
                         }
                     ]
                 },
@@ -824,18 +836,18 @@
                     "sources": [
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/d4/70/d60450c3dd48ef87586924207ae8907090de0b306af2bce5d134d78615cb/python_dateutil-2.8.1-py2.py3-none-any.whl",
-                            "sha256": "75bb3f31ea686f1197762692a9ee6a7550b59fc6ca3a1f4b5d7e32fb98e2da2a"
+                            "url": "https://files.pythonhosted.org/packages/36/7a/87837f39d0296e723bb9b62bbb257d0355c7f6128853c78955f57342a56d/python_dateutil-2.8.2-py2.py3-none-any.whl",
+                            "sha256": "961d03dc3453ebbc59dbdea9e4e11c5651520a876d0f4db161e8674aae935da9"
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/dc/83/15f7833b70d3e067ca91467ca245bae0f6fe56ddc7451aa0dc5606b120f2/pytz-2018.4-py2.py3-none-any.whl",
-                            "sha256": "65ae0c8101309c45772196b21b74c46b2e5d11b6275c45d251b150d5da334555"
+                            "url": "https://files.pythonhosted.org/packages/d8/66/309545413162bc8271c73e622499a41cdc37217b499febe26155ff9f93ed/pytz-2022.4-py2.py3-none-any.whl",
+                            "sha256": "2c0784747071402c6e99f0bafdb7da0fa22645f06554c7ae06bf6358897e9c91"
                         },
                         {
                             "type": "file",
-                            "url": "https://pypi.io/packages/source/c/certifi/certifi-2021.10.8.tar.gz",
-                            "sha256": "78884e7c1d4b00ce3cea67b44566851c4343c120abd683433ce934a68ea58872"
+                            "url": "https://pypi.io/packages/source/c/certifi/certifi-2022.9.24.tar.gz",
+                            "sha256": "0d9c601124e5a6ba9712dbc60d9c53c21e34f5f641fe83002317394311bdce14"
                         },
                         {
                             "type": "file",
@@ -844,23 +856,23 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://pypi.io/packages/source/c/charset-normalizer/charset-normalizer-2.0.11.tar.gz",
-                            "sha256": "98398a9d69ee80548c762ba991a4728bfc3836768ed226b3945908d1a688371c"
+                            "url": "https://pypi.io/packages/source/c/charset-normalizer/charset-normalizer-2.1.1.tar.gz",
+                            "sha256": "5a3d016c7c547f69d6f81fb0db9449ce888b418b5b9952cc5e6e66843e9dd845"
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/23/fc/8a49991f7905261f9ca9df5aa9b58363c3c821ce3e7f671895442b7100f2/urllib3-1.26.3-py2.py3-none-any.whl",
-                            "sha256": "1b465e494e3e0d8939b50680403e3aedaa2bc434b7d5af64dfd3c958d7f5ae80"
+                            "url": "https://files.pythonhosted.org/packages/6f/de/5be2e3eed8426f871b170663333a0f627fc2924cc386cd41be065e7ea870/urllib3-1.26.12-py2.py3-none-any.whl",
+                            "sha256": "b930dd878d5a8afb066a637fbb35144fe7901e3b209d1cd4f524bd0e9deee997"
                         },
                         {
                             "type": "file",
-                            "url": "https://github.com/psf/requests/releases/download/v2.27.1/requests-2.27.1-py2.py3-none-any.whl",
-                            "sha256": "f22fa1e554c9ddfd16e6e41ac79759e17be9e492b3587efa038054674760e72d"
+                            "url": "https://github.com/psf/requests/releases/download/v2.28.1/requests-2.28.1-py3-none-any.whl",
+                            "sha256": "8fefa2a1a1365bf5520aac41836fbee479da67864514bdb821f31ce07ce65349"
                         },
                         {
                             "type": "file",
-                            "url": "https://github.com/geopython/OWSLib/archive/refs/tags/0.24.1.tar.gz",
-                            "sha256": "e511ffbba7bdc9fa9169d4acb3029c846fd1292554f13563fe0d97ba4ab63972",
+                            "url": "https://github.com/geopython/OWSLib/archive/refs/tags/0.27.2.tar.gz",
+                            "sha256": "3a8461e39fb9c5be5abb1f5a07fffbf688300c970ec553f256c9e664603657b1",
                             "dest-filename": "owslib.tar.gz"
                         }
                     ]
@@ -874,9 +886,9 @@
                     ],
                     "sources": [
                         {
-                            "type": "archive",
-                            "url": "http://initd.org/psycopg/tarballs/PSYCOPG-2-8/psycopg2-2.8.6.tar.gz",
-                            "sha256": "fb23f6c71107c37fd667cb4ea363ddeb936b348bbd6449278eb92c189699f543"
+                            "type": "git",
+                            "url": "https://github.com/psycopg/psycopg2.git",
+                            "tag": "2_9_4"
                         }
                     ]
                 },
@@ -901,14 +913,9 @@
                     ],
                     "sources": [
                         {
-                            "type": "archive",
-                            "url": "https://grass.osgeo.org/grass78/source/grass-7.8.6.tar.gz",
-                            "sha256": "d85e17b0a717e344cdda8f6c5bdeb86763e48d1ee74a62ab471dc8e1293993be",
-                            "x-checker-data": {
-                                "type": "anitya",
-                                "project-id": 8826,
-                                "url-template": "https://grass.osgeo.org/grass$major$minor/source/grass-$version.tar.gz"
-                            }
+                            "type": "git",
+                            "url": "https://github.com/OSGeo/grass.git",
+                            "tag": "7.8.7"
                         }
                     ],
                     "modules": [
@@ -927,7 +934,7 @@
                         {
                             "type": "git",
                             "url": "https://git.code.sf.net/p/saga-gis/code",
-                            "tag": "release-8.2.3"
+                            "tag": "release-8.2.0"
                         },
                         {
                             "type": "shell",
@@ -965,8 +972,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://github.com/wxWidgets/wxWidgets/releases/download/v3.1.7/wxWidgets-3.1.7.tar.bz2",
-                                    "sha256": "3d666e47d86192f085c84089b850c90db7a73a5d26b684b617298d89dce84f19"
+                                    "url": "https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.1/wxWidgets-3.2.1.tar.bz2",
+                                    "sha256": "c229976bb413eb88e45cb5dfb68b27890d450149c09b331abd751e7ae0f5fa66"
                                 }
                             ]
                         }
@@ -981,8 +988,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://files.pythonhosted.org/packages/62/0f/52c009332fdadd484e898dc8f2acca0663c1031b3517070fd34ad9c1b64e/MarkupSafe-2.1.0.tar.gz",
-                            "sha256": "80beaf63ddfbc64a0452b841d8036ca0611e049650e20afcb882f5d3c266d65f"
+                            "url": "https://files.pythonhosted.org/packages/1d/97/2288fe498044284f39ab8950703e88abbac2abbdf65524d576157af70556/MarkupSafe-2.1.1.tar.gz",
+                            "sha256": "7f91197cc9e48f989d12e4e6fbc46495c446636dfc81b9ccf50bb0ec74b91d4b"
                         }
                     ],
                     "build-commands": [
@@ -1014,7 +1021,7 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pygments/pygments.git",
-                            "tag": "2.11.2"
+                            "tag": "2.13.0"
                         }
                     ]
                 },
@@ -1032,8 +1039,8 @@
                     "sources": [
                         {
                             "type": "git",
-                            "url": "https://github.com/Exiv2/exiv2",
-                            "tag": "v0.27.2"
+                            "url": "https://github.com/Exiv2/exiv2.git",
+                            "tag": "v0.27.5"
                         }
                     ]
                 },
@@ -1048,8 +1055,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/protocolbuffers/protobuf/releases/download/v21.1/protobuf-cpp-3.21.1.tar.gz",
-                            "sha256": "9ccabf07bd087bca3bb37067e04bf1d7377f0d60311cf3d2aa88e7af4c49a177"
+                            "url": "https://github.com/protocolbuffers/protobuf/releases/download/v21.7/protobuf-cpp-3.21.7.tar.gz",
+                            "sha256": "70de993af0b4f2ddacce59e62ba6d7b7e48faf48beb1b0d5f1ac0e1fb0a68423"
                         }
                     ]
                 },
@@ -1081,12 +1088,12 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.20.4/libsecret-0.20.4.tar.gz",
-                                    "sha256": "ca34e69b210df221ae5da6692c2cb15ef169bb4daf42e204442f24fdb0520d4b",
+                                    "url": "https://download.gnome.org/sources/libsecret/0.20/libsecret-0.20.5.tar.xz",
+                                    "sha256": "3fb3ce340fcd7db54d87c893e69bfc2b1f6e4d4b279065ffe66dac9f0fd12b4d",
                                     "x-checker-data": {
-                                        "type": "anitya",
-                                        "project-id": 13150,
-                                        "url-template": "https://gitlab.gnome.org/GNOME/libsecret/-/archive/$version/libsecret-$version.tar.gz"
+                                        "type": "gnome",
+                                        "name": "libsecret",
+                                        "stable-only": true
                                     }
                                 }
                             ]
