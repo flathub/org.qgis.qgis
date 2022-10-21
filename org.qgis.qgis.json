@@ -926,7 +926,7 @@
                     "sources": [
                         {
                             "type": "git",
-                            "url": "git://git.code.sf.net/p/saga-gis/code",
+                            "url": "https://git.code.sf.net/p/saga-gis/code",
                             "tag": "release-8.2.3"
                         },
                         {
