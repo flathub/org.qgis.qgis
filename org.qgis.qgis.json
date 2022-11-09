@@ -67,7 +67,7 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/PROJ.git",
-                            "tag": "8.2.1"
+                            "tag": "9.1.0"
                         }
                     ]
                 },
@@ -793,7 +793,7 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v65.4.1"
+                            "tag": "v65.5.1"
                         }
                     ]
                 },
@@ -847,8 +847,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/d8/66/309545413162bc8271c73e622499a41cdc37217b499febe26155ff9f93ed/pytz-2022.4-py2.py3-none-any.whl",
-                            "sha256": "2c0784747071402c6e99f0bafdb7da0fa22645f06554c7ae06bf6358897e9c91"
+                            "url": "https://files.pythonhosted.org/packages/85/ac/92f998fc52a70afd7f6b788142632afb27cd60c8c782d1452b7466603332/pytz-2022.6-py2.py3-none-any.whl",
+                            "sha256": "222439474e9c98fced559f1709d89e6c9cbf8d79c794ff3eb9f8800064291427"
                         },
                         {
                             "type": "file",
@@ -894,7 +894,7 @@
                         {
                             "type": "git",
                             "url": "https://github.com/psycopg/psycopg2.git",
-                            "tag": "2_9_4"
+                            "tag": "2_9_5"
                         }
                     ]
                 },
@@ -921,7 +921,7 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/grass.git",
-                            "tag": "7.8.7"
+                            "tag": "8.2.0"
                         }
                     ],
                     "modules": [
@@ -1061,8 +1061,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/protocolbuffers/protobuf/releases/download/v21.7/protobuf-cpp-3.21.7.tar.gz",
-                            "sha256": "70de993af0b4f2ddacce59e62ba6d7b7e48faf48beb1b0d5f1ac0e1fb0a68423"
+                            "url": "https://github.com/protocolbuffers/protobuf/releases/download/v21.9/protobuf-cpp-3.21.9.tar.gz",
+                            "sha256": "bddc5dd16da45c89a510704683e02ba08c30af78fe092d255cf25b9b01259405"
                         }
                     ]
                 },
