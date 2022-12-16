@@ -38,8 +38,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.28.1.tar.bz2",
-                    "sha256": "09015bb68c45556ffe9d480272d24048e6276a6bf1c010fd77beae64329ff674",
+                    "url": "https://qgis.org/downloads/qgis-3.28.2.tar.bz2",
+                    "sha256": "e5bebe20fc3b9e6cd2b2030176befc0ac51c5ea987dc250b1b543e1dcac81853",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -1020,8 +1020,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/protocolbuffers/protobuf/releases/download/v21.9/protobuf-cpp-3.21.9.tar.gz",
-                            "sha256": "bddc5dd16da45c89a510704683e02ba08c30af78fe092d255cf25b9b01259405"
+                            "url": "https://github.com/protocolbuffers/protobuf/releases/download/v21.12/protobuf-cpp-3.21.12.tar.gz",
+                            "sha256": "4eab9b524aa5913c6fffb20b2a8abf5ef7f95a80bc0701f3a6dbb4c607f73460"
                         }
                     ]
                 },
