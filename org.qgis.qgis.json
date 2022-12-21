@@ -233,6 +233,52 @@
                 {
                     "name": "gdal",
                     "buildsystem": "cmake-ninja",
+                    "comment": ["-DGDAL_USE_EXPAT=ON", "See https://github.com/libexpat/libexpat/pull/682"],
+                    "config-opts": [
+                        "-DGDAL_USE_EXPAT=OFF",
+                        "-DENABLE_IPO=ON",
+                        "-DBUILD_PYTHON_BINDINGS=ON",
+                        "-DGDAL_ENABLE_PLUGINS=ON",
+                        "-DGDAL_USE_ARROW=OFF",
+                        "-DGDAL_USE_BLOSC=ON",
+                        "-DGDAL_USE_CFITSIO=ON",
+                        "-DGDAL_USE_CURL=ON",
+                        "-DGDAL_USE_CRYPTOPP=ON",
+                        "-DGDAL_USE_DEFLATE=ON",
+                        "-DGDAL_USE_FREEXL=ON",
+                        "-DGDAL_USE_GEOTIFF=ON",
+                        "-DGDAL_USE_GEOS=ON",
+                        "-DGDAL_USE_GIF=ON",
+                        "-DGDAL_USE_HEIF=ON",
+                        "-DGDAL_USE_HDF5=ON",
+                        "-DGDAL_USE_ICONV=ON",
+                        "-DGDAL_USE_JPEG=ON",
+                        "-DGDAL_USE_JSONC=ON",
+                        "-DGDAL_USE_JXL=ON",
+                        "-DGDAL_USE_LIBLZMA=ON",
+                        "-DGDAL_USE_LIBXML2=OFF",
+                        "-DGDAL_USE_LZ4=ON",
+                        "-DGDAL_USE_MYSQL=ON",
+                        "-DGDAL_USE_NETCDF=ON",
+                        "-DGDAL_USE_ODBC=ON",
+                        "-DGDAL_USE_OPENCL=ON",
+                        "-DGDAL_USE_OPENEXR=ON",
+                        "-DGDAL_USE_OPENJPEG=ON",
+                        "-DGDAL_USE_OPENSSL=ON",
+                        "-DGDAL_USE_PARQUET=OFF",
+                        "-DGDAL_USE_PCRE2=ON",
+                        "-DGDAL_USE_PNG=ON",
+                        "-DGDAL_USE_POPPLER=ON",
+                        "-DGDAL_USE_POSTGRESQL=ON",
+                        "-DGDAL_USE_QHULL=ON",
+                        "-DGDAL_USE_SPATIALITE=ON",
+                        "-DGDAL_USE_SQLITE3=ON",
+                        "-DGDAL_USE_TIFF=ON",
+                        "-DGDAL_USE_WEBP=ON",
+                        "-DGDAL_USE_XERCESC=ON",
+                        "-DGDAL_USE_ZLIB=ON",
+                        "-DGDAL_USE_ZSTD=ON"
+                    ],
                     "sources": [
                         {
                             "type": "archive",
@@ -303,6 +349,16 @@
                         },
                         {
                             "name": "hdf5",
+                            "config-opts": [
+                                "--disable-static",
+                                "--disable-sharedlib-rpath",
+                                "--enable-build-mode=production",
+                                "--enable-hl",
+                                "--enable-cxx",
+                                "--with-pic",
+                                "--with-zlib",
+                                "--with-szlib"
+                            ],
                             "no-autogen": true,
                             "sources": [
                                 {
@@ -390,9 +446,8 @@
                             "name": "boost",
                             "buildsystem": "simple",
                             "build-commands": [
-                                "./bootstrap.sh --prefix=${FLATPAK_DEST}",
-                                "./b2 -j ${FLATPAK_BUILDER_N_JOBS} headers",
-                                "cp -r boost ${FLATPAK_DEST}/include/boost"
+                                "./bootstrap.sh --prefix=${FLATPAK_DEST} --with-icu",
+                                "./b2 install -j ${FLATPAK_BUILDER_N_JOBS} headers variant=release threading=multi --layout=system"
                             ],
                             "sources": [
                                 {
@@ -528,6 +583,143 @@
                                     "sha256": "ed2cc92af0efad20198638c69bb0fc2870a58dabfba6eb722c933b48556c686c"
                                 }
                             ]
+                        },
+                        {
+                            "name": "libdeflate",
+                            "buildsystem": "cmake-ninja",
+                            "builddir": true,
+                            "sources": [
+                                {
+                                    "type": "git",
+                                    "url": "https://github.com/ebiggers/libdeflate.git",
+                                    "tag": "v1.15"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "libgeotiff",
+                            "sources": [
+                                {
+                                    "type": "archive",
+                                    "url": "https://github.com/OSGeo/libgeotiff/releases/download/1.7.1/libgeotiff-1.7.1.tar.gz",
+                                    "sha256": "05ab1347aaa471fc97347d8d4269ff0c00f30fa666d956baba37948ec87e55d6",
+                                    "x-checker-data": {
+                                        "type": "anitya",
+                                        "project-id": 21361,
+                                        "url-template": "https://github.com/OSGeo/libgeotiff/releases/download/$version/libgeotiff-$version.tar.gz",
+                                        "stable-only": true
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "json-c",
+                            "buildsystem": "cmake-ninja",
+                            "builddir": true,
+                            "sources": [
+                                {
+                                    "type": "git",
+                                    "url": "https://github.com/json-c/json-c",
+                                    "tag": "json-c-0.16-20220414"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "qhull",
+                            "buildsystem": "cmake-ninja",
+                            "sources": [
+                                {
+                                    "type": "archive",
+                                    "url": "http://www.qhull.org/download/qhull-2020-src-8.0.2.tgz",
+                                    "sha256": "b5c2d7eb833278881b952c8a52d20179eab87766b00b865000469a45c1838b7e"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "opencl-headers",
+                            "buildsystem": "simple",
+                            "build-commands": [
+                                "cp -av CL /app/include/",
+                                "install -p -D -m 0644 LICENSE -t ${FLATPAK_DEST}/share/licenses/opencl-headers/"
+                            ],
+
+                            "sources": [
+                                {
+                                    "type": "git",
+                                    "url": "https://github.com/KhronosGroup/OpenCL-Headers.git",
+                                    "tag": "v2022.09.30"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "blosc",
+                            "buildsystem": "cmake-ninja",
+                            "sources": [
+                                {
+                                    "type": "git",
+                                    "url": "https://github.com/Blosc/c-blosc.git",
+                                    "tag": "v1.17.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "libjxl",
+                            "buildsystem": "cmake-ninja",
+                            "config-opts": [
+                                "-DJPEGXL_ENABLE_BENCHMARK:BOOL=OFF",
+                                "-DJPEGXL_ENABLE_EXAMPLES:BOOL=OFF",
+                                "-DJPEGXL_ENABLE_FUZZERS:BOOL=OFF",
+                                "-DJPEGXL_ENABLE_PLUGINS:BOOL=ON",
+                                "-DJPEGXL_ENABLE_VIEWERS:BOOL=OFF",
+                                "-DJPEGXL_FORCE_SYSTEM_BROTLI:BOOL=ON",
+                                "-DJPEGXL_BUNDLE_LIBPNG:BOOL=OFF"
+                            ],
+                            "sources": [
+                                {
+                                    "type": "git",
+                                    "url": "https://github.com/libjxl/libjxl.git",
+                                    "tag": "v0.7.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "openexr",
+                            "buildsystem": "cmake-ninja",
+                            "sources": [
+                                {
+                                    "type": "git",
+                                    "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
+                                    "tag": "v3.1.5"
+                                }
+                            ],
+                            "modules": [
+                                {
+                                    "name": "openexr-imath",
+                                    "buildsystem": "cmake-ninja",
+                                    "sources": [
+                                        {
+                                            "type": "git",
+                                            "url": "https://github.com/AcademySoftwareFoundation/Imath.git",
+                                            "tag": "v3.1.6"
+                                        }
+                                    ],
+                                    "modules": [
+
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name" : "libheif",
+                            "builddir" : true,
+                            "buildsystem" : "cmake-ninja",
+                            "sources" : [
+                                {
+                                    "type" : "git",
+                                    "url" : "https://github.com/strukturag/libheif.git",
+                                    "tag" : "v1.14.0"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -549,24 +741,6 @@
                                 "url-template": "https://github.com/PDAL/PDAL/releases/download/$version/PDAL-$version-src.tar.bz2",
                                 "stable-only": true
                             }
-                        }
-                    ],
-                    "modules": [
-                        {
-                            "name": "libgeotiff",
-                            "sources": [
-                                {
-                                    "type": "archive",
-                                    "url": "https://github.com/OSGeo/libgeotiff/releases/download/1.7.1/libgeotiff-1.7.1.tar.gz",
-                                    "sha256": "05ab1347aaa471fc97347d8d4269ff0c00f30fa666d956baba37948ec87e55d6",
-                                    "x-checker-data": {
-                                        "type": "anitya",
-                                        "project-id": 21361,
-                                        "url-template": "https://github.com/OSGeo/libgeotiff/releases/download/$version/libgeotiff-$version.tar.gz",
-                                        "stable-only": true
-                                    }
-                                }
-                            ]
                         }
                     ]
                 },
