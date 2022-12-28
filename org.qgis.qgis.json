@@ -233,7 +233,10 @@
                 {
                     "name": "gdal",
                     "buildsystem": "cmake-ninja",
-                    "comment": ["-DGDAL_USE_EXPAT=ON", "See https://github.com/libexpat/libexpat/pull/682"],
+                    "comment": [
+                        "-DGDAL_USE_EXPAT=ON",
+                        "See https://github.com/libexpat/libexpat/pull/682"
+                    ],
                     "config-opts": [
                         "-DGDAL_USE_EXPAT=OFF",
                         "-DENABLE_IPO=ON",
@@ -416,8 +419,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-11.4.2.tar.xz",
-                                    "sha256": "e6860134f1ac9656c6a1ccc74c74b75f8c5966ac8612841f2fbf0c91ce39f4e9",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-11.4.3.tar.xz",
+                                    "sha256": "87603263664988af41da2ca4f36205e36ea47a9281fa6cfd463115f3797a1da2",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -642,7 +645,6 @@
                                 "cp -av CL /app/include/",
                                 "install -p -D -m 0644 LICENSE -t ${FLATPAK_DEST}/share/licenses/opencl-headers/"
                             ],
-
                             "sources": [
                                 {
                                     "type": "git",
@@ -703,21 +705,19 @@
                                             "tag": "v3.1.6"
                                         }
                                     ],
-                                    "modules": [
-
-                                    ]
+                                    "modules": []
                                 }
                             ]
                         },
                         {
-                            "name" : "libheif",
-                            "builddir" : true,
-                            "buildsystem" : "cmake-ninja",
-                            "sources" : [
+                            "name": "libheif",
+                            "builddir": true,
+                            "buildsystem": "cmake-ninja",
+                            "sources": [
                                 {
-                                    "type" : "git",
-                                    "url" : "https://github.com/strukturag/libheif.git",
-                                    "tag" : "v1.14.0"
+                                    "type": "git",
+                                    "url": "https://github.com/strukturag/libheif.git",
+                                    "tag": "v1.14.0"
                                 }
                             ]
                         }
