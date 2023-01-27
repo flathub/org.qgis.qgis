@@ -38,8 +38,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.28.2.tar.bz2",
-                    "sha256": "e5bebe20fc3b9e6cd2b2030176befc0ac51c5ea987dc250b1b543e1dcac81853",
+                    "url": "https://qgis.org/downloads/qgis-3.28.3.tar.bz2",
+                    "sha256": "a09124f46465a520f6d735306ba3954c339b84aa396d6f52b476b82edcc4fe0e",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -733,8 +733,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/PDAL/PDAL/releases/download/2.4.3/PDAL-2.4.3-src.tar.bz2",
-                            "sha256": "3d2b00e87d177f6d01fee3dd3436cd9fc1f6d821fae40f36dccc07469d0d8226",
+                            "url": "https://github.com/PDAL/PDAL/releases/download/2.5.0/PDAL-2.5.0-src.tar.bz2",
+                            "sha256": "9315f01aa7fb98e0bb4c67848c9debc6fae51a50258869830c127b5ed3c062d2",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 138228,
