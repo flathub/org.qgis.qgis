@@ -419,8 +419,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-11.4.4.tar.xz",
-                                    "sha256": "2439c9859b35b7d3d95a21a86830d3365f9d6bb624317690e383402e26040398",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-12.0.1.tar.xz",
+                                    "sha256": "230a5c75daad52dc47e1adce8f5a50f9aa4e4354e0f1bb18ea84efa2e70e20df",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -733,8 +733,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/PDAL/PDAL/releases/download/2.5.1/PDAL-2.5.1-src.tar.bz2",
-                            "sha256": "4b9921ead19112eb58a7fa94b1758ebc06ea99c0efc9abf4edd6b0378e500b1d",
+                            "url": "https://github.com/PDAL/PDAL/releases/download/2.5.2/PDAL-2.5.2-src.tar.bz2",
+                            "sha256": "6609c2a30842a24370c7f08cc3285f4224244dbd2e1d8035fd48e3dd393676a7",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 138228,
