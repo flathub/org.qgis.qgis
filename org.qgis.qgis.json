@@ -36,9 +36,14 @@
             "buildsystem": "cmake-ninja",
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qgis.org/downloads/qgis-3.22.12.tar.bz2",
-                    "sha256": "24524b5acfebe2f3b8a0e80634a00f599d88dbd6de9007b5679578b774e486d5"
+                    "type": "git",
+                    "url": "https://github.com/qgis/QGIS.git",
+                    "tag": "final-3_28_4",
+                    "commit": "fd0fb72ab3b4dc694051e704140e6372659ccecd",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^(final-3_28_.*)$"
+                    }
                 }
             ],
             "config-opts": [
@@ -461,8 +466,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://github.com/Unidata/netcdf-c/archive/v4.9.0.tar.gz",
-                                    "sha256": "9f4cb864f3ab54adb75409984c6202323d2fc66c003e5308f3cdf224ed41c0a6",
+                                    "url": "https://github.com/Unidata/netcdf-c/archive/v4.9.2.tar.gz",
+                                    "sha256": "bc104d101278c68b303359b3dc4192f81592ae8640f1aee486921138f7f88cb7",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 10354,
