@@ -75,8 +75,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "http://download.osgeo.org/geos/geos-3.11.0.tar.bz2",
-                            "sha256": "79ab8cabf4aa8604d161557b52e3e4d84575acdc0d08cb09ab3f7aaefa4d858a",
+                            "url": "http://download.osgeo.org/geos/geos-3.11.2.tar.bz2",
+                            "sha256": "b1f077669481c5a3e62affc49e96eb06f281987a5d36fdab225217e5b825e4cc",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 13493,
@@ -217,8 +217,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/facebook/zstd/releases/download/v1.5.2/zstd-1.5.2.tar.gz",
-                            "sha256": "7c42d56fac126929a6a85dbc73ff1db2411d04f104fae9bdea51305663a83fd0",
+                            "url": "https://github.com/facebook/zstd/releases/download/v1.5.4/zstd-1.5.4.tar.gz",
+                            "sha256": "0f470992aedad543126d06efab344dc5f3e171893810455787d38347343a4424",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 12083,
@@ -296,8 +296,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "http://prdownloads.sourceforge.net/swig/swig-4.0.2.tar.gz",
-                                    "sha256": "d53be9730d8d58a16bf0cbd1f8ac0c0c3e1090573168bfa151b01eb47fa906fc",
+                                    "url": "http://prdownloads.sourceforge.net/swig/swig-4.1.1.tar.gz",
+                                    "sha256": "2af08aced8fcd65cdb5cc62426768914bedc735b1c250325203716f78e39ac9b",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 4919,
@@ -400,8 +400,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-11.4.2.tar.xz",
-                                    "sha256": "e6860134f1ac9656c6a1ccc74c74b75f8c5966ac8612841f2fbf0c91ce39f4e9",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-12.0.1.tar.xz",
+                                    "sha256": "230a5c75daad52dc47e1adce8f5a50f9aa4e4354e0f1bb18ea84efa2e70e20df",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
