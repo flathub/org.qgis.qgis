@@ -1114,63 +1114,6 @@
                     ]
                 },
                 {
-                    "name": "saga-gis",
-                    "subdir": "saga-gis",
-                    "config-opts": [
-                        "--enable-python",
-                        "--with-python_exec_prefix=/app",
-                        "--disable-odbc"
-                    ],
-                    "sources": [
-                        {
-                            "type": "git",
-                            "url": "https://git.code.sf.net/p/saga-gis/code",
-                            "tag": "saga-8.5"
-                        },
-                        {
-                            "type": "shell",
-                            "commands": [
-                                "echo \"autoreconf -vfi $@\" > saga-gis/autogen.sh",
-                                "chmod a+x saga-gis/autogen.sh"
-                            ]
-                        }
-                    ],
-                    "modules": [
-                        {
-                            "name": "wxWidgets",
-                            "cleanup": [
-                                "/bin",
-                                "/share/bakefile"
-                            ],
-                            "config-opts": [
-                                "--with-opengl",
-                                "--with-libjpeg",
-                                "--with-libtiff",
-                                "--with-libpng",
-                                "--with-zlib",
-                                "--disable-sdltest",
-                                "--enable-unicode",
-                                "--enable-display",
-                                "--enable-propgrid",
-                                "--disable-webview",
-                                "--disable-webviewwebkit",
-                                "--with-expat=builtin",
-                                "--with-libiconv=/usr"
-                            ],
-                            "build-options": {
-                                "cxxflags": "-std=c++0x"
-                            },
-                            "sources": [
-                                {
-                                    "type": "archive",
-                                    "url": "https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.1/wxWidgets-3.2.1.tar.bz2",
-                                    "sha256": "c229976bb413eb88e45cb5dfb68b27890d450149c09b331abd751e7ae0f5fa66"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
                     "name": "python3-markupsafe",
                     "buildsystem": "simple",
                     "ensure-writable": [
