@@ -571,36 +571,50 @@
                             ]
                         },
                         {
-                            "name": "mysql-boost",
+                            "name": "mariadb-libs",
+                            "comment": "for mysql-boost",
                             "config-opts": [
                                 "-DCMAKE_BUILD_TYPE=Release",
                                 "-DFORCE_INSOURCE_BUILD=1",
                                 "-DWITH_EDITLINE=bundled",
-                                "-DWITH_SSL=yes",
+                                "-DWITH_SSL=system",
+                                "-DWITH_ZLIB=system",
                                 "-DWITH_UNIT_TESTS=OFF",
+                                "-DWITH_LIBFMT=system",
+                                "-DPLUGIN_FEDERATED=NO",
                                 "-DWITHOUT_SERVER=ON"
                             ],
                             "buildsystem": "cmake-ninja",
-                            "builddir": true,
+                            "builddir": false,
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-boost-8.0.27.tar.gz",
-                                    "md5": "80310c5a1b24145fa072927ab99a4c0d"
+                                    "url": "https://rsync.osuosl.org/pub/mariadb/mariadb-11.0.1/source/mariadb-11.0.1.tar.gz",
+                                    "sha256": "8e33504eb502ca7f695cc36c0d6958b9dfd34a4731e922c0f71ee73de4aecb79",
+                                    "x-checker-data": {
+                                        "type": "anitya",
+                                        "project-id": 1887,
+                                        "url-template": "https://rsync.osuosl.org/pub/mariadb/mariadb-$version/source/mariadb-$version.tar.gz",
+                                        "stable-only": true
+                                    }
                                 }
-                            ]
-                        },
-                        {
-                            "name": "python3-numpy",
-                            "buildsystem": "simple",
-                            "build-commands": [
-                                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"numpy\" --no-build-isolation"
                             ],
-                            "sources": [
+                            "modules": [
                                 {
-                                    "type": "file",
-                                    "url": "https://github.com/numpy/numpy/releases/download/v1.23.4/numpy-1.23.4.tar.gz",
-                                    "sha256": "ed2cc92af0efad20198638c69bb0fc2870a58dabfba6eb722c933b48556c686c"
+                                    "name": "libfmt",
+                                    "buildsystem": "cmake-ninja",
+                                    "sources": [
+                                        {
+                                            "type": "git",
+                                            "url": "https://github.com/fmtlib/fmt.git",
+                                            "tag": "9.1.0",
+                                            "x-checker-data": {
+                                                "type": "git",
+                                                "tag-pattern": "^([0-9.]+)$"
+                                            },
+                                            "commit": "a33701196adfad74917046096bf5a2aa0ab0bb50"
+                                        }
+                                    ]
                                 }
                             ]
                         },
