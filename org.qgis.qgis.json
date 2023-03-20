@@ -290,8 +290,14 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.6.0/gdal-3.6.0.tar.xz",
-                            "sha256": "f7afa4aa8d32d0799e011a9f573c6a67e9471f78e70d3d0d0b45b45c8c0c1a94"
+                            "url": "https://download.osgeo.org/gdal/3.6.3/gdal-3.6.3.tar.xz",
+                            "sha256": "3cccbed883b1fb99b913966aa3a650ad930e7c3afc714f5823f9754176ee49ea",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 881,
+                                "url-template": "https://download.osgeo.org/gdal/$version/gdal-$version.tar.xz",
+                                "stable-only": true
+                            }
                         }
                     ],
                     "modules": [
