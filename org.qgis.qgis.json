@@ -460,8 +460,14 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://downloads.sourceforge.net/project/boost/boost/1.73.0/boost_1_73_0.tar.bz2",
-                                    "sha256": "4eb3b8d442b426dc35346235c8733b5ae35ba431690e38c6a8263dce9fcbb402"
+                                    "url": "https://downloads.sourceforge.net/project/boost/boost/1.81.0/boost_1_81_0.tar.bz2",
+                                    "sha256": "71feeed900fbccca04a3b4f2f84a7c217186f28a940ed8b7ed4725986baf99fa",
+                                    "x-checker-data": {
+                                        "type": "html",
+                                        "url": "https://www.boost.org/feed/downloads.rss",
+                                        "version-pattern": "<link>https://www.boost.org/users/history/version_([\\d_]+).html</link>",
+                                        "url-template": "https://downloads.sourceforge.net/project/boost/boost/$version0.$version2.$version4/boost_$version.tar.bz2"
+                                    }
                                 }
                             ]
                         },
