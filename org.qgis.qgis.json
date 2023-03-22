@@ -238,12 +238,8 @@
                 {
                     "name": "gdal",
                     "buildsystem": "cmake-ninja",
-                    "comment": [
-                        "-DGDAL_USE_EXPAT=ON",
-                        "See https://github.com/libexpat/libexpat/pull/682"
-                    ],
                     "config-opts": [
-                        "-DGDAL_USE_EXPAT=OFF",
+                        "-DGDAL_USE_EXPAT=ON",
                         "-DENABLE_IPO=ON",
                         "-DBUILD_PYTHON_BINDINGS=ON",
                         "-DGDAL_ENABLE_PLUGINS=ON",
@@ -786,6 +782,30 @@
                                         "type": "git"
                                     },
                                     "commit": "06f6acfe735379b9c3bcf865285f6dba80611e90"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "expat",
+                            "comment": "This is on the FDO runtime, we need to bring it to work around https://github.com/libexpat/libexpat/issues/501",
+                            "builddir": true,
+                            "buildsystem": "cmake-ninja",
+                            "subdir": "expat",
+                            "config-opts": [
+                                "-DEXPAT_BUILD_EXAMPLES=OFF",
+                                "-DEXPAT_BUILD_DOCS=OFF",
+                                "-DEXPAT_BUILD_TESTS=OFF"
+                            ],
+                            "sources": [
+                                {
+                                    "type": "git",
+                                    "url": "https://github.com/libexpat/libexpat.git",
+                                    "tag": "R_2_5_0",
+                                    "x-checker-data": {
+                                        "type": "git",
+                                        "tag-pattern": "^(R_[0-9_]+)$"
+                                    },
+                                    "commit": "654d2de0da85662fcc7644a7acd7c2dd2cfb21f0"
                                 }
                             ]
                         }
