@@ -55,7 +55,11 @@
                 "-DSQLITE3_INCLUDE_DIR=/app/include",
                 "-DSQLITE3_LIBRARY=/app/lib/libsqlite3.so",
                 "-DUSE_OPENCL=ON",
-                "-DWITH_PDAL=TRUE"
+                "-DWITH_QUICK=ON",
+                "-DWITH_PDAL=TRUE",
+                "-DHAS_KDE_QT5_PDF_TRANSFORM_FIX=TRUE",
+                "-DHAS_KDE_QT5_SMALL_CAPS_FIX=TRUE",
+                "-DHAS_KDE_QT5_FONT_STRETCH_FIX=TRUE"
             ],
             "modules": [
                 {
