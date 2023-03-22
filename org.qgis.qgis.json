@@ -8,7 +8,7 @@
     "command": "qgis",
     "rename-icon": "qgis",
     "finish-args": [
-        "--env=LD_LIBRARY_PATH=/app/lib:/app/grass78/lib",
+        "--env=LD_LIBRARY_PATH=/app/lib:/app/grass82/lib",
         "--share=ipc",
         "--share=network",
         "--socket=wayland",
@@ -28,7 +28,7 @@
         "*.la",
         "*.a",
         "bin/mysql*",
-        "grass78/docs"
+        "grass*/docs"
     ],
     "modules": [
         {
@@ -48,7 +48,7 @@
             ],
             "config-opts": [
                 "-DWITH_3D=TRUE",
-                "-DGRASS_PREFIX7=/app/grass78",
+                "-DGRASS_PREFIX8=/app/grass82",
                 "-DQWT_LIBRARY=/app/lib/libqwt.so",
                 "-DSQLITE3_INCLUDE_DIR=/app/include",
                 "-DSQLITE3_LIBRARY=/app/lib/libsqlite3.so",
