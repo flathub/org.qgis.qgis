@@ -545,6 +545,9 @@
                                 "-DWITH_UNIT_TESTS=OFF",
                                 "-DWITHOUT_SERVER=ON"
                             ],
+                            "cleanup": [
+                                "/bin"
+                            ],
                             "buildsystem": "cmake-ninja",
                             "builddir": true,
                             "sources": [
