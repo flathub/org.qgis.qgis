@@ -971,7 +971,7 @@
                         {
                             "type": "git",
                             "url": "https://git.code.sf.net/p/saga-gis/code",
-                            "tag": "release-8.2.0"
+                            "tag": "release-7.9.2"
                         },
                         {
                             "type": "shell",
