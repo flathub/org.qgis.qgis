@@ -420,7 +420,7 @@
                             "name": "armadillo",
                             "buildsystem": "cmake-ninja",
                             "config-opts": [
-                                "-DDETECT_HDF5=ON"
+                                "-DBUILD_SMOKE_TEST=OFF"
                             ],
                             "builddir": true,
                             "sources": [
@@ -434,6 +434,35 @@
                                         "url-template": "https://sourceforge.net/projects/arma/files/armadillo-$version.tar.xz",
                                         "stable-only": true
                                     }
+                                }
+                            ],
+                            "modules": [
+                                {
+                                    "name": "lapack",
+                                    "buildsystem": "cmake",
+                                    "builddir": true,
+                                    "config-opts": [
+                                        "-DCMAKE_BUILD_TYPE=Release",
+                                        "-DBUILD_SHARED_LIBS=ON",
+                                        "-DBUILD_TESTING=OFF",
+                                        "-DCMAKE_Fortran_COMPILER=gfortran",
+                                        "-DLAPACKE=ON",
+                                        "-DCBLAS=ON"
+                                    ],
+                                    "sources": [
+                                        {
+                                            "type": "git",
+                                            "url": "https://github.com/Reference-LAPACK/lapack.git",
+                                            "tag": "v3.11.0",
+                                            "x-checker-data": {
+                                                "type": "git"
+                                            },
+                                            "commit": "7866626840f5d5e7e27f027a55182da8b3303872"
+                                        }
+                                    ],
+                                    "cleanup": [
+                                        "/lib/cmake"
+                                    ]
                                 }
                             ]
                         },
