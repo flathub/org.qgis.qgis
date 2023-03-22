@@ -584,6 +584,9 @@
                                 "-DPLUGIN_FEDERATED=NO",
                                 "-DWITHOUT_SERVER=ON"
                             ],
+                            "cleanup": [
+                                "/bin"
+                            ],
                             "buildsystem": "cmake-ninja",
                             "builddir": false,
                             "sources": [
