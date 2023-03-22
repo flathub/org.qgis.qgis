@@ -8,7 +8,7 @@
     "command": "qgis",
     "rename-icon": "qgis",
     "finish-args": [
-        "--env=LD_LIBRARY_PATH=/app/lib:/app/grass78/lib",
+        "--env=LD_LIBRARY_PATH=/app/lib:/app/grass82/lib",
         "--env=PROJ_LIB=/app/share/proj/",
         "--share=ipc",
         "--share=network",
