@@ -814,11 +814,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/strukturag/libheif.git",
-                                    "tag": "v1.15.1",
+                                    "tag": "v1.15.2",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "06f6acfe735379b9c3bcf865285f6dba80611e90"
+                                    "commit": "516ef5522680c7cb62768a34ecb24f3b165ec8b4"
                                 }
                             ]
                         },
