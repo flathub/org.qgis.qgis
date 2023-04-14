@@ -495,8 +495,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://downloads.sourceforge.net/project/boost/boost/1.81.0/boost_1_81_0.tar.bz2",
-                                    "sha256": "71feeed900fbccca04a3b4f2f84a7c217186f28a940ed8b7ed4725986baf99fa",
+                                    "url": "https://downloads.sourceforge.net/project/boost/boost/1.82.0/boost_1_82_0.tar.bz2",
+                                    "sha256": "a6e1ab9b0860e6a2881dd7b21fe9f737a095e5f33a3a874afc6a345228597ee6",
                                     "x-checker-data": {
                                         "type": "html",
                                         "url": "https://www.boost.org/feed/downloads.rss",
@@ -858,8 +858,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/PDAL/PDAL/releases/download/2.5.2/PDAL-2.5.2-src.tar.bz2",
-                            "sha256": "6609c2a30842a24370c7f08cc3285f4224244dbd2e1d8035fd48e3dd393676a7",
+                            "url": "https://github.com/PDAL/PDAL/releases/download/2.5.3/PDAL-2.5.3-src.tar.bz2",
+                            "sha256": "1d193e9cf11766a394722e1899d6a7d1fb81387af113250beff58e6325851b13",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 138228,
