@@ -38,8 +38,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/qgis/QGIS.git",
-                    "tag": "final-3_28_4",
-                    "commit": "fd0fb72ab3b4dc694051e704140e6372659ccecd",
+                    "tag": "final-3_28_6",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^(final-3_28_.*)$"
