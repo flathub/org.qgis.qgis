@@ -38,8 +38,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.30.2.tar.bz2",
-                    "sha256": "996e50561ba2c9234b99f19df512b98549203723da8b3856dd7eb091a60e4272",
+                    "url": "https://qgis.org/downloads/qgis-3.30.1.tar.bz2",
+                    "sha256": "baac5f55ca3d34dd5b1bfa0535cecfecc74ecbc837cbeb70b95cdb91b1c7af55",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -814,11 +814,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/strukturag/libheif.git",
-                                    "tag": "v1.15.2",
+                                    "tag": "v1.16.0",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "516ef5522680c7cb62768a34ecb24f3b165ec8b4"
+                                    "commit": "6f479d76f57d68bb8d1a842aea37544834fdbe40"
                                 }
                             ]
                         },
