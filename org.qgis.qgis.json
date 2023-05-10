@@ -639,12 +639,12 @@
                                         {
                                             "type": "git",
                                             "url": "https://github.com/fmtlib/fmt.git",
-                                            "tag": "9.1.0",
+                                            "tag": "10.0.0",
                                             "x-checker-data": {
                                                 "type": "git",
                                                 "tag-pattern": "^([0-9.]+)$"
                                             },
-                                            "commit": "a33701196adfad74917046096bf5a2aa0ab0bb50"
+                                            "commit": "a0b8a92e3d1532361c2f7feb63babc5c18d00ef2"
                                         }
                                     ]
                                 }
@@ -1252,11 +1252,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/Exiv2/exiv2.git",
-                            "tag": "v0.27.6",
+                            "tag": "v0.28.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "c60285eb1a3027f5dcf742be0c6c064a74ad966c"
+                            "commit": "931a40a746f5678dcc4625b06a2eb25fa4f00b34"
                         }
                     ]
                 },
