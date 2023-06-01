@@ -38,8 +38,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.30.1.tar.bz2",
-                    "sha256": "baac5f55ca3d34dd5b1bfa0535cecfecc74ecbc837cbeb70b95cdb91b1c7af55",
+                    "url": "https://qgis.org/downloads/qgis-3.30.3.tar.bz2",
+                    "sha256": "e291cb7c74fd44bfebf8ac3738490e185ab8e64b3e45bbec769b4b14c2f82687",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -72,12 +72,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/PROJ.git",
-                            "tag": "9.2.0",
+                            "tag": "9.2.1",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "4a7fbe48b489d8e7c5a10de0f67cda8a3b3904a0"
+                            "commit": "5405125a6544126b86af3f2cee53d954e4eb28b5"
                         }
                     ]
                 },
@@ -290,8 +290,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.6.4/gdal-3.6.4.tar.xz",
-                            "sha256": "889894cfff348c04ac65b462f629d03efc53ea56cf04de7662fbe81a364e3df1",
+                            "url": "https://download.osgeo.org/gdal/3.7.0/gdal-3.7.0.tar.xz",
+                            "sha256": "af4b26a6b6b3509ae9ccf1fcc5104f7fe015ef2110f5ba13220816398365adce",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -430,8 +430,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-12.2.0.tar.xz",
-                                    "sha256": "b0dce042297e865add3351dad77f78c2c7638d6632f58357b015e50edcbd2186",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-12.4.0.tar.xz",
+                                    "sha256": "9905282781ced3f99769b0e45a705ecb50192ca1622300707b3302ea167dc883",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -639,12 +639,12 @@
                                         {
                                             "type": "git",
                                             "url": "https://github.com/fmtlib/fmt.git",
-                                            "tag": "9.1.0",
+                                            "tag": "10.0.0",
                                             "x-checker-data": {
                                                 "type": "git",
                                                 "tag-pattern": "^([0-9.]+)$"
                                             },
-                                            "commit": "a33701196adfad74917046096bf5a2aa0ab0bb50"
+                                            "commit": "a0b8a92e3d1532361c2f7feb63babc5c18d00ef2"
                                         }
                                     ]
                                 }
@@ -745,11 +745,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/Blosc/c-blosc.git",
-                                    "tag": "v1.21.3",
+                                    "tag": "v1.21.4",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "5477f1614dca1f2e54bb440f0a65bb2918abc272"
+                                    "commit": "2c2f9bd936b1340ad92a6da6c2a52adf4254c241"
                                 }
                             ]
                         },
@@ -814,11 +814,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/strukturag/libheif.git",
-                                    "tag": "v1.16.1",
+                                    "tag": "v1.16.2",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "2f88e23bf2a4379b680b913780b7a7a672a4face"
+                                    "commit": "6ee6762657cfb0a921860d1a9d4cf36fa0eb5633"
                                 }
                             ]
                         },
@@ -858,8 +858,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/PDAL/PDAL/releases/download/2.5.3/PDAL-2.5.3-src.tar.bz2",
-                            "sha256": "1d193e9cf11766a394722e1899d6a7d1fb81387af113250beff58e6325851b13",
+                            "url": "https://github.com/PDAL/PDAL/releases/download/2.5.4/PDAL-2.5.4-src.tar.bz2",
+                            "sha256": "db9231cfe3d5199075aca6e479a3b9fced1d090a300bddc938717398d3e58c4b",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 138228,
@@ -1252,11 +1252,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/Exiv2/exiv2.git",
-                            "tag": "v0.27.6",
+                            "tag": "v0.28.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "c60285eb1a3027f5dcf742be0c6c064a74ad966c"
+                            "commit": "931a40a746f5678dcc4625b06a2eb25fa4f00b34"
                         }
                     ]
                 },
