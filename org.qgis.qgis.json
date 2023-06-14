@@ -769,11 +769,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/libjxl/libjxl.git",
-                                    "tag": "v0.8.1",
+                                    "tag": "v0.8.2",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "c27d499263435ac77007174e0f1cf54557cff23a"
+                                    "commit": "954b460768c08a147abf47689ad69b0e7beff65e"
                                 }
                             ]
                         },
@@ -1252,11 +1252,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/Exiv2/exiv2.git",
-                            "tag": "v0.27.6",
+                            "tag": "v0.28.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "c60285eb1a3027f5dcf742be0c6c064a74ad966c"
+                            "commit": "931a40a746f5678dcc4625b06a2eb25fa4f00b34"
                         }
                     ]
                 },
