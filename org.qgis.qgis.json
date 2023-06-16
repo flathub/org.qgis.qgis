@@ -430,8 +430,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-12.4.0.tar.xz",
-                                    "sha256": "9905282781ced3f99769b0e45a705ecb50192ca1622300707b3302ea167dc883",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-12.4.1.tar.xz",
+                                    "sha256": "8127635d27dfb996fab495de6ff9ce84bd9b5e04de3c0037fc2ac6de96dcf397",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -769,11 +769,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/libjxl/libjxl.git",
-                                    "tag": "v0.8.1",
+                                    "tag": "v0.8.2",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "c27d499263435ac77007174e0f1cf54557cff23a"
+                                    "commit": "954b460768c08a147abf47689ad69b0e7beff65e"
                                 }
                             ]
                         },
@@ -858,8 +858,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/PDAL/PDAL/releases/download/2.5.4/PDAL-2.5.4-src.tar.bz2",
-                            "sha256": "db9231cfe3d5199075aca6e479a3b9fced1d090a300bddc938717398d3e58c4b",
+                            "url": "https://github.com/PDAL/PDAL/releases/download/2.5.5/PDAL-2.5.5-src.tar.bz2",
+                            "sha256": "b32b16475619a6bdfaee5a07a9b859206e18de5acff2a4447502fd0a9c6538d6",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 138228,
@@ -1252,11 +1252,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/Exiv2/exiv2.git",
-                            "tag": "v0.27.6",
+                            "tag": "v0.28.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "c60285eb1a3027f5dcf742be0c6c064a74ad966c"
+                            "commit": "931a40a746f5678dcc4625b06a2eb25fa4f00b34"
                         }
                     ]
                 },
