@@ -38,8 +38,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.32.0.tar.bz2",
-                    "sha256": "dfc90a6103a3c6020d005dbb68c81caf9a4c11fca4be53bfe070226813f87a9a",
+                    "url": "https://qgis.org/downloads/qgis-3.32.1.tar.bz2",
+                    "sha256": "6a31abd2869f0850724d88c164703cf161c83893adc663a32e68da685f48b7b2",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -290,8 +290,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.7.0/gdal-3.7.0.tar.xz",
-                            "sha256": "af4b26a6b6b3509ae9ccf1fcc5104f7fe015ef2110f5ba13220816398365adce",
+                            "url": "https://download.osgeo.org/gdal/3.7.1/gdal-3.7.1.tar.xz",
+                            "sha256": "9297948f0a8ba9e6369cd50e87c7e2442eda95336b94d2b92ef1829d260b9a06",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -430,8 +430,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-12.4.1.tar.xz",
-                                    "sha256": "8127635d27dfb996fab495de6ff9ce84bd9b5e04de3c0037fc2ac6de96dcf397",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-12.6.0.tar.xz",
+                                    "sha256": "b4102a384791af16d9e5fbb306f11fe356abfbca0a7d7ca7abbc9a8a9466102a",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -659,8 +659,8 @@
                             "sources": [
                                 {
                                     "type": "file",
-                                    "url": "https://files.pythonhosted.org/packages/d0/b2/fe774844d1857804cc884bba67bec38f649c99d0dc1ee7cbbf1da601357c/numpy-1.25.0.tar.gz",
-                                    "sha256": "f1accae9a28dc3cda46a91de86acf69de0d1b5f4edd44a9b0c3ceb8036dfff19",
+                                    "url": "https://files.pythonhosted.org/packages/cf/7a/f68d1d658a0e68084097beb212fa9356fee7eabff8b57231cc4acb555b12/numpy-1.25.1.tar.gz",
+                                    "sha256": "9a3a9f3a61480cc086117b426a8bd86869c213fc4072e606f01c4e4b66eb92bf",
                                     "x-checker-data": {
                                         "type": "pypi",
                                         "name": "numpy"
