@@ -38,11 +38,12 @@
                 {
                     "type": "git",
                     "url": "https://github.com/qgis/QGIS.git",
-                    "tag": "final-3_28_6",
+                    "tag": "final-3_28_9",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^(final-3_28_.*)$"
-                    }
+                    },
+                    "commit": "66f4d63ad4f2888134babb55459f8b87369dca46"
                 }
             ],
             "config-opts": [
@@ -216,8 +217,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/facebook/zstd/releases/download/v1.5.4/zstd-1.5.4.tar.gz",
-                            "sha256": "0f470992aedad543126d06efab344dc5f3e171893810455787d38347343a4424",
+                            "url": "https://github.com/facebook/zstd/releases/download/v1.5.5/zstd-1.5.5.tar.gz",
+                            "sha256": "9c4396cc829cfae319a6e2615202e82aad41372073482fce286fac78646d3ee4",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 12083,
