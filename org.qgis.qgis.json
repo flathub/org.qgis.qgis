@@ -659,8 +659,8 @@
                             "sources": [
                                 {
                                     "type": "file",
-                                    "url": "https://files.pythonhosted.org/packages/cf/7a/f68d1d658a0e68084097beb212fa9356fee7eabff8b57231cc4acb555b12/numpy-1.25.1.tar.gz",
-                                    "sha256": "9a3a9f3a61480cc086117b426a8bd86869c213fc4072e606f01c4e4b66eb92bf",
+                                    "url": "https://files.pythonhosted.org/packages/a0/41/8f53eff8e969dd8576ddfb45e7ed315407d27c7518ae49418be8ed532b07/numpy-1.25.2.tar.gz",
+                                    "sha256": "fd608e19c8d7c55021dffd43bfe5492fab8cc105cc8986f813f8c3c048b38760",
                                     "x-checker-data": {
                                         "type": "pypi",
                                         "name": "numpy"
@@ -784,11 +784,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
-                                    "tag": "v3.1.9",
+                                    "tag": "v3.1.10",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "45da397ca89527a5aa65d8d3aaf163aad58dfec9"
+                                    "commit": "913f07d1734677e51c9d2201ce349a30c929d624"
                                 }
                             ],
                             "modules": [
@@ -1179,12 +1179,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/grass.git",
-                            "tag": "8.2.1",
+                            "tag": "8.3.0",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "9468133b806f0952d6b47780eb9cb0c92bc220e4"
+                            "commit": "66b29bad25feaa6b1d1c571a67e49553243c80e6"
                         }
                     ],
                     "modules": [
@@ -1252,11 +1252,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/Exiv2/exiv2.git",
-                            "tag": "v0.27.6",
+                            "tag": "v0.28.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "c60285eb1a3027f5dcf742be0c6c064a74ad966c"
+                            "commit": "931a40a746f5678dcc4625b06a2eb25fa4f00b34"
                         }
                     ]
                 },
