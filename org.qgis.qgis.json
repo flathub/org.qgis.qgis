@@ -430,8 +430,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-12.6.0.tar.xz",
-                                    "sha256": "b4102a384791af16d9e5fbb306f11fe356abfbca0a7d7ca7abbc9a8a9466102a",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-12.6.2.tar.xz",
+                                    "sha256": "e7efaaf29abda3448447bdf8cba2cceaa19afb802981b62f0c6384c842b01609",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -495,8 +495,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://downloads.sourceforge.net/project/boost/boost/1.82.0/boost_1_82_0.tar.bz2",
-                                    "sha256": "a6e1ab9b0860e6a2881dd7b21fe9f737a095e5f33a3a874afc6a345228597ee6",
+                                    "url": "https://downloads.sourceforge.net/project/boost/boost/1.83.0/boost_1_83_0.tar.bz2",
+                                    "sha256": "6478edfe2f3305127cffe8caf73ea0176c53769f4bf1585be237eb30798c3b8e",
                                     "x-checker-data": {
                                         "type": "html",
                                         "url": "https://www.boost.org/feed/downloads.rss",
@@ -659,8 +659,8 @@
                             "sources": [
                                 {
                                     "type": "file",
-                                    "url": "https://files.pythonhosted.org/packages/cf/7a/f68d1d658a0e68084097beb212fa9356fee7eabff8b57231cc4acb555b12/numpy-1.25.1.tar.gz",
-                                    "sha256": "9a3a9f3a61480cc086117b426a8bd86869c213fc4072e606f01c4e4b66eb92bf",
+                                    "url": "https://files.pythonhosted.org/packages/a0/41/8f53eff8e969dd8576ddfb45e7ed315407d27c7518ae49418be8ed532b07/numpy-1.25.2.tar.gz",
+                                    "sha256": "fd608e19c8d7c55021dffd43bfe5492fab8cc105cc8986f813f8c3c048b38760",
                                     "x-checker-data": {
                                         "type": "pypi",
                                         "name": "numpy"
@@ -784,11 +784,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
-                                    "tag": "v3.1.9",
+                                    "tag": "v3.1.11",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "45da397ca89527a5aa65d8d3aaf163aad58dfec9"
+                                    "commit": "6f5fc9013d14c04960c13b8d3724e18642c02eba"
                                 }
                             ],
                             "modules": [
