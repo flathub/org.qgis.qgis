@@ -14,7 +14,12 @@
         "--share=network",
         "--socket=wayland",
         "--socket=x11",
-        "--filesystem=host",
+        "--filesystem=home",
+        "--filesystem=/media",
+        "--filesystem=/mnt",
+        "--filesystem=/run/media",
+        "--filesystem=/var/run/media",
+        "--filesystem=/var/mnt",
         "--device=dri"
     ],
     "separate-locales": false,
