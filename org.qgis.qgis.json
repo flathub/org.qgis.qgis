@@ -639,12 +639,12 @@
                                         {
                                             "type": "git",
                                             "url": "https://github.com/fmtlib/fmt.git",
-                                            "tag": "10.0.0",
+                                            "tag": "10.1.0",
                                             "x-checker-data": {
                                                 "type": "git",
                                                 "tag-pattern": "^([0-9.]+)$"
                                             },
-                                            "commit": "a0b8a92e3d1532361c2f7feb63babc5c18d00ef2"
+                                            "commit": "e57ca2e3685b160617d3d95fcd9e789c4e06ca88"
                                         }
                                     ]
                                 }
@@ -1179,12 +1179,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/grass.git",
-                            "tag": "8.2.1",
+                            "tag": "8.3.0",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "9468133b806f0952d6b47780eb9cb0c92bc220e4"
+                            "commit": "66b29bad25feaa6b1d1c571a67e49553243c80e6"
                         }
                     ],
                     "modules": [
@@ -1252,11 +1252,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/Exiv2/exiv2.git",
-                            "tag": "v0.27.6",
+                            "tag": "v0.28.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "c60285eb1a3027f5dcf742be0c6c064a74ad966c"
+                            "commit": "931a40a746f5678dcc4625b06a2eb25fa4f00b34"
                         }
                     ]
                 },
