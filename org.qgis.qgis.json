@@ -1,14 +1,14 @@
 {
     "id": "org.qgis.qgis",
-    "base": "io.qt.qtwebkit.BaseApp",
-    "base-version": "5.15-22.08",
+    "base": "com.riverbankcomputing.PyQt.BaseApp",
+    "base-version": "5.15-23.08",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-22.08",
+    "runtime-version": "5.15-23.08",
     "sdk": "org.kde.Sdk",
     "command": "qgis",
     "rename-icon": "qgis",
     "finish-args": [
-        "--env=LD_LIBRARY_PATH=/app/lib:/app/grass82/lib",
+        "--env=LD_LIBRARY_PATH=/app/lib:/app/grass83/lib",
         "--env=PROJ_LIB=/app/share/proj/",
         "--share=ipc",
         "--share=network",
@@ -20,7 +20,7 @@
     "separate-locales": false,
     "build-options": {
         "env": {
-            "PYTHONPATH": "/app/lib/python3.10/site-packages:/usr/lib/python3.10/site-packages"
+            "PYTHONPATH": "/app/lib/python3.11/site-packages:/usr/lib/python3.11/site-packages"
         }
     },
     "cleanup": [
@@ -31,6 +31,9 @@
         "bin/mysql*",
         "grass*/docs"
     ],
+    "cleanup-commands": [
+        "/app/cleanup-BaseApp.sh"
+    ],
     "modules": [
         {
             "name": "qgis",
@@ -38,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.32.3.tar.bz2",
-                    "sha256": "cd52487447ebd952b4fbb158b8602de95f8e940e9d79391bba15f941cddd0740",
+                    "url": "https://qgis.org/downloads/qgis-3.34.0.tar.bz2",
+                    "sha256": "348a2df4c4520813a319b7f72546b3823e044cacd28646ba189b56a49c7d1b5f",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -50,16 +53,18 @@
             ],
             "config-opts": [
                 "-DWITH_3D=TRUE",
-                "-DGRASS_PREFIX8=/app/grass82",
+                "-DGRASS_PREFIX8=/app/grass83",
                 "-DQWT_LIBRARY=/app/lib/libqwt.so",
                 "-DSQLITE3_INCLUDE_DIR=/app/include",
                 "-DSQLITE3_LIBRARY=/app/lib/libsqlite3.so",
                 "-DUSE_OPENCL=ON",
                 "-DWITH_QUICK=ON",
                 "-DWITH_PDAL=TRUE",
+                "-DWITH_QTWEBKIT=FALSE",
                 "-DHAS_KDE_QT5_PDF_TRANSFORM_FIX=TRUE",
                 "-DHAS_KDE_QT5_SMALL_CAPS_FIX=TRUE",
-                "-DHAS_KDE_QT5_FONT_STRETCH_FIX=TRUE"
+                "-DHAS_KDE_QT5_FONT_STRETCH_FIX=TRUE",
+                "-DSIP_BUILD_EXTRA_OPTIONS=--target-dir=/app/lib/python3.11/site-packages"
             ],
             "modules": [
                 {
@@ -72,12 +77,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/PROJ.git",
-                            "tag": "9.2.1",
+                            "tag": "9.3.0",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "5405125a6544126b86af3f2cee53d954e4eb28b5"
+                            "commit": "08f394ea303391be96f6ade46d87b7b677531afc"
                         }
                     ]
                 },
@@ -86,8 +91,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "http://download.osgeo.org/geos/geos-3.12.0.tar.bz2",
-                            "sha256": "d96db96011259178a35555a0f6d6e75a739e52a495a6b2aa5efb3d75390fbc39",
+                            "url": "http://download.osgeo.org/geos/geos-3.12.1.tar.bz2",
+                            "sha256": "d6ea7e492224b51193e8244fe3ec17c4d44d0777f3c32ca4fb171140549a0d03",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 13493,
@@ -290,8 +295,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.7.2/gdal-3.7.2.tar.xz",
-                            "sha256": "40c0068591d2c711c699bbb734319398485ab169116ac28005d8302f80b923ad",
+                            "url": "https://download.osgeo.org/gdal/3.7.3/gdal-3.7.3.tar.xz",
+                            "sha256": "e0a6f0c453ea7eb7c09967f50ac49426808fcd8f259dbc9888140eb69d7ffee6",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -430,8 +435,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-12.6.4.tar.xz",
-                                    "sha256": "eb7f243ffc32f18324bc7fa978d0358637e7357ca7836bec55b4eb56e9749380",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-12.6.6.tar.xz",
+                                    "sha256": "3858b0fd431772af032ad3f35c2aeb54e8dabea59169e7d1e9fccd78bc82ad35",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -621,8 +626,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://rsync.osuosl.org/pub/mariadb/mariadb-11.1.1/source/mariadb-11.1.1.tar.gz",
-                                    "sha256": "272051c65cc46bace572eb01e036d3601c2d1e83af6ca84a03ddb3c3860e0385",
+                                    "url": "https://rsync.osuosl.org/pub/mariadb/mariadb-11.1.3/source/mariadb-11.1.3.tar.gz",
+                                    "sha256": "ad3aa6ae478179275ecb28e3ed8a578f2004f084e14409727c0bf04975ace36c",
                                     "FIXME-x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 1887,
@@ -659,12 +664,33 @@
                             "sources": [
                                 {
                                     "type": "file",
-                                    "url": "https://files.pythonhosted.org/packages/a0/41/8f53eff8e969dd8576ddfb45e7ed315407d27c7518ae49418be8ed532b07/numpy-1.25.2.tar.gz",
-                                    "sha256": "fd608e19c8d7c55021dffd43bfe5492fab8cc105cc8986f813f8c3c048b38760",
+                                    "url": "https://files.pythonhosted.org/packages/dd/2b/205ddff2314d4eea852e31d53b8e55eb3f32b292efc3dd86bd827ab9019d/numpy-1.26.2.tar.gz",
+                                    "sha256": "f65738447676ab5777f11e6bbbdb8ce11b785e105f690bc45966574816b6d3ea",
                                     "x-checker-data": {
                                         "type": "pypi",
                                         "name": "numpy"
                                     }
+                                }
+                            ],
+                            "modules": [
+                                {
+                                    "name": "pyproject-metadata",
+                                    "buildsystem": "simple",
+                                    "build-commands": [
+                                        "pip3 install --verbose --exists-action=i --no-index --find-links=file://${PWD} --prefix=${FLATPAK_DEST} pyproject_metadata --no-build-isolation"
+                                    ],
+                                    "sources": [
+                                        {
+                                            "type": "file",
+                                            "url": "https://files.pythonhosted.org/packages/c4/cb/4678dfd70cd2f2d8969e571cdc1bb1e9293c698f8d1cf428fadcf48d6e9f/pyproject_metadata-0.7.1-py3-none-any.whl",
+                                            "sha256": "28691fbb36266a819ec56c9fa1ecaf36f879d6944dfde5411e87fc4ff793aa60",
+                                            "x-checker-data": {
+                                                "type": "pypi",
+                                                "name": "pyproject_metadata",
+                                                "packagetype": "bdist_wheel"
+                                            }
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -676,11 +702,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/ebiggers/libdeflate.git",
-                                    "tag": "v1.18",
+                                    "tag": "v1.19",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "495fee110ebb48a5eb63b75fd67e42b2955871e2"
+                                    "commit": "dd12ff2b36d603dbb7fa8838fe7e7176fcbd4f6f"
                                 }
                             ]
                         },
@@ -784,11 +810,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
-                                    "tag": "v3.1.11",
+                                    "tag": "v3.2.1",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "6f5fc9013d14c04960c13b8d3724e18642c02eba"
+                                    "commit": "737b2707a001e67f3812d86a639c3d037efe2ea8"
                                 }
                             ],
                             "modules": [
@@ -814,11 +840,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/strukturag/libheif.git",
-                                    "tag": "v1.16.2",
+                                    "tag": "v1.17.3",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "6ee6762657cfb0a921860d1a9d4cf36fa0eb5633"
+                                    "commit": "8bc6fce34947dfce7a894d19931b0f9b4d7fe30e"
                                 }
                             ]
                         },
@@ -941,75 +967,24 @@
                     ]
                 },
                 {
-                    "name": "pyqt5",
-                    "config-opts": [
-                        "--disable-static",
-                        "--enable-x11"
-                    ],
-                    "build-options": {
-                        "env": {
-                            "QMAKEPATH": "/app/lib"
-                        }
-                    },
-                    "sources": [
-                        {
-                            "type": "archive",
-                            "url": "https://files.pythonhosted.org/packages/28/6c/640e3f5c734c296a7193079a86842a789edb7988dca39eab44579088a1d1/PyQt5-5.15.2.tar.gz",
-                            "sha256": "372b08dc9321d1201e4690182697c5e7ffb2e0770e6b4a45519025134b12e4fc"
-                        },
-                        {
-                            "type": "script",
-                            "commands": [
-                                "python3 configure.py --assume-shared --confirm-license --no-designer-plugin --no-qml-plugin --sysroot=/app --qsci-api --qsci-api-destdir=/app/qsci --sipdir=/app/share/sip --sip=/app/bin/sip --sip-incdir=/app/include QMAKE_CFLAGS_RELEASE='-I/usr/include/python3.10/' QMAKE_CXXFLAGS_RELEASE='-I/usr/include/python3.10/'"
-                            ],
-                            "dest-filename": "configure"
-                        }
-                    ],
-                    "modules": [
-                        {
-                            "name": "sip",
-                            "sources": [
-                                {
-                                    "type": "archive",
-                                    "url": "https://www.riverbankcomputing.com/static/Downloads/sip/4.19.25/sip-4.19.25.tar.gz",
-                                    "sha256": "b39d93e937647807bac23579edbff25fe46d16213f708370072574ab1f1b4211"
-                                },
-                                {
-                                    "type": "script",
-                                    "commands": [
-                                        "python3 configure.py --sip-module PyQt5.sip -b ${FLATPAK_DEST}/bin -d ${FLATPAK_DEST}/lib/python3.10/site-packages -e ${FLATPAK_DEST}/include -v ${FLATPAK_DEST}/share/sip --stubsdir=${FLATPAK_DEST}/lib/python3.10/site-packages"
-                                    ],
-                                    "dest-filename": "configure"
-                                }
-                            ],
-                            "cleanup": [
-                                "/bin",
-                                "/include"
-                            ]
-                        }
-                    ]
-                },
-                {
                     "name": "qscintilla",
                     "buildsystem": "simple",
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://www.riverbankcomputing.com/static/Downloads/QScintilla/2.11.6/QScintilla-2.11.6.tar.gz",
-                            "sha256": "e7346057db47d2fb384467fafccfcb13aa0741373c5d593bc72b55b2f0dd20a7"
+                            "url": "https://www.riverbankcomputing.com/static/Downloads/QScintilla/2.14.1/QScintilla_src-2.14.1.tar.gz",
+                            "sha256": "dfe13c6acc9d85dfcba76ccc8061e71a223957a6c02f3c343b30a9d43a4cdd4d"
                         }
                     ],
                     "build-commands": [
-                        "sed -e 's|\\(target.path\\) = .*|\\1 = /app/lib|' -i Qt4Qt5/qscintilla.pro",
-                        "sed -e 's|\\(header.path\\) = .*|\\1 = /app/include|' -i Qt4Qt5/qscintilla.pro",
-                        "sed -e 's|\\(trans.path\\) = .*|\\1 = /app/share/qt5/translations|' -i Qt4Qt5/qscintilla.pro",
-                        "sed -e 's|\\(qsci.path\\) = .*|\\1 = /app/share/qt5|' -i Qt4Qt5/qscintilla.pro",
-                        "sed -e 's|\\(features.path\\) = .*|\\1 = /app/lib/qt5/mkspecs/features|' -i Qt4Qt5/qscintilla.pro",
-                        "sed -e \"s|qmake = {'CONFIG': 'qscintilla2'}|qmake = {'CONFIG': 'qscintilla2', 'QT': 'widgets printsupport'}|\" -i Python/configure.py",
-                        "cd Qt4Qt5 && qmake && make -j ${FLATPAK_BUILDER_N_JOBS:-`nproc`} && make install",
-                        "cd Python && python3 configure.py --pyqt=PyQt5 -n ../Qt4Qt5/ -o ../Qt4Qt5/ --pyqt-sipdir=/app/share/sip --destdir=/app/lib/python3.10/site-packages/PyQt5 --apidir=/app/qsci/api/python --no-stubs --no-dist-info",
-                        "echo \"LIBS += /app/lib/libqscintilla2_qt5.so\" >> Python/Qsci/Qsci.pro",
-                        "cd Python && make -j ${FLATPAK_BUILDER_N_JOBS:-`nproc`} && make install"
+                        "sed -e 's|\\(target.path\\) = .*|\\1 = /app/lib|' -i src/qscintilla.pro",
+                        "sed -e 's|\\(header.path\\) = .*|\\1 = /app/include|' -i src/qscintilla.pro",
+                        "sed -e 's|\\(trans.path\\) = .*|\\1 = /app/share/qt/translations|' -i src/qscintilla.pro",
+                        "sed -e 's|\\(qsci.path\\) = .*|\\1 = /app/share/qt|' -i src/qscintilla.pro",
+                        "sed -e 's|\\(features.path\\) = .*|\\1 = /app/lib/qt/mkspecs/features|' -i src/qscintilla.pro",
+
+                        "cd src/ && QMAKEFEATURES=$PWD/src/features/ qmake && qmake -set prefix /app && make -j ${FLATPAK_BUILDER_N_JOBS:-`nproc`} && PREFIX=/app DESTDIR=/banana make install",
+                        "cd Python && mv pyproject{-qt5,}.toml && sip-build --no-make --qsci-features-dir ../src/features --qsci-include-dir ../src --qsci-library-dir ../src --api-dir /app/share/qt/qsci/api/python --target-dir=/app/lib/python3.11/site-packages && make -C build -j ${FLATPAK_BUILDER_N_JOBS:-`nproc`} && make -C build install"
                     ]
                 },
                 {
@@ -1179,12 +1154,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/grass.git",
-                            "tag": "8.2.1",
+                            "tag": "8.3.1",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "9468133b806f0952d6b47780eb9cb0c92bc220e4"
+                            "commit": "4e66071694144043f251c53df2c2237f01b5af9c"
                         }
                     ],
                     "modules": [
@@ -1246,17 +1221,18 @@
                     "config-opts": [
                         "-DCMAKE_BUILD_TYPE=Release",
                         "-DEXIV2_BUILD_EXIV2_COMMAND=OFF",
-                        "-DEXIV2_BUILD_SAMPLES=OFF"
+                        "-DEXIV2_BUILD_SAMPLES=OFF",
+                        "-DEXIV2_ENABLE_INIH=OFF"
                     ],
                     "sources": [
                         {
                             "type": "git",
                             "url": "https://github.com/Exiv2/exiv2.git",
-                            "tag": "v0.27.6",
+                            "tag": "v0.28.1",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "c60285eb1a3027f5dcf742be0c6c064a74ad966c"
+                            "commit": "5c91bfc8b5bd2227bf0e2a6607feb85a4020064e"
                         }
                     ]
                 },
@@ -1313,6 +1289,28 @@
                                     }
                                 }
                             ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Draco",
+                    "buildsystem": "cmake-ninja",
+                    "builddir": true,
+                    "build-options": {
+                        "cflags": "-fPIC",
+                        "cxxflags": "-fPIC"
+                    },
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://github.com/google/draco/archive/refs/tags/1.5.6.tar.gz",
+                            "sha256": "0280888e5b8e4c4fb93bf40e65e4e8a1ba316a0456f308164fb5c2b2b0c282d6",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 322269,
+                                "stable-only": true,
+                                "url-template": "https://github.com/google/draco/archive/refs/tags/$version.tar.gz"
+                            }
                         }
                     ]
                 }
