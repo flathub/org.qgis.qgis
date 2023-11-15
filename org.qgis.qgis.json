@@ -72,12 +72,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/PROJ.git",
-                            "tag": "9.2.1",
+                            "tag": "9.3.0",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "5405125a6544126b86af3f2cee53d954e4eb28b5"
+                            "commit": "08f394ea303391be96f6ade46d87b7b677531afc"
                         }
                     ]
                 },
@@ -639,12 +639,12 @@
                                         {
                                             "type": "git",
                                             "url": "https://github.com/fmtlib/fmt.git",
-                                            "tag": "10.0.0",
+                                            "tag": "10.1.1",
                                             "x-checker-data": {
                                                 "type": "git",
                                                 "tag-pattern": "^([0-9.]+)$"
                                             },
-                                            "commit": "a0b8a92e3d1532361c2f7feb63babc5c18d00ef2"
+                                            "commit": "f5e54359df4c26b6230fc61d38aa294581393084"
                                         }
                                     ]
                                 }
@@ -659,8 +659,8 @@
                             "sources": [
                                 {
                                     "type": "file",
-                                    "url": "https://files.pythonhosted.org/packages/a0/41/8f53eff8e969dd8576ddfb45e7ed315407d27c7518ae49418be8ed532b07/numpy-1.25.2.tar.gz",
-                                    "sha256": "fd608e19c8d7c55021dffd43bfe5492fab8cc105cc8986f813f8c3c048b38760",
+                                    "url": "https://files.pythonhosted.org/packages/dd/2b/205ddff2314d4eea852e31d53b8e55eb3f32b292efc3dd86bd827ab9019d/numpy-1.26.2.tar.gz",
+                                    "sha256": "f65738447676ab5777f11e6bbbdb8ce11b785e105f690bc45966574816b6d3ea",
                                     "x-checker-data": {
                                         "type": "pypi",
                                         "name": "numpy"
@@ -676,11 +676,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/ebiggers/libdeflate.git",
-                                    "tag": "v1.18",
+                                    "tag": "v1.19",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "495fee110ebb48a5eb63b75fd67e42b2955871e2"
+                                    "commit": "dd12ff2b36d603dbb7fa8838fe7e7176fcbd4f6f"
                                 }
                             ]
                         },
@@ -784,11 +784,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
-                                    "tag": "v3.1.11",
+                                    "tag": "v3.2.1",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "6f5fc9013d14c04960c13b8d3724e18642c02eba"
+                                    "commit": "737b2707a001e67f3812d86a639c3d037efe2ea8"
                                 }
                             ],
                             "modules": [
@@ -814,11 +814,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/strukturag/libheif.git",
-                                    "tag": "v1.16.2",
+                                    "tag": "v1.17.3",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "6ee6762657cfb0a921860d1a9d4cf36fa0eb5633"
+                                    "commit": "8bc6fce34947dfce7a894d19931b0f9b4d7fe30e"
                                 }
                             ]
                         },
@@ -1179,12 +1179,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/grass.git",
-                            "tag": "8.2.1",
+                            "tag": "8.3.1",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "9468133b806f0952d6b47780eb9cb0c92bc220e4"
+                            "commit": "4e66071694144043f251c53df2c2237f01b5af9c"
                         }
                     ],
                     "modules": [
@@ -1252,11 +1252,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/Exiv2/exiv2.git",
-                            "tag": "v0.27.6",
+                            "tag": "v0.28.1",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "c60285eb1a3027f5dcf742be0c6c064a74ad966c"
+                            "commit": "5c91bfc8b5bd2227bf0e2a6607feb85a4020064e"
                         }
                     ]
                 },
