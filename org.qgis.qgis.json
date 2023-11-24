@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.34.0.tar.bz2",
-                    "sha256": "348a2df4c4520813a319b7f72546b3823e044cacd28646ba189b56a49c7d1b5f",
+                    "url": "https://qgis.org/downloads/qgis-3.34.1.tar.bz2",
+                    "sha256": "3cc827aefab62f3a636c17c08b253ff5338ac72b5701d97c39639c43a4174148",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -295,8 +295,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.7.3/gdal-3.7.3.tar.xz",
-                            "sha256": "e0a6f0c453ea7eb7c09967f50ac49426808fcd8f259dbc9888140eb69d7ffee6",
+                            "url": "https://download.osgeo.org/gdal/3.8.0/gdal-3.8.0.tar.xz",
+                            "sha256": "ec0f78d9dc32352aeac6edc9c3b27a991b91f9dc6f92c452207d84431c58757d",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -462,11 +462,11 @@
                                         {
                                             "type": "git",
                                             "url": "https://github.com/Reference-LAPACK/lapack.git",
-                                            "tag": "v3.11.0",
+                                            "tag": "v3.12.0",
                                             "x-checker-data": {
                                                 "type": "git"
                                             },
-                                            "commit": "7866626840f5d5e7e27f027a55182da8b3303872"
+                                            "commit": "b231dd57cd663619ccfe8596ca80fd920ff1afc4"
                                         }
                                     ],
                                     "cleanup": [
@@ -644,12 +644,12 @@
                                         {
                                             "type": "git",
                                             "url": "https://github.com/fmtlib/fmt.git",
-                                            "tag": "10.0.0",
+                                            "tag": "10.1.1",
                                             "x-checker-data": {
                                                 "type": "git",
                                                 "tag-pattern": "^([0-9.]+)$"
                                             },
-                                            "commit": "a0b8a92e3d1532361c2f7feb63babc5c18d00ef2"
+                                            "commit": "f5e54359df4c26b6230fc61d38aa294581393084"
                                         }
                                     ]
                                 }
@@ -840,11 +840,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/strukturag/libheif.git",
-                                    "tag": "v1.17.3",
+                                    "tag": "v1.17.5",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "8bc6fce34947dfce7a894d19931b0f9b4d7fe30e"
+                                    "commit": "82219b903001305fd916874a29dd372d92927d48"
                                 }
                             ]
                         },
@@ -884,8 +884,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/PDAL/PDAL/releases/download/2.5.6/PDAL-2.5.6-src.tar.bz2",
-                            "sha256": "7c7c4570ef518942299479cc4077e0c657ec5b5174daf465415de947a1d3eb99",
+                            "url": "https://github.com/PDAL/PDAL/releases/download/2.6.0/PDAL-2.6.0-src.tar.bz2",
+                            "sha256": "ec50e60544673a72f4300d90df1e70f1cd28055780b789319185590b63e3f688",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 138228,
@@ -982,7 +982,6 @@
                         "sed -e 's|\\(trans.path\\) = .*|\\1 = /app/share/qt/translations|' -i src/qscintilla.pro",
                         "sed -e 's|\\(qsci.path\\) = .*|\\1 = /app/share/qt|' -i src/qscintilla.pro",
                         "sed -e 's|\\(features.path\\) = .*|\\1 = /app/lib/qt/mkspecs/features|' -i src/qscintilla.pro",
-
                         "cd src/ && QMAKEFEATURES=$PWD/src/features/ qmake && qmake -set prefix /app && make -j ${FLATPAK_BUILDER_N_JOBS:-`nproc`} && PREFIX=/app DESTDIR=/banana make install",
                         "cd Python && mv pyproject{-qt5,}.toml && sip-build --no-make --qsci-features-dir ../src/features --qsci-include-dir ../src --qsci-library-dir ../src --api-dir /app/share/qt/qsci/api/python --target-dir=/app/lib/python3.11/site-packages && make -C build -j ${FLATPAK_BUILDER_N_JOBS:-`nproc`} && make -C build install"
                     ]
