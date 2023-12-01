@@ -77,12 +77,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/PROJ.git",
-                            "tag": "9.3.0",
+                            "tag": "9.3.1",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "08f394ea303391be96f6ade46d87b7b677531afc"
+                            "commit": "0f2922e1bb6e98727f10e5a3720466710943963a"
                         }
                     ]
                 },
@@ -295,8 +295,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.8.0/gdal-3.8.0.tar.xz",
-                            "sha256": "ec0f78d9dc32352aeac6edc9c3b27a991b91f9dc6f92c452207d84431c58757d",
+                            "url": "https://download.osgeo.org/gdal/3.8.1/gdal-3.8.1.tar.xz",
+                            "sha256": "75a20b23879bfa3d8c0db68e1d6f8b924f7f9d97f5fed089b01a72e404293900",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
