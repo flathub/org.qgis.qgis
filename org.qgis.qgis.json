@@ -77,12 +77,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/PROJ.git",
-                            "tag": "9.3.0",
+                            "tag": "9.3.1",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "08f394ea303391be96f6ade46d87b7b677531afc"
+                            "commit": "0f2922e1bb6e98727f10e5a3720466710943963a"
                         }
                     ]
                 },
@@ -295,8 +295,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.8.0/gdal-3.8.0.tar.xz",
-                            "sha256": "ec0f78d9dc32352aeac6edc9c3b27a991b91f9dc6f92c452207d84431c58757d",
+                            "url": "https://download.osgeo.org/gdal/3.8.1/gdal-3.8.1.tar.xz",
+                            "sha256": "75a20b23879bfa3d8c0db68e1d6f8b924f7f9d97f5fed089b01a72e404293900",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -500,8 +500,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://downloads.sourceforge.net/project/boost/boost/1.83.0/boost_1_83_0.tar.bz2",
-                                    "sha256": "6478edfe2f3305127cffe8caf73ea0176c53769f4bf1585be237eb30798c3b8e",
+                                    "url": "https://downloads.sourceforge.net/project/boost/boost/1.84.0/boost_1_84_0.tar.bz2",
+                                    "sha256": "cc4b893acf645c9d4b698e9a0f08ca8846aa5d6c68275c14c3e7949c24109454",
                                     "x-checker-data": {
                                         "type": "html",
                                         "url": "https://www.boost.org/feed/downloads.rss",
