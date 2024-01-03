@@ -192,8 +192,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://www.sqlite.org/2021/sqlite-autoconf-3360000.tar.gz",
-                                    "sha256": "bd90c3eb96bee996206b83be7065c9ce19aef38c3f4fb53073ada0d0b69bbce3"
+                                    "url": "https://www.sqlite.org/2023/sqlite-autoconf-3440200.tar.gz",
+                                    "sha256": "1c6719a148bc41cf0f2bbbe3926d7ce3f5ca09d878f1246fcc20767b175bb407"
                                 }
                             ]
                         }
@@ -295,8 +295,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.8.0/gdal-3.8.0.tar.xz",
-                            "sha256": "ec0f78d9dc32352aeac6edc9c3b27a991b91f9dc6f92c452207d84431c58757d",
+                            "url": "https://download.osgeo.org/gdal/3.8.2/gdal-3.8.2.tar.xz",
+                            "sha256": "dc2921ee1cf7a5c0498e94d15fb9ab9c9689c296363a1d021fc3293dd242b4db",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
