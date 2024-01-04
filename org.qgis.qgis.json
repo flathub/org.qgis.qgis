@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.34.1.tar.bz2",
-                    "sha256": "3cc827aefab62f3a636c17c08b253ff5338ac72b5701d97c39639c43a4174148",
+                    "url": "https://qgis.org/downloads/qgis-3.34.2.tar.bz2",
+                    "sha256": "8cf11d5f271847d654da94ee3f98a4f0e24b15ebaf3554c52fa0073ccd8f6271",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -295,8 +295,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.8.0/gdal-3.8.0.tar.xz",
-                            "sha256": "ec0f78d9dc32352aeac6edc9c3b27a991b91f9dc6f92c452207d84431c58757d",
+                            "url": "https://download.osgeo.org/gdal/3.8.2/gdal-3.8.2.tar.xz",
+                            "sha256": "dc2921ee1cf7a5c0498e94d15fb9ab9c9689c296363a1d021fc3293dd242b4db",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -321,8 +321,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "http://prdownloads.sourceforge.net/swig/swig-4.1.1.tar.gz",
-                                    "sha256": "2af08aced8fcd65cdb5cc62426768914bedc735b1c250325203716f78e39ac9b",
+                                    "url": "http://prdownloads.sourceforge.net/swig/swig-4.2.0.tar.gz",
+                                    "sha256": "261ca2d7589e260762817b912c075831572b72ff2717942f75b3e51244829c97",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 4919,
@@ -644,12 +644,12 @@
                                         {
                                             "type": "git",
                                             "url": "https://github.com/fmtlib/fmt.git",
-                                            "tag": "10.1.1",
+                                            "tag": "10.2.1",
                                             "x-checker-data": {
                                                 "type": "git",
                                                 "tag-pattern": "^([0-9.]+)$"
                                             },
-                                            "commit": "f5e54359df4c26b6230fc61d38aa294581393084"
+                                            "commit": "e69e5f977d458f2650bb346dadf2ad30c5320281"
                                         }
                                     ]
                                 }
@@ -664,8 +664,8 @@
                             "sources": [
                                 {
                                     "type": "file",
-                                    "url": "https://files.pythonhosted.org/packages/dd/2b/205ddff2314d4eea852e31d53b8e55eb3f32b292efc3dd86bd827ab9019d/numpy-1.26.2.tar.gz",
-                                    "sha256": "f65738447676ab5777f11e6bbbdb8ce11b785e105f690bc45966574816b6d3ea",
+                                    "url": "https://files.pythonhosted.org/packages/d0/b0/13e2b50c95bfc1d5ee04925eb5c105726c838f922d0aaddd57b7c8be0f8b/numpy-1.26.3.tar.gz",
+                                    "sha256": "697df43e2b6310ecc9d95f05d5ef20eacc09c7c4ecc9da3f235d39e71b7da1e4",
                                     "x-checker-data": {
                                         "type": "pypi",
                                         "name": "numpy"
@@ -795,11 +795,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/libjxl/libjxl.git",
-                                    "tag": "v0.8.2",
+                                    "tag": "v0.9.0",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "954b460768c08a147abf47689ad69b0e7beff65e"
+                                    "commit": "c51cffd7587d27fdd73f0be856db3b730314f03c"
                                 }
                             ]
                         },
