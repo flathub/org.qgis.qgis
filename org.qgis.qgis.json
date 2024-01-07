@@ -295,8 +295,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.8.0/gdal-3.8.0.tar.xz",
-                            "sha256": "ec0f78d9dc32352aeac6edc9c3b27a991b91f9dc6f92c452207d84431c58757d",
+                            "url": "https://download.osgeo.org/gdal/3.8.2/gdal-3.8.2.tar.xz",
+                            "sha256": "dc2921ee1cf7a5c0498e94d15fb9ab9c9689c296363a1d021fc3293dd242b4db",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
