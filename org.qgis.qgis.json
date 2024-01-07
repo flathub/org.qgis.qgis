@@ -644,12 +644,12 @@
                                         {
                                             "type": "git",
                                             "url": "https://github.com/fmtlib/fmt.git",
-                                            "tag": "10.2.0",
+                                            "tag": "10.2.1",
                                             "x-checker-data": {
                                                 "type": "git",
                                                 "tag-pattern": "^([0-9.]+)$"
                                             },
-                                            "commit": "67c0c0c09cf74d407d71a29c194761981614df3e"
+                                            "commit": "e69e5f977d458f2650bb346dadf2ad30c5320281"
                                         }
                                     ]
                                 }
