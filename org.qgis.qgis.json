@@ -295,8 +295,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.8.2/gdal-3.8.2.tar.xz",
-                            "sha256": "dc2921ee1cf7a5c0498e94d15fb9ab9c9689c296363a1d021fc3293dd242b4db",
+                            "url": "https://download.osgeo.org/gdal/3.8.3/gdal-3.8.3.tar.xz",
+                            "sha256": "ae2d160f65016e208eca34ff14490ec4511f1fa03fd386ac130449d15e82929d",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -644,12 +644,12 @@
                                         {
                                             "type": "git",
                                             "url": "https://github.com/fmtlib/fmt.git",
-                                            "tag": "10.2.0",
+                                            "tag": "10.2.1",
                                             "x-checker-data": {
                                                 "type": "git",
                                                 "tag-pattern": "^([0-9.]+)$"
                                             },
-                                            "commit": "67c0c0c09cf74d407d71a29c194761981614df3e"
+                                            "commit": "e69e5f977d458f2650bb346dadf2ad30c5320281"
                                         }
                                     ]
                                 }
