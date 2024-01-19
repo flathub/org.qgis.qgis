@@ -795,11 +795,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/libjxl/libjxl.git",
-                                    "tag": "v0.9.0",
+                                    "tag": "v0.9.1",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "c51cffd7587d27fdd73f0be856db3b730314f03c"
+                                    "commit": "b8ceae3a6e9d0ffd9efebcbdd04322fcfc502eed"
                                 }
                             ]
                         },
@@ -1280,8 +1280,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://download.gnome.org/sources/libsecret/0.20/libsecret-0.20.5.tar.xz",
-                                    "sha256": "3fb3ce340fcd7db54d87c893e69bfc2b1f6e4d4b279065ffe66dac9f0fd12b4d",
+                                    "url": "https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.2.tar.xz",
+                                    "sha256": "e4a341496a0815e64c8d3b8fabab33d7bae7efdeab77b843669731d5b181dcee",
                                     "x-checker-data": {
                                         "type": "gnome",
                                         "name": "libsecret",
@@ -1303,8 +1303,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/google/draco/archive/refs/tags/1.5.6.tar.gz",
-                            "sha256": "0280888e5b8e4c4fb93bf40e65e4e8a1ba316a0456f308164fb5c2b2b0c282d6",
+                            "url": "https://github.com/google/draco/archive/refs/tags/1.5.7.tar.gz",
+                            "sha256": "bf6b105b79223eab2b86795363dfe5e5356050006a96521477973aba8f036fe1",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 322269,
