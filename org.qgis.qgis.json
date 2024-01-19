@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.34.2.tar.bz2",
-                    "sha256": "8cf11d5f271847d654da94ee3f98a4f0e24b15ebaf3554c52fa0073ccd8f6271",
+                    "url": "https://qgis.org/downloads/qgis-3.34.3.tar.bz2",
+                    "sha256": "87b359154743ec93f63c9c9d189f07cc35fb476e32c79d4761ff42776a765cd5",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -1309,8 +1309,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/google/draco/archive/refs/tags/1.5.6.tar.gz",
-                            "sha256": "0280888e5b8e4c4fb93bf40e65e4e8a1ba316a0456f308164fb5c2b2b0c282d6",
+                            "url": "https://github.com/google/draco/archive/refs/tags/1.5.7.tar.gz",
+                            "sha256": "bf6b105b79223eab2b86795363dfe5e5356050006a96521477973aba8f036fe1",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 322269,
