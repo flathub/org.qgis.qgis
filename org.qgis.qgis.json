@@ -73,11 +73,6 @@
                     "config-opts": [
                         "--preset ninja-release"
                     ],
-                    "build-options": {
-                        "build-args": [
-                            "--share=network"
-                        ]
-                    },
                     "subdir": "cpp",
                     "sources": [
                         {
@@ -89,6 +84,12 @@
                                 "tag-pattern": "^apache-arrow-([0-9.]+)$"
                             },
                             "commit": "a61f4af724cd06c3a9b4abd20491345997e532c0"
+                        },
+                        {
+                            "type": "shell",
+                            "commands": [
+                                "./cpp/thirdparty/download_dependencies.sh"
+                            ]
                         }
                     ]
                 },
