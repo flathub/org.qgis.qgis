@@ -19,7 +19,7 @@ If you feel like it definitely should be bundled, don't hesitate to report an is
 ### TL;DR
 ```
 git clone --recurse-submodules ...
-flatpak-builder --force-clean --user --install ./build org.qgis.qgis.json
+flatpak-builder --force-clean --user --sandbox --install ./build org.qgis.qgis.json
 ```
 
 ### Description
@@ -34,13 +34,13 @@ sudo apt install flatpak-builder
 
 Build and install the image with this command:
 ```
-flatpak-builder --user --install ./build org.qgis.qgis.json
+flatpak-builder --user --sandbox --install ./build org.qgis.qgis.json
 ```
 if you're building again you can add: `--force-clean` which will clear `./build` dir.
 
 Or with flatpak version of flatpak builder:
 ```
-flatpak run org.flatpak.Builder --user --install --force-clean ./build org.qgis.qgis.json
+flatpak run org.flatpak.Builder --user --sandbox --install --force-clean ./build org.qgis.qgis.json
 ```
 
 ### Build errors
