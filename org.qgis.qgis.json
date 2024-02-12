@@ -108,11 +108,19 @@
                 },
                 {
                     "name": "spatialindex",
+                    "buildsystem": "cmake-ninja",
+                    "config-opts": [
+                        "-DBUILD_TESTING=OFF"
+                    ],
                     "sources": [
                         {
-                            "type": "archive",
-                            "url": "http://download.osgeo.org/libspatialindex/spatialindex-src-1.8.5.tar.bz2",
-                            "sha256": "31ec0a9305c3bd6b4ad60a5261cba5402366dd7d1969a8846099717778e9a50a"
+                            "type": "git",
+                            "url": "https://github.com/libspatialindex/libspatialindex.git",
+                            "commit": "1896a183afdff3f5845742ce3027553a88e13c3a",
+                            "tag": "1.9.3",
+                            "x-checker-data": {
+                                "type": "git"
+                            }
                         }
                     ]
                 },
@@ -168,8 +176,14 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "http://www.gaia-gis.it/gaia-sins/freexl-sources/freexl-1.0.6.tar.gz",
-                                    "sha256": "3de8b57a3d130cb2881ea52d3aa9ce1feedb1b57b7daa4eb37f751404f90fc22"
+                                    "url": "http://www.gaia-gis.it/gaia-sins/freexl-sources/freexl-2.0.0.tar.gz",
+                                    "sha256": "176705f1de58ab7c1eebbf5c6de46ab76fcd8b856508dbd28f5648f7c6e1a7f0",
+                                    "x-checker-data": {
+                                        "type": "anitya",
+                                        "project-id": 855,
+                                        "stable-only": true,
+                                        "url-template": "http://www.gaia-gis.it/gaia-sins/freexl-sources/freexl-$version.tar.gz"
+                                    }
                                 },
                                 {
                                     "type": "script",
@@ -186,7 +200,12 @@
                                 {
                                     "type": "git",
                                     "url": "https://git.osgeo.org/gitea/rttopo/librttopo.git",
-                                    "commit": "98a8bdd0b2d13f6b685d0658b4bce15d46606a1a"
+                                    "tag": "librttopo-1.1.0",
+                                    "commit": "98a8bdd0b2d13f6b685d0658b4bce15d46606a1a",
+                                    "x-checker-data": {
+                                        "type": "git",
+                                        "tag-pattern": "^librttopo-([0-9.]+)$"
+                                    }
                                 }
                             ]
                         },
@@ -218,8 +237,14 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://ftp.postgresql.org/pub/source/v12.2/postgresql-12.2.tar.bz2",
-                            "sha256": "ad1dcc4c4fc500786b745635a9e1eba950195ce20b8913f50345bb7d5369b5de"
+                            "url": "https://ftp.postgresql.org/pub/source/v16.2/postgresql-16.2.tar.bz2",
+                            "sha256": "446e88294dbc2c9085ab4b7061a646fa604b4bec03521d5ea671c2e5ad9b2952",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 5601,
+                                "stable-only": true,
+                                "url-template": "https://ftp.postgresql.org/pub/source/v$version/postgresql-$version.tar.bz2"
+                            }
                         }
                     ]
                 },
@@ -228,8 +253,14 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "http://www.unixodbc.org/unixODBC-2.3.7.tar.gz",
-                            "sha256": "45f169ba1f454a72b8fcbb82abd832630a3bf93baa84731cf2949f449e1e3e77"
+                            "url": "http://www.unixodbc.org/unixODBC-2.3.12.tar.gz",
+                            "sha256": "f210501445ce21bf607ba51ef8c125e10e22dffdffec377646462df5f01915ec",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 7344,
+                                "stable-only": true,
+                                "url-template": "http://www.unixodbc.org/unixODBC-$version.tar.gz"
+                            }
                         }
                     ]
                 },
@@ -305,8 +336,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.8.3/gdal-3.8.3.tar.xz",
-                            "sha256": "ae2d160f65016e208eca34ff14490ec4511f1fa03fd386ac130449d15e82929d",
+                            "url": "https://download.osgeo.org/gdal/3.8.4/gdal-3.8.4.tar.xz",
+                            "sha256": "0c53ced95d29474236487202709b49015854f8e02e35e44ed0f4f4e12a7966ce",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -495,8 +526,14 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://github.com/weidai11/cryptopp/archive/CRYPTOPP_8_7_0.tar.gz",
-                                    "sha256": "8d6a4064b8e9f34cd3e838f5a12c40067ee7b95ee37d9173ec273cb0913e7ca2"
+                                    "url": "https://github.com/weidai11/cryptopp/archive/CRYPTOPP_8_9_0.tar.gz",
+                                    "sha256": "ab5174b9b5c6236588e15a1aa1aaecb6658cdbe09501c7981ac8db276a24d9ab",
+                                    "x-checker-data": {
+                                        "type": "anitya",
+                                        "project-id": 14487,
+                                        "stable-only": true,
+                                        "url-template": "https://github.com/weidai11/cryptopp/archive/CRYPTOPP_${major}_${minor}_$patch.tar.gz"
+                                    }
                                 }
                             ]
                         },
@@ -564,7 +601,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/uclouvain/openjpeg.git",
-                                    "tag": "v2.5.0"
+                                    "tag": "v2.5.0",
+                                    "x-checker-data": {
+                                        "type": "git"
+                                    },
+                                    "commit": "a5891555eb49ed7cc26b2901ea680acda136d811"
                                 }
                             ],
                             "cleanup": [
@@ -584,8 +625,14 @@
                                     "sources": [
                                         {
                                             "type": "archive",
-                                            "url": "https://poppler.freedesktop.org/poppler-data-0.4.11.tar.gz",
-                                            "sha256": "2cec05cd1bb03af98a8b06a1e22f6e6e1a65b1e2f3816cb3069bb0874825f08c"
+                                            "url": "https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz",
+                                            "sha256": "c835b640a40ce357e1b83666aabd95edffa24ddddd49b8daff63adb851cdab74",
+                                            "x-checker-data": {
+                                                "type": "anitya",
+                                                "project-id": 3687,
+                                                "stable-only": true,
+                                                "url-template": "https://poppler.freedesktop.org/poppler-data-$version.tar.gz"
+                                            }
                                         }
                                     ]
                                 }
@@ -598,6 +645,7 @@
                                 "-DENABLE_GLIB=OFF",
                                 "-DENABLE_GOBJECT_INTROSPECTION=OFF",
                                 "-DENABLE_UTILS=OFF",
+                                "-DENABLE_QT6=OFF",
                                 "-DENABLE_LIBOPENJPEG=openjpeg2"
                             ],
                             "cleanup": [
@@ -609,8 +657,14 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-21.11.0.tar.xz",
-                                    "sha256": "31b76b5cac0a48612fdd154c02d9eca01fd38fb8eaa77c1196840ecdeb53a584"
+                                    "url": "https://poppler.freedesktop.org/poppler-24.02.0.tar.xz",
+                                    "sha256": "19187a3fdd05f33e7d604c4799c183de5ca0118640c88b370ddcf3136343222e",
+                                    "x-checker-data": {
+                                        "type": "anitya",
+                                        "project-id": 3686,
+                                        "stable-only": true,
+                                        "url-template": "https://poppler.freedesktop.org/poppler-$version.tar.xz"
+                                    }
                                 }
                             ]
                         },
@@ -674,8 +728,8 @@
                             "sources": [
                                 {
                                     "type": "file",
-                                    "url": "https://files.pythonhosted.org/packages/d0/b0/13e2b50c95bfc1d5ee04925eb5c105726c838f922d0aaddd57b7c8be0f8b/numpy-1.26.3.tar.gz",
-                                    "sha256": "697df43e2b6310ecc9d95f05d5ef20eacc09c7c4ecc9da3f235d39e71b7da1e4",
+                                    "url": "https://files.pythonhosted.org/packages/65/6e/09db70a523a96d25e115e71cc56a6f9031e7b8cd166c1ac8438307c14058/numpy-1.26.4.tar.gz",
+                                    "sha256": "2a02aba9ed12e4ac4eb3ea9421c420301a0c6460d9830d74a9df87efa4912010",
                                     "x-checker-data": {
                                         "type": "pypi",
                                         "name": "numpy"
@@ -698,6 +752,24 @@
                                                 "type": "pypi",
                                                 "name": "pyproject_metadata",
                                                 "packagetype": "bdist_wheel"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "meson-python",
+                                    "buildsystem": "simple",
+                                    "build-commands": [
+                                        "pip3 install --verbose --exists-action=i --no-index --find-links=file://${PWD} --prefix=${FLATPAK_DEST} meson-python --no-build-isolation"
+                                    ],
+                                    "sources": [
+                                        {
+                                            "type": "file",
+                                            "url": "https://files.pythonhosted.org/packages/a2/3b/276b596824a0820987fdcc7721618453b4f9a8305fe20b611a00ac3f948e/meson_python-0.15.0.tar.gz",
+                                            "sha256": "fddb73eecd49e89c1c41c87937cd89c2d0b65a1c63ba28238681d4bd9484d26f",
+                                            "x-checker-data": {
+                                                "type": "pypi",
+                                                "name": "meson-python"
                                             }
                                         }
                                     ]
@@ -744,7 +816,12 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/json-c/json-c",
-                                    "tag": "json-c-0.16-20220414"
+                                    "tag": "json-c-0.17-20230812",
+                                    "x-checker-data": {
+                                        "type": "git",
+                                        "tag-pattern": "^json-c-([\\d.]+)-[\\d]+$"
+                                    },
+                                    "commit": "b4c371fa0cbc4dcbaccc359ce9e957a22988fb34"
                                 }
                             ]
                         },
@@ -770,7 +847,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/KhronosGroup/OpenCL-Headers.git",
-                                    "tag": "v2022.09.30"
+                                    "tag": "v2023.12.14",
+                                    "x-checker-data": {
+                                        "type": "git"
+                                    },
+                                    "commit": "2368105c0531069fe927989505de7d125ec58c55"
                                 }
                             ]
                         },
@@ -820,11 +901,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
-                                    "tag": "v3.2.1",
+                                    "tag": "v3.2.126",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "737b2707a001e67f3812d86a639c3d037efe2ea8"
+                                    "commit": "6905396791cd858715fb695fab253deff797f119"
                                 }
                             ],
                             "modules": [
@@ -835,7 +916,11 @@
                                         {
                                             "type": "git",
                                             "url": "https://github.com/AcademySoftwareFoundation/Imath.git",
-                                            "tag": "v3.1.6"
+                                            "tag": "v3.1.10",
+                                            "x-checker-data": {
+                                                "type": "git"
+                                            },
+                                            "commit": "9fe5ed213cd99237976f2eb48b8bf86e112d90fa"
                                         }
                                     ],
                                     "modules": []
@@ -904,6 +989,30 @@
                                 "stable-only": true
                             }
                         }
+                    ],
+                    "modules": [
+                        {
+                            "name": "abseil",
+                            "buildsystem": "cmake-ninja",
+                            "config-opts": [
+                                "-DCMAKE_CXX_STANDARD=17",
+                                "-DCMAKE_POSITION_INDEPENDENT_CODE=ON",
+                                "-DBUILD_SHARED_LIBS=ON",
+                                "-DABSL_PROPAGATE_CXX_STD=ON"
+                            ],
+                            "sources": [
+                                {
+                                    "type": "git",
+                                    "url": "https://github.com/abseil/abseil-cpp.git",
+                                    "tag": "20240116.1",
+                                    "commit": "2f9e432cce407ce0ae50676696666f33a77d42ac",
+                                    "x-checker-data": {
+                                        "type": "git",
+                                        "tag-pattern": "^([\\d.]+)$"
+                                    }
+                                }
+                            ]
+                        }
                     ]
                 },
                 {
@@ -915,8 +1024,14 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.kde.org/stable/qca/2.3.4/qca-2.3.4.tar.xz",
-                            "sha256": "6b695881a7e3fd95f73aaee6eaeab96f6ad17e515e9c2b3d4b3272d7862ff5c4"
+                            "url": "https://download.kde.org/stable/qca/2.3.8/qca-2.3.8.tar.xz",
+                            "sha256": "48759ca86a0202461d908ba66134380cc3bb7d20fed3c031b9fc0289796a8264",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 13606,
+                                "stable-only": true,
+                                "url-template": "https://download.kde.org/stable/qca/$version/qca-$version.tar.xz"
+                            }
                         }
                     ]
                 },
@@ -1007,7 +1122,11 @@
                         {
                             "type": "file",
                             "url": "https://files.pythonhosted.org/packages/71/39/171f1c67cd00715f190ba0b100d606d440a28c93c7714febeca8b79af85e/six-1.16.0.tar.gz",
-                            "sha256": "1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"
+                            "sha256": "1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926",
+                            "x-checker-data": {
+                                "type": "pypi",
+                                "name": "six"
+                            }
                         }
                     ]
                 },
@@ -1020,8 +1139,12 @@
                     "sources": [
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/45/0b/38b06fd9b92dc2b68d58b75f900e97884c45bedd2ff83203d933cf5851c9/future-0.18.2.tar.gz",
-                            "sha256": "b1bead90b70cf6ec3f0710ae53a525360fa360d306a86583adc6bf83a4db537d"
+                            "url": "https://files.pythonhosted.org/packages/8f/2e/cf6accf7415237d6faeeebdc7832023c90e0282aa16fd3263db0eb4715ec/future-0.18.3.tar.gz",
+                            "sha256": "34a17436ed1e96697a86f9de3d15a3b0be01d8bc8de9c1dffd59fb8234ed5307",
+                            "x-checker-data": {
+                                "type": "pypi",
+                                "name": "future"
+                            }
                         }
                     ]
                 },
@@ -1036,7 +1159,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v65.5.1"
+                            "tag": "v69.1.0",
+                            "x-checker-data": {
+                                "type": "git"
+                            },
+                            "commit": "bc6b031574efae1be4e0940bc8f262755149e216"
                         }
                     ]
                 },
@@ -1075,53 +1202,161 @@
                     "build-commands": [
                         "pip3 install --prefix=/app *dateutil-*",
                         "pip3 install --prefix=/app pytz-*",
+                        "pip3 install --prefix=/app pathspec-*",
+                        "pip3 install --prefix=/app editables-*",
+                        "pip3 install --prefix=/app pluggy-*",
+                        "pip3 install --prefix=/app trove_classifiers-*",
+                        "pip3 install --prefix=/app hatchling-*",
                         "pip3 install --prefix=/app urllib3-*",
+                        "pip3 install --prefix=/app --force-reinstall flit_core-*",
                         "pip3 install --prefix=/app idna-*",
                         "pip3 install --prefix=/app certifi-*",
                         "pip3 install --prefix=/app charset-normalizer-*",
                         "pip3 install --prefix=/app requests-*",
+                        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"lxml\" --no-build-isolation",
                         "pip3 install --prefix=/app owslib*"
                     ],
                     "sources": [
                         {
                             "type": "file",
                             "url": "https://files.pythonhosted.org/packages/36/7a/87837f39d0296e723bb9b62bbb257d0355c7f6128853c78955f57342a56d/python_dateutil-2.8.2-py2.py3-none-any.whl",
-                            "sha256": "961d03dc3453ebbc59dbdea9e4e11c5651520a876d0f4db161e8674aae935da9"
+                            "sha256": "961d03dc3453ebbc59dbdea9e4e11c5651520a876d0f4db161e8674aae935da9",
+                            "x-checker-data": {
+                                "type": "pypi",
+                                "name": "python-dateutil",
+                                "packagetype": "bdist_wheel"
+                            }
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/85/ac/92f998fc52a70afd7f6b788142632afb27cd60c8c782d1452b7466603332/pytz-2022.6-py2.py3-none-any.whl",
-                            "sha256": "222439474e9c98fced559f1709d89e6c9cbf8d79c794ff3eb9f8800064291427"
+                            "url": "https://files.pythonhosted.org/packages/90/26/9f1f00a5d021fff16dee3de13d43e5e978f3d58928e129c3a62cf7eb9738/pytz-2024.1.tar.gz",
+                            "sha256": "2a29735ea9c18baf14b448846bde5a48030ed267578472d8955cd0e7443a9812",
+                            "x-checker-data": {
+                                "type": "pypi",
+                                "name": "pytz"
+                            }
                         },
                         {
                             "type": "file",
-                            "url": "https://pypi.io/packages/source/c/certifi/certifi-2022.9.24.tar.gz",
-                            "sha256": "0d9c601124e5a6ba9712dbc60d9c53c21e34f5f641fe83002317394311bdce14"
+                            "url": "https://files.pythonhosted.org/packages/71/da/e94e26401b62acd6d91df2b52954aceb7f561743aa5ccc32152886c76c96/certifi-2024.2.2.tar.gz",
+                            "sha256": "0569859f95fc761b18b45ef421b1290a0f65f147e92a1e5eb3e635f9a5e4e66f",
+                            "x-checker-data": {
+                                "type": "pypi",
+                                "name": "certifi"
+                            }
                         },
                         {
                             "type": "file",
-                            "url": "https://pypi.io/packages/source/i/idna/idna-3.3.tar.gz",
-                            "sha256": "9d643ff0a55b762d5cdb124b8eaa99c66322e2157b69160bc32796e824360e6d"
+                            "url": "https://files.pythonhosted.org/packages/c2/e7/a82b05cf63a603df6e68d59ae6a68bf5064484a0718ea5033660af4b54a9/idna-3.6-py3-none-any.whl",
+                            "sha256": "c05567e9c24a6b9faaa835c4821bad0590fbb9d5779e7caa6e1cc4978e7eb24f",
+                            "x-checker-data": {
+                                "type": "pypi",
+                                "name": "idna",
+                                "packagetype": "bdist_wheel"
+                            }
                         },
                         {
                             "type": "file",
-                            "url": "https://pypi.io/packages/source/c/charset-normalizer/charset-normalizer-2.1.1.tar.gz",
-                            "sha256": "5a3d016c7c547f69d6f81fb0db9449ce888b418b5b9952cc5e6e66843e9dd845"
+                            "url": "https://files.pythonhosted.org/packages/63/09/c1bc53dab74b1816a00d8d030de5bf98f724c52c1635e07681d312f20be8/charset-normalizer-3.3.2.tar.gz",
+                            "sha256": "f30c3cb33b24454a82faecaf01b19c18562b1e89558fb6c56de4d9118a032fd5",
+                            "x-checker-data": {
+                                "type": "pypi",
+                                "name": "charset-normalizer"
+                            }
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/6f/de/5be2e3eed8426f871b170663333a0f627fc2924cc386cd41be065e7ea870/urllib3-1.26.12-py2.py3-none-any.whl",
-                            "sha256": "b930dd878d5a8afb066a637fbb35144fe7901e3b209d1cd4f524bd0e9deee997"
+                            "url": "https://files.pythonhosted.org/packages/6b/be/0f2f4a5e8adc114a02b63d92bf8edbfa24db6fc602fca83c885af2479e0e/editables-0.5-py3-none-any.whl",
+                            "sha256": "61e5ffa82629e0d8bfe09bc44a07db3c1ab8ed1ce78a6980732870f19b5e7d4c",
+                            "x-checker-data": {
+                                "type": "pypi",
+                                "name": "editables",
+                                "packagetype": "bdist_wheel"
+                            }
                         },
                         {
                             "type": "file",
-                            "url": "https://github.com/psf/requests/releases/download/v2.28.1/requests-2.28.1-py3-none-any.whl",
-                            "sha256": "8fefa2a1a1365bf5520aac41836fbee479da67864514bdb821f31ce07ce65349"
+                            "url": "https://files.pythonhosted.org/packages/a5/5b/0cc789b59e8cc1bf288b38111d002d8c5917123194d45b29dcdac64723cc/pluggy-1.4.0-py3-none-any.whl",
+                            "sha256": "7db9f7b503d67d1c5b95f59773ebb58a8c1c288129a88665838012cfb07b8981",
+                            "x-checker-data": {
+                                "type": "pypi",
+                                "name": "pluggy",
+                                "packagetype": "bdist_wheel"
+                            }
                         },
                         {
                             "type": "file",
-                            "url": "https://github.com/geopython/OWSLib/archive/refs/tags/0.27.2.tar.gz",
-                            "sha256": "3a8461e39fb9c5be5abb1f5a07fffbf688300c970ec553f256c9e664603657b1",
+                            "url": "https://files.pythonhosted.org/packages/6b/4e/599b1d41680dc063166bc8872e96f05967200245a338bd404d669e1ae3fa/trove_classifiers-2024.1.31-py3-none-any.whl",
+                            "sha256": "854aba3358f3cf10e5c0916aa533f5a39e27aadd8ade26a54cdc2a93257e39c4",
+                            "x-checker-data": {
+                                "type": "pypi",
+                                "name": "trove-classifiers",
+                                "packagetype": "bdist_wheel"
+                            }
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://files.pythonhosted.org/packages/38/45/618e84e49a6c51e5dd15565ec2fcd82ab273434f236b8f108f065ded517a/flit_core-3.9.0-py3-none-any.whl",
+                            "sha256": "7aada352fb0c7f5538c4fafeddf314d3a6a92ee8e2b1de70482329e42de70301",
+                            "x-checker-data": {
+                                "type": "pypi",
+                                "name": "flit_core",
+                                "packagetype": "bdist_wheel"
+                            }
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://files.pythonhosted.org/packages/3a/bb/40528a09a33845bd7fd75c33b3be7faec3b5c8f15f68a58931da67420fb9/hatchling-1.21.1-py3-none-any.whl",
+                            "sha256": "21e8c13f8458b219a91cb84e5b61c15bf786695d1c4fabc29e91e78f94bfe892",
+                            "x-checker-data": {
+                                "type": "pypi",
+                                "name": "hatchling",
+                                "packagetype": "bdist_wheel"
+                            }
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://files.pythonhosted.org/packages/cc/20/ff623b09d963f88bfde16306a54e12ee5ea43e9b597108672ff3a408aad6/pathspec-0.12.1-py3-none-any.whl",
+                            "sha256": "a0d503e138a4c123b27490a4f7beda6a01c6f288df0e4a8b79c7eb0dc7b4cc08",
+                            "x-checker-data": {
+                                "type": "pypi",
+                                "name": "pathspec",
+                                "packagetype": "bdist_wheel"
+                            }
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://files.pythonhosted.org/packages/a2/73/a68704750a7679d0b6d3ad7aa8d4da8e14e151ae82e6fee774e6e0d05ec8/urllib3-2.2.1-py3-none-any.whl",
+                            "sha256": "450b20ec296a467077128bff42b73080516e71b56ff59a60a02bef2232c4fa9d",
+                            "x-checker-data": {
+                                "type": "pypi",
+                                "name": "urllib3",
+                                "packagetype": "bdist_wheel"
+                            }
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://files.pythonhosted.org/packages/70/8e/0e2d847013cb52cd35b38c009bb167a1a26b2ce6cd6965bf26b47bc0bf44/requests-2.31.0-py3-none-any.whl",
+                            "sha256": "58cd2187c01e70e6e26505bca751777aa9f2ee0b7f4300988b709f44e013003f",
+                            "x-checker-data": {
+                                "type": "pypi",
+                                "name": "requests",
+                                "packagetype": "bdist_wheel"
+                            }
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://files.pythonhosted.org/packages/2b/b4/bbccb250adbee490553b6a52712c46c20ea1ba533a643f1424b27ffc6845/lxml-5.1.0.tar.gz",
+                            "sha256": "3eea6ed6e6c918e468e693c41ef07f3c3acc310b70ddd9cc72d9ef84bc9564ca",
+                            "x-checker-data": {
+                                "type": "pypi",
+                                "name": "lxml"
+                            }
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/geopython/OWSLib/archive/refs/tags/0.29.3.tar.gz",
+                            "sha256": "e6e57c6dfe9200ad6cb5e77a4fbb9cf52828bcdb897f1555b89332c0d3213699",
                             "dest-filename": "owslib.tar.gz"
                         }
                     ]
@@ -1137,7 +1372,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/psycopg/psycopg2.git",
-                            "tag": "2_9_5"
+                            "tag": "2.9.9",
+                            "x-checker-data": {
+                                "type": "git"
+                            },
+                            "commit": "ad5bee7054519d87f25bc5828c502b2ebe197049"
                         }
                     ]
                 },
@@ -1184,41 +1423,35 @@
                     ],
                     "sources": [
                         {
-                            "type": "archive",
-                            "url": "https://files.pythonhosted.org/packages/1d/97/2288fe498044284f39ab8950703e88abbac2abbdf65524d576157af70556/MarkupSafe-2.1.1.tar.gz",
-                            "sha256": "7f91197cc9e48f989d12e4e6fbc46495c446636dfc81b9ccf50bb0ec74b91d4b"
+                            "type": "file",
+                            "url": "https://files.pythonhosted.org/packages/87/5b/aae44c6655f3801e81aa3eef09dbbf012431987ba564d7231722f68df02d/MarkupSafe-2.1.5.tar.gz",
+                            "sha256": "d283d37a890ba4c1ae73ffadf8046435c76e7bc2247bbb63c00bd1a709c6544b",
+                            "x-checker-data": {
+                                "type": "pypi",
+                                "name": "MarkupSafe"
+                            }
                         }
                     ],
                     "build-commands": [
-                        "python3 setup.py build",
-                        "python3 setup.py install --prefix /app"
+                        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"MarkupSafe\" --no-build-isolation"
                     ]
                 },
                 {
                     "name": "python3-jinja2",
                     "buildsystem": "simple",
                     "build-commands": [
-                        "pip3 install --prefix=/app Jinja2-3.1.2-py3-none-any.whl"
+                        "pip3 install --prefix=/app Jinja2-*"
                     ],
                     "sources": [
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/bc/c3/f068337a370801f372f2f8f6bad74a5c140f6fda3d9de154052708dd3c65/Jinja2-3.1.2-py3-none-any.whl",
-                            "sha256": "6088930bfe239f0e6710546ab9c19c9ef35e29792895fed6e6e31a023a182a61"
-                        }
-                    ]
-                },
-                {
-                    "name": "python3-pygments",
-                    "buildsystem": "simple",
-                    "build-commands": [
-                        "python3 setup.py install --prefix=/app --root=/ --optimize=1"
-                    ],
-                    "sources": [
-                        {
-                            "type": "git",
-                            "url": "https://github.com/pygments/pygments.git",
-                            "tag": "2.13.0"
+                            "url": "https://files.pythonhosted.org/packages/30/6d/6de6be2d02603ab56e72997708809e8a5b0fbfee080735109b40a3564843/Jinja2-3.1.3-py3-none-any.whl",
+                            "sha256": "7d6d50dd97d52cbc355597bd845fabfbac3f551e1f99619e39a35ce8c370b5fa",
+                            "x-checker-data": {
+                                "type": "pypi",
+                                "name": "Jinja2",
+                                "packagetype": "bdist_wheel"
+                            }
                         }
                     ]
                 },
@@ -1238,27 +1471,37 @@
                         {
                             "type": "git",
                             "url": "https://github.com/Exiv2/exiv2.git",
-                            "tag": "v0.28.1",
+                            "tag": "v0.28.2",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "5c91bfc8b5bd2227bf0e2a6607feb85a4020064e"
+                            "commit": "04207b9c39bf7b3b1a7144f7ed4e4f16b4f29ef6"
                         }
                     ]
                 },
                 {
                     "name": "protobuf",
+                    "buildsystem": "cmake-ninja",
+                    "config-opts": [
+                        "-DCMAKE_POSITION_INDEPENDENT_CODE=ON",
+                        "-Dprotobuf_ABSL_PROVIDER=package",
+                        "-Dprotobuf_BUILD_SHARED_LIBS=ON",
+                        "-Dprotobuf_BUILD_TESTS=OFF"
+                    ],
                     "cleanup": [
-                        "protoc",
-                        "/bin",
-                        "/doc",
-                        "/lib/plugins"
+                        "/bin/protoc*",
+                        "/lib/libprotoc*",
+                        "/lib/libprotobuf-lite*"
                     ],
                     "sources": [
                         {
-                            "type": "archive",
-                            "url": "https://github.com/protocolbuffers/protobuf/releases/download/v21.12/protobuf-cpp-3.21.12.tar.gz",
-                            "sha256": "4eab9b524aa5913c6fffb20b2a8abf5ef7f95a80bc0701f3a6dbb4c607f73460"
+                            "type": "git",
+                            "url": "https://github.com/protocolbuffers/protobuf.git",
+                            "tag": "v25.3",
+                            "commit": "4a2aef570deb2bfb8927426558701e8bfc26f2a4",
+                            "x-checker-data": {
+                                "type": "git"
+                            }
                         }
                     ]
                 },
@@ -1272,9 +1515,13 @@
                     ],
                     "sources": [
                         {
-                            "type": "archive",
-                            "url": "https://github.com/frankosterfeld/qtkeychain/archive/v0.13.2.tar.gz",
-                            "sha256": "20beeb32de7c4eb0af9039b21e18370faf847ac8697ab3045906076afbc4caa5"
+                            "type": "git",
+                            "url": "https://github.com/frankosterfeld/qtkeychain/",
+                            "tag": "0.14.2",
+                            "x-checker-data": {
+                                "type": "git"
+                            },
+                            "commit": "8eac9889775ca45c106d077bb0d3744754a1570a"
                         }
                     ],
                     "modules": [
