@@ -1,0 +1,56 @@
+diff --git a/linux/org.qgis.qgis.appdata.xml.in b/linux/org.qgis.qgis.appdata.xml.in
+index 740f3963438..4b26035acc9 100644
+--- a/linux/org.qgis.qgis.appdata.xml.in
++++ b/linux/org.qgis.qgis.appdata.xml.in
+@@ -2,11 +2,11 @@
+ <component type="desktop">
+   <id>org.qgis.qgis.desktop</id>
+   <name>QGIS Desktop</name>
+-  <developer_name>QGIS Development Team</developer_name>
+-  <summary>A Free and Open Source Geographic Information System</summary>
++  <summary>A Geographic Information System</summary>
+   <screenshots>
+-    <screenshot><image type="source">https://qgis.org/en/_static/images/about-screenshot.png</image></screenshot>
++    <screenshot type="default"><caption>QGIS</caption><image type="source">https://qgis.org/en/_static/images/about-screenshot.png</image></screenshot>
+   </screenshots>
++  <developer id="qgis.org"><name>QGIS Development Team<name></developer>
+   <description><p>QGIS is a user friendly Open Source Geographic Information System (GIS) licensed under the GNU General Public License. QGIS is an official project of the Open Source Geospatial Foundation (OSGeo). It runs on Linux, Unix, Mac OSX, Windows and Android and supports numerous vector, raster, and database formats and functionalities.</p></description>
+ 
+   <metadata_license>CC-BY-3.0</metadata_license>
+diff --git a/scripts/ts2appinfo.py b/scripts/ts2appinfo.py
+index a9018a26c35..67f0a94ef79 100644
+--- a/scripts/ts2appinfo.py
++++ b/scripts/ts2appinfo.py
+@@ -69,7 +69,7 @@ for qm in sorted(glob(sys.argv[1] + "/output/i18n/qgis_*.qm")):
+             continue
+         strings[s][lang] = translation
+ 
+-for elem in ['name', 'summary', 'description']:
++for elem in ['name', 'summary']:
+     for c in r.iter(elem):
+         if c.attrib:
+             continue
+@@ -83,6 +83,23 @@ for elem in ['name', 'summary', 'description']:
+             e.tail = c.tail
+             r.append(e)
+ 
++# we need to do description separately because it's the <p> that we translate
++descriptionElement = r.find('description')
++descriptionString = None
++for c in descriptionElement.iter('p'):
++    descriptionString = et.tostring(c).decode("utf-8")
++
++for lang in strings[descriptionString]:
++    translated = strings[descriptionString][lang]
++    try:
++        translatedElement = et.fromstring(translated)
++        translatedElement.attrib={"xml:lang": lang}
++        translatedElement.tail = "\n    "
++        descriptionElement.append(translatedElement)
++    except:
++        print("Skipping:", lang, translated)
++        continue
++
+ d.write(sys.argv[1] + "/org.qgis.qgis.appdata.xml", encoding="UTF-8", xml_declaration=True)
+ 
+ f = open(sys.argv[1] + "/org.qgis.qgis.desktop", "w", encoding="utf-8")
