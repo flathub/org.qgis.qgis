@@ -301,8 +301,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.8.3/gdal-3.8.3.tar.xz",
-                            "sha256": "ae2d160f65016e208eca34ff14490ec4511f1fa03fd386ac130449d15e82929d",
+                            "url": "https://download.osgeo.org/gdal/3.8.4/gdal-3.8.4.tar.xz",
+                            "sha256": "0c53ced95d29474236487202709b49015854f8e02e35e44ed0f4f4e12a7966ce",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -670,8 +670,8 @@
                             "sources": [
                                 {
                                     "type": "file",
-                                    "url": "https://files.pythonhosted.org/packages/d0/b0/13e2b50c95bfc1d5ee04925eb5c105726c838f922d0aaddd57b7c8be0f8b/numpy-1.26.3.tar.gz",
-                                    "sha256": "697df43e2b6310ecc9d95f05d5ef20eacc09c7c4ecc9da3f235d39e71b7da1e4",
+                                    "url": "https://files.pythonhosted.org/packages/65/6e/09db70a523a96d25e115e71cc56a6f9031e7b8cd166c1ac8438307c14058/numpy-1.26.4.tar.gz",
+                                    "sha256": "2a02aba9ed12e4ac4eb3ea9421c420301a0c6460d9830d74a9df87efa4912010",
                                     "x-checker-data": {
                                         "type": "pypi",
                                         "name": "numpy"
@@ -801,11 +801,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/libjxl/libjxl.git",
-                                    "tag": "v0.9.2",
+                                    "tag": "v0.10.0",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "41b8cdab7815c79a060938bfe0c24337e2eb9e54"
+                                    "commit": "19bcd827dbf44bdc7ef30af8925696a5b82dcdf2"
                                 }
                             ]
                         },
@@ -816,11 +816,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
-                                    "tag": "v3.2.1",
+                                    "tag": "v3.2.126",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "737b2707a001e67f3812d86a639c3d037efe2ea8"
+                                    "commit": "6905396791cd858715fb695fab253deff797f119"
                                 }
                             ],
                             "modules": [
@@ -1234,11 +1234,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/Exiv2/exiv2.git",
-                            "tag": "v0.28.1",
+                            "tag": "v0.28.2",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "5c91bfc8b5bd2227bf0e2a6607feb85a4020064e"
+                            "commit": "04207b9c39bf7b3b1a7144f7ed4e4f16b4f29ef6"
                         }
                     ]
                 },
