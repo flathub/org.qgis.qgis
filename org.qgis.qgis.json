@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.34.3.tar.bz2",
-                    "sha256": "87b359154743ec93f63c9c9d189f07cc35fb476e32c79d4761ff42776a765cd5",
+                    "url": "https://qgis.org/downloads/qgis-3.36.0.tar.bz2",
+                    "sha256": "1b64bc92660bf07edc6b6478fc6a13656149e87d92eabe5c3db9493072506e2c",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -886,11 +886,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/libjxl/libjxl.git",
-                                    "tag": "v0.9.2",
+                                    "tag": "v0.10.0",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "41b8cdab7815c79a060938bfe0c24337e2eb9e54"
+                                    "commit": "19bcd827dbf44bdc7ef30af8925696a5b82dcdf2"
                                 }
                             ]
                         },
@@ -1139,8 +1139,8 @@
                     "sources": [
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/8f/2e/cf6accf7415237d6faeeebdc7832023c90e0282aa16fd3263db0eb4715ec/future-0.18.3.tar.gz",
-                            "sha256": "34a17436ed1e96697a86f9de3d15a3b0be01d8bc8de9c1dffd59fb8234ed5307",
+                            "url": "https://files.pythonhosted.org/packages/a7/b2/4140c69c6a66432916b26158687e821ba631a4c9273c474343badf84d3ba/future-1.0.0.tar.gz",
+                            "sha256": "bd2968309307861edae1458a4f8a4f3598c03be43b97521076aebf5d94c07b05",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "future"
@@ -1159,11 +1159,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v69.1.0",
+                            "tag": "v69.1.1",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "bc6b031574efae1be4e0940bc8f262755149e216"
+                            "commit": "8c45d6e445a8ca5f5a1fd724a80a5c418fe36780"
                         }
                     ]
                 },
@@ -1286,8 +1286,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/6b/4e/599b1d41680dc063166bc8872e96f05967200245a338bd404d669e1ae3fa/trove_classifiers-2024.1.31-py3-none-any.whl",
-                            "sha256": "854aba3358f3cf10e5c0916aa533f5a39e27aadd8ade26a54cdc2a93257e39c4",
+                            "url": "https://files.pythonhosted.org/packages/56/45/6887993f3d1fd941fe129c8dc3aa648d5bd20e0e02c08f99df961fd1e908/trove_classifiers-2024.2.23-py3-none-any.whl",
+                            "sha256": "3094534b8021dc1822aadb1d11d4c7b62a854d464d19458fd0a49d6fe2b68b77",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "trove-classifiers",
@@ -1537,8 +1537,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.3.tar.xz",
-                                    "sha256": "9a3e2571f1048035d80238f52c8760125884a43baf8a580fedb7250c1ad0a9e7",
+                                    "url": "https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.4.tar.xz",
+                                    "sha256": "163d08d783be6d4ab9a979ceb5a4fecbc1d9660d3c34168c581301cd53912b20",
                                     "x-checker-data": {
                                         "type": "gnome",
                                         "name": "libsecret",
