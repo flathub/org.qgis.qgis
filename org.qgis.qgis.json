@@ -1490,8 +1490,7 @@
                     ],
                     "cleanup": [
                         "/bin/protoc*",
-                        "/lib/libprotoc*",
-                        "/lib/libprotobuf-lite*"
+                        "/lib/libprotoc*"
                     ],
                     "sources": [
                         {
