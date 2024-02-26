@@ -13,7 +13,7 @@
         "--share=ipc",
         "--share=network",
         "--socket=wayland",
-        "--socket=fallback-x11",
+        "--socket=x11",
         "--filesystem=host",
         "--device=dri"
     ],
