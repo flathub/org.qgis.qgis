@@ -601,11 +601,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/uclouvain/openjpeg.git",
-                                    "tag": "v2.5.0",
+                                    "tag": "v2.5.1",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "a5891555eb49ed7cc26b2901ea680acda136d811"
+                                    "commit": "14d03e8ed5dcdb8552c8a4c7c9a383b29a6891cb"
                                 }
                             ],
                             "cleanup": [
