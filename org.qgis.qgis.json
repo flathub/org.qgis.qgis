@@ -601,11 +601,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/uclouvain/openjpeg.git",
-                                    "tag": "v2.5.0",
+                                    "tag": "v2.5.2",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "a5891555eb49ed7cc26b2901ea680acda136d811"
+                                    "commit": "39e8c50a2f9bdcf36810ee3d41bcbf1cc78968ae"
                                 }
                             ],
                             "cleanup": [
@@ -886,11 +886,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/libjxl/libjxl.git",
-                                    "tag": "v0.10.0",
+                                    "tag": "v0.10.1",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "19bcd827dbf44bdc7ef30af8925696a5b82dcdf2"
+                                    "commit": "5f67ebced96df5c0696ec7d1822bdd3e4e11a1a1"
                                 }
                             ]
                         },
@@ -916,11 +916,11 @@
                                         {
                                             "type": "git",
                                             "url": "https://github.com/AcademySoftwareFoundation/Imath.git",
-                                            "tag": "v3.1.10",
+                                            "tag": "v3.1.11",
                                             "x-checker-data": {
                                                 "type": "git"
                                             },
-                                            "commit": "9fe5ed213cd99237976f2eb48b8bf86e112d90fa"
+                                            "commit": "5ac1d5335cb34f0f356c5f2461a57c845b96b115"
                                         }
                                     ],
                                     "modules": []
