@@ -1106,6 +1106,10 @@
                         },
                         {
                             "name": "libgeotiff",
+                            "config-opts": [
+                                "--with-jpeg=yes",
+                                "--with-zlib=yes"
+                            ],
                             "sources": [
                                 {
                                     "type": "archive",
