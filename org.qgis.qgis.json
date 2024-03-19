@@ -81,12 +81,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/PROJ.git",
-                            "tag": "9.3.1",
+                            "tag": "9.4.0",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "0f2922e1bb6e98727f10e5a3720466710943963a"
+                            "commit": "7cd00d0b2ca594315acd6c76912df39be4607094"
                         }
                     ]
                 },
@@ -476,8 +476,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-12.8.0.tar.xz",
-                                    "sha256": "a89bb6fece5ce9fdd1d01a4bc145cf7cc0b939c5777cca46de69c2f5e3412cf0",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-12.8.1.tar.xz",
+                                    "sha256": "2781dd3a6cc5f9a49c91a4519dde2b1c24335a5bfe0cc1c9881b6363142452b4",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -601,11 +601,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/uclouvain/openjpeg.git",
-                                    "tag": "v2.5.0",
+                                    "tag": "v2.5.2",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "a5891555eb49ed7cc26b2901ea680acda136d811"
+                                    "commit": "39e8c50a2f9bdcf36810ee3d41bcbf1cc78968ae"
                                 }
                             ],
                             "cleanup": [
@@ -657,8 +657,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-24.02.0.tar.xz",
-                                    "sha256": "19187a3fdd05f33e7d604c4799c183de5ca0118640c88b370ddcf3136343222e",
+                                    "url": "https://poppler.freedesktop.org/poppler-24.03.0.tar.xz",
+                                    "sha256": "bafbf0db5713dec25b5d16eb2cd87e4a62351cdc40f050c3937cd8dd6882d446",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -890,11 +890,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/libjxl/libjxl.git",
-                                    "tag": "v0.10.0",
+                                    "tag": "v0.10.2",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "19bcd827dbf44bdc7ef30af8925696a5b82dcdf2"
+                                    "commit": "e1489592a770b989303b0edc5cc1dc447bbe0515"
                                 }
                             ]
                         },
@@ -905,11 +905,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
-                                    "tag": "v3.2.126",
+                                    "tag": "v3.2.3",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "6905396791cd858715fb695fab253deff797f119"
+                                    "commit": "e4b8d0226ad88f58b19936c79b9998c2f73d2cfa"
                                 }
                             ],
                             "modules": [
@@ -920,11 +920,11 @@
                                         {
                                             "type": "git",
                                             "url": "https://github.com/AcademySoftwareFoundation/Imath.git",
-                                            "tag": "v3.1.10",
+                                            "tag": "v3.1.11",
                                             "x-checker-data": {
                                                 "type": "git"
                                             },
-                                            "commit": "9fe5ed213cd99237976f2eb48b8bf86e112d90fa"
+                                            "commit": "5ac1d5335cb34f0f356c5f2461a57c845b96b115"
                                         }
                                     ],
                                     "modules": []
@@ -962,12 +962,12 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/libexpat/libexpat.git",
-                                    "tag": "R_2_6_0",
+                                    "tag": "R_2_6_2",
                                     "x-checker-data": {
                                         "type": "git",
                                         "tag-pattern": "^(R_[0-9_]+)$"
                                     },
-                                    "commit": "849da3e3fe727fccef5e96ef35482d66447f06a2"
+                                    "commit": "fa75b96546c069d17b8f80d91e0f4ef0cde3790d"
                                 }
                             ]
                         }
@@ -1163,11 +1163,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v69.1.1",
+                            "tag": "v69.2.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "8c45d6e445a8ca5f5a1fd724a80a5c418fe36780"
+                            "commit": "6ee23bf0579c52e1cbe7c97fc20fd085ff2a25c7"
                         }
                     ]
                 },
@@ -1223,8 +1223,8 @@
                     "sources": [
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/36/7a/87837f39d0296e723bb9b62bbb257d0355c7f6128853c78955f57342a56d/python_dateutil-2.8.2-py2.py3-none-any.whl",
-                            "sha256": "961d03dc3453ebbc59dbdea9e4e11c5651520a876d0f4db161e8674aae935da9",
+                            "url": "https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+                            "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "python-dateutil",
@@ -1290,8 +1290,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/56/45/6887993f3d1fd941fe129c8dc3aa648d5bd20e0e02c08f99df961fd1e908/trove_classifiers-2024.2.23-py3-none-any.whl",
-                            "sha256": "3094534b8021dc1822aadb1d11d4c7b62a854d464d19458fd0a49d6fe2b68b77",
+                            "url": "https://files.pythonhosted.org/packages/bb/81/a16cb58f719e68d0cce72fb9afd6f0f50c0e474d7b8dc267c8309c3e2793/trove_classifiers-2024.3.3-py3-none-any.whl",
+                            "sha256": "3a84096861b385ec422c79995d1f6435dde47a9b63adaa3c886e53232ba7e6e0",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "trove-classifiers",
@@ -1310,8 +1310,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/3a/bb/40528a09a33845bd7fd75c33b3be7faec3b5c8f15f68a58931da67420fb9/hatchling-1.21.1-py3-none-any.whl",
-                            "sha256": "21e8c13f8458b219a91cb84e5b61c15bf786695d1c4fabc29e91e78f94bfe892",
+                            "url": "https://files.pythonhosted.org/packages/2d/31/b4ffda996d1e21bb7096fd377b0437f4925351c2f60dbe9563e83705744c/hatchling-1.22.3-py3-none-any.whl",
+                            "sha256": "f6602529d17f4c91123b4ffbcd4e0f143d92ba9603716edab4a83785f66e2942",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "hatchling",
@@ -1407,12 +1407,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/grass.git",
-                            "tag": "8.3.1",
+                            "tag": "8.3.2",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "4e66071694144043f251c53df2c2237f01b5af9c"
+                            "commit": "695385bb79319a536eb18d8f80ea4e2d13c5221d"
                         }
                     ],
                     "modules": [
@@ -1500,8 +1500,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v25.3",
-                            "commit": "4a2aef570deb2bfb8927426558701e8bfc26f2a4",
+                            "tag": "v26.0",
+                            "commit": "d6511091a0cab1ad13f676a02676ad2a0e5eb9ae",
                             "x-checker-data": {
                                 "type": "git"
                             }
