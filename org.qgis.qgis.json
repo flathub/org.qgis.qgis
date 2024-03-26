@@ -923,11 +923,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
-                                    "tag": "v3.2.3",
+                                    "tag": "v3.2.4",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "e4b8d0226ad88f58b19936c79b9998c2f73d2cfa"
+                                    "commit": "a1a00ffeecf627bbbc010d40700720bee48b2af7"
                                 }
                             ],
                             "modules": [
@@ -1308,8 +1308,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/bb/81/a16cb58f719e68d0cce72fb9afd6f0f50c0e474d7b8dc267c8309c3e2793/trove_classifiers-2024.3.3-py3-none-any.whl",
-                            "sha256": "3a84096861b385ec422c79995d1f6435dde47a9b63adaa3c886e53232ba7e6e0",
+                            "url": "https://files.pythonhosted.org/packages/59/db/a5e9710acb366237fc003bf146a0f1f5b7b17a532d99937dcd8aafe041a0/trove_classifiers-2024.3.25-py3-none-any.whl",
+                            "sha256": "c400e0bdceb018913339d53b07682d09a42aada687d070e90ee3c08477bec024",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "trove-classifiers",
