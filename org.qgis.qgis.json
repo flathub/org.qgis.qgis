@@ -657,8 +657,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-24.03.0.tar.xz",
-                                    "sha256": "bafbf0db5713dec25b5d16eb2cd87e4a62351cdc40f050c3937cd8dd6882d446",
+                                    "url": "https://poppler.freedesktop.org/poppler-24.04.0.tar.xz",
+                                    "sha256": "1e804ec565acf7126eb2e9bb3b56422ab2039f7e05863a5dfabdd1ffd1bb77a7",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -1368,8 +1368,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/73/a6/0730ff6cbb87e42e1329a486fe4ccbd3f8f728cb629c2671b0d093a85918/lxml-5.1.1.tar.gz",
-                            "sha256": "42a8aa957e98bd8b884a8142175ec24ce4ef0a57760e8879f193bfe64b757ca9",
+                            "url": "https://files.pythonhosted.org/packages/ea/e2/3834472e7f18801e67a3cd6f3c203a5456d6f7f903cfb9a990e62098a2f3/lxml-5.2.1.tar.gz",
+                            "sha256": "3f7765e69bbce0906a7c74d5fe46d2c7a7596147318dbc08e4a2431f3060e306",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "lxml"
