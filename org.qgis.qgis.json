@@ -336,8 +336,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.8.4/gdal-3.8.4.tar.xz",
-                            "sha256": "0c53ced95d29474236487202709b49015854f8e02e35e44ed0f4f4e12a7966ce",
+                            "url": "https://download.osgeo.org/gdal/3.8.5/gdal-3.8.5.tar.xz",
+                            "sha256": "e8b4df2a8a7d25272f867455c0c230459545972f81f0eff2ddbf6a6f60dcb1e4",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -476,8 +476,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-12.8.1.tar.xz",
-                                    "sha256": "2781dd3a6cc5f9a49c91a4519dde2b1c24335a5bfe0cc1c9881b6363142452b4",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-12.8.2.tar.xz",
+                                    "sha256": "03b62f8c09e4f5d74643b478520741b8e27b55e7e4525978fcae2f5d791ac3bf",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -657,8 +657,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-24.03.0.tar.xz",
-                                    "sha256": "bafbf0db5713dec25b5d16eb2cd87e4a62351cdc40f050c3937cd8dd6882d446",
+                                    "url": "https://poppler.freedesktop.org/poppler-24.04.0.tar.xz",
+                                    "sha256": "1e804ec565acf7126eb2e9bb3b56422ab2039f7e05863a5dfabdd1ffd1bb77a7",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -1026,8 +1026,8 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/abseil/abseil-cpp.git",
-                                    "tag": "20240116.1",
-                                    "commit": "2f9e432cce407ce0ae50676696666f33a77d42ac",
+                                    "tag": "20240116.2",
+                                    "commit": "d7aaad83b488fd62bd51c81ecf16cd938532cc0a",
                                     "x-checker-data": {
                                         "type": "git",
                                         "tag-pattern": "^([\\d.]+)$"
@@ -1328,8 +1328,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/49/63/2d56d6356f9f8b906aa68335cbf5b1b54c69873a2e271eda2ddba319c1ae/hatchling-1.22.4-py3-none-any.whl",
-                            "sha256": "f56da5bfc396af7b29daa3164851dd04991c994083f56cb054b5003675caecdc",
+                            "url": "https://files.pythonhosted.org/packages/52/6a/5e6a176ac6be3d3c36dded0b0d346f7059f83268716cc88f707b16f711f5/hatchling-1.22.5-py3-none-any.whl",
+                            "sha256": "30ec7ee09f6e17b73257eedfd7f5bb5a9b028a6cf6d144d9faad1d826fa203b8",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "hatchling",
@@ -1368,8 +1368,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/73/a6/0730ff6cbb87e42e1329a486fe4ccbd3f8f728cb629c2671b0d093a85918/lxml-5.1.1.tar.gz",
-                            "sha256": "42a8aa957e98bd8b884a8142175ec24ce4ef0a57760e8879f193bfe64b757ca9",
+                            "url": "https://files.pythonhosted.org/packages/ea/e2/3834472e7f18801e67a3cd6f3c203a5456d6f7f903cfb9a990e62098a2f3/lxml-5.2.1.tar.gz",
+                            "sha256": "3f7765e69bbce0906a7c74d5fe46d2c7a7596147318dbc08e4a2431f3060e306",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "lxml"
