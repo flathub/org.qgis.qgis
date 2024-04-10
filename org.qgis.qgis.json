@@ -1308,8 +1308,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/59/db/a5e9710acb366237fc003bf146a0f1f5b7b17a532d99937dcd8aafe041a0/trove_classifiers-2024.3.25-py3-none-any.whl",
-                            "sha256": "c400e0bdceb018913339d53b07682d09a42aada687d070e90ee3c08477bec024",
+                            "url": "https://files.pythonhosted.org/packages/be/26/2adcb1eb5e154de20fa93cd8ef467f19e42a9861742e46116b39a410bcfd/trove_classifiers-2024.4.10-py3-none-any.whl",
+                            "sha256": "678bd6fcc5218d72e3304e27a608acc9b91e17bd00c3f3d8c968497c843ad98b",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "trove-classifiers",
