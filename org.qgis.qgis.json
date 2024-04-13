@@ -1181,11 +1181,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v69.2.0",
+                            "tag": "v69.5.1",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "6ee23bf0579c52e1cbe7c97fc20fd085ff2a25c7"
+                            "commit": "ff58075cdf3459ecdf73486d2a83cecdd70c7e4a"
                         }
                     ]
                 },
@@ -1269,8 +1269,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/c2/e7/a82b05cf63a603df6e68d59ae6a68bf5064484a0718ea5033660af4b54a9/idna-3.6-py3-none-any.whl",
-                            "sha256": "c05567e9c24a6b9faaa835c4821bad0590fbb9d5779e7caa6e1cc4978e7eb24f",
+                            "url": "https://files.pythonhosted.org/packages/e5/3e/741d8c82801c347547f8a2a06aa57dbb1992be9e948df2ea0eda2c8b79e8/idna-3.7-py3-none-any.whl",
+                            "sha256": "82fee1fc78add43492d3a1898bfa6d8a904cc97d8427f683ed8e798d07761aa0",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "idna",
@@ -1308,8 +1308,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/59/db/a5e9710acb366237fc003bf146a0f1f5b7b17a532d99937dcd8aafe041a0/trove_classifiers-2024.3.25-py3-none-any.whl",
-                            "sha256": "c400e0bdceb018913339d53b07682d09a42aada687d070e90ee3c08477bec024",
+                            "url": "https://files.pythonhosted.org/packages/be/26/2adcb1eb5e154de20fa93cd8ef467f19e42a9861742e46116b39a410bcfd/trove_classifiers-2024.4.10-py3-none-any.whl",
+                            "sha256": "678bd6fcc5218d72e3304e27a608acc9b91e17bd00c3f3d8c968497c843ad98b",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "trove-classifiers",
