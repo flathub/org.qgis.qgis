@@ -1328,8 +1328,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/52/6a/5e6a176ac6be3d3c36dded0b0d346f7059f83268716cc88f707b16f711f5/hatchling-1.22.5-py3-none-any.whl",
-                            "sha256": "30ec7ee09f6e17b73257eedfd7f5bb5a9b028a6cf6d144d9faad1d826fa203b8",
+                            "url": "https://files.pythonhosted.org/packages/36/47/8266533720febfb0640ba1c93ab2edb83be4091dcfb107595cc8bbbb99ef/hatchling-1.24.0-py3-none-any.whl",
+                            "sha256": "cb2892c05858cbeb313ec5e7f0f253550250827e33c59aa732168ef24ff30f71",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "hatchling",
