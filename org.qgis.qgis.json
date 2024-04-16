@@ -547,8 +547,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://downloads.sourceforge.net/project/boost/boost/1.84.0/boost_1_84_0.tar.bz2",
-                                    "sha256": "cc4b893acf645c9d4b698e9a0f08ca8846aa5d6c68275c14c3e7949c24109454",
+                                    "url": "https://downloads.sourceforge.net/project/boost/boost/1.85.0/boost_1_85_0.tar.bz2",
+                                    "sha256": "7009fe1faa1697476bdc7027703a2badb84e849b7b0baad5086b087b971f8617",
                                     "x-checker-data": {
                                         "type": "html",
                                         "url": "https://www.boost.org/feed/downloads.rss",
@@ -1328,8 +1328,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/52/6a/5e6a176ac6be3d3c36dded0b0d346f7059f83268716cc88f707b16f711f5/hatchling-1.22.5-py3-none-any.whl",
-                            "sha256": "30ec7ee09f6e17b73257eedfd7f5bb5a9b028a6cf6d144d9faad1d826fa203b8",
+                            "url": "https://files.pythonhosted.org/packages/36/47/8266533720febfb0640ba1c93ab2edb83be4091dcfb107595cc8bbbb99ef/hatchling-1.24.0-py3-none-any.whl",
+                            "sha256": "cb2892c05858cbeb313ec5e7f0f253550250827e33c59aa732168ef24ff30f71",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "hatchling",
