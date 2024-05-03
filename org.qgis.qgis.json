@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.36.1.tar.bz2",
-                    "sha256": "ca0ffa5a76167304a4c3b40f7bafde99a476fa9b490a87d4e4b73370a199fc1d",
+                    "url": "https://qgis.org/downloads/qgis-3.36.2.tar.bz2",
+                    "sha256": "8c886ab59094d7ea7fff5c299173b969509b88d896880d2c5d818c400cee69a4",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -648,8 +648,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.8.4/gdal-3.8.4.tar.xz",
-                            "sha256": "0c53ced95d29474236487202709b49015854f8e02e35e44ed0f4f4e12a7966ce",
+                            "url": "https://download.osgeo.org/gdal/3.8.5/gdal-3.8.5.tar.xz",
+                            "sha256": "e8b4df2a8a7d25272f867455c0c230459545972f81f0eff2ddbf6a6f60dcb1e4",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -788,8 +788,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-12.8.1.tar.xz",
-                                    "sha256": "2781dd3a6cc5f9a49c91a4519dde2b1c24335a5bfe0cc1c9881b6363142452b4",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-12.8.2.tar.xz",
+                                    "sha256": "03b62f8c09e4f5d74643b478520741b8e27b55e7e4525978fcae2f5d791ac3bf",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -859,8 +859,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://downloads.sourceforge.net/project/boost/boost/1.84.0/boost_1_84_0.tar.bz2",
-                                    "sha256": "cc4b893acf645c9d4b698e9a0f08ca8846aa5d6c68275c14c3e7949c24109454",
+                                    "url": "https://downloads.sourceforge.net/project/boost/boost/1.85.0/boost_1_85_0.tar.bz2",
+                                    "sha256": "7009fe1faa1697476bdc7027703a2badb84e849b7b0baad5086b087b971f8617",
                                     "x-checker-data": {
                                         "type": "html",
                                         "url": "https://www.boost.org/feed/downloads.rss",
@@ -969,8 +969,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-24.03.0.tar.xz",
-                                    "sha256": "bafbf0db5713dec25b5d16eb2cd87e4a62351cdc40f050c3937cd8dd6882d446",
+                                    "url": "https://poppler.freedesktop.org/poppler-24.04.0.tar.xz",
+                                    "sha256": "1e804ec565acf7126eb2e9bb3b56422ab2039f7e05863a5dfabdd1ffd1bb77a7",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -1058,8 +1058,8 @@
                                     "sources": [
                                         {
                                             "type": "file",
-                                            "url": "https://files.pythonhosted.org/packages/c4/cb/4678dfd70cd2f2d8969e571cdc1bb1e9293c698f8d1cf428fadcf48d6e9f/pyproject_metadata-0.7.1-py3-none-any.whl",
-                                            "sha256": "28691fbb36266a819ec56c9fa1ecaf36f879d6944dfde5411e87fc4ff793aa60",
+                                            "url": "https://files.pythonhosted.org/packages/aa/5f/bb5970d3d04173b46c9037109f7f05fc8904ff5be073ee49bb6ff00301bc/pyproject_metadata-0.8.0-py3-none-any.whl",
+                                            "sha256": "ad858d448e1d3a1fb408ac5bac9ea7743e7a8bbb472f2693aaa334d2db42f526",
                                             "x-checker-data": {
                                                 "type": "pypi",
                                                 "name": "pyproject_metadata",
@@ -1077,8 +1077,8 @@
                                     "sources": [
                                         {
                                             "type": "file",
-                                            "url": "https://files.pythonhosted.org/packages/a2/3b/276b596824a0820987fdcc7721618453b4f9a8305fe20b611a00ac3f948e/meson_python-0.15.0.tar.gz",
-                                            "sha256": "fddb73eecd49e89c1c41c87937cd89c2d0b65a1c63ba28238681d4bd9484d26f",
+                                            "url": "https://files.pythonhosted.org/packages/1a/3f/b19e9354c358f5acf322dd1f81ed9f0c633ba4bcccfd32e9c3740c43c9e5/meson_python-0.16.0.tar.gz",
+                                            "sha256": "9068c17e36c89d6c7ff709fffb2a8a9925e8cd0b02629728e5ceaf2ec505cb5f",
                                             "x-checker-data": {
                                                 "type": "pypi",
                                                 "name": "meson-python"
@@ -1338,8 +1338,8 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/abseil/abseil-cpp.git",
-                                    "tag": "20240116.1",
-                                    "commit": "2f9e432cce407ce0ae50676696666f33a77d42ac",
+                                    "tag": "20240116.2",
+                                    "commit": "d7aaad83b488fd62bd51c81ecf16cd938532cc0a",
                                     "x-checker-data": {
                                         "type": "git",
                                         "tag-pattern": "^([\\d.]+)$"
@@ -1493,11 +1493,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v69.2.0",
+                            "tag": "v69.5.1",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "6ee23bf0579c52e1cbe7c97fc20fd085ff2a25c7"
+                            "commit": "ff58075cdf3459ecdf73486d2a83cecdd70c7e4a"
                         }
                     ]
                 },
@@ -1581,8 +1581,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/c2/e7/a82b05cf63a603df6e68d59ae6a68bf5064484a0718ea5033660af4b54a9/idna-3.6-py3-none-any.whl",
-                            "sha256": "c05567e9c24a6b9faaa835c4821bad0590fbb9d5779e7caa6e1cc4978e7eb24f",
+                            "url": "https://files.pythonhosted.org/packages/e5/3e/741d8c82801c347547f8a2a06aa57dbb1992be9e948df2ea0eda2c8b79e8/idna-3.7-py3-none-any.whl",
+                            "sha256": "82fee1fc78add43492d3a1898bfa6d8a904cc97d8427f683ed8e798d07761aa0",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "idna",
@@ -1620,8 +1620,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/59/db/a5e9710acb366237fc003bf146a0f1f5b7b17a532d99937dcd8aafe041a0/trove_classifiers-2024.3.25-py3-none-any.whl",
-                            "sha256": "c400e0bdceb018913339d53b07682d09a42aada687d070e90ee3c08477bec024",
+                            "url": "https://files.pythonhosted.org/packages/be/26/2adcb1eb5e154de20fa93cd8ef467f19e42a9861742e46116b39a410bcfd/trove_classifiers-2024.4.10-py3-none-any.whl",
+                            "sha256": "678bd6fcc5218d72e3304e27a608acc9b91e17bd00c3f3d8c968497c843ad98b",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "trove-classifiers",
@@ -1640,8 +1640,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/49/63/2d56d6356f9f8b906aa68335cbf5b1b54c69873a2e271eda2ddba319c1ae/hatchling-1.22.4-py3-none-any.whl",
-                            "sha256": "f56da5bfc396af7b29daa3164851dd04991c994083f56cb054b5003675caecdc",
+                            "url": "https://files.pythonhosted.org/packages/e5/d1/9e933f6ed4276c448806968a97d42ad4ed3e8d8722541fba5f75571d9add/hatchling-1.24.1-py3-none-any.whl",
+                            "sha256": "c4a9ed2314a1fa1d52bbb5bcf01774ff6dd1994048ec954fca040797884a9628",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "hatchling",
@@ -1680,8 +1680,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/73/a6/0730ff6cbb87e42e1329a486fe4ccbd3f8f728cb629c2671b0d093a85918/lxml-5.1.1.tar.gz",
-                            "sha256": "42a8aa957e98bd8b884a8142175ec24ce4ef0a57760e8879f193bfe64b757ca9",
+                            "url": "https://files.pythonhosted.org/packages/ea/e2/3834472e7f18801e67a3cd6f3c203a5456d6f7f903cfb9a990e62098a2f3/lxml-5.2.1.tar.gz",
+                            "sha256": "3f7765e69bbce0906a7c74d5fe46d2c7a7596147318dbc08e4a2431f3060e306",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "lxml"
