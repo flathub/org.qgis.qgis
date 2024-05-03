@@ -657,8 +657,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-24.04.0.tar.xz",
-                                    "sha256": "1e804ec565acf7126eb2e9bb3b56422ab2039f7e05863a5dfabdd1ffd1bb77a7",
+                                    "url": "https://poppler.freedesktop.org/poppler-24.05.0.tar.xz",
+                                    "sha256": "d8c5eb30b50285ad9f0af8c6335cc2d3b9597fca475cbc2598a5479fa379f779",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -1298,8 +1298,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/a5/5b/0cc789b59e8cc1bf288b38111d002d8c5917123194d45b29dcdac64723cc/pluggy-1.4.0-py3-none-any.whl",
-                            "sha256": "7db9f7b503d67d1c5b95f59773ebb58a8c1c288129a88665838012cfb07b8981",
+                            "url": "https://files.pythonhosted.org/packages/88/5f/e351af9a41f866ac3f1fac4ca0613908d9a41741cfcf2228f4ad853b697d/pluggy-1.5.0-py3-none-any.whl",
+                            "sha256": "44e1ad92c8ca002de6377e165f3e0f1be63266ab4d554740532335b9d75ea669",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "pluggy",
@@ -1328,8 +1328,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/e5/d1/9e933f6ed4276c448806968a97d42ad4ed3e8d8722541fba5f75571d9add/hatchling-1.24.1-py3-none-any.whl",
-                            "sha256": "c4a9ed2314a1fa1d52bbb5bcf01774ff6dd1994048ec954fca040797884a9628",
+                            "url": "https://files.pythonhosted.org/packages/5f/20/b890241570ac3ba6508febab3104eeb1acd7ffba1bd3447190f56151f1bc/hatchling-1.24.2-py3-none-any.whl",
+                            "sha256": "5576ad05227cf96bb4bfd3a5dce31aa53eff05e95da57b40769bd5a3096b31b1",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "hatchling",
