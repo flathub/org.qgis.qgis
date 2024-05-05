@@ -439,8 +439,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://github.com/uriparser/uriparser/releases/download/uriparser-0.9.7/uriparser-0.9.7.tar.bz2",
-                                    "sha256": "d27dea0c8b6f6fb9798f07caedef1cd96a6e3fc5c6189596774e19afa7ddded7",
+                                    "url": "https://github.com/uriparser/uriparser/releases/download/uriparser-0.9.8/uriparser-0.9.8.tar.bz2",
+                                    "sha256": "72d1b559be3a1806f788a3d9be34a1b063d42aa238b29ba4ee633d6effcd33bd",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 10160,
@@ -657,8 +657,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-24.04.0.tar.xz",
-                                    "sha256": "1e804ec565acf7126eb2e9bb3b56422ab2039f7e05863a5dfabdd1ffd1bb77a7",
+                                    "url": "https://poppler.freedesktop.org/poppler-24.05.0.tar.xz",
+                                    "sha256": "d8c5eb30b50285ad9f0af8c6335cc2d3b9597fca475cbc2598a5479fa379f779",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -1298,8 +1298,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/a5/5b/0cc789b59e8cc1bf288b38111d002d8c5917123194d45b29dcdac64723cc/pluggy-1.4.0-py3-none-any.whl",
-                            "sha256": "7db9f7b503d67d1c5b95f59773ebb58a8c1c288129a88665838012cfb07b8981",
+                            "url": "https://files.pythonhosted.org/packages/88/5f/e351af9a41f866ac3f1fac4ca0613908d9a41741cfcf2228f4ad853b697d/pluggy-1.5.0-py3-none-any.whl",
+                            "sha256": "44e1ad92c8ca002de6377e165f3e0f1be63266ab4d554740532335b9d75ea669",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "pluggy",
@@ -1328,8 +1328,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/e5/d1/9e933f6ed4276c448806968a97d42ad4ed3e8d8722541fba5f75571d9add/hatchling-1.24.1-py3-none-any.whl",
-                            "sha256": "c4a9ed2314a1fa1d52bbb5bcf01774ff6dd1994048ec954fca040797884a9628",
+                            "url": "https://files.pythonhosted.org/packages/5f/20/b890241570ac3ba6508febab3104eeb1acd7ffba1bd3447190f56151f1bc/hatchling-1.24.2-py3-none-any.whl",
+                            "sha256": "5576ad05227cf96bb4bfd3a5dce31aa53eff05e95da57b40769bd5a3096b31b1",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "hatchling",
@@ -1467,8 +1467,8 @@
                     "sources": [
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/30/6d/6de6be2d02603ab56e72997708809e8a5b0fbfee080735109b40a3564843/Jinja2-3.1.3-py3-none-any.whl",
-                            "sha256": "7d6d50dd97d52cbc355597bd845fabfbac3f551e1f99619e39a35ce8c370b5fa",
+                            "url": "https://files.pythonhosted.org/packages/31/80/3a54838c3fb461f6fec263ebf3a3a41771bd05190238de3486aae8540c36/jinja2-3.1.4-py3-none-any.whl",
+                            "sha256": "bc5dd2abb727a5319567b7a813e6a2e7318c39f4f487cfe6c89c6f9c7d25197d",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "Jinja2",
@@ -1538,11 +1538,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/frankosterfeld/qtkeychain/",
-                            "tag": "0.14.2",
+                            "tag": "0.14.3",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "8eac9889775ca45c106d077bb0d3744754a1570a"
+                            "commit": "38ff50766c7e4ec490fecb2d9939b7cdc4b74b8e"
                         }
                     ],
                     "modules": [
