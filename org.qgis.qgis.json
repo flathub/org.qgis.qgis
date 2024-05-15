@@ -690,7 +690,7 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://rsync.osuosl.org/pub/mariadb/mariadb-11.1.3/source/mariadb-11.1.3.tar.gz",
+                                    "url": "https://dlm.mariadb.com/3656685/MariaDB/mariadb-11.1.3/source/mariadb-11.1.3.tar.gz",
                                     "sha256": "ad3aa6ae478179275ecb28e3ed8a578f2004f084e14409727c0bf04975ace36c",
                                     "FIXME-x-checker-data": {
                                         "type": "anitya",
