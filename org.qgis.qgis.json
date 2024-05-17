@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.36.2.tar.bz2",
-                    "sha256": "8c886ab59094d7ea7fff5c299173b969509b88d896880d2c5d818c400cee69a4",
+                    "url": "https://qgis.org/downloads/qgis-3.36.3.tar.bz2",
+                    "sha256": "fb8d153813f54164ddf5283cfd46f176839b4d55996de9acf6bac2bd2fb2da5d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -237,8 +237,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://ftp.postgresql.org/pub/source/v16.2/postgresql-16.2.tar.bz2",
-                            "sha256": "446e88294dbc2c9085ab4b7061a646fa604b4bec03521d5ea671c2e5ad9b2952",
+                            "url": "https://ftp.postgresql.org/pub/source/v16.3/postgresql-16.3.tar.bz2",
+                            "sha256": "331963d5d3dc4caf4216a049fa40b66d6bcb8c730615859411b9518764e60585",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 5601,
@@ -336,8 +336,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.8.5/gdal-3.8.5.tar.xz",
-                            "sha256": "e8b4df2a8a7d25272f867455c0c230459545972f81f0eff2ddbf6a6f60dcb1e4",
+                            "url": "https://download.osgeo.org/gdal/3.9.0/gdal-3.9.0.tar.xz",
+                            "sha256": "577f80e9d14ff7c90b6bfbc34201652b4546700c01543efb4f4c3050e0b3fda2",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -439,8 +439,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://github.com/uriparser/uriparser/releases/download/uriparser-0.9.7/uriparser-0.9.7.tar.bz2",
-                                    "sha256": "d27dea0c8b6f6fb9798f07caedef1cd96a6e3fc5c6189596774e19afa7ddded7",
+                                    "url": "https://github.com/uriparser/uriparser/releases/download/uriparser-0.9.8/uriparser-0.9.8.tar.bz2",
+                                    "sha256": "72d1b559be3a1806f788a3d9be34a1b063d42aa238b29ba4ee633d6effcd33bd",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 10160,
@@ -479,8 +479,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-12.8.2.tar.xz",
-                                    "sha256": "03b62f8c09e4f5d74643b478520741b8e27b55e7e4525978fcae2f5d791ac3bf",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-12.8.3.tar.xz",
+                                    "sha256": "2922589f6387796504b340da6bb954bef3d87574c298515893289edd2d890151",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -660,8 +660,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-24.04.0.tar.xz",
-                                    "sha256": "1e804ec565acf7126eb2e9bb3b56422ab2039f7e05863a5dfabdd1ffd1bb77a7",
+                                    "url": "https://poppler.freedesktop.org/poppler-24.05.0.tar.xz",
+                                    "sha256": "d8c5eb30b50285ad9f0af8c6335cc2d3b9597fca475cbc2598a5479fa379f779",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -1311,8 +1311,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/be/26/2adcb1eb5e154de20fa93cd8ef467f19e42a9861742e46116b39a410bcfd/trove_classifiers-2024.4.10-py3-none-any.whl",
-                            "sha256": "678bd6fcc5218d72e3304e27a608acc9b91e17bd00c3f3d8c968497c843ad98b",
+                            "url": "https://files.pythonhosted.org/packages/1b/55/1cbcbd2987618bbb01135beb540478b13943d95f89cd012ef329072a4f23/trove_classifiers-2024.5.17-py3-none-any.whl",
+                            "sha256": "2ebdddebd43e749ac6b6e9b9aa158ab489603dff147cba8714787729cdb9ea37",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "trove-classifiers",
@@ -1465,7 +1465,7 @@
                     "name": "python3-jinja2",
                     "buildsystem": "simple",
                     "build-commands": [
-                        "pip3 install --prefix=/app Jinja2-*"
+                        "pip3 install --prefix=/app jinja2-*"
                     ],
                     "sources": [
                         {
