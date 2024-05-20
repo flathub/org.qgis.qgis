@@ -1361,8 +1361,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/70/8e/0e2d847013cb52cd35b38c009bb167a1a26b2ce6cd6965bf26b47bc0bf44/requests-2.31.0-py3-none-any.whl",
-                            "sha256": "58cd2187c01e70e6e26505bca751777aa9f2ee0b7f4300988b709f44e013003f",
+                            "url": "https://files.pythonhosted.org/packages/24/e8/09e8d662a9675a4e4f5dd7a8e6127b463a091d2703ed931a64aa66d00065/requests-2.32.0-py3-none-any.whl",
+                            "sha256": "f2c3881dddb70d056c5bd7600a4fae312b2a300e39be6a118d30b90bd27262b5",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "requests",
