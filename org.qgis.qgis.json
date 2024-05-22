@@ -1184,11 +1184,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v69.5.1",
+                            "tag": "v70.0.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "ff58075cdf3459ecdf73486d2a83cecdd70c7e4a"
+                            "commit": "5cbf12a9b63fd37985a4525617b46576b8ac3a7b"
                         }
                     ]
                 },
@@ -1311,8 +1311,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/1b/55/1cbcbd2987618bbb01135beb540478b13943d95f89cd012ef329072a4f23/trove_classifiers-2024.5.17-py3-none-any.whl",
-                            "sha256": "2ebdddebd43e749ac6b6e9b9aa158ab489603dff147cba8714787729cdb9ea37",
+                            "url": "https://files.pythonhosted.org/packages/00/87/c8ccf265dea5f96a1e930e69b97214255bbe284ca78e450aeaba7d021bdb/trove_classifiers-2024.5.22-py3-none-any.whl",
+                            "sha256": "c43ade18704823e4afa3d9db7083294bc4708a5e02afbcefacd0e9d03a7a24ef",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "trove-classifiers",
@@ -1361,8 +1361,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/70/8e/0e2d847013cb52cd35b38c009bb167a1a26b2ce6cd6965bf26b47bc0bf44/requests-2.31.0-py3-none-any.whl",
-                            "sha256": "58cd2187c01e70e6e26505bca751777aa9f2ee0b7f4300988b709f44e013003f",
+                            "url": "https://files.pythonhosted.org/packages/c3/20/748e38b466e0819491f0ce6e90ebe4184966ee304fe483e2c414b0f4ef07/requests-2.32.2-py3-none-any.whl",
+                            "sha256": "fc06670dd0ed212426dfeb94fc1b983d917c4f9847c863f313c9dfaaffb7c23c",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "requests",
@@ -1521,8 +1521,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v26.1",
-                            "commit": "2434ef2adf0c74149b9d547ac5fb545a1ff8b6b5",
+                            "tag": "v27.0",
+                            "commit": "a978b75794a6ce4547c9db08a115c458d9190934",
                             "x-checker-data": {
                                 "type": "git"
                             }
