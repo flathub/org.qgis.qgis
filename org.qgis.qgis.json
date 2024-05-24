@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.36.2.tar.bz2",
-                    "sha256": "8c886ab59094d7ea7fff5c299173b969509b88d896880d2c5d818c400cee69a4",
+                    "url": "https://qgis.org/downloads/qgis-3.36.3.tar.bz2",
+                    "sha256": "fb8d153813f54164ddf5283cfd46f176839b4d55996de9acf6bac2bd2fb2da5d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -549,8 +549,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://ftp.postgresql.org/pub/source/v16.2/postgresql-16.2.tar.bz2",
-                            "sha256": "446e88294dbc2c9085ab4b7061a646fa604b4bec03521d5ea671c2e5ad9b2952",
+                            "url": "https://ftp.postgresql.org/pub/source/v16.3/postgresql-16.3.tar.bz2",
+                            "sha256": "331963d5d3dc4caf4216a049fa40b66d6bcb8c730615859411b9518764e60585",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 5601,
@@ -648,8 +648,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.8.5/gdal-3.8.5.tar.xz",
-                            "sha256": "e8b4df2a8a7d25272f867455c0c230459545972f81f0eff2ddbf6a6f60dcb1e4",
+                            "url": "https://download.osgeo.org/gdal/3.9.0/gdal-3.9.0.tar.xz",
+                            "sha256": "577f80e9d14ff7c90b6bfbc34201652b4546700c01543efb4f4c3050e0b3fda2",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -751,8 +751,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://github.com/uriparser/uriparser/releases/download/uriparser-0.9.7/uriparser-0.9.7.tar.bz2",
-                                    "sha256": "d27dea0c8b6f6fb9798f07caedef1cd96a6e3fc5c6189596774e19afa7ddded7",
+                                    "url": "https://github.com/uriparser/uriparser/releases/download/uriparser-0.9.8/uriparser-0.9.8.tar.bz2",
+                                    "sha256": "72d1b559be3a1806f788a3d9be34a1b063d42aa238b29ba4ee633d6effcd33bd",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 10160,
@@ -772,9 +772,12 @@
                             ],
                             "sources": [
                                 {
-                                    "type": "archive",
-                                    "url": "https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-4.1.0.tar.gz",
-                                    "sha256": "b367c695d2831958e7166921c3b356d5dfa51b1ecee505b97416ba39d1b6c17a"
+                                    "type": "git",
+                                    "url": "https://github.com/HEASARC/cfitsio.git",
+                                    "tag": "cfitsio4_4_0_20240228",
+                                    "x-checker-data": {
+                                        "type": "git"
+                                    }
                                 }
                             ]
                         },
@@ -788,8 +791,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-12.8.2.tar.xz",
-                                    "sha256": "03b62f8c09e4f5d74643b478520741b8e27b55e7e4525978fcae2f5d791ac3bf",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-12.8.3.tar.xz",
+                                    "sha256": "2922589f6387796504b340da6bb954bef3d87574c298515893289edd2d890151",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -969,8 +972,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-24.04.0.tar.xz",
-                                    "sha256": "1e804ec565acf7126eb2e9bb3b56422ab2039f7e05863a5dfabdd1ffd1bb77a7",
+                                    "url": "https://poppler.freedesktop.org/poppler-24.05.0.tar.xz",
+                                    "sha256": "d8c5eb30b50285ad9f0af8c6335cc2d3b9597fca475cbc2598a5479fa379f779",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -1002,7 +1005,7 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://rsync.osuosl.org/pub/mariadb/mariadb-11.1.3/source/mariadb-11.1.3.tar.gz",
+                                    "url": "https://dlm.mariadb.com/3656685/MariaDB/mariadb-11.1.3/source/mariadb-11.1.3.tar.gz",
                                     "sha256": "ad3aa6ae478179275ecb28e3ed8a578f2004f084e14409727c0bf04975ace36c",
                                     "FIXME-x-checker-data": {
                                         "type": "anitya",
@@ -1181,11 +1184,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/KhronosGroup/OpenCL-Headers.git",
-                                    "tag": "v2023.12.14",
+                                    "tag": "v2024.05.08",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "2368105c0531069fe927989505de7d125ec58c55"
+                                    "commit": "8275634cf9ec31b6484c2e6be756237cb583999d"
                                 }
                             ]
                         },
@@ -1314,9 +1317,9 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/PDAL/PDAL/releases/download/2.5.6/PDAL-2.5.6-src.tar.bz2",
-                            "sha256": "7c7c4570ef518942299479cc4077e0c657ec5b5174daf465415de947a1d3eb99",
-                            "DISABLED-UNTIL-2.6.2-x-checker-data": {
+                            "url": "https://github.com/PDAL/PDAL/releases/download/2.7.1/PDAL-2.7.1-src.tar.bz2",
+                            "sha256": "7769aaacfc26daeb559b511c73c241a5e9a2f31e26ef3a736204b83e791c5453",
+                            "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 138228,
                                 "url-template": "https://github.com/PDAL/PDAL/releases/download/$version/PDAL-$version-src.tar.bz2",
@@ -1493,11 +1496,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v69.5.1",
+                            "tag": "v70.0.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "ff58075cdf3459ecdf73486d2a83cecdd70c7e4a"
+                            "commit": "5cbf12a9b63fd37985a4525617b46576b8ac3a7b"
                         }
                     ]
                 },
@@ -1610,8 +1613,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/a5/5b/0cc789b59e8cc1bf288b38111d002d8c5917123194d45b29dcdac64723cc/pluggy-1.4.0-py3-none-any.whl",
-                            "sha256": "7db9f7b503d67d1c5b95f59773ebb58a8c1c288129a88665838012cfb07b8981",
+                            "url": "https://files.pythonhosted.org/packages/88/5f/e351af9a41f866ac3f1fac4ca0613908d9a41741cfcf2228f4ad853b697d/pluggy-1.5.0-py3-none-any.whl",
+                            "sha256": "44e1ad92c8ca002de6377e165f3e0f1be63266ab4d554740532335b9d75ea669",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "pluggy",
@@ -1620,8 +1623,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/be/26/2adcb1eb5e154de20fa93cd8ef467f19e42a9861742e46116b39a410bcfd/trove_classifiers-2024.4.10-py3-none-any.whl",
-                            "sha256": "678bd6fcc5218d72e3304e27a608acc9b91e17bd00c3f3d8c968497c843ad98b",
+                            "url": "https://files.pythonhosted.org/packages/00/87/c8ccf265dea5f96a1e930e69b97214255bbe284ca78e450aeaba7d021bdb/trove_classifiers-2024.5.22-py3-none-any.whl",
+                            "sha256": "c43ade18704823e4afa3d9db7083294bc4708a5e02afbcefacd0e9d03a7a24ef",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "trove-classifiers",
@@ -1640,8 +1643,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/e5/d1/9e933f6ed4276c448806968a97d42ad4ed3e8d8722541fba5f75571d9add/hatchling-1.24.1-py3-none-any.whl",
-                            "sha256": "c4a9ed2314a1fa1d52bbb5bcf01774ff6dd1994048ec954fca040797884a9628",
+                            "url": "https://files.pythonhosted.org/packages/5f/20/b890241570ac3ba6508febab3104eeb1acd7ffba1bd3447190f56151f1bc/hatchling-1.24.2-py3-none-any.whl",
+                            "sha256": "5576ad05227cf96bb4bfd3a5dce31aa53eff05e95da57b40769bd5a3096b31b1",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "hatchling",
@@ -1670,8 +1673,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/70/8e/0e2d847013cb52cd35b38c009bb167a1a26b2ce6cd6965bf26b47bc0bf44/requests-2.31.0-py3-none-any.whl",
-                            "sha256": "58cd2187c01e70e6e26505bca751777aa9f2ee0b7f4300988b709f44e013003f",
+                            "url": "https://files.pythonhosted.org/packages/c3/20/748e38b466e0819491f0ce6e90ebe4184966ee304fe483e2c414b0f4ef07/requests-2.32.2-py3-none-any.whl",
+                            "sha256": "fc06670dd0ed212426dfeb94fc1b983d917c4f9847c863f313c9dfaaffb7c23c",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "requests",
@@ -1680,8 +1683,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/ea/e2/3834472e7f18801e67a3cd6f3c203a5456d6f7f903cfb9a990e62098a2f3/lxml-5.2.1.tar.gz",
-                            "sha256": "3f7765e69bbce0906a7c74d5fe46d2c7a7596147318dbc08e4a2431f3060e306",
+                            "url": "https://files.pythonhosted.org/packages/63/f7/ffbb6d2eb67b80a45b8a0834baa5557a14a5ffce0979439e7cd7f0c4055b/lxml-5.2.2.tar.gz",
+                            "sha256": "bb2dc4898180bea79863d5487e5f9c7c34297414bad54bcd0f0852aee9cfdb87",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "lxml"
@@ -1774,13 +1777,13 @@
                     "name": "python3-jinja2",
                     "buildsystem": "simple",
                     "build-commands": [
-                        "pip3 install --prefix=/app Jinja2-*"
+                        "pip3 install --prefix=/app jinja2-*"
                     ],
                     "sources": [
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/30/6d/6de6be2d02603ab56e72997708809e8a5b0fbfee080735109b40a3564843/Jinja2-3.1.3-py3-none-any.whl",
-                            "sha256": "7d6d50dd97d52cbc355597bd845fabfbac3f551e1f99619e39a35ce8c370b5fa",
+                            "url": "https://files.pythonhosted.org/packages/31/80/3a54838c3fb461f6fec263ebf3a3a41771bd05190238de3486aae8540c36/jinja2-3.1.4-py3-none-any.whl",
+                            "sha256": "bc5dd2abb727a5319567b7a813e6a2e7318c39f4f487cfe6c89c6f9c7d25197d",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "Jinja2",
@@ -1850,11 +1853,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/frankosterfeld/qtkeychain/",
-                            "tag": "0.14.2",
+                            "tag": "0.14.3",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "8eac9889775ca45c106d077bb0d3744754a1570a"
+                            "commit": "38ff50766c7e4ec490fecb2d9939b7cdc4b74b8e"
                         }
                     ],
                     "modules": [
