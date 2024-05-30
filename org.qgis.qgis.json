@@ -479,8 +479,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-12.8.3.tar.xz",
-                                    "sha256": "2922589f6387796504b340da6bb954bef3d87574c298515893289edd2d890151",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-12.8.4.tar.xz",
+                                    "sha256": "558fe526b990a1663678eff3af6ec93f79ee128c81a4c8aef27ad328fae61138",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -804,8 +804,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://github.com/OSGeo/libgeotiff/releases/download/1.7.1/libgeotiff-1.7.1.tar.gz",
-                                    "sha256": "05ab1347aaa471fc97347d8d4269ff0c00f30fa666d956baba37948ec87e55d6",
+                                    "url": "https://github.com/OSGeo/libgeotiff/releases/download/1.7.3/libgeotiff-1.7.3.tar.gz",
+                                    "sha256": "ba23a3a35980ed3de916e125c739251f8e3266be07540200125a307d7cf5a704",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 21361,
@@ -1361,8 +1361,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/c3/20/748e38b466e0819491f0ce6e90ebe4184966ee304fe483e2c414b0f4ef07/requests-2.32.2-py3-none-any.whl",
-                            "sha256": "fc06670dd0ed212426dfeb94fc1b983d917c4f9847c863f313c9dfaaffb7c23c",
+                            "url": "https://files.pythonhosted.org/packages/f9/9b/335f9764261e915ed497fcdeb11df5dfd6f7bf257d4a6a2a686d80da4d54/requests-2.32.3-py3-none-any.whl",
+                            "sha256": "70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "requests",
@@ -1521,8 +1521,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v26.1",
-                            "commit": "2434ef2adf0c74149b9d547ac5fb545a1ff8b6b5",
+                            "tag": "v27.0",
+                            "commit": "a978b75794a6ce4547c9db08a115c458d9190934",
                             "x-checker-data": {
                                 "type": "git"
                             }
