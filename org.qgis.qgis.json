@@ -95,8 +95,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "http://download.osgeo.org/geos/geos-3.12.1.tar.bz2",
-                            "sha256": "d6ea7e492224b51193e8244fe3ec17c4d44d0777f3c32ca4fb171140549a0d03",
+                            "url": "http://download.osgeo.org/geos/geos-3.12.2.tar.bz2",
+                            "sha256": "34c7770bf0090ee88488af98767d08e779f124fa33437e0aabec8abd4609fec6",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 13493,
@@ -116,8 +116,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/libspatialindex/libspatialindex.git",
-                            "commit": "1896a183afdff3f5845742ce3027553a88e13c3a",
-                            "tag": "1.9.3",
+                            "commit": "4a3bd449b9f2858d31a4619ba60bae6d1d30b77d",
+                            "tag": "2.0.0",
                             "x-checker-data": {
                                 "type": "git"
                             }
@@ -660,8 +660,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-24.06.0.tar.xz",
-                                    "sha256": "0cdabd495cada11f6ee9e75c793f80daf46367b66c25a63ee8c26d0f9ec40c76",
+                                    "url": "https://poppler.freedesktop.org/poppler-24.06.1.tar.xz",
+                                    "sha256": "1e629e8732286c745fbc0b15a3ee591443fb37a2210856e7f3ec38a0fb93ab13",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -1521,8 +1521,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v27.0",
-                            "commit": "a978b75794a6ce4547c9db08a115c458d9190934",
+                            "tag": "v27.1",
+                            "commit": "3d9f7c430a5ae1385512908801492d4421c3cdb7",
                             "x-checker-data": {
                                 "type": "git"
                             }
