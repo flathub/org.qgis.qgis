@@ -116,8 +116,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/libspatialindex/libspatialindex.git",
-                            "commit": "1896a183afdff3f5845742ce3027553a88e13c3a",
-                            "tag": "1.9.3",
+                            "commit": "4a3bd449b9f2858d31a4619ba60bae6d1d30b77d",
+                            "tag": "2.0.0",
                             "x-checker-data": {
                                 "type": "git"
                             }
@@ -1521,8 +1521,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v27.0",
-                            "commit": "a978b75794a6ce4547c9db08a115c458d9190934",
+                            "tag": "v27.1",
+                            "commit": "3d9f7c430a5ae1385512908801492d4421c3cdb7",
                             "x-checker-data": {
                                 "type": "git"
                             }
