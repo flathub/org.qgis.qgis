@@ -393,12 +393,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/PROJ.git",
-                            "tag": "9.4.0",
+                            "tag": "9.4.1",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "7cd00d0b2ca594315acd6c76912df39be4607094"
+                            "commit": "875a485fa5ef435c57f7682f904dd31ca92253ab"
                         }
                     ]
                 },
@@ -791,8 +791,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-12.8.3.tar.xz",
-                                    "sha256": "2922589f6387796504b340da6bb954bef3d87574c298515893289edd2d890151",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-12.8.4.tar.xz",
+                                    "sha256": "558fe526b990a1663678eff3af6ec93f79ee128c81a4c8aef27ad328fae61138",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -972,8 +972,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-24.05.0.tar.xz",
-                                    "sha256": "d8c5eb30b50285ad9f0af8c6335cc2d3b9597fca475cbc2598a5479fa379f779",
+                                    "url": "https://poppler.freedesktop.org/poppler-24.06.0.tar.xz",
+                                    "sha256": "0cdabd495cada11f6ee9e75c793f80daf46367b66c25a63ee8c26d0f9ec40c76",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -1116,8 +1116,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://github.com/OSGeo/libgeotiff/releases/download/1.7.1/libgeotiff-1.7.1.tar.gz",
-                                    "sha256": "05ab1347aaa471fc97347d8d4269ff0c00f30fa666d956baba37948ec87e55d6",
+                                    "url": "https://github.com/OSGeo/libgeotiff/releases/download/1.7.3/libgeotiff-1.7.3.tar.gz",
+                                    "sha256": "ba23a3a35980ed3de916e125c739251f8e3266be07540200125a307d7cf5a704",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 21361,
@@ -1575,8 +1575,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/71/da/e94e26401b62acd6d91df2b52954aceb7f561743aa5ccc32152886c76c96/certifi-2024.2.2.tar.gz",
-                            "sha256": "0569859f95fc761b18b45ef421b1290a0f65f147e92a1e5eb3e635f9a5e4e66f",
+                            "url": "https://files.pythonhosted.org/packages/07/b3/e02f4f397c81077ffc52a538e0aec464016f1860c472ed33bd2a1d220cc5/certifi-2024.6.2.tar.gz",
+                            "sha256": "3cd43f1c6fa7dedc5899d69d3ad0398fd018ad1a17fba83ddaf78aa46c747516",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "certifi"
@@ -1673,8 +1673,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/c3/20/748e38b466e0819491f0ce6e90ebe4184966ee304fe483e2c414b0f4ef07/requests-2.32.2-py3-none-any.whl",
-                            "sha256": "fc06670dd0ed212426dfeb94fc1b983d917c4f9847c863f313c9dfaaffb7c23c",
+                            "url": "https://files.pythonhosted.org/packages/f9/9b/335f9764261e915ed497fcdeb11df5dfd6f7bf257d4a6a2a686d80da4d54/requests-2.32.3-py3-none-any.whl",
+                            "sha256": "70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "requests",
@@ -1833,8 +1833,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v26.1",
-                            "commit": "2434ef2adf0c74149b9d547ac5fb545a1ff8b6b5",
+                            "tag": "v27.0",
+                            "commit": "a978b75794a6ce4547c9db08a115c458d9190934",
                             "x-checker-data": {
                                 "type": "git"
                             }
