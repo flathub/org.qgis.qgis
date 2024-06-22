@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.36.3.tar.bz2",
-                    "sha256": "fb8d153813f54164ddf5283cfd46f176839b4d55996de9acf6bac2bd2fb2da5d",
+                    "url": "https://qgis.org/downloads/qgis-3.38.0.tar.bz2",
+                    "sha256": "f9cf5ab241b9d6b3f5d40d4d7a6759a5f806148a7c9a11ba85670a03f2344be7",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -1185,11 +1185,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v70.0.0",
+                            "tag": "v70.1.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "5cbf12a9b63fd37985a4525617b46576b8ac3a7b"
+                            "commit": "3466f9f1e14c4b0ef87299fef414f73600d4a46f"
                         }
                     ]
                 },
@@ -1332,8 +1332,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/5f/20/b890241570ac3ba6508febab3104eeb1acd7ffba1bd3447190f56151f1bc/hatchling-1.24.2-py3-none-any.whl",
-                            "sha256": "5576ad05227cf96bb4bfd3a5dce31aa53eff05e95da57b40769bd5a3096b31b1",
+                            "url": "https://files.pythonhosted.org/packages/0c/8b/90e80904fdc24ce33f6fc6f35ebd2232fe731a8528a22008458cf197bc4d/hatchling-1.25.0-py3-none-any.whl",
+                            "sha256": "b47948e45d4d973034584dd4cb39c14b6a70227cf287ab7ec0ad7983408a882c",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "hatchling",
