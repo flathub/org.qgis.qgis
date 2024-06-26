@@ -480,8 +480,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-12.8.4.tar.xz",
-                                    "sha256": "558fe526b990a1663678eff3af6ec93f79ee128c81a4c8aef27ad328fae61138",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.0.0.tar.xz",
+                                    "sha256": "8a3586b33277e6dbc3c8f27f4fff52231c2c6f7614191c190c66fb9b78ba98b5",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -889,11 +889,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/Blosc/c-blosc.git",
-                                    "tag": "v1.21.5",
+                                    "tag": "v1.21.6",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "d306135aaf378ade04cd4d149058c29036335758"
+                                    "commit": "616f4b7343a8479f7e71dd3d7025bd92c9a6bbd0"
                                 }
                             ]
                         },
@@ -1051,8 +1051,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.kde.org/stable/qca/2.3.8/qca-2.3.8.tar.xz",
-                            "sha256": "48759ca86a0202461d908ba66134380cc3bb7d20fed3c031b9fc0289796a8264",
+                            "url": "https://download.kde.org/stable/qca/2.3.9/qca-2.3.9.tar.xz",
+                            "sha256": "c555d5298cdd7b6bafe2b1f96106f30cfa543a23d459d50c8a91eac33c476e4e",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 13606,
@@ -1186,11 +1186,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v70.1.0",
+                            "tag": "v70.1.1",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "3466f9f1e14c4b0ef87299fef414f73600d4a46f"
+                            "commit": "222ebf921a4a1cca69d6a5193121f3090580e502"
                         }
                     ]
                 },
@@ -1523,8 +1523,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v27.1",
-                            "commit": "3d9f7c430a5ae1385512908801492d4421c3cdb7",
+                            "tag": "v27.2",
+                            "commit": "63def39e881afa496502d9c410f4ea948e59490d",
                             "x-checker-data": {
                                 "type": "git"
                             }
