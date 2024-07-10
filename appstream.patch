@@ -1,25 +1,62 @@
-From da2edb0cf92a5c5150bc12c2b866994311185a9b Mon Sep 17 00:00:00 2001
+From 053f35aee3b8be0144c7bd6ccd4f0f933e383af0 Mon Sep 17 00:00:00 2001
 From: Aleix Pol <aleixpol@kde.org>
-Date: Mon, 19 Feb 2024 19:58:04 +0100
-Subject: [PATCH] Use the correct syntax for the development_team
+Date: Wed, 26 Jun 2024 03:03:32 +0200
+Subject: [PATCH] appdata: be mindful of the xml elements depth when
+ translating
 
+We were doing a deep search for "name" which happened for the component
+name _and_ and the developer name, which is in a deeper tag.
+Instead of doing a deep search, just look for the elements we care about
+among the component element's children.
+
+Fixes this error from appstreamcli:
+org.qgis.qgis.metainfo.xml
+  E: org.qgis.qgis.desktop:88: tag-duplicated name (lang=de)
+  E: org.qgis.qgis.desktop:88: tag-duplicated name (lang=hu)
+  E: org.qgis.qgis.desktop:88: tag-duplicated name (lang=lt)
+  E: org.qgis.qgis.desktop:88: tag-duplicated name (lang=nb)
+  E: org.qgis.qgis.desktop:88: tag-duplicated name (lang=zh-Hans)
 ---
- linux/org.qgis.qgis.appdata.xml.in | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+ scripts/ts2appinfo.py.in | 12 +++++++-----
+ 1 file changed, 7 insertions(+), 5 deletions(-)
 
-diff --git a/linux/org.qgis.qgis.appdata.xml.in b/linux/org.qgis.qgis.appdata.xml.in
-index f695aba2194..1ead089d960 100644
---- a/linux/org.qgis.qgis.appdata.xml.in
-+++ b/linux/org.qgis.qgis.appdata.xml.in
-@@ -6,7 +6,7 @@
-   <screenshots>
-     <screenshot type="default"><caption>QGIS</caption><image type="source">https://qgis.org/en/_static/images/about-screenshot.png</image></screenshot>
-   </screenshots>
--  <developer id="qgis.org">QGIS Development Team</developer>
-+  <developer id="qgis.org"><name>QGIS Development Team</name></developer>
-   <description><p>QGIS is a user friendly Open Source Geographic Information System (GIS) licensed under the GNU General Public License. QGIS is an official project of the Open Source Geospatial Foundation (OSGeo). It runs on Linux, Unix, Mac OSX, Windows and Android and supports numerous vector, raster, and database formats and functionalities.</p></description>
+diff --git a/scripts/ts2appinfo.py.in b/scripts/ts2appinfo.py.in
+index 98d3bc17241..eaa2347cb2d 100644
+--- a/scripts/ts2appinfo.py.in
++++ b/scripts/ts2appinfo.py.in
+@@ -29,8 +29,9 @@ strings = {}
+ d = et.parse('linux/org.qgis.qgis.appdata.xml.in')
  
-   <metadata_license>CC-BY-3.0</metadata_license>
+ r = d.getroot()
+-for elem in ['name', 'summary', 'description']:
+-    for c in r.iter(elem):
++valuesNeeded = ['name', 'summary', 'description']
++for c in r:
++    if c.tag in valuesNeeded:
+         if not c.attrib:
+             l = list(c)
+             t = c.text if not l else "".join([et.tostring(x).decode("utf-8") for x in l])
+@@ -68,8 +69,9 @@ for qm in sorted(glob(sys.argv[1] + "/output/i18n/qgis_*.qm")):
+             continue
+         strings[s][lang] = translation
+ 
+-for elem in ['name', 'summary']:
+-    for c in r.iter(elem):
++valuesOffered = ['name', 'summary']
++for c in r:
++    if c.tag in valuesOffered:
+         if c.attrib:
+             continue
+ 
+@@ -77,7 +79,7 @@ for elem in ['name', 'summary']:
+         s = c.text if not l else "".join([et.tostring(x).decode("utf-8") for x in l])
+ 
+         for lang in strings[s]:
+-            e = et.Element(elem, attrib={"xml:lang": lang})
++            e = et.Element(c.tag, attrib={"xml:lang": lang})
+             e.text = strings[s][lang]
+             e.tail = c.tail
+             r.append(e)
 -- 
-2.43.2
+2.45.2
 
