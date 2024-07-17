@@ -337,8 +337,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.9.0/gdal-3.9.0.tar.xz",
-                            "sha256": "577f80e9d14ff7c90b6bfbc34201652b4546700c01543efb4f4c3050e0b3fda2",
+                            "url": "https://download.osgeo.org/gdal/3.9.1/gdal-3.9.1.tar.xz",
+                            "sha256": "aff3086fee75f5773e33a5598df98d8a4d10be411f777d3ce23584b21d8171ca",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -480,8 +480,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-12.8.4.tar.xz",
-                                    "sha256": "558fe526b990a1663678eff3af6ec93f79ee128c81a4c8aef27ad328fae61138",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.0.1.tar.xz",
+                                    "sha256": "8346f1e7567bcb3a28dd770097208e78d33a5d41e0a71af2a7e7fd997f17db44",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -661,8 +661,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-24.06.1.tar.xz",
-                                    "sha256": "1e629e8732286c745fbc0b15a3ee591443fb37a2210856e7f3ec38a0fb93ab13",
+                                    "url": "https://poppler.freedesktop.org/poppler-24.07.0.tar.xz",
+                                    "sha256": "19eb4f49198e4ae3fd9e5a6cf24d0fc7e674e8802046a7de14baab1e40cc2f1d",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -712,12 +712,12 @@
                                         {
                                             "type": "git",
                                             "url": "https://github.com/fmtlib/fmt.git",
-                                            "tag": "10.2.1",
+                                            "tag": "11.0.1",
                                             "x-checker-data": {
                                                 "type": "git",
                                                 "tag-pattern": "^([0-9.]+)$"
                                             },
-                                            "commit": "e69e5f977d458f2650bb346dadf2ad30c5320281"
+                                            "commit": "b50e685db996c167e6c831dcef582aba6e14276a"
                                         }
                                     ]
                                 }
@@ -962,11 +962,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/strukturag/libheif.git",
-                                    "tag": "v1.17.6",
+                                    "tag": "v1.18.0",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "59b58566de0d8e2e9fea958abeba1d3346bda9de"
+                                    "commit": "537d66852629e23ca778ef717343be8f657c0e79"
                                 }
                             ]
                         },
@@ -1007,8 +1007,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/PDAL/PDAL/releases/download/2.7.1/PDAL-2.7.1-src.tar.bz2",
-                            "sha256": "7769aaacfc26daeb559b511c73c241a5e9a2f31e26ef3a736204b83e791c5453",
+                            "url": "https://github.com/PDAL/PDAL/releases/download/2.7.2/PDAL-2.7.2-src.tar.bz2",
+                            "sha256": "f6ae0f3dc012b19c70dde2361799ecac0cdcbeb9cad5cfd96313c9fdc8608f32",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 138228,
@@ -1186,11 +1186,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v70.1.1",
+                            "tag": "v71.0.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "222ebf921a4a1cca69d6a5193121f3090580e502"
+                            "commit": "1b344658b9c406be8bb6cb48ee5d6c1b9ea7d765"
                         }
                     ]
                 },
@@ -1265,8 +1265,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/07/b3/e02f4f397c81077ffc52a538e0aec464016f1860c472ed33bd2a1d220cc5/certifi-2024.6.2.tar.gz",
-                            "sha256": "3cd43f1c6fa7dedc5899d69d3ad0398fd018ad1a17fba83ddaf78aa46c747516",
+                            "url": "https://files.pythonhosted.org/packages/c2/02/a95f2b11e207f68bc64d7aae9666fed2e2b3f307748d5123dffb72a1bbea/certifi-2024.7.4.tar.gz",
+                            "sha256": "5a1e7645bc0ec61a09e26c36f6106dd4cf40c6db3a1fb6352b0244e7fb057c7b",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "certifi"
@@ -1313,8 +1313,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/00/87/c8ccf265dea5f96a1e930e69b97214255bbe284ca78e450aeaba7d021bdb/trove_classifiers-2024.5.22-py3-none-any.whl",
-                            "sha256": "c43ade18704823e4afa3d9db7083294bc4708a5e02afbcefacd0e9d03a7a24ef",
+                            "url": "https://files.pythonhosted.org/packages/0f/b0/09794439a62a7dc18bffdbf145aaf50297fd994890b11da27a13e376b947/trove_classifiers-2024.7.2-py3-none-any.whl",
+                            "sha256": "ccc57a33717644df4daca018e7ec3ef57a835c48e96a1e71fc07eb7edac67af6",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "trove-classifiers",
@@ -1498,11 +1498,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/Exiv2/exiv2.git",
-                            "tag": "v0.28.2",
+                            "tag": "v0.28.3",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "04207b9c39bf7b3b1a7144f7ed4e4f16b4f29ef6"
+                            "commit": "a6a79ef064f131ffd03c110acce2d3edb84ffa2e"
                         }
                     ]
                 },
