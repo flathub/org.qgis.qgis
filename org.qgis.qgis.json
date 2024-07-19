@@ -53,6 +53,10 @@
                 {
                     "type": "patch",
                     "path": "appstream.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "update-screenshots.patch"
                 }
             ],
             "config-opts": [
