@@ -1,0 +1,24 @@
+commit a4f8fd38ad18bb42477d761fa655fac769325a0d
+Author: Aleix Pol <aleixpol@kde.org>
+Date:   Fri Jul 19 02:32:22 2024 +0200
+
+    appstream: Fix screenshot
+    
+    The one we were pointing to is 404, so got some screenshots from the
+    documentation.
+
+diff --git a/linux/org.qgis.qgis.appdata.xml.in b/linux/org.qgis.qgis.appdata.xml.in
+index 245d8dc001c..899d633e175 100644
+--- a/linux/org.qgis.qgis.appdata.xml.in
++++ b/linux/org.qgis.qgis.appdata.xml.in
+@@ -4,7 +4,9 @@
+   <name>QGIS Desktop</name>
+   <summary>A Geographic Information System</summary>
+   <screenshots>
+-    <screenshot type="default"><caption>QGIS</caption><image type="source">https://qgis.org/en/_static/images/about-screenshot.png</image></screenshot>
++    <screenshot type="default"><caption>QGIS</caption><image type="source">https://docs.qgis.org/testing/en/_images/answer_symbology2.png</image></screenshot>
++    <screenshot type="default"><caption>3D Map View</caption><image type="source">https://docs.qgis.org/testing/en/_images/3dmapview.png</image></screenshot>
++    <screenshot type="default"><caption>QGIS Project Properties</caption><image type="source">https://docs.qgis.org/testing/en/_images/selectCRS.png</image></screenshot>
+   </screenshots>
+   <developer id="qgis.org"><name>QGIS Development Team</name></developer>
+   <description><p>QGIS is a user friendly Open Source Geographic Information System (GIS) licensed under the GNU General Public License. QGIS is an official project of the Open Source Geospatial Foundation (OSGeo). It runs on Linux, Unix, Mac OSX, Windows and Android and supports numerous vector, raster, and database formats and functionalities.</p></description>
