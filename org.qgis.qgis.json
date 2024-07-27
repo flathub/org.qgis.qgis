@@ -1434,12 +1434,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/grass.git",
-                            "tag": "8.3.2",
+                            "tag": "8.4.0",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "695385bb79319a536eb18d8f80ea4e2d13c5221d"
+                            "commit": "e49c044e626e0ca5595e8c64c035a1a0c0bf2719"
                         }
                     ],
                     "modules": [
