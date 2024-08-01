@@ -1035,8 +1035,8 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/abseil/abseil-cpp.git",
-                                    "tag": "20240116.2",
-                                    "commit": "d7aaad83b488fd62bd51c81ecf16cd938532cc0a",
+                                    "tag": "20240722.0",
+                                    "commit": "4447c7562e3bc702ade25105912dce503f0c4010",
                                     "x-checker-data": {
                                         "type": "git",
                                         "tag-pattern": "^([\\d.]+)$"
@@ -1190,11 +1190,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v71.1.0",
+                            "tag": "v72.1.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "08bd31115732ece3cca50bd93f338e1b90dead34"
+                            "commit": "441799f8b45a1a01c608db49333403db1b0d7100"
                         }
                     ]
                 },
@@ -1434,12 +1434,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/grass.git",
-                            "tag": "8.3.2",
+                            "tag": "8.4.0",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "695385bb79319a536eb18d8f80ea4e2d13c5221d"
+                            "commit": "e49c044e626e0ca5595e8c64c035a1a0c0bf2719"
                         }
                     ],
                     "modules": [
@@ -1527,8 +1527,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v27.2",
-                            "commit": "63def39e881afa496502d9c410f4ea948e59490d",
+                            "tag": "v27.3",
+                            "commit": "7cc670c1809e704ebeba90fb430d50e009f36727",
                             "x-checker-data": {
                                 "type": "git"
                             }
