@@ -84,12 +84,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/apache/arrow.git",
-                            "tag": "apache-arrow-15.0.0",
+                            "tag": "apache-arrow-17.0.0",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^apache-arrow-([0-9.]+)$"
                             },
-                            "commit": "a61f4af724cd06c3a9b4abd20491345997e532c0"
+                            "commit": "6a2e19a852b367c72d7b12da4d104456491ed8b7"
                         },
                         {
                             "type": "file",
@@ -223,9 +223,9 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://github.com/google/benchmark/archive/v1.7.1.tar.gz",
-                            "sha256": "6430e4092653380d9dc4ccb45a1e2dc9259d581f4866dc0759713126056bc1d7",
-                            "dest-filename": "gbenchmark-v1.7.1.tar.gz"
+                            "url": "https://github.com/google/benchmark/archive/v1.8.3.tar.gz",
+                            "sha256": "6bc180a57d23d4d9515519f92b0c83d61b05b5bab188961f36ac7b06b0d9e9ce",
+                            "dest-filename": "gbenchmark-v1.8.3.tar.gz"
                         },
                         {
                             "type": "file",
@@ -241,9 +241,9 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://github.com/googleapis/google-cloud-cpp/archive/v2.12.0.tar.gz",
-                            "sha256": "8cda870803925c62de8716a765e03eb9d34249977e5cdb7d0d20367e997a55e2",
-                            "dest-filename": "google-cloud-cpp-v2.12.0.tar.gz"
+                            "url": "https://github.com/googleapis/google-cloud-cpp/archive/v2.22.0.tar.gz",
+                            "sha256": "0c68782e57959c82e0c81def805c01460a042c1aae0c2feee905acaa2a2dc9bf",
+                            "dest-filename": "google-cloud-cpp-v2.22.0.tar.gz"
                         },
                         {
                             "type": "file",
@@ -289,9 +289,9 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://github.com/open-telemetry/opentelemetry-cpp/archive/refs/tags/v1.8.1.tar.gz",
-                            "sha256": "3d640201594b07f08dade9cd1017bd0b59674daca26223b560b9bb6bf56264c2",
-                            "dest-filename": "opentelemetry-cpp-v1.8.1.tar.gz"
+                            "url": "https://github.com/open-telemetry/opentelemetry-cpp/archive/refs/tags/v1.13.0.tar.gz",
+                            "sha256": "7735cc56507149686e6019e06f588317099d4522480be5f38a2a09ec69af1706",
+                            "dest-filename": "opentelemetry-cpp-v1.13.0.tar.gz"
                         },
                         {
                             "type": "file",
@@ -301,9 +301,9 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://archive.apache.org/dist/orc/orc-1.9.2/orc-1.9.2.tar.gz",
-                            "sha256": "7f46f2c184ecefd6791f1a53fb062286818bd8710c3f08b94dd3cac365e240ee",
-                            "dest-filename": "orc-1.9.2.tar.gz"
+                            "url": "https://archive.apache.org/dist/orc/orc-2.0.1/orc-2.0.1.tar.gz",
+                            "sha256": "1ffac0228aa83f04a1b1cf2788a3af5953e82587ae3a77c41900e99f2557132d",
+                            "dest-filename": "orc-2.0.1.tar.gz"
                         },
                         {
                             "type": "file",
@@ -337,9 +337,9 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://github.com/substrait-io/substrait/archive/v0.27.0.tar.gz",
-                            "sha256": "4ed375f69d972a57fdc5ec406c17003a111831d8640d3f1733eccd4b3ff45628",
-                            "dest-filename": "substrait_v0.27.0.tar.gz"
+                            "url": "https://github.com/substrait-io/substrait/archive/v0.44.0.tar.gz",
+                            "sha256": "f989a862f694e7dbb695925ddb7c4ce06aa6c51aca945105c075139aed7e55a2",
+                            "dest-filename": "substrait_v0.44.0.tar.gz"
                         },
                         {
                             "type": "file",
@@ -364,28 +364,28 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://github.com/xtensor-stack/xsimd/archive/9.0.1.tar.gz",
-                            "sha256": "b1bb5f92167fd3a4f25749db0be7e61ed37e0a5d943490f3accdcd2cd2918cc0",
+                            "url": "https://github.com/xtensor-stack/xsimd/archive/13.0.0.tar.gz",
+                            "sha256": "8bdbbad0c3e7afa38d88d0d484d70a1671a1d8aefff03f4223ab2eb6a41110a3",
                             "mirror-urls": [
-                                "https://github.com/xtensor-stack/xsimd/archive/refs/tags/9.0.1.tar.gz"
+                                "https://github.com/xtensor-stack/xsimd/archive/refs/tags/13.0.0.tar.gz"
                             ],
-                            "dest-filename": "xsimd-9.0.1.tar.gz"
+                            "dest-filename": "xsimd-13.0.0.tar.gz"
                         },
                         {
                             "type": "file",
-                            "url": "https://zlib.net/fossils/zlib-1.2.13.tar.gz",
-                            "sha256": "b3a24de97a8fdbc835b9833169501030b8977031bcb54b3b3ac13740f846ab30",
-                            "dest-filename": "zlib-1.2.13.tar.gz"
+                            "url": "https://zlib.net/fossils/zlib-1.3.1.tar.gz",
+                            "sha256": "9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23",
+                            "dest-filename": "zlib-1.3.1.tar.gz"
                         },
                         {
                             "type": "file",
-                            "url": "https://github.com/facebook/zstd/releases/download/v1.5.5/zstd-1.5.5.tar.gz",
-                            "sha256": "9c4396cc829cfae319a6e2615202e82aad41372073482fce286fac78646d3ee4",
-                            "dest-filename": "zstd-1.5.5.tar.gz"
+                            "url": "https://github.com/facebook/zstd/releases/download/v1.5.6/zstd-1.5.6.tar.gz",
+                            "sha256": "8c29e06cf42aacc1eafc4077ae2ec6c6fcb96a626157e0593d5e82a34fd403c1",
+                            "dest-filename": "zstd-1.5.6.tar.gz"
                         }
                     ],
                     "build-commands": [
-                        "export ARROW_ABSL_URL=/run/build/arrow/absl-20211102.0.tar.gz && export ARROW_AWS_C_AUTH_URL=/run/build/arrow/aws-c-auth-v0.6.22.tar.gz && export ARROW_AWS_C_CAL_URL=/run/build/arrow/aws-c-cal-v0.5.20.tar.gz && export ARROW_AWS_C_COMMON_URL=/run/build/arrow/aws-c-common-v0.8.9.tar.gz && export ARROW_AWS_C_COMPRESSION_URL=/run/build/arrow/aws-c-compression-v0.2.16.tar.gz && export ARROW_AWS_C_EVENT_STREAM_URL=/run/build/arrow/aws-c-event-stream-v0.2.18.tar.gz && export ARROW_AWS_C_HTTP_URL=/run/build/arrow/aws-c-http-v0.7.3.tar.gz && export ARROW_AWS_C_IO_URL=/run/build/arrow/aws-c-io-v0.13.14.tar.gz && export ARROW_AWS_C_MQTT_URL=/run/build/arrow/aws-c-mqtt-v0.8.4.tar.gz && export ARROW_AWS_C_S3_URL=/run/build/arrow/aws-c-s3-v0.2.3.tar.gz && export ARROW_AWS_C_SDKUTILS_URL=/run/build/arrow/aws-c-sdkutils-v0.1.6.tar.gz && export ARROW_AWS_CHECKSUMS_URL=/run/build/arrow/aws-checksums-v0.1.13.tar.gz && export ARROW_AWS_CRT_CPP_URL=/run/build/arrow/aws-crt-cpp-v0.18.16.tar.gz && export ARROW_AWS_LC_URL=/run/build/arrow/aws-lc-v1.3.0.tar.gz && export ARROW_AWSSDK_URL=/run/build/arrow/aws-sdk-cpp-1.10.55.tar.gz && export ARROW_AZURE_SDK_URL=/run/build/arrow/azure-core_1.10.3.tar.gz && export ARROW_BOOST_URL=/run/build/arrow/boost-1_81_0.tar.gz && export ARROW_BROTLI_URL=/run/build/arrow/brotli-v1.0.9.tar.gz && export ARROW_BZIP2_URL=/run/build/arrow/bzip2-1.0.8.tar.gz && export ARROW_CARES_URL=/run/build/arrow/cares-1.17.2.tar.gz && export ARROW_CRC32C_URL=/run/build/arrow/crc32c-1.1.2.tar.gz && export ARROW_GBENCHMARK_URL=/run/build/arrow/gbenchmark-v1.7.1.tar.gz && export ARROW_GFLAGS_URL=/run/build/arrow/gflags-v2.2.2.tar.gz && export ARROW_GLOG_URL=/run/build/arrow/glog-v0.5.0.tar.gz && export ARROW_GOOGLE_CLOUD_CPP_URL=/run/build/arrow/google-cloud-cpp-v2.12.0.tar.gz && export ARROW_GRPC_URL=/run/build/arrow/grpc-v1.46.3.tar.gz && export ARROW_GTEST_URL=/run/build/arrow/gtest-1.11.0.tar.gz && export ARROW_JEMALLOC_URL=/run/build/arrow/jemalloc-5.3.0.tar.bz2 && export ARROW_LZ4_URL=/run/build/arrow/lz4-v1.9.4.tar.gz && export ARROW_MIMALLOC_URL=/run/build/arrow/mimalloc-v2.0.6.tar.gz && export ARROW_NLOHMANN_JSON_URL=/run/build/arrow/nlohmann-json-v3.10.5.tar.gz && export ARROW_OPENTELEMETRY_URL=/run/build/arrow/opentelemetry-cpp-v1.8.1.tar.gz && export ARROW_OPENTELEMETRY_PROTO_URL=/run/build/arrow/opentelemetry-proto-v0.17.0.tar.gz && export ARROW_ORC_URL=/run/build/arrow/orc-1.9.2.tar.gz && export ARROW_PROTOBUF_URL=/run/build/arrow/protobuf-21.3.tar.gz && export ARROW_RAPIDJSON_URL=/run/build/arrow/rapidjson-232389d4f1012dddec4ef84861face2d2ba85709.tar.gz && export ARROW_RE2_URL=/run/build/arrow/re2-2022-06-01.tar.gz && export ARROW_S2N_TLS_URL=/run/build/arrow/s2n-v1.3.35.tar.gz && export ARROW_SNAPPY_URL=/run/build/arrow/snappy-1.1.10.tar.gz && export ARROW_SUBSTRAIT_URL=/run/build/arrow/substrait_v0.27.0.tar.gz && export ARROW_THRIFT_URL=/run/build/arrow/thrift-0.16.0.tar.gz && export ARROW_UCX_URL=/run/build/arrow/ucx-1.12.1.tar.gz && export ARROW_UTF8PROC_URL=/run/build/arrow/utf8proc-v2.7.0.tar.gz && export ARROW_XSIMD_URL=/run/build/arrow/xsimd-9.0.1.tar.gz && export ARROW_ZLIB_URL=/run/build/arrow/zlib-1.2.13.tar.gz && export ARROW_ZSTD_URL=/run/build/arrow/zstd-1.5.5.tar.gz && cmake -GNinja --preset ninja-release -DCMAKE_INSTALL_PREFIX=/app && cmake --build . && ninja && ninja install"
+                        "export ARROW_ABSL_URL=/run/build/arrow/absl-20211102.0.tar.gz && export ARROW_AWS_C_AUTH_URL=/run/build/arrow/aws-c-auth-v0.6.22.tar.gz && export ARROW_AWS_C_CAL_URL=/run/build/arrow/aws-c-cal-v0.5.20.tar.gz && export ARROW_AWS_C_COMMON_URL=/run/build/arrow/aws-c-common-v0.8.9.tar.gz && export ARROW_AWS_C_COMPRESSION_URL=/run/build/arrow/aws-c-compression-v0.2.16.tar.gz && export ARROW_AWS_C_EVENT_STREAM_URL=/run/build/arrow/aws-c-event-stream-v0.2.18.tar.gz && export ARROW_AWS_C_HTTP_URL=/run/build/arrow/aws-c-http-v0.7.3.tar.gz && export ARROW_AWS_C_IO_URL=/run/build/arrow/aws-c-io-v0.13.14.tar.gz && export ARROW_AWS_C_MQTT_URL=/run/build/arrow/aws-c-mqtt-v0.8.4.tar.gz && export ARROW_AWS_C_S3_URL=/run/build/arrow/aws-c-s3-v0.2.3.tar.gz && export ARROW_AWS_C_SDKUTILS_URL=/run/build/arrow/aws-c-sdkutils-v0.1.6.tar.gz && export ARROW_AWS_CHECKSUMS_URL=/run/build/arrow/aws-checksums-v0.1.13.tar.gz && export ARROW_AWS_CRT_CPP_URL=/run/build/arrow/aws-crt-cpp-v0.18.16.tar.gz && export ARROW_AWS_LC_URL=/run/build/arrow/aws-lc-v1.3.0.tar.gz && export ARROW_AWSSDK_URL=/run/build/arrow/aws-sdk-cpp-1.10.55.tar.gz && export ARROW_AZURE_SDK_URL=/run/build/arrow/azure-core_1.10.3.tar.gz && export ARROW_BOOST_URL=/run/build/arrow/boost-1_81_0.tar.gz && export ARROW_BROTLI_URL=/run/build/arrow/brotli-v1.0.9.tar.gz && export ARROW_BZIP2_URL=/run/build/arrow/bzip2-1.0.8.tar.gz && export ARROW_CARES_URL=/run/build/arrow/cares-1.17.2.tar.gz && export ARROW_CRC32C_URL=/run/build/arrow/crc32c-1.1.2.tar.gz && export ARROW_GBENCHMARK_URL=/run/build/arrow/gbenchmark-v1.8.3.tar.gz && export ARROW_GFLAGS_URL=/run/build/arrow/gflags-v2.2.2.tar.gz && export ARROW_GLOG_URL=/run/build/arrow/glog-v0.5.0.tar.gz && export ARROW_GOOGLE_CLOUD_CPP_URL=/run/build/arrow/google-cloud-cpp-v2.22.0.tar.gz && export ARROW_GRPC_URL=/run/build/arrow/grpc-v1.46.3.tar.gz && export ARROW_GTEST_URL=/run/build/arrow/gtest-1.11.0.tar.gz && export ARROW_JEMALLOC_URL=/run/build/arrow/jemalloc-5.3.0.tar.bz2 && export ARROW_LZ4_URL=/run/build/arrow/lz4-v1.9.4.tar.gz && export ARROW_MIMALLOC_URL=/run/build/arrow/mimalloc-v2.0.6.tar.gz && export ARROW_NLOHMANN_JSON_URL=/run/build/arrow/nlohmann-json-v3.10.5.tar.gz && export ARROW_OPENTELEMETRY_URL=/run/build/arrow/opentelemetry-cpp-v1.13.0.tar.gz && export ARROW_OPENTELEMETRY_PROTO_URL=/run/build/arrow/opentelemetry-proto-v0.17.0.tar.gz && export ARROW_ORC_URL=/run/build/arrow/orc-2.0.1.tar.gz && export ARROW_PROTOBUF_URL=/run/build/arrow/protobuf-21.3.tar.gz && export ARROW_RAPIDJSON_URL=/run/build/arrow/rapidjson-232389d4f1012dddec4ef84861face2d2ba85709.tar.gz && export ARROW_RE2_URL=/run/build/arrow/re2-2022-06-01.tar.gz && export ARROW_S2N_TLS_URL=/run/build/arrow/s2n-v1.3.35.tar.gz && export ARROW_SNAPPY_URL=/run/build/arrow/snappy-1.1.10.tar.gz && export ARROW_SUBSTRAIT_URL=/run/build/arrow/substrait_v0.44.0.tar.gz && export ARROW_THRIFT_URL=/run/build/arrow/thrift-0.16.0.tar.gz && export ARROW_UCX_URL=/run/build/arrow/ucx-1.12.1.tar.gz && export ARROW_UTF8PROC_URL=/run/build/arrow/utf8proc-v2.7.0.tar.gz && export ARROW_XSIMD_URL=/run/build/arrow/xsimd-13.0.0.tar.gz && export ARROW_ZLIB_URL=/run/build/arrow/zlib-1.3.1.tar.gz && export ARROW_ZSTD_URL=/run/build/arrow/zstd-1.5.6.tar.gz && cmake -GNinja --preset ninja-release -DCMAKE_INSTALL_PREFIX=/app && cmake --build . && ninja && ninja install"
                     ]
                 },
                 {
