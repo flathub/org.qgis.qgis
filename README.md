@@ -67,3 +67,9 @@ Downloading https://mesa.freedesktop.org/archive/glu/glu-9.0.1.tar.xz
 Failed to download sources: module glu: server certificate verification failed. CAfile: none CRLfile: none
 ```
 then see: https://github.com/flatpak/flatpak-builder/issues/468 or https://github.com/flathub/shared-modules/issues/230
+
+### Updating arrow version
+Change tag and commit for arrow in `org.qgis.qgis.json` to version you want to update to.
+
+Check `cpp/thirdparty/versions.txt` ( [e.g. version 17.0.0](https://github.com/apache/arrow/blob/apache-arrow-17.0.0/cpp/thirdparty/versions.txt) ) file in arrow repo for that version and compare versions of dependencies.
+For each dependency you need to update the url, the downloaded file name, and file name exported to env variable.
