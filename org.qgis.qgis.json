@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.38.1.tar.bz2",
-                    "sha256": "c670f90e3929e7f76abe4a19f0dbf8c1b1f24f1b54c15a91839a8d0cedd05137",
+                    "url": "https://qgis.org/downloads/qgis-3.38.2.tar.bz2",
+                    "sha256": "38abdf9c858e24190caac56171ad1bdea50b30f726144f224a0b7f32c96950d8",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -341,8 +341,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.9.1/gdal-3.9.1.tar.xz",
-                            "sha256": "aff3086fee75f5773e33a5598df98d8a4d10be411f777d3ce23584b21d8171ca",
+                            "url": "https://download.osgeo.org/gdal/3.9.2/gdal-3.9.2.tar.xz",
+                            "sha256": "bfbcc9f087f012c36151c20c79f8eac9529e1e5298fbded79cd5a1365f0b113a",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -484,8 +484,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.0.1.tar.xz",
-                                    "sha256": "8346f1e7567bcb3a28dd770097208e78d33a5d41e0a71af2a7e7fd997f17db44",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.0.2.tar.xz",
+                                    "sha256": "248e2535fc092add6cb7dea94fc86ae1c463bda39e46fd82d2a7165c1c197dff",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -555,8 +555,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://downloads.sourceforge.net/project/boost/boost/1.85.0/boost_1_85_0.tar.bz2",
-                                    "sha256": "7009fe1faa1697476bdc7027703a2badb84e849b7b0baad5086b087b971f8617",
+                                    "url": "https://downloads.sourceforge.net/project/boost/boost/1.86.0/boost_1_86_0.tar.bz2",
+                                    "sha256": "1bed88e40401b2cb7a1f76d4bab499e352fa4d0c5f31c0dbae64e24d34d7513b",
                                     "x-checker-data": {
                                         "type": "html",
                                         "url": "https://www.boost.org/feed/downloads.rss",
@@ -665,8 +665,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-24.07.0.tar.xz",
-                                    "sha256": "19eb4f49198e4ae3fd9e5a6cf24d0fc7e674e8802046a7de14baab1e40cc2f1d",
+                                    "url": "https://poppler.freedesktop.org/poppler-24.08.0.tar.xz",
+                                    "sha256": "97453fbddf0c9a9eafa0ea45ac710d3d49bcf23a62e864585385d3c0b4403174",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -793,11 +793,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/ebiggers/libdeflate.git",
-                                    "tag": "v1.20",
+                                    "tag": "v1.21",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "275aa5141db6eda3587214e0f1d3a134768f557d"
+                                    "commit": "9be1c54e6086cd1f9e1e7dece96eb6d1355c93f7"
                                 }
                             ]
                         },
@@ -966,11 +966,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/strukturag/libheif.git",
-                                    "tag": "v1.18.1",
+                                    "tag": "v1.18.2",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "586335e93528203209a37f0935dbbe14e0f76741"
+                                    "commit": "bf35e9eb25af8f2b7917996ad9ba849d922f8d15"
                                 }
                             ]
                         },
@@ -1035,8 +1035,8 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/abseil/abseil-cpp.git",
-                                    "tag": "20240116.2",
-                                    "commit": "d7aaad83b488fd62bd51c81ecf16cd938532cc0a",
+                                    "tag": "20240722.0",
+                                    "commit": "4447c7562e3bc702ade25105912dce503f0c4010",
                                     "x-checker-data": {
                                         "type": "git",
                                         "tag-pattern": "^([\\d.]+)$"
@@ -1190,11 +1190,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v71.1.0",
+                            "tag": "v73.0.1",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "08bd31115732ece3cca50bd93f338e1b90dead34"
+                            "commit": "ebddeb36f72c9d758b5cc0e9f81f8a66aa837d96"
                         }
                     ]
                 },
@@ -1377,8 +1377,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/63/f7/ffbb6d2eb67b80a45b8a0834baa5557a14a5ffce0979439e7cd7f0c4055b/lxml-5.2.2.tar.gz",
-                            "sha256": "bb2dc4898180bea79863d5487e5f9c7c34297414bad54bcd0f0852aee9cfdb87",
+                            "url": "https://files.pythonhosted.org/packages/e7/6b/20c3a4b24751377aaa6307eb230b66701024012c29dd374999cc92983269/lxml-5.3.0.tar.gz",
+                            "sha256": "4e109ca30d1edec1ac60cdbe341905dc3b8f55b16855e03a54aaf59e51ec8c6f",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "lxml"
@@ -1434,12 +1434,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/grass.git",
-                            "tag": "8.3.2",
+                            "tag": "8.4.0",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "695385bb79319a536eb18d8f80ea4e2d13c5221d"
+                            "commit": "e49c044e626e0ca5595e8c64c035a1a0c0bf2719"
                         }
                     ],
                     "modules": [
@@ -1527,8 +1527,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v27.2",
-                            "commit": "63def39e881afa496502d9c410f4ea948e59490d",
+                            "tag": "v27.3",
+                            "commit": "7cc670c1809e704ebeba90fb430d50e009f36727",
                             "x-checker-data": {
                                 "type": "git"
                             }
