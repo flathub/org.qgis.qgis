@@ -1190,11 +1190,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v73.0.1",
+                            "tag": "v74.0.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "ebddeb36f72c9d758b5cc0e9f81f8a66aa837d96"
+                            "commit": "98ad794354efecf4ed1f629d4e5f02feae00d2ae"
                         }
                     ]
                 },
@@ -1278,8 +1278,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/e5/3e/741d8c82801c347547f8a2a06aa57dbb1992be9e948df2ea0eda2c8b79e8/idna-3.7-py3-none-any.whl",
-                            "sha256": "82fee1fc78add43492d3a1898bfa6d8a904cc97d8427f683ed8e798d07761aa0",
+                            "url": "https://files.pythonhosted.org/packages/22/7e/d71db821f177828df9dea8c42ac46473366f191be53080e552e628aad991/idna-3.8-py3-none-any.whl",
+                            "sha256": "050b4e5baadcd44d760cedbd2b8e639f2ff89bbc7a5730fcc662954303377aac",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "idna",
@@ -1527,8 +1527,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v27.3",
-                            "commit": "7cc670c1809e704ebeba90fb430d50e009f36727",
+                            "tag": "v28.0",
+                            "commit": "439c42c735ae1efed57ab7771986f2a3c0b99319",
                             "x-checker-data": {
                                 "type": "git"
                             }
