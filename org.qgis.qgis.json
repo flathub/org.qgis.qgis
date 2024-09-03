@@ -665,8 +665,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-24.08.0.tar.xz",
-                                    "sha256": "97453fbddf0c9a9eafa0ea45ac710d3d49bcf23a62e864585385d3c0b4403174",
+                                    "url": "https://poppler.freedesktop.org/poppler-24.09.0.tar.xz",
+                                    "sha256": "ebd857987e2395608c69fdc44009692d5906f13b612c5280beff65a0b75dc255",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -1190,11 +1190,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v74.0.0",
+                            "tag": "v74.1.1",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "98ad794354efecf4ed1f629d4e5f02feae00d2ae"
+                            "commit": "7ee29bd9ade19515c9521911c2d243817c021ee8"
                         }
                     ]
                 },
