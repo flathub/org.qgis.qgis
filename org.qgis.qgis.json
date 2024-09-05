@@ -989,12 +989,12 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/libexpat/libexpat.git",
-                                    "tag": "R_2_6_2",
+                                    "tag": "R_2_6_3",
                                     "x-checker-data": {
                                         "type": "git",
                                         "tag-pattern": "^(R_[0-9_]+)$"
                                     },
-                                    "commit": "fa75b96546c069d17b8f80d91e0f4ef0cde3790d"
+                                    "commit": "88b3ed553d8ad335559254863a33360d55b9f1d6"
                                 }
                             ]
                         }
@@ -1194,7 +1194,7 @@
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "c484f9edb936049cf5958a7ce004b18a74158c13"
+                            "commit": "3b2ef1e72a704d7a2528408c190b39ed71560341"
                         }
                     ]
                 },
