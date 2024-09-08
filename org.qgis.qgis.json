@@ -100,8 +100,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "http://download.osgeo.org/geos/geos-3.12.2.tar.bz2",
-                            "sha256": "34c7770bf0090ee88488af98767d08e779f124fa33437e0aabec8abd4609fec6",
+                            "url": "http://download.osgeo.org/geos/geos-3.13.0.tar.bz2",
+                            "sha256": "47ec83ff334d672b9e4426695f15da6e6368244214971fabf386ff8ef6df39e4",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 13493,
@@ -989,12 +989,12 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/libexpat/libexpat.git",
-                                    "tag": "R_2_6_2",
+                                    "tag": "R_2_6_3",
                                     "x-checker-data": {
                                         "type": "git",
                                         "tag-pattern": "^(R_[0-9_]+)$"
                                     },
-                                    "commit": "fa75b96546c069d17b8f80d91e0f4ef0cde3790d"
+                                    "commit": "88b3ed553d8ad335559254863a33360d55b9f1d6"
                                 }
                             ]
                         }
@@ -1011,8 +1011,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/PDAL/PDAL/releases/download/2.7.2/PDAL-2.7.2-src.tar.bz2",
-                            "sha256": "f6ae0f3dc012b19c70dde2361799ecac0cdcbeb9cad5cfd96313c9fdc8608f32",
+                            "url": "https://github.com/PDAL/PDAL/releases/download/2.8.0/PDAL-2.8.0-src.tar.bz2",
+                            "sha256": "8a6d7646912a4e7a382f06451b14a1f5f2e8aa4e0b391dc91c30701222198b77",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 138228,
@@ -1194,7 +1194,7 @@
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "c484f9edb936049cf5958a7ce004b18a74158c13"
+                            "commit": "3b2ef1e72a704d7a2528408c190b39ed71560341"
                         }
                     ]
                 },
