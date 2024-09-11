@@ -947,11 +947,11 @@
                                         {
                                             "type": "git",
                                             "url": "https://github.com/AcademySoftwareFoundation/Imath.git",
-                                            "tag": "v3.1.11",
+                                            "tag": "v3.1.12",
                                             "x-checker-data": {
                                                 "type": "git"
                                             },
-                                            "commit": "5ac1d5335cb34f0f356c5f2461a57c845b96b115"
+                                            "commit": "c0396a055a01bc537d32f435aee11a9b7ed6f0b5"
                                         }
                                     ],
                                     "modules": []
@@ -1260,8 +1260,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/90/26/9f1f00a5d021fff16dee3de13d43e5e978f3d58928e129c3a62cf7eb9738/pytz-2024.1.tar.gz",
-                            "sha256": "2a29735ea9c18baf14b448846bde5a48030ed267578472d8955cd0e7443a9812",
+                            "url": "https://files.pythonhosted.org/packages/3a/31/3c70bf7603cc2dca0f19bdc53b4537a797747a58875b552c8c413d963a3f/pytz-2024.2.tar.gz",
+                            "sha256": "2aa355083c50a0f93fa581709deac0c9ad65cca8a9e9beac660adcbd493c798a",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "pytz"
@@ -1527,8 +1527,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v28.0",
-                            "commit": "439c42c735ae1efed57ab7771986f2a3c0b99319",
+                            "tag": "v28.1",
+                            "commit": "10ef3f77683f77fb3c059bf47725c27b3ff41e63",
                             "x-checker-data": {
                                 "type": "git"
                             }
