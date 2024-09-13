@@ -917,11 +917,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/libjxl/libjxl.git",
-                                    "tag": "v0.10.3",
+                                    "tag": "v0.11.0",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "4a3b22d2600f92d8706fb72d85d52bfee2acbd54"
+                                    "commit": "4df1e9eccdf86b8df4c0c7c08f529263906f9c4f"
                                 }
                             ]
                         },
@@ -1317,8 +1317,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/0f/b0/09794439a62a7dc18bffdbf145aaf50297fd994890b11da27a13e376b947/trove_classifiers-2024.7.2-py3-none-any.whl",
-                            "sha256": "ccc57a33717644df4daca018e7ec3ef57a835c48e96a1e71fc07eb7edac67af6",
+                            "url": "https://files.pythonhosted.org/packages/b6/7a/e0edec9c8905e851d52076bbc41890603e2ba97cf64966bc1498f2244fd2/trove_classifiers-2024.9.12-py3-none-any.whl",
+                            "sha256": "f88a27a892891c87c5f8bbdf110710ae9e0a4725ea8e0fb45f1bcadf088a491f",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "trove-classifiers",
@@ -1357,8 +1357,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/ca/1c/89ffc63a9605b583d5df2be791a27bc1a42b7c32bab68d3c8f2f73a98cd4/urllib3-2.2.2-py3-none-any.whl",
-                            "sha256": "a448b2f64d686155468037e1ace9f2d2199776e17f0a46610480d311f73e3472",
+                            "url": "https://files.pythonhosted.org/packages/ce/d9/5f4c13cecde62396b0d3fe530a50ccea91e7dfc1ccf0e09c228841bb5ba8/urllib3-2.2.3-py3-none-any.whl",
+                            "sha256": "ca899ca043dcb1bafa3e262d73aa25c465bfb49e0bd9dd5d59f1d0acba2f8fac",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "urllib3",
@@ -1527,8 +1527,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v28.0",
-                            "commit": "439c42c735ae1efed57ab7771986f2a3c0b99319",
+                            "tag": "v28.1",
+                            "commit": "10ef3f77683f77fb3c059bf47725c27b3ff41e63",
                             "x-checker-data": {
                                 "type": "git"
                             }
