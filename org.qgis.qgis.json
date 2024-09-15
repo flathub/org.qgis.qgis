@@ -86,12 +86,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/PROJ.git",
-                            "tag": "9.4.1",
+                            "tag": "9.5.0",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "875a485fa5ef435c57f7682f904dd31ca92253ab"
+                            "commit": "0a407325fbb5bf42407a7dc5d4f948be9707e302"
                         }
                     ]
                 },
@@ -1278,8 +1278,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/22/7e/d71db821f177828df9dea8c42ac46473366f191be53080e552e628aad991/idna-3.8-py3-none-any.whl",
-                            "sha256": "050b4e5baadcd44d760cedbd2b8e639f2ff89bbc7a5730fcc662954303377aac",
+                            "url": "https://files.pythonhosted.org/packages/6d/15/61933d1999bc5ad8cad612d67f02fa5b16a423076ea0816e39c2e797af12/idna-3.9-py3-none-any.whl",
+                            "sha256": "69297d5da0cc9281c77efffb4e730254dd45943f45bbfb461de5991713989b1e",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "idna",
