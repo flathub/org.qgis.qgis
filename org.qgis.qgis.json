@@ -86,12 +86,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/PROJ.git",
-                            "tag": "9.4.1",
+                            "tag": "9.5.0",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "875a485fa5ef435c57f7682f904dd31ca92253ab"
+                            "commit": "0a407325fbb5bf42407a7dc5d4f948be9707e302"
                         }
                     ]
                 },
@@ -829,11 +829,11 @@
                                         {
                                             "type": "git",
                                             "url": "https://gitlab.com/libtiff/libtiff.git",
-                                            "tag": "v4.6.0",
+                                            "tag": "v4.7.0",
                                             "x-checker-data": {
                                                 "type": "git"
                                             },
-                                            "commit": "8b20804fc0ddeaa93667b799b5e1a2a7dc9e3fb2"
+                                            "commit": "9dff73bebc5661f2dace6f16e14cf9e857172f4e"
                                         }
                                     ]
                                 }
@@ -847,12 +847,12 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/json-c/json-c",
-                                    "tag": "json-c-0.17-20230812",
+                                    "tag": "json-c-0.18-20240915",
                                     "x-checker-data": {
                                         "type": "git",
                                         "tag-pattern": "^json-c-([\\d.]+)-[\\d]+$"
                                     },
-                                    "commit": "b4c371fa0cbc4dcbaccc359ce9e957a22988fb34"
+                                    "commit": "41a55cfcedb54d9c1874f2f0eb07b504091d7e37"
                                 }
                             ]
                         },
@@ -1190,11 +1190,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v74.1.2",
+                            "tag": "v75.1.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "3b2ef1e72a704d7a2528408c190b39ed71560341"
+                            "commit": "3106af0512fe67464a8b5e7524c07fddf7717660"
                         }
                     ]
                 },
@@ -1278,8 +1278,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/22/7e/d71db821f177828df9dea8c42ac46473366f191be53080e552e628aad991/idna-3.8-py3-none-any.whl",
-                            "sha256": "050b4e5baadcd44d760cedbd2b8e639f2ff89bbc7a5730fcc662954303377aac",
+                            "url": "https://files.pythonhosted.org/packages/76/c6/c88e154df9c4e1a2a66ccf0005a88dfb2650c1dffb6f5ce603dfbd452ce3/idna-3.10-py3-none-any.whl",
+                            "sha256": "946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "idna",
