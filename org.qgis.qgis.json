@@ -1527,8 +1527,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v28.1",
-                            "commit": "10ef3f77683f77fb3c059bf47725c27b3ff41e63",
+                            "tag": "v28.2",
+                            "commit": "9fff46d7327c699ef970769d5c9fd0e44df08fc7",
                             "x-checker-data": {
                                 "type": "git"
                             }
