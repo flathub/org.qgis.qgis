@@ -793,11 +793,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/ebiggers/libdeflate.git",
-                                    "tag": "v1.21",
+                                    "tag": "v1.22",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "9be1c54e6086cd1f9e1e7dece96eb6d1355c93f7"
+                                    "commit": "2335c047e91cac6fd04cb0fd2769380395149f15"
                                 }
                             ]
                         },
