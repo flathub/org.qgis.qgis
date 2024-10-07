@@ -755,8 +755,8 @@
                                     "sources": [
                                         {
                                             "type": "file",
-                                            "url": "https://files.pythonhosted.org/packages/aa/5f/bb5970d3d04173b46c9037109f7f05fc8904ff5be073ee49bb6ff00301bc/pyproject_metadata-0.8.0-py3-none-any.whl",
-                                            "sha256": "ad858d448e1d3a1fb408ac5bac9ea7743e7a8bbb472f2693aaa334d2db42f526",
+                                            "url": "https://files.pythonhosted.org/packages/22/81/42aaafbff27ca340eef777a4e3e8a509941e75fc0eeb9da2be5ee4159041/pyproject_metadata-0.8.1-py3-none-any.whl",
+                                            "sha256": "adf593fa478b787c90cc77fcea4114f19a3a1335532bdcba2851be9459a6c39e",
                                             "x-checker-data": {
                                                 "type": "pypi",
                                                 "name": "pyproject_metadata",
@@ -793,11 +793,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/ebiggers/libdeflate.git",
-                                    "tag": "v1.21",
+                                    "tag": "v1.22",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "9be1c54e6086cd1f9e1e7dece96eb6d1355c93f7"
+                                    "commit": "2335c047e91cac6fd04cb0fd2769380395149f15"
                                 }
                             ]
                         },
