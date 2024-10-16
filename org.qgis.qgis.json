@@ -341,8 +341,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.9.2/gdal-3.9.2.tar.xz",
-                            "sha256": "bfbcc9f087f012c36151c20c79f8eac9529e1e5298fbded79cd5a1365f0b113a",
+                            "url": "https://download.osgeo.org/gdal/3.9.3/gdal-3.9.3.tar.xz",
+                            "sha256": "34a037852ffe6d2163f1b8948a1aa7019ff767148aea55876c1339b22ad751f1",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -384,8 +384,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://dlcdn.apache.org//xerces/c/3/sources/xerces-c-3.2.5.tar.xz",
-                                    "sha256": "6239e6035645b21bc9bf7f02004db334dce3fe6d85428ee4fe7e180c2d948230",
+                                    "url": "https://dlcdn.apache.org//xerces/c/3/sources/xerces-c-3.3.0.tar.xz",
+                                    "sha256": "a83e12af82dc4fea09c592979fdbb6f206eeaa968562d7d18a0a4dd032c51267",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 5182,
@@ -484,8 +484,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.0.2.tar.xz",
-                                    "sha256": "248e2535fc092add6cb7dea94fc86ae1c463bda39e46fd82d2a7165c1c197dff",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.0.3.tar.xz",
+                                    "sha256": "ebd6215eeb01ee412fed078c8a9f7f87d4e1f6187ebcdc1bc09f46095a4f4003",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -665,8 +665,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-24.09.0.tar.xz",
-                                    "sha256": "ebd857987e2395608c69fdc44009692d5906f13b612c5280beff65a0b75dc255",
+                                    "url": "https://poppler.freedesktop.org/poppler-24.10.0.tar.xz",
+                                    "sha256": "58ed1849810f04a10b37c7ff6f3e411845c8a57d731d599d0045acc7a7fff09d",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -755,8 +755,8 @@
                                     "sources": [
                                         {
                                             "type": "file",
-                                            "url": "https://files.pythonhosted.org/packages/aa/5f/bb5970d3d04173b46c9037109f7f05fc8904ff5be073ee49bb6ff00301bc/pyproject_metadata-0.8.0-py3-none-any.whl",
-                                            "sha256": "ad858d448e1d3a1fb408ac5bac9ea7743e7a8bbb472f2693aaa334d2db42f526",
+                                            "url": "https://files.pythonhosted.org/packages/22/81/42aaafbff27ca340eef777a4e3e8a509941e75fc0eeb9da2be5ee4159041/pyproject_metadata-0.8.1-py3-none-any.whl",
+                                            "sha256": "adf593fa478b787c90cc77fcea4114f19a3a1335532bdcba2851be9459a6c39e",
                                             "x-checker-data": {
                                                 "type": "pypi",
                                                 "name": "pyproject_metadata",
@@ -793,11 +793,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/ebiggers/libdeflate.git",
-                                    "tag": "v1.21",
+                                    "tag": "v1.22",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "9be1c54e6086cd1f9e1e7dece96eb6d1355c93f7"
+                                    "commit": "2335c047e91cac6fd04cb0fd2769380395149f15"
                                 }
                             ]
                         },
@@ -932,11 +932,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
-                                    "tag": "v3.3.0",
+                                    "tag": "v3.3.1",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "c7d3eac70ccde2c4ed484c6638b83ba872f71464"
+                                    "commit": "f723c3940fff287c0a26b425b90a8e764823bfd4"
                                 }
                             ],
                             "modules": [
@@ -1190,11 +1190,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v75.1.0",
+                            "tag": "v75.1.1",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "3106af0512fe67464a8b5e7524c07fddf7717660"
+                            "commit": "b828db4242966382f47fe521865ac8b1f12ace4b"
                         }
                     ]
                 },
@@ -1288,8 +1288,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/63/09/c1bc53dab74b1816a00d8d030de5bf98f724c52c1635e07681d312f20be8/charset-normalizer-3.3.2.tar.gz",
-                            "sha256": "f30c3cb33b24454a82faecaf01b19c18562b1e89558fb6c56de4d9118a032fd5",
+                            "url": "https://files.pythonhosted.org/packages/f2/4f/e1808dc01273379acc506d18f1504eb2d299bd4131743b9fc54d7be4df1e/charset_normalizer-3.4.0.tar.gz",
+                            "sha256": "223217c3d4f82c3ac5e29032b3f1c2eb0fb591b72161f86d93f5719079dae93e",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "charset-normalizer"
@@ -1317,8 +1317,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/b6/7a/e0edec9c8905e851d52076bbc41890603e2ba97cf64966bc1498f2244fd2/trove_classifiers-2024.9.12-py3-none-any.whl",
-                            "sha256": "f88a27a892891c87c5f8bbdf110710ae9e0a4725ea8e0fb45f1bcadf088a491f",
+                            "url": "https://files.pythonhosted.org/packages/4b/5c/65ae209acac6038f9576893e983b1abcdd6268cab7f5ab124103f4dde701/trove_classifiers-2024.10.13-py3-none-any.whl",
+                            "sha256": "4154432be880041d8cb1e01f7e0d9989a4ca24a71355bc036777919ec0a633f2",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "trove-classifiers",
@@ -1455,8 +1455,8 @@
                     "sources": [
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/87/5b/aae44c6655f3801e81aa3eef09dbbf012431987ba564d7231722f68df02d/MarkupSafe-2.1.5.tar.gz",
-                            "sha256": "d283d37a890ba4c1ae73ffadf8046435c76e7bc2247bbb63c00bd1a709c6544b",
+                            "url": "https://files.pythonhosted.org/packages/b4/d2/38ff920762f2247c3af5cbbbbc40756f575d9692d381d7c520f45deb9b8f/markupsafe-3.0.1.tar.gz",
+                            "sha256": "3e683ee4f5d0fa2dde4db77ed8dd8a876686e3fc417655c2ece9a90576905344",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "MarkupSafe"
