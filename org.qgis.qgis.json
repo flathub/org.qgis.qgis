@@ -774,8 +774,8 @@
                                     "sources": [
                                         {
                                             "type": "file",
-                                            "url": "https://files.pythonhosted.org/packages/1a/3f/b19e9354c358f5acf322dd1f81ed9f0c633ba4bcccfd32e9c3740c43c9e5/meson_python-0.16.0.tar.gz",
-                                            "sha256": "9068c17e36c89d6c7ff709fffb2a8a9925e8cd0b02629728e5ceaf2ec505cb5f",
+                                            "url": "https://files.pythonhosted.org/packages/72/ea/a7895f15512cae5b3b5be988d38531ad3be74b06f56f0cdcee3ffcf86108/meson_python-0.17.0.tar.gz",
+                                            "sha256": "142ac0691c31ee5825e7defcf5c9c252fa11b2497f5b9e35ed359e4b0ac467e8",
                                             "x-checker-data": {
                                                 "type": "pypi",
                                                 "name": "meson-python"
@@ -1317,8 +1317,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/75/a0/dd773135ca0f7227e8257555fd2f7a0c88672bfd111a400361f10c09face/trove_classifiers-2024.10.16-py3-none-any.whl",
-                            "sha256": "9b02a4cb49bd2e85c13e728ee461f4f332d6334736b18d61254c964643687144",
+                            "url": "https://files.pythonhosted.org/packages/35/35/5055ab8d215af853d07bbff1a74edf48f91ed308f037380a5ca52dd73348/trove_classifiers-2024.10.21.16-py3-none-any.whl",
+                            "sha256": "0fb11f1e995a757807a8ef1c03829fbd4998d817319abcef1f33165750f103be",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "trove-classifiers",
