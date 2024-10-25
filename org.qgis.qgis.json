@@ -49,14 +49,6 @@
                         "url-template": "https://qgis.org/downloads/qgis-$version.tar.bz2",
                         "stable-only": true
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "appstream.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "update-screenshots.patch"
                 }
             ],
             "config-opts": [
