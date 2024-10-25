@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.38.3.tar.bz2",
-                    "sha256": "d72d07a39729d97d8d3f536301819a4ca9c2c00f9f396e9022a5ec4356d828bf",
+                    "url": "https://qgis.org/downloads/qgis-3.40.0.tar.bz2",
+                    "sha256": "14a6c224ad6519b807f4c2cbdd3697c40fd1e114d439eef8b3ed11e7dc5260c3",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -755,8 +755,8 @@
                                     "sources": [
                                         {
                                             "type": "file",
-                                            "url": "https://files.pythonhosted.org/packages/22/81/42aaafbff27ca340eef777a4e3e8a509941e75fc0eeb9da2be5ee4159041/pyproject_metadata-0.8.1-py3-none-any.whl",
-                                            "sha256": "adf593fa478b787c90cc77fcea4114f19a3a1335532bdcba2851be9459a6c39e",
+                                            "url": "https://files.pythonhosted.org/packages/e8/61/9dd3e68d2b6aa40a5fc678662919be3c3a7bf22cba5a6b4437619b77e156/pyproject_metadata-0.9.0-py3-none-any.whl",
+                                            "sha256": "fc862aab066a2e87734333293b0af5845fe8ac6cb69c451a41551001e923be0b",
                                             "x-checker-data": {
                                                 "type": "pypi",
                                                 "name": "pyproject_metadata",
@@ -1527,8 +1527,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v28.2",
-                            "commit": "9fff46d7327c699ef970769d5c9fd0e44df08fc7",
+                            "tag": "v28.3",
+                            "commit": "5fda5abda3dee5f7a102c85860594bff8d8610bd",
                             "x-checker-data": {
                                 "type": "git"
                             }
