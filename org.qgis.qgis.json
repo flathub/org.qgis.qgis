@@ -162,8 +162,14 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "http://www.gaia-gis.it/gaia-sins/libspatialite-sources/libspatialite-5.0.1.tar.gz",
-                            "sha256": "eecbc94311c78012d059ebc0fae86ea5ef6eecb13303e6e82b3753c1b3409e98"
+                            "url": "http://www.gaia-gis.it/gaia-sins/libspatialite-sources/libspatialite-5.1.0.tar.gz",
+                            "sha256": "43be2dd349daffe016dd1400c5d11285828c22fea35ca5109f21f3ed50605080",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 1723,
+                                "stable-only": true,
+                                "url-template": "http://www.gaia-gis.it/gaia-sins/libspatialite-sources/libspatialite-$version.tar.gz"
+                            }
                         },
                         {
                             "type": "script",
@@ -225,8 +231,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://www.sqlite.org/2023/sqlite-autoconf-3440200.tar.gz",
-                                    "sha256": "1c6719a148bc41cf0f2bbbe3926d7ce3f5ca09d878f1246fcc20767b175bb407"
+                                    "url": "https://www.sqlite.org/2024/sqlite-autoconf-3470000.tar.gz",
+                                    "sha256": "83eb21a6f6a649f506df8bd3aab85a08f7556ceed5dbd8dea743ea003fc3a957"
                                 }
                             ]
                         }
@@ -456,20 +462,21 @@
                         },
                         {
                             "name": "cfitsio",
-                            "buildsystem": "simple",
-                            "build-commands": [
-                                "./configure --prefix=${FLATPAK_DEST} --enable-reentrant",
-                                "make shared",
-                                "make install"
+                            "buildsystem": "cmake-ninja",
+                            "config-opts": [
+                                "-DUSE_PTHREADS=ON"
                             ],
+                            "builddir": true,
                             "sources": [
                                 {
                                     "type": "git",
                                     "url": "https://github.com/HEASARC/cfitsio.git",
-                                    "tag": "cfitsio4_4_0_20240228",
+                                    "tag": "cfitsio4_5_0_20240826",
                                     "x-checker-data": {
-                                        "type": "git"
-                                    }
+                                        "type": "git",
+                                        "tag-pattern": "^(.+)$"
+                                    },
+                                    "commit": "3b6fc6feea25c6e8926645e06570b16f6e15cfeb"
                                 }
                             ]
                         },
@@ -773,8 +780,8 @@
                                     "sources": [
                                         {
                                             "type": "file",
-                                            "url": "https://files.pythonhosted.org/packages/72/ea/a7895f15512cae5b3b5be988d38531ad3be74b06f56f0cdcee3ffcf86108/meson_python-0.17.0.tar.gz",
-                                            "sha256": "142ac0691c31ee5825e7defcf5c9c252fa11b2497f5b9e35ed359e4b0ac467e8",
+                                            "url": "https://files.pythonhosted.org/packages/67/66/91d242ea8dd1729addd36069318ba2cd03874872764f316c3bb51b633ed2/meson_python-0.17.1.tar.gz",
+                                            "sha256": "efb91f69f2e19eef7bc9a471ed2a4e730088cc6b39eacaf3e49fc4f930eb5f83",
                                             "x-checker-data": {
                                                 "type": "pypi",
                                                 "name": "meson-python"
@@ -877,11 +884,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/KhronosGroup/OpenCL-Headers.git",
-                                    "tag": "v2024.05.08",
+                                    "tag": "v2024.10.24",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "8275634cf9ec31b6484c2e6be756237cb583999d"
+                                    "commit": "4ea6df132107e3b4b9407f903204b5522fdffcd6"
                                 }
                             ]
                         },
@@ -1010,8 +1017,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/PDAL/PDAL/releases/download/2.8.0/PDAL-2.8.0-src.tar.bz2",
-                            "sha256": "8a6d7646912a4e7a382f06451b14a1f5f2e8aa4e0b391dc91c30701222198b77",
+                            "url": "https://github.com/PDAL/PDAL/releases/download/2.8.1/PDAL-2.8.1-src.tar.bz2",
+                            "sha256": "0e8d7deabe721f806b275dda6cf5630a8e43dc7210299b57c91f46fadcc34b31",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 138228,
@@ -1189,11 +1196,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v75.2.0",
+                            "tag": "v75.3.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "61a5a03fbf8acc59e6e12144011aa06b85162bda"
+                            "commit": "d8da7dfaa0cef4a69ee21d9406391651c4dc5ce4"
                         }
                     ]
                 },
