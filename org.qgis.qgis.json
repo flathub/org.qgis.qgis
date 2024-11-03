@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.38.3.tar.bz2",
-                    "sha256": "d72d07a39729d97d8d3f536301819a4ca9c2c00f9f396e9022a5ec4356d828bf",
+                    "url": "https://qgis.org/downloads/qgis-3.40.0.tar.bz2",
+                    "sha256": "14a6c224ad6519b807f4c2cbdd3697c40fd1e114d439eef8b3ed11e7dc5260c3",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -665,8 +665,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-24.10.0.tar.xz",
-                                    "sha256": "58ed1849810f04a10b37c7ff6f3e411845c8a57d731d599d0045acc7a7fff09d",
+                                    "url": "https://poppler.freedesktop.org/poppler-24.11.0.tar.xz",
+                                    "sha256": "7723d880565211740c13649d24a300257b86ddd7fa2d208187ff7e5cc8dfbd58",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -755,8 +755,8 @@
                                     "sources": [
                                         {
                                             "type": "file",
-                                            "url": "https://files.pythonhosted.org/packages/22/81/42aaafbff27ca340eef777a4e3e8a509941e75fc0eeb9da2be5ee4159041/pyproject_metadata-0.8.1-py3-none-any.whl",
-                                            "sha256": "adf593fa478b787c90cc77fcea4114f19a3a1335532bdcba2851be9459a6c39e",
+                                            "url": "https://files.pythonhosted.org/packages/e8/61/9dd3e68d2b6aa40a5fc678662919be3c3a7bf22cba5a6b4437619b77e156/pyproject_metadata-0.9.0-py3-none-any.whl",
+                                            "sha256": "fc862aab066a2e87734333293b0af5845fe8ac6cb69c451a41551001e923be0b",
                                             "x-checker-data": {
                                                 "type": "pypi",
                                                 "name": "pyproject_metadata",
@@ -774,8 +774,8 @@
                                     "sources": [
                                         {
                                             "type": "file",
-                                            "url": "https://files.pythonhosted.org/packages/72/ea/a7895f15512cae5b3b5be988d38531ad3be74b06f56f0cdcee3ffcf86108/meson_python-0.17.0.tar.gz",
-                                            "sha256": "142ac0691c31ee5825e7defcf5c9c252fa11b2497f5b9e35ed359e4b0ac467e8",
+                                            "url": "https://files.pythonhosted.org/packages/67/66/91d242ea8dd1729addd36069318ba2cd03874872764f316c3bb51b633ed2/meson_python-0.17.1.tar.gz",
+                                            "sha256": "efb91f69f2e19eef7bc9a471ed2a4e730088cc6b39eacaf3e49fc4f930eb5f83",
                                             "x-checker-data": {
                                                 "type": "pypi",
                                                 "name": "meson-python"
@@ -878,11 +878,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/KhronosGroup/OpenCL-Headers.git",
-                                    "tag": "v2024.05.08",
+                                    "tag": "v2024.10.24",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "8275634cf9ec31b6484c2e6be756237cb583999d"
+                                    "commit": "4ea6df132107e3b4b9407f903204b5522fdffcd6"
                                 }
                             ]
                         },
@@ -966,11 +966,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/strukturag/libheif.git",
-                                    "tag": "v1.18.2",
+                                    "tag": "v1.19.1",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "bf35e9eb25af8f2b7917996ad9ba849d922f8d15"
+                                    "commit": "bf8c7fb115aebc288d379c1b190eb615574f22f0"
                                 }
                             ]
                         },
@@ -1011,8 +1011,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/PDAL/PDAL/releases/download/2.8.0/PDAL-2.8.0-src.tar.bz2",
-                            "sha256": "8a6d7646912a4e7a382f06451b14a1f5f2e8aa4e0b391dc91c30701222198b77",
+                            "url": "https://github.com/PDAL/PDAL/releases/download/2.8.1/PDAL-2.8.1-src.tar.bz2",
+                            "sha256": "0e8d7deabe721f806b275dda6cf5630a8e43dc7210299b57c91f46fadcc34b31",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 138228,
@@ -1190,11 +1190,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v75.2.0",
+                            "tag": "v75.3.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "61a5a03fbf8acc59e6e12144011aa06b85162bda"
+                            "commit": "d8da7dfaa0cef4a69ee21d9406391651c4dc5ce4"
                         }
                     ]
                 },
@@ -1327,8 +1327,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/38/45/618e84e49a6c51e5dd15565ec2fcd82ab273434f236b8f108f065ded517a/flit_core-3.9.0-py3-none-any.whl",
-                            "sha256": "7aada352fb0c7f5538c4fafeddf314d3a6a92ee8e2b1de70482329e42de70301",
+                            "url": "https://files.pythonhosted.org/packages/be/2d/293fe6a58e73df57cc2b5e5cf2b17c6bb4fb5b0c390bab8f1e87bdc62529/flit_core-3.10.1-py3-none-any.whl",
+                            "sha256": "cb31a76e8b31ad3351bb89e531f64ef2b05d1e65bd939183250bf81ddf4922a8",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "flit_core",
@@ -1527,8 +1527,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v28.2",
-                            "commit": "9fff46d7327c699ef970769d5c9fd0e44df08fc7",
+                            "tag": "v28.3",
+                            "commit": "5fda5abda3dee5f7a102c85860594bff8d8610bd",
                             "x-checker-data": {
                                 "type": "git"
                             }
