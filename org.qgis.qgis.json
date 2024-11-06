@@ -671,8 +671,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-24.10.0.tar.xz",
-                                    "sha256": "58ed1849810f04a10b37c7ff6f3e411845c8a57d731d599d0045acc7a7fff09d",
+                                    "url": "https://poppler.freedesktop.org/poppler-24.11.0.tar.xz",
+                                    "sha256": "7723d880565211740c13649d24a300257b86ddd7fa2d208187ff7e5cc8dfbd58",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -972,11 +972,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/strukturag/libheif.git",
-                                    "tag": "v1.18.2",
+                                    "tag": "v1.19.2",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "bf35e9eb25af8f2b7917996ad9ba849d922f8d15"
+                                    "commit": "a86f00e146413770dda7895d133ebe3862e0d876"
                                 }
                             ]
                         },
@@ -1333,8 +1333,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/38/45/618e84e49a6c51e5dd15565ec2fcd82ab273434f236b8f108f065ded517a/flit_core-3.9.0-py3-none-any.whl",
-                            "sha256": "7aada352fb0c7f5538c4fafeddf314d3a6a92ee8e2b1de70482329e42de70301",
+                            "url": "https://files.pythonhosted.org/packages/be/2d/293fe6a58e73df57cc2b5e5cf2b17c6bb4fb5b0c390bab8f1e87bdc62529/flit_core-3.10.1-py3-none-any.whl",
+                            "sha256": "cb31a76e8b31ad3351bb89e531f64ef2b05d1e65bd939183250bf81ddf4922a8",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "flit_core",
