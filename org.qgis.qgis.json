@@ -938,11 +938,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
-                                    "tag": "v3.3.1",
+                                    "tag": "v3.3.2",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "f723c3940fff287c0a26b425b90a8e764823bfd4"
+                                    "commit": "55d1a1404cec5b4b187009d9f7fe55a5622ac4e5"
                                 }
                             ],
                             "modules": [
@@ -972,11 +972,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/strukturag/libheif.git",
-                                    "tag": "v1.18.2",
+                                    "tag": "v1.19.3",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "bf35e9eb25af8f2b7917996ad9ba849d922f8d15"
+                                    "commit": "65b0e04ee7e3abebcc55bf2f77d7083823c2d07a"
                                 }
                             ]
                         },
@@ -1196,11 +1196,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v75.3.0",
+                            "tag": "v75.4.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "d8da7dfaa0cef4a69ee21d9406391651c4dc5ce4"
+                            "commit": "8f5559c859309a170c2056e04020ea9679fc7517"
                         }
                     ]
                 },
@@ -1343,8 +1343,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/0c/8b/90e80904fdc24ce33f6fc6f35ebd2232fe731a8528a22008458cf197bc4d/hatchling-1.25.0-py3-none-any.whl",
-                            "sha256": "b47948e45d4d973034584dd4cb39c14b6a70227cf287ab7ec0ad7983408a882c",
+                            "url": "https://files.pythonhosted.org/packages/7f/36/bd5a834bfcbded7de667609792df6018840fd2193cc686962a6e9dc332f7/hatchling-1.26.2-py3-none-any.whl",
+                            "sha256": "bf994eabc0d0c0f8baf2d3ef55102445eb2f68ed3f408063bd3810314541eeb2",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "hatchling",
