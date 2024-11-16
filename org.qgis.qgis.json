@@ -968,6 +968,10 @@
                             "name": "libheif",
                             "builddir": true,
                             "buildsystem": "cmake-ninja",
+                            "config-opts": [
+                                "-DCMAKE_C_COMPILER=clang",
+                                "-DCMAKE_CXX_COMPILER=clang++"
+                            ],
                             "sources": [
                                 {
                                     "type": "git",
