@@ -976,11 +976,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/strukturag/libheif.git",
-                                    "tag": "v1.19.3",
+                                    "tag": "v1.19.5",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "65b0e04ee7e3abebcc55bf2f77d7083823c2d07a"
+                                    "commit": "cd95b113d78d0696105a9e678cbd19487ee13d6c"
                                 }
                             ]
                         },
@@ -1200,11 +1200,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v75.5.0",
+                            "tag": "v75.6.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "540001561bc2c6766940ba5fd6247735c1a3a290"
+                            "commit": "bf2ced2a61833915a307c73405da99b6408154c7"
                         }
                     ]
                 },
@@ -1413,11 +1413,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/psycopg/psycopg2.git",
-                            "tag": "2.9.9",
+                            "tag": "2.9.10",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "ad5bee7054519d87f25bc5828c502b2ebe197049"
+                            "commit": "a805acf59f402f554e95624b5e27518169ca7715"
                         }
                     ]
                 },
