@@ -923,11 +923,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/libjxl/libjxl.git",
-                                    "tag": "v0.11.0",
+                                    "tag": "v0.11.1",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "4df1e9eccdf86b8df4c0c7c08f529263906f9c4f"
+                                    "commit": "794a5dcf0d54f9f0b20d288a12e87afb91d20dfc"
                                 }
                             ]
                         },
@@ -1537,8 +1537,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v28.3",
-                            "commit": "5fda5abda3dee5f7a102c85860594bff8d8610bd",
+                            "tag": "v29.0",
+                            "commit": "2d4414f384dc499af113b5991ce3eaa9df6dd931",
                             "x-checker-data": {
                                 "type": "git"
                             }
