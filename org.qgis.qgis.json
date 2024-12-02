@@ -46,8 +46,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.40.0.tar.bz2",
-                    "sha256": "14a6c224ad6519b807f4c2cbdd3697c40fd1e114d439eef8b3ed11e7dc5260c3",
+                    "url": "https://qgis.org/downloads/qgis-3.40.1.tar.bz2",
+                    "sha256": "53110464c9f5ba5562c437e1563ab36dad2f218e6e7d1c0cfbe5b6effe241c8e",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -559,8 +559,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://ftp.postgresql.org/pub/source/v17.0/postgresql-17.0.tar.bz2",
-                            "sha256": "7e276131c0fdd6b62588dbad9b3bb24b8c3498d5009328dba59af16e819109de",
+                            "url": "https://ftp.postgresql.org/pub/source/v17.2/postgresql-17.2.tar.bz2",
+                            "sha256": "82ef27c0af3751695d7f64e2d963583005fbb6a0c3df63d0e4b42211d7021164",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 5601,
@@ -802,8 +802,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.0.3.tar.xz",
-                                    "sha256": "ebd6215eeb01ee412fed078c8a9f7f87d4e1f6187ebcdc1bc09f46095a4f4003",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.2.1.tar.xz",
+                                    "sha256": "2495815cf9d130f70fffb6a12733d0dcaf86cbaac51e8b4b82ad25183eda1dd5",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -1235,11 +1235,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/libjxl/libjxl.git",
-                                    "tag": "v0.11.0",
+                                    "tag": "v0.11.1",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "4df1e9eccdf86b8df4c0c7c08f529263906f9c4f"
+                                    "commit": "794a5dcf0d54f9f0b20d288a12e87afb91d20dfc"
                                 }
                             ]
                         },
@@ -1250,11 +1250,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
-                                    "tag": "v3.3.1",
+                                    "tag": "v3.3.2",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "f723c3940fff287c0a26b425b90a8e764823bfd4"
+                                    "commit": "55d1a1404cec5b4b187009d9f7fe55a5622ac4e5"
                                 }
                             ],
                             "modules": [
@@ -1280,15 +1280,19 @@
                             "name": "libheif",
                             "builddir": true,
                             "buildsystem": "cmake-ninja",
+                            "config-opts": [
+                                "-DCMAKE_C_COMPILER=clang",
+                                "-DCMAKE_CXX_COMPILER=clang++"
+                            ],
                             "sources": [
                                 {
                                     "type": "git",
                                     "url": "https://github.com/strukturag/libheif.git",
-                                    "tag": "v1.18.2",
+                                    "tag": "v1.19.5",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "bf35e9eb25af8f2b7917996ad9ba849d922f8d15"
+                                    "commit": "cd95b113d78d0696105a9e678cbd19487ee13d6c"
                                 }
                             ]
                         },
@@ -1508,11 +1512,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v75.3.0",
+                            "tag": "v75.6.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "d8da7dfaa0cef4a69ee21d9406391651c4dc5ce4"
+                            "commit": "bf2ced2a61833915a307c73405da99b6408154c7"
                         }
                     ]
                 },
@@ -1655,8 +1659,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/0c/8b/90e80904fdc24ce33f6fc6f35ebd2232fe731a8528a22008458cf197bc4d/hatchling-1.25.0-py3-none-any.whl",
-                            "sha256": "b47948e45d4d973034584dd4cb39c14b6a70227cf287ab7ec0ad7983408a882c",
+                            "url": "https://files.pythonhosted.org/packages/72/41/b3e29dc4fe623794070e5dfbb9915acb649ce05d6472f005470cbed9de83/hatchling-1.26.3-py3-none-any.whl",
+                            "sha256": "c407e1c6c17b574584a66ae60e8e9a01235ecb6dc61d01559bb936577aaf5846",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "hatchling",
@@ -1721,11 +1725,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/psycopg/psycopg2.git",
-                            "tag": "2.9.9",
+                            "tag": "2.9.10",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "ad5bee7054519d87f25bc5828c502b2ebe197049"
+                            "commit": "a805acf59f402f554e95624b5e27518169ca7715"
                         }
                     ]
                 },
