@@ -85,12 +85,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/PROJ.git",
-                            "tag": "9.5.0",
+                            "tag": "9.5.1",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "0a407325fbb5bf42407a7dc5d4f948be9707e302"
+                            "commit": "41f79ccfe107d3951dac6826f289b55d17cc3b81"
                         }
                     ]
                 },
@@ -490,8 +490,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.2.1.tar.xz",
-                                    "sha256": "2495815cf9d130f70fffb6a12733d0dcaf86cbaac51e8b4b82ad25183eda1dd5",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.2.2.tar.xz",
+                                    "sha256": "3054c8e63db3abdf1a5c8f9fdb7e6b4ad833f9bcfb58324c0ff86de0784c70e0",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -615,11 +615,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/uclouvain/openjpeg.git",
-                                    "tag": "v2.5.2",
+                                    "tag": "v2.5.3",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "39e8c50a2f9bdcf36810ee3d41bcbf1cc78968ae"
+                                    "commit": "210a8a5690d0da66f02d49420d7176a21ef409dc"
                                 }
                             ],
                             "cleanup": [
@@ -671,8 +671,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-24.11.0.tar.xz",
-                                    "sha256": "7723d880565211740c13649d24a300257b86ddd7fa2d208187ff7e5cc8dfbd58",
+                                    "url": "https://poppler.freedesktop.org/poppler-24.12.0.tar.xz",
+                                    "sha256": "1cf374c3146f3f685d9257701bf0c2866c61d6c202c14d1f5c01a1f3a089028a",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -1021,8 +1021,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/PDAL/PDAL/releases/download/2.8.1/PDAL-2.8.1-src.tar.bz2",
-                            "sha256": "0e8d7deabe721f806b275dda6cf5630a8e43dc7210299b57c91f46fadcc34b31",
+                            "url": "https://github.com/PDAL/PDAL/releases/download/2.8.2/PDAL-2.8.2-src.tar.bz2",
+                            "sha256": "da431616d8a3178fbc8b8e5c57e646a696f22e08cbae30d9ce96a349d8ad3bd9",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 138228,
@@ -1162,8 +1162,8 @@
                     "sources": [
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/71/39/171f1c67cd00715f190ba0b100d606d440a28c93c7714febeca8b79af85e/six-1.16.0.tar.gz",
-                            "sha256": "1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926",
+                            "url": "https://files.pythonhosted.org/packages/94/e7/b2c673351809dca68a0e064b6af791aa332cf192da575fd474ed7d6f16a2/six-1.17.0.tar.gz",
+                            "sha256": "ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "six"
@@ -1537,8 +1537,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v28.3",
-                            "commit": "5fda5abda3dee5f7a102c85860594bff8d8610bd",
+                            "tag": "v29.1",
+                            "commit": "796e49f6ca82f763d1087d2ff7355d2f0d7b71b1",
                             "x-checker-data": {
                                 "type": "git"
                             }
