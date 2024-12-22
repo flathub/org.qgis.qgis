@@ -46,8 +46,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.40.1.tar.bz2",
-                    "sha256": "53110464c9f5ba5562c437e1563ab36dad2f218e6e7d1c0cfbe5b6effe241c8e",
+                    "url": "https://qgis.org/downloads/qgis-3.40.2.tar.bz2",
+                    "sha256": "3eddc2cb93f339dabb4c90d94ea31d5d1845c21542e8317ec2cbe3e95d124b9a",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -615,11 +615,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/uclouvain/openjpeg.git",
-                                    "tag": "v2.5.2",
+                                    "tag": "v2.5.3",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "39e8c50a2f9bdcf36810ee3d41bcbf1cc78968ae"
+                                    "commit": "210a8a5690d0da66f02d49420d7176a21ef409dc"
                                 }
                             ],
                             "cleanup": [
@@ -799,11 +799,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/ebiggers/libdeflate.git",
-                                    "tag": "v1.22",
+                                    "tag": "v1.23",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "2335c047e91cac6fd04cb0fd2769380395149f15"
+                                    "commit": "78051988f96dc8d8916310d8b24021f01bd9e102"
                                 }
                             ]
                         },
@@ -1162,8 +1162,8 @@
                     "sources": [
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/71/39/171f1c67cd00715f190ba0b100d606d440a28c93c7714febeca8b79af85e/six-1.16.0.tar.gz",
-                            "sha256": "1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926",
+                            "url": "https://files.pythonhosted.org/packages/94/e7/b2c673351809dca68a0e064b6af791aa332cf192da575fd474ed7d6f16a2/six-1.17.0.tar.gz",
+                            "sha256": "ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "six"
@@ -1279,8 +1279,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/b0/ee/9b19140fe824b367c04c5e1b369942dd754c4c5462d5674002f75c4dedc1/certifi-2024.8.30.tar.gz",
-                            "sha256": "bec941d2aa8195e248a60b31ff9f0558284cf01a52591ceda73ea9afffd69fd9",
+                            "url": "https://files.pythonhosted.org/packages/0f/bd/1d41ee578ce09523c81a15426705dd20969f5abf006d1afe8aeff0dd776a/certifi-2024.12.14.tar.gz",
+                            "sha256": "b650d30f370c2b724812bee08008be0c4163b163ddaec3f2546c1caf65f191db",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "certifi"
@@ -1347,8 +1347,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/72/41/b3e29dc4fe623794070e5dfbb9915acb649ce05d6472f005470cbed9de83/hatchling-1.26.3-py3-none-any.whl",
-                            "sha256": "c407e1c6c17b574584a66ae60e8e9a01235ecb6dc61d01559bb936577aaf5846",
+                            "url": "https://files.pythonhosted.org/packages/08/e7/ae38d7a6dfba0533684e0b2136817d667588ae3ec984c1a4e5df5eb88482/hatchling-1.27.0-py3-none-any.whl",
+                            "sha256": "d3a2f3567c4f926ea39849cdf924c7e99e6686c9c8e288ae1037c8fa2a5d937b",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "hatchling",
@@ -1367,8 +1367,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/ce/d9/5f4c13cecde62396b0d3fe530a50ccea91e7dfc1ccf0e09c228841bb5ba8/urllib3-2.2.3-py3-none-any.whl",
-                            "sha256": "ca899ca043dcb1bafa3e262d73aa25c465bfb49e0bd9dd5d59f1d0acba2f8fac",
+                            "url": "https://files.pythonhosted.org/packages/c8/19/4ec628951a74043532ca2cf5d97b7b14863931476d117c471e8e2b1eb39f/urllib3-2.3.0-py3-none-any.whl",
+                            "sha256": "1cee9ad369867bfdbbb48b7dd50374c0967a0bb7710050facf0dd6911440e3df",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "urllib3",
@@ -1486,8 +1486,8 @@
                     "sources": [
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/31/80/3a54838c3fb461f6fec263ebf3a3a41771bd05190238de3486aae8540c36/jinja2-3.1.4-py3-none-any.whl",
-                            "sha256": "bc5dd2abb727a5319567b7a813e6a2e7318c39f4f487cfe6c89c6f9c7d25197d",
+                            "url": "https://files.pythonhosted.org/packages/bd/0f/2ba5fbcd631e3e88689309dbe978c5769e883e4b84ebfe7da30b43275c5a/jinja2-3.1.5-py3-none-any.whl",
+                            "sha256": "aba0f4dc9ed8013c424088f68a5c226f7d6097ed89b246d7749c2ec4175c6adb",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "Jinja2",
