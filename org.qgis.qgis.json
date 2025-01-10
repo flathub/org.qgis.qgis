@@ -85,12 +85,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/PROJ.git",
-                            "tag": "9.5.0",
+                            "tag": "9.5.1",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "0a407325fbb5bf42407a7dc5d4f948be9707e302"
+                            "commit": "41f79ccfe107d3951dac6826f289b55d17cc3b81"
                         }
                     ]
                 },
@@ -120,8 +120,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/libspatialindex/libspatialindex.git",
-                            "commit": "4a3bd449b9f2858d31a4619ba60bae6d1d30b77d",
-                            "tag": "2.0.0",
+                            "commit": "175b56a9541e76982d13dbbf0c9b8f0b8d752619",
+                            "tag": "2.1.0",
                             "x-checker-data": {
                                 "type": "git"
                             }
@@ -490,8 +490,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.2.1.tar.xz",
-                                    "sha256": "2495815cf9d130f70fffb6a12733d0dcaf86cbaac51e8b4b82ad25183eda1dd5",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.2.2.tar.xz",
+                                    "sha256": "3054c8e63db3abdf1a5c8f9fdb7e6b4ad833f9bcfb58324c0ff86de0784c70e0",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -517,11 +517,11 @@
                                         {
                                             "type": "git",
                                             "url": "https://github.com/Reference-LAPACK/lapack.git",
-                                            "tag": "v3.12.0",
+                                            "tag": "v3.12.1",
                                             "x-checker-data": {
                                                 "type": "git"
                                             },
-                                            "commit": "04b044e020a3560ccfa9988c8a80a1fb7083fc2e"
+                                            "commit": "6ec7f2bc4ecf4c4a93496aa2fa519575bc0e39ca"
                                         }
                                     ],
                                     "cleanup": [
@@ -561,8 +561,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://downloads.sourceforge.net/project/boost/boost/1.86.0/boost_1_86_0.tar.bz2",
-                                    "sha256": "1bed88e40401b2cb7a1f76d4bab499e352fa4d0c5f31c0dbae64e24d34d7513b",
+                                    "url": "https://downloads.sourceforge.net/project/boost/boost/1.87.0/boost_1_87_0.tar.bz2",
+                                    "sha256": "af57be25cb4c4f4b413ed692fe378affb4352ea50fbe294a11ef548f4d527d89",
                                     "x-checker-data": {
                                         "type": "html",
                                         "url": "https://www.boost.org/feed/downloads.rss",
@@ -671,8 +671,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-24.11.0.tar.xz",
-                                    "sha256": "7723d880565211740c13649d24a300257b86ddd7fa2d208187ff7e5cc8dfbd58",
+                                    "url": "https://poppler.freedesktop.org/poppler-25.01.0.tar.xz",
+                                    "sha256": "7eefc122207bbbd72a303c5e0743f4941e8ae861e24dcf0501e18ce1d1414112",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -722,12 +722,12 @@
                                         {
                                             "type": "git",
                                             "url": "https://github.com/fmtlib/fmt.git",
-                                            "tag": "11.0.2",
+                                            "tag": "11.1.1",
                                             "x-checker-data": {
                                                 "type": "git",
                                                 "tag-pattern": "^([0-9.]+)$"
                                             },
-                                            "commit": "0c9fce2ffefecfdce794e1859584e25877b7b592"
+                                            "commit": "e3ddede6c4ee818825c4e5a6dfa1d384860c27d9"
                                         }
                                     ]
                                 }
@@ -1021,8 +1021,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/PDAL/PDAL/releases/download/2.8.1/PDAL-2.8.1-src.tar.bz2",
-                            "sha256": "0e8d7deabe721f806b275dda6cf5630a8e43dc7210299b57c91f46fadcc34b31",
+                            "url": "https://github.com/PDAL/PDAL/releases/download/2.8.3/PDAL-2.8.3-src.tar.bz2",
+                            "sha256": "13dfdb0d634bdd568b351fd535aaa03f7611df4c2cdb8be938117751355ad09b",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 138228,
@@ -1200,11 +1200,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v75.6.0",
+                            "tag": "v75.8.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "bf2ced2a61833915a307c73405da99b6408154c7"
+                            "commit": "5c9d9809dec1b20e2a9da6b4a06355fd6f87a190"
                         }
                     ]
                 },
@@ -1298,8 +1298,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/f2/4f/e1808dc01273379acc506d18f1504eb2d299bd4131743b9fc54d7be4df1e/charset_normalizer-3.4.0.tar.gz",
-                            "sha256": "223217c3d4f82c3ac5e29032b3f1c2eb0fb591b72161f86d93f5719079dae93e",
+                            "url": "https://files.pythonhosted.org/packages/16/b0/572805e227f01586461c80e0fd25d65a2115599cc9dad142fee4b747c357/charset_normalizer-3.4.1.tar.gz",
+                            "sha256": "44251f18cd68a75b56585dd00dae26183e102cd5e0f9f1466e6df5da2ed64ea3",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "charset-normalizer"
@@ -1327,8 +1327,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/35/35/5055ab8d215af853d07bbff1a74edf48f91ed308f037380a5ca52dd73348/trove_classifiers-2024.10.21.16-py3-none-any.whl",
-                            "sha256": "0fb11f1e995a757807a8ef1c03829fbd4998d817319abcef1f33165750f103be",
+                            "url": "https://files.pythonhosted.org/packages/67/54/dcb9a4f9a8b3187f79a9f250cb457682a49ad536a02ac59ff4e1edbc9eeb/trove_classifiers-2025.1.10.15-py3-none-any.whl",
+                            "sha256": "9824eb16f7df1b1cc1c217c52ce56c76869d6263da2067f8eadc45122a731cfc",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "trove-classifiers",
@@ -1537,8 +1537,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v28.3",
-                            "commit": "5fda5abda3dee5f7a102c85860594bff8d8610bd",
+                            "tag": "v29.3",
+                            "commit": "b407e8416e3893036aee5af9a12bd9b6a0e2b2e6",
                             "x-checker-data": {
                                 "type": "git"
                             }
