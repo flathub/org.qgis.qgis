@@ -1,15 +1,12 @@
 {
     "id": "org.qgis.qgis",
     "base": "com.riverbankcomputing.PyQt.BaseApp",
-    "base-version": "5.15-23.08",
+    "base-version": "6.8",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-23.08",
+    "runtime-version": "6.8",
     "sdk": "org.kde.Sdk",
     "command": "qgis",
     "rename-icon": "qgis",
-    "sdk-extensions": [
-        "org.freedesktop.Sdk.Extension.llvm18"
-    ],
     "finish-args": [
         "--env=LD_LIBRARY_PATH=/app/lib:/app/grass83/lib",
         "--env=PROJ_LIB=/app/share/proj/",
@@ -22,10 +19,8 @@
     ],
     "separate-locales": false,
     "build-options": {
-        "append-path": "/usr/lib/sdk/llvm18/bin",
-        "prepend-ld-library-path": "/usr/lib/sdk/llvm18/lib",
         "env": {
-            "PYTHONPATH": "/app/lib/python3.11/site-packages:/usr/lib/python3.11/site-packages"
+            "PYTHONPATH": "/app/lib/python3.12/site-packages:/usr/lib/python3.12/site-packages"
         }
     },
     "cleanup": [
@@ -57,8 +52,6 @@
                 }
             ],
             "config-opts": [
-                "-DCMAKE_C_COMPILER=clang",
-                "-DCMAKE_CXX_COMPILER=clang++",
                 "-DENABLE_TESTS=FALSE",
                 "-DWITH_3D=TRUE",
                 "-DGRASS_PREFIX8=/app/grass83",
@@ -69,10 +62,8 @@
                 "-DWITH_QUICK=ON",
                 "-DWITH_PDAL=TRUE",
                 "-DWITH_QTWEBKIT=FALSE",
-                "-DHAS_KDE_QT5_PDF_TRANSFORM_FIX=TRUE",
-                "-DHAS_KDE_QT5_SMALL_CAPS_FIX=TRUE",
-                "-DHAS_KDE_QT5_FONT_STRETCH_FIX=TRUE",
-                "-DSIP_BUILD_EXTRA_OPTIONS=--target-dir=/app/lib/python3.11/site-packages"
+                "-DBUILD_WITH_QT6=ON",
+                "-DSIP_BUILD_EXTRA_OPTIONS=--target-dir=/app/lib/python3.12/site-packages"
             ],
             "modules": [
                 {
@@ -968,10 +959,6 @@
                             "name": "libheif",
                             "builddir": true,
                             "buildsystem": "cmake-ninja",
-                            "config-opts": [
-                                "-DCMAKE_C_COMPILER=clang",
-                                "-DCMAKE_CXX_COMPILER=clang++"
-                            ],
                             "sources": [
                                 {
                                     "type": "git",
@@ -1150,7 +1137,7 @@
                         "sed -e 's|\\(qsci.path\\) = .*|\\1 = /app/share/qt|' -i src/qscintilla.pro",
                         "sed -e 's|\\(features.path\\) = .*|\\1 = /app/lib/qt/mkspecs/features|' -i src/qscintilla.pro",
                         "cd src/ && QMAKEFEATURES=$PWD/src/features/ qmake && qmake -set prefix /app && make -j ${FLATPAK_BUILDER_N_JOBS:-`nproc`} && PREFIX=/app DESTDIR=/banana make install",
-                        "cd Python && mv pyproject{-qt5,}.toml && sip-build --no-make --qsci-features-dir ../src/features --qsci-include-dir ../src --qsci-library-dir ../src --api-dir /app/share/qt/qsci/api/python --target-dir=/app/lib/python3.11/site-packages && make -C build -j ${FLATPAK_BUILDER_N_JOBS:-`nproc`} && make -C build install"
+                        "cd Python && mv pyproject{-qt5,}.toml && sip-build --no-make --qsci-features-dir ../src/features --qsci-include-dir ../src --qsci-library-dir ../src --api-dir /app/share/qt/qsci/api/python --target-dir=/app/lib/python3.12/site-packages && make -C build -j ${FLATPAK_BUILDER_N_JOBS:-`nproc`} && make -C build install"
                     ]
                 },
                 {
