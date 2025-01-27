@@ -1,9 +1,9 @@
 {
     "id": "org.qgis.qgis",
     "base": "com.riverbankcomputing.PyQt.BaseApp",
-    "base-version": "5.15-23.08",
+    "base-version": "5.15-24.08",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-23.08",
+    "runtime-version": "5.15-24.08",
     "sdk": "org.kde.Sdk",
     "command": "qgis",
     "rename-icon": "qgis",
@@ -25,7 +25,7 @@
         "append-path": "/usr/lib/sdk/llvm18/bin",
         "prepend-ld-library-path": "/usr/lib/sdk/llvm18/lib",
         "env": {
-            "PYTHONPATH": "/app/lib/python3.11/site-packages:/usr/lib/python3.11/site-packages"
+            "PYTHONPATH": "/app/lib/python3.12/site-packages:/usr/lib/python3.12/site-packages"
         }
     },
     "cleanup": [
@@ -72,7 +72,7 @@
                 "-DHAS_KDE_QT5_PDF_TRANSFORM_FIX=TRUE",
                 "-DHAS_KDE_QT5_SMALL_CAPS_FIX=TRUE",
                 "-DHAS_KDE_QT5_FONT_STRETCH_FIX=TRUE",
-                "-DSIP_BUILD_EXTRA_OPTIONS=--target-dir=/app/lib/python3.11/site-packages"
+                "-DSIP_BUILD_EXTRA_OPTIONS=--target-dir=/app/lib/python3.12/site-packages"
             ],
             "modules": [
                 {
@@ -96,6 +96,7 @@
                 },
                 {
                     "name": "geos",
+                    "buildsystem": "cmake-ninja",
                     "sources": [
                         {
                             "type": "archive",
@@ -1150,7 +1151,7 @@
                         "sed -e 's|\\(qsci.path\\) = .*|\\1 = /app/share/qt|' -i src/qscintilla.pro",
                         "sed -e 's|\\(features.path\\) = .*|\\1 = /app/lib/qt/mkspecs/features|' -i src/qscintilla.pro",
                         "cd src/ && QMAKEFEATURES=$PWD/src/features/ qmake && qmake -set prefix /app && make -j ${FLATPAK_BUILDER_N_JOBS:-`nproc`} && PREFIX=/app DESTDIR=/banana make install",
-                        "cd Python && mv pyproject{-qt5,}.toml && sip-build --no-make --qsci-features-dir ../src/features --qsci-include-dir ../src --qsci-library-dir ../src --api-dir /app/share/qt/qsci/api/python --target-dir=/app/lib/python3.11/site-packages && make -C build -j ${FLATPAK_BUILDER_N_JOBS:-`nproc`} && make -C build install"
+                        "cd Python && mv pyproject{-qt5,}.toml && sip-build --no-make --qsci-features-dir ../src/features --qsci-include-dir ../src --qsci-library-dir ../src --api-dir /app/share/qt/qsci/api/python --target-dir=/app/lib/python3.12/site-packages && make -C build -j ${FLATPAK_BUILDER_N_JOBS:-`nproc`} && make -C build install"
                     ]
                 },
                 {
