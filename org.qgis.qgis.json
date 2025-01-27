@@ -1232,8 +1232,13 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://files.pythonhosted.org/packages/36/2b/61d51a2c4f25ef062ae3f74576b01638bebad5e045f747ff12643df63844/PyYAML-6.0.tar.gz",
-                            "sha256": "68fb519c14306fec9720a2a5b45bc9f0c8d1b9c72adf45c37baedfcd949c35a2"
+                            "url": "https://files.pythonhosted.org/packages/54/ed/79a089b6be93607fa5cdaedf301d7dfb23af5f25c398d5ead2525b063e17/pyyaml-6.0.2.tar.gz",
+                            "sha256": "d584d9ec91ad65861cc08d42e834324ef890a082e591037abe114850ff7bbc3e",
+                            "x-checker-data": {
+                                "type": "pypi",
+                                "name": "PyYAML",
+                                "packagetype": "sdist"
+                            }
                         }
                     ]
                 },
@@ -1254,7 +1259,7 @@
                         "pip3 install --prefix=/app certifi-*",
                         "pip3 install --prefix=/app charset_normalizer-*",
                         "pip3 install --prefix=/app requests-*",
-                        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"lxml\" --no-build-isolation",
+                        "pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"lxml\" --no-build-isolation",
                         "pip3 install --prefix=/app owslib*"
                     ],
                     "sources": [
@@ -1298,11 +1303,12 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/16/b0/572805e227f01586461c80e0fd25d65a2115599cc9dad142fee4b747c357/charset_normalizer-3.4.1.tar.gz",
-                            "sha256": "44251f18cd68a75b56585dd00dae26183e102cd5e0f9f1466e6df5da2ed64ea3",
+                            "url": "https://files.pythonhosted.org/packages/0e/f6/65ecc6878a89bb1c23a086ea335ad4bf21a588990c3f535a227b9eea9108/charset_normalizer-3.4.1-py3-none-any.whl",
+                            "sha256": "d98b1668f06378c6dbefec3b92299716b931cd4e6061f3c875a71ced1780ab85",
                             "x-checker-data": {
                                 "type": "pypi",
-                                "name": "charset-normalizer"
+                                "name": "charset-normalizer",
+                                "packagetype": "bdist_wheel"
                             }
                         },
                         {
