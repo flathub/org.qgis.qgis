@@ -7,9 +7,6 @@
     "sdk": "org.kde.Sdk",
     "command": "qgis",
     "rename-icon": "qgis",
-    "sdk-extensions": [
-        "org.freedesktop.Sdk.Extension.llvm18"
-    ],
     "finish-args": [
         "--env=LD_LIBRARY_PATH=/app/lib:/app/grass83/lib",
         "--env=PROJ_LIB=/app/share/proj/",
@@ -22,8 +19,6 @@
     ],
     "separate-locales": false,
     "build-options": {
-        "append-path": "/usr/lib/sdk/llvm18/bin",
-        "prepend-ld-library-path": "/usr/lib/sdk/llvm18/lib",
         "env": {
             "PYTHONPATH": "/app/lib/python3.12/site-packages:/usr/lib/python3.12/site-packages"
         }
@@ -57,8 +52,6 @@
                 }
             ],
             "config-opts": [
-                "-DCMAKE_C_COMPILER=clang",
-                "-DCMAKE_CXX_COMPILER=clang++",
                 "-DENABLE_TESTS=FALSE",
                 "-DWITH_3D=TRUE",
                 "-DGRASS_PREFIX8=/app/grass83",
@@ -970,8 +963,7 @@
                             "builddir": true,
                             "buildsystem": "cmake-ninja",
                             "config-opts": [
-                                "-DCMAKE_C_COMPILER=clang",
-                                "-DCMAKE_CXX_COMPILER=clang++"
+                                "-DCMAKE_COMPILE_WARNING_AS_ERROR=OFF"
                             ],
                             "sources": [
                                 {
