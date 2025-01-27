@@ -348,6 +348,10 @@
                                 "url-template": "https://download.osgeo.org/gdal/$version/gdal-$version.tar.xz",
                                 "stable-only": true
                             }
+                        },
+                        {
+                            "type": "patch",
+                            "path": "fix_build_with_poppler_24.12.patch"
                         }
                     ],
                     "modules": [
