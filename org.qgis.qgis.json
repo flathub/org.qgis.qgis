@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.40.2.tar.bz2",
-                    "sha256": "3eddc2cb93f339dabb4c90d94ea31d5d1845c21542e8317ec2cbe3e95d124b9a",
+                    "url": "https://qgis.org/downloads/qgis-3.40.3.tar.bz2",
+                    "sha256": "51135f0b0f82f2b76de4b89a0978396dbdab9baa3c9c03c4a53b7e2f48451076",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -340,8 +340,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.10.0/gdal-3.10.0.tar.xz",
-                            "sha256": "af821a3bcf68cf085724c21c9b53605fd451d83af3c8854d8bf194638eb734a8",
+                            "url": "https://download.osgeo.org/gdal/3.10.1/gdal-3.10.1.tar.xz",
+                            "sha256": "9211eac72b53f5f85d23cf6d83ee20245c6d818733405024e71f2af41e5c5f91",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -488,8 +488,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.2.2.tar.xz",
-                                    "sha256": "3054c8e63db3abdf1a5c8f9fdb7e6b4ad833f9bcfb58324c0ff86de0784c70e0",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.2.3.tar.xz",
+                                    "sha256": "fc70c3089a8d2bb7f2510588597d4b35b4323f6d4be5db5c17c6dba20ab4a9cc",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -594,8 +594,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://github.com/Unidata/netcdf-c/archive/v4.9.2.tar.gz",
-                                    "sha256": "bc104d101278c68b303359b3dc4192f81592ae8640f1aee486921138f7f88cb7",
+                                    "url": "https://github.com/Unidata/netcdf-c/archive/v4.9.3.tar.gz",
+                                    "sha256": "990f46d49525d6ab5dc4249f8684c6deeaf54de6fec63a187e9fb382cc0ffdff",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 10354,
@@ -669,8 +669,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-25.01.0.tar.xz",
-                                    "sha256": "7eefc122207bbbd72a303c5e0743f4941e8ae861e24dcf0501e18ce1d1414112",
+                                    "url": "https://poppler.freedesktop.org/poppler-25.02.0.tar.xz",
+                                    "sha256": "21234cb2a9647d73c752ce4031e65a79d11a511a835f2798284c2497b8701dee",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -720,12 +720,12 @@
                                         {
                                             "type": "git",
                                             "url": "https://github.com/fmtlib/fmt.git",
-                                            "tag": "11.0.2",
+                                            "tag": "11.1.3",
                                             "x-checker-data": {
                                                 "type": "git",
                                                 "tag-pattern": "^([0-9.]+)$"
                                             },
-                                            "commit": "0c9fce2ffefecfdce794e1859584e25877b7b592"
+                                            "commit": "9cf9f38eded63e5e0fb95cd536ba51be601d7fa2"
                                         }
                                     ]
                                 }
@@ -1018,8 +1018,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/PDAL/PDAL/releases/download/2.8.3/PDAL-2.8.3-src.tar.bz2",
-                            "sha256": "13dfdb0d634bdd568b351fd535aaa03f7611df4c2cdb8be938117751355ad09b",
+                            "url": "https://github.com/PDAL/PDAL/releases/download/2.8.4/PDAL-2.8.4-src.tar.bz2",
+                            "sha256": "c27dc79af0b26f9cb3209b694703e9d576f1b0c8c05b36206fd5e310494e75b5",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 138228,
@@ -1042,8 +1042,8 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/abseil/abseil-cpp.git",
-                                    "tag": "20240722.0",
-                                    "commit": "4447c7562e3bc702ade25105912dce503f0c4010",
+                                    "tag": "20250127.0",
+                                    "commit": "9ac7062b1860d895fb5a8cbf58c3e9ef8f674b5f",
                                     "x-checker-data": {
                                         "type": "git",
                                         "tag-pattern": "^([\\d.]+)$"
@@ -1197,11 +1197,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v75.7.0",
+                            "tag": "v75.8.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "4e82e8b75c8bd8cba1232a107dc171b4fd2c588c"
+                            "commit": "5c9d9809dec1b20e2a9da6b4a06355fd6f87a190"
                         }
                     ]
                 },
@@ -1219,7 +1219,8 @@
                             "tag": "3.7.0",
                             "x-checker-data": {
                                 "type": "git"
-                            }
+                            },
+                            "commit": "954b53e9a9a3ac557f2d4b3c966fcf460d11661e"
                         }
                     ]
                 },
@@ -1275,8 +1276,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/3a/31/3c70bf7603cc2dca0f19bdc53b4537a797747a58875b552c8c413d963a3f/pytz-2024.2.tar.gz",
-                            "sha256": "2aa355083c50a0f93fa581709deac0c9ad65cca8a9e9beac660adcbd493c798a",
+                            "url": "https://files.pythonhosted.org/packages/5f/57/df1c9157c8d5a05117e455d66fd7cf6dbc46974f832b1058ed4856785d8a/pytz-2025.1.tar.gz",
+                            "sha256": "c2db42be2a2518b28e65f9207c4d05e6ff547d1efa4086469ef855e4ab70178e",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "pytz"
@@ -1284,8 +1285,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/0f/bd/1d41ee578ce09523c81a15426705dd20969f5abf006d1afe8aeff0dd776a/certifi-2024.12.14.tar.gz",
-                            "sha256": "b650d30f370c2b724812bee08008be0c4163b163ddaec3f2546c1caf65f191db",
+                            "url": "https://files.pythonhosted.org/packages/1c/ab/c9f1e32b7b1bf505bf26f0ef697775960db7932abeb7b516de930ba2705f/certifi-2025.1.31.tar.gz",
+                            "sha256": "3d5da6925056f6f18f119200434a4780a94263f10d1c21d032a6f6b2baa20651",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "certifi"
@@ -1333,8 +1334,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/3b/e4/5bd91cb201c80bbccd8514f6e63f51b15f46b9f692723519aab155b32836/trove_classifiers-2025.1.7.14-py3-none-any.whl",
-                            "sha256": "969b4ea1ef4e5e91b0398b60ae3a5e94027a50a65d5410badc920b2fc3de7ebb",
+                            "url": "https://files.pythonhosted.org/packages/2b/c5/6422dbc59954389b20b2aba85b737ab4a552e357e7ea14b52f40312e7c84/trove_classifiers-2025.1.15.22-py3-none-any.whl",
+                            "sha256": "5f19c789d4f17f501d36c94dbbf969fb3e8c2784d008e6f5164dd2c3d6a2b07c",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "trove-classifiers",
@@ -1393,8 +1394,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/e7/6b/20c3a4b24751377aaa6307eb230b66701024012c29dd374999cc92983269/lxml-5.3.0.tar.gz",
-                            "sha256": "4e109ca30d1edec1ac60cdbe341905dc3b8f55b16855e03a54aaf59e51ec8c6f",
+                            "url": "https://files.pythonhosted.org/packages/ef/f6/c15ca8e5646e937c148e147244817672cf920b56ac0bf2cc1512ae674be8/lxml-5.3.1.tar.gz",
+                            "sha256": "106b7b5d2977b339f1e97efe2778e2ab20e99994cbb0ec5e55771ed0795920c8",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "lxml"
@@ -1543,8 +1544,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v29.2",
-                            "commit": "233098326bc268fc03b28725c941519fc77703e6",
+                            "tag": "v29.3",
+                            "commit": "b407e8416e3893036aee5af9a12bd9b6a0e2b2e6",
                             "x-checker-data": {
                                 "type": "git"
                             }
@@ -1563,11 +1564,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/frankosterfeld/qtkeychain/",
-                            "tag": "0.14.3",
+                            "tag": "0.15.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "38ff50766c7e4ec490fecb2d9939b7cdc4b74b8e"
+                            "commit": "ad7344c45a86a4f66cbafc4b081b5f7b876cb0b7"
                         }
                     ],
                     "modules": [
@@ -1583,8 +1584,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.4.tar.xz",
-                                    "sha256": "163d08d783be6d4ab9a979ceb5a4fecbc1d9660d3c34168c581301cd53912b20",
+                                    "url": "https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.6.tar.xz",
+                                    "sha256": "747b8c175be108c880d3adfb9c3537ea66e520e4ad2dccf5dce58003aeeca090",
                                     "x-checker-data": {
                                         "type": "gnome",
                                         "name": "libsecret",
