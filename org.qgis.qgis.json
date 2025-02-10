@@ -340,18 +340,14 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.10.0/gdal-3.10.0.tar.xz",
-                            "sha256": "af821a3bcf68cf085724c21c9b53605fd451d83af3c8854d8bf194638eb734a8",
+                            "url": "https://download.osgeo.org/gdal/3.10.1/gdal-3.10.1.tar.xz",
+                            "sha256": "9211eac72b53f5f85d23cf6d83ee20245c6d818733405024e71f2af41e5c5f91",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
                                 "url-template": "https://download.osgeo.org/gdal/$version/gdal-$version.tar.xz",
                                 "stable-only": true
                             }
-                        },
-                        {
-                            "type": "patch",
-                            "path": "fix_build_with_poppler_24.12.patch"
                         }
                     ],
                     "modules": [
@@ -684,13 +680,14 @@
                             "name": "mariadb-libs",
                             "comment": "for mysql-boost",
                             "config-opts": [
+                                "-DCOMPILATION_COMMENT=\"Flathub - QGIS\"",
                                 "-DCMAKE_BUILD_TYPE=Release",
                                 "-DFORCE_INSOURCE_BUILD=1",
                                 "-DWITH_EDITLINE=bundled",
+                                "-DWITH_PCRE2=system",
                                 "-DWITH_SSL=system",
                                 "-DWITH_ZLIB=system",
                                 "-DWITH_UNIT_TESTS=OFF",
-                                "-DWITH_LIBFMT=system",
                                 "-DPLUGIN_FEDERATED=NO",
                                 "-DWITHOUT_SERVER=ON"
                             ],
@@ -710,24 +707,6 @@
                                         "url-template": "https://rsync.osuosl.org/pub/mariadb/mariadb-$version/source/mariadb-$version.tar.gz",
                                         "stable-only": true
                                     }
-                                }
-                            ],
-                            "modules": [
-                                {
-                                    "name": "libfmt",
-                                    "buildsystem": "cmake-ninja",
-                                    "sources": [
-                                        {
-                                            "type": "git",
-                                            "url": "https://github.com/fmtlib/fmt.git",
-                                            "tag": "11.0.2",
-                                            "x-checker-data": {
-                                                "type": "git",
-                                                "tag-pattern": "^([0-9.]+)$"
-                                            },
-                                            "commit": "0c9fce2ffefecfdce794e1859584e25877b7b592"
-                                        }
-                                    ]
                                 }
                             ]
                         },
@@ -1018,8 +997,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/PDAL/PDAL/releases/download/2.8.3/PDAL-2.8.3-src.tar.bz2",
-                            "sha256": "13dfdb0d634bdd568b351fd535aaa03f7611df4c2cdb8be938117751355ad09b",
+                            "url": "https://github.com/PDAL/PDAL/releases/download/2.8.4/PDAL-2.8.4-src.tar.bz2",
+                            "sha256": "c27dc79af0b26f9cb3209b694703e9d576f1b0c8c05b36206fd5e310494e75b5",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 138228,
@@ -1394,8 +1373,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/e7/6b/20c3a4b24751377aaa6307eb230b66701024012c29dd374999cc92983269/lxml-5.3.0.tar.gz",
-                            "sha256": "4e109ca30d1edec1ac60cdbe341905dc3b8f55b16855e03a54aaf59e51ec8c6f",
+                            "url": "https://files.pythonhosted.org/packages/ef/f6/c15ca8e5646e937c148e147244817672cf920b56ac0bf2cc1512ae674be8/lxml-5.3.1.tar.gz",
+                            "sha256": "106b7b5d2977b339f1e97efe2778e2ab20e99994cbb0ec5e55771ed0795920c8",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "lxml"
@@ -1519,11 +1498,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/Exiv2/exiv2.git",
-                            "tag": "v0.28.3",
+                            "tag": "v0.28.4",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "a6a79ef064f131ffd03c110acce2d3edb84ffa2e"
+                            "commit": "57a07113648624b89b09c5f3183acd7f711362ef"
                         }
                     ]
                 },
