@@ -8,7 +8,7 @@
     "command": "qgis",
     "rename-icon": "qgis",
     "finish-args": [
-        "--env=LD_LIBRARY_PATH=/app/lib:/app/grass83/lib",
+        "--env=LD_LIBRARY_PATH=/app/lib:",
         "--env=PROJ_LIB=/app/share/proj/",
         "--share=ipc",
         "--share=network",
@@ -28,8 +28,7 @@
         "/include",
         "*.la",
         "*.a",
-        "bin/mysql*",
-        "grass*/docs"
+        "bin/mysql*"
     ],
     "cleanup-commands": [
         "/app/cleanup-BaseApp.sh"
@@ -41,8 +40,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.40.3.tar.bz2",
-                    "sha256": "51135f0b0f82f2b76de4b89a0978396dbdab9baa3c9c03c4a53b7e2f48451076",
+                    "url": "https://qgis.org/downloads/qgis-3.42.0.tar.bz2",
+                    "sha256": "04b743397ee2375a1a0521578131fc514752f84db2f86225a9551d1f87e704e8",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -1405,41 +1404,6 @@
                             },
                             "commit": "a805acf59f402f554e95624b5e27518169ca7715"
                         }
-                    ]
-                },
-                {
-                    "name": "gisgrass",
-                    "cleanup": [
-                        "/include",
-                        "/lib/pkgconfig",
-                        "/share/man",
-                        "/lib/*.la"
-                    ],
-                    "config-opts": [
-                        "--prefix=/app",
-                        "--with-freetype-includes=/usr/include/freetype2",
-                        "--with-readline",
-                        "--with-pthread",
-                        "--with-nls",
-                        "--with-geos",
-                        "--with-sqlite=yes",
-                        "--with-python=yes",
-                        "--with-postgres"
-                    ],
-                    "sources": [
-                        {
-                            "type": "git",
-                            "url": "https://github.com/OSGeo/grass.git",
-                            "tag": "8.4.0",
-                            "x-checker-data": {
-                                "type": "git",
-                                "tag-pattern": "^([0-9.]+)$"
-                            },
-                            "commit": "e49c044e626e0ca5595e8c64c035a1a0c0bf2719"
-                        }
-                    ],
-                    "modules": [
-                        "shared-modules/glu/glu-9.json"
                     ]
                 },
                 {
