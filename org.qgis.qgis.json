@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.40.3.tar.bz2",
-                    "sha256": "51135f0b0f82f2b76de4b89a0978396dbdab9baa3c9c03c4a53b7e2f48451076",
+                    "url": "https://qgis.org/downloads/qgis-3.42.0.tar.bz2",
+                    "sha256": "04b743397ee2375a1a0521578131fc514752f84db2f86225a9551d1f87e704e8",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -952,11 +952,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/strukturag/libheif.git",
-                                    "tag": "v1.19.5",
+                                    "tag": "v1.19.7",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "cd95b113d78d0696105a9e678cbd19487ee13d6c"
+                                    "commit": "c22636155fc6848b71ad77971159e6e1cc349cce"
                                 }
                             ]
                         },
@@ -1176,11 +1176,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v75.8.0",
+                            "tag": "v75.8.2",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "5c9d9809dec1b20e2a9da6b4a06355fd6f87a190"
+                            "commit": "9aa3771f57f070bd13b9a3e83bd469413afc98c7"
                         }
                     ]
                 },
@@ -1313,8 +1313,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/e1/67/038a8c7f60ffd6037374649826dbaa221e4b17755016b71a581162a15ce1/trove_classifiers-2025.2.18.16-py3-none-any.whl",
-                            "sha256": "7f6dfae899f23f04b73bc09e0754d9219a6fc4d6cca6acd62f1850a87ea92262",
+                            "url": "https://files.pythonhosted.org/packages/ef/bf/44195f3d9c3c4fe4cccf1c261c80d50781b9e8a0a6febf084c09c66740ff/trove_classifiers-2025.3.3.18-py3-none-any.whl",
+                            "sha256": "215630da61cf8757c373f81b602fc1283ec5a691cf12c5f9f96f11d6ad5fc7f2",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "trove-classifiers",
@@ -1430,12 +1430,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/grass.git",
-                            "tag": "8.4.0",
+                            "tag": "8.4.1",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "e49c044e626e0ca5595e8c64c035a1a0c0bf2719"
+                            "commit": "45ca3179ab0c450329d5ea410fce1b47b6bffbc8"
                         }
                     ],
                     "modules": [
@@ -1498,11 +1498,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/Exiv2/exiv2.git",
-                            "tag": "v0.28.4",
+                            "tag": "v0.28.5",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "57a07113648624b89b09c5f3183acd7f711362ef"
+                            "commit": "907169fa643c2c74c14fd4106e55eaeee3634d9f"
                         }
                     ]
                 },
