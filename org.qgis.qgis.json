@@ -405,8 +405,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "http://download.osgeo.org/geos/geos-3.13.0.tar.bz2",
-                            "sha256": "47ec83ff334d672b9e4426695f15da6e6368244214971fabf386ff8ef6df39e4",
+                            "url": "http://download.osgeo.org/geos/geos-3.13.1.tar.bz2",
+                            "sha256": "df2c50503295f325e7c8d7b783aca8ba4773919cde984193850cf9e361dfd28c",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 13493,
@@ -1264,11 +1264,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/strukturag/libheif.git",
-                                    "tag": "v1.19.5",
+                                    "tag": "v1.19.7",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "cd95b113d78d0696105a9e678cbd19487ee13d6c"
+                                    "commit": "c22636155fc6848b71ad77971159e6e1cc349cce"
                                 }
                             ]
                         },
