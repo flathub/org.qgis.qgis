@@ -43,6 +43,12 @@ Or with flatpak version of flatpak builder:
 flatpak run org.flatpak.Builder --disable-updates --ccache --user --sandbox --install --force-clean ./build org.qgis.qgis.json
 ```
 
+Alternatively you can try commands executed by the CI machine, which are more or less:
+```
+flatpak run org.flatpak.Builder -v --force-clean --sandbox --delete-build-dirs --user --install-deps-from=flathub --install-deps-from=flathub-beta --arch x86_64 --bundle-sources --extra-sources=./downloads --default-branch test ./build org.qgis.qgis.json --download-only
+flatpak run org.flatpak.Builder -v --force-clean --sandbox --delete-build-dirs --user --install-deps-from=flathub --install-deps-from=flathub-beta --arch x86_64 --bundle-sources --extra-sources=./downloads --default-branch test ./build org.qgis.qgis.json --disable-download --install
+```
+
 ### Build errors
 If you get:
 ```
