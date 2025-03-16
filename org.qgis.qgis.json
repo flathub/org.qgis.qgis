@@ -78,12 +78,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/PROJ.git",
-                            "tag": "9.5.1",
+                            "tag": "9.6.0",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "41f79ccfe107d3951dac6826f289b55d17cc3b81"
+                            "commit": "cd190c47f33d7ea8bfc34b4cc217ea0db78959e4"
                         }
                     ]
                 },
@@ -465,12 +465,12 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/HEASARC/cfitsio.git",
-                                    "tag": "cfitsio-4.5.0",
+                                    "tag": "cfitsio-4.6.0",
                                     "x-checker-data": {
                                         "type": "git",
                                         "tag-pattern": "^(.+)$"
                                     },
-                                    "commit": "3b6fc6feea25c6e8926645e06570b16f6e15cfeb"
+                                    "commit": "87f6441266c9ae97593daaadada101522b667df5"
                                 }
                             ]
                         },
@@ -738,8 +738,8 @@
                                     "sources": [
                                         {
                                             "type": "file",
-                                            "url": "https://files.pythonhosted.org/packages/e8/61/9dd3e68d2b6aa40a5fc678662919be3c3a7bf22cba5a6b4437619b77e156/pyproject_metadata-0.9.0-py3-none-any.whl",
-                                            "sha256": "fc862aab066a2e87734333293b0af5845fe8ac6cb69c451a41551001e923be0b",
+                                            "url": "https://files.pythonhosted.org/packages/7e/b1/8e63033b259e0a4e40dd1ec4a9fee17718016845048b43a36ec67d62e6fe/pyproject_metadata-0.9.1-py3-none-any.whl",
+                                            "sha256": "ee5efde548c3ed9b75a354fc319d5afd25e9585fa918a34f62f904cc731973ad",
                                             "x-checker-data": {
                                                 "type": "pypi",
                                                 "name": "pyproject_metadata",
@@ -975,12 +975,12 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/libexpat/libexpat.git",
-                                    "tag": "R_2_6_4",
+                                    "tag": "R_2_7_0",
                                     "x-checker-data": {
                                         "type": "git",
                                         "tag-pattern": "^(R_[0-9_]+)$"
                                     },
-                                    "commit": "2691aff4304a6d7e053199c205620136481b9dd1"
+                                    "commit": "6d4ffe856df497ac2cae33537665c3fec7ec8a00"
                                 }
                             ]
                         }
@@ -1176,11 +1176,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v75.8.0",
+                            "tag": "v76.0.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "5c9d9809dec1b20e2a9da6b4a06355fd6f87a190"
+                            "commit": "c11a4940deba04a6f8f8e1410686116f587f6f70"
                         }
                     ]
                 },
@@ -1313,8 +1313,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/e1/67/038a8c7f60ffd6037374649826dbaa221e4b17755016b71a581162a15ce1/trove_classifiers-2025.2.18.16-py3-none-any.whl",
-                            "sha256": "7f6dfae899f23f04b73bc09e0754d9219a6fc4d6cca6acd62f1850a87ea92262",
+                            "url": "https://files.pythonhosted.org/packages/46/52/bc0592d1ac02f93983f5e46b0e4872a0abcc498faa2727ff7c184b6bdb6c/trove_classifiers-2025.3.13.13-py3-none-any.whl",
+                            "sha256": "c1679d2876eef24584ad1619e3870177c216bab28bd5bc5b59ee78b491eb8a6b",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "trove-classifiers",
@@ -1430,12 +1430,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/grass.git",
-                            "tag": "8.4.0",
+                            "tag": "8.4.1",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "e49c044e626e0ca5595e8c64c035a1a0c0bf2719"
+                            "commit": "45ca3179ab0c450329d5ea410fce1b47b6bffbc8"
                         }
                     ],
                     "modules": [
@@ -1472,8 +1472,8 @@
                     "sources": [
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/bd/0f/2ba5fbcd631e3e88689309dbe978c5769e883e4b84ebfe7da30b43275c5a/jinja2-3.1.5-py3-none-any.whl",
-                            "sha256": "aba0f4dc9ed8013c424088f68a5c226f7d6097ed89b246d7749c2ec4175c6adb",
+                            "url": "https://files.pythonhosted.org/packages/62/a1/3d680cbfd5f4b8f15abc1d571870c5fc3e594bb582bc3b64ea099db13e56/jinja2-3.1.6-py3-none-any.whl",
+                            "sha256": "85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "Jinja2",
@@ -1498,11 +1498,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/Exiv2/exiv2.git",
-                            "tag": "v0.28.4",
+                            "tag": "v0.28.5",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "57a07113648624b89b09c5f3183acd7f711362ef"
+                            "commit": "907169fa643c2c74c14fd4106e55eaeee3634d9f"
                         }
                     ]
                 },
@@ -1523,8 +1523,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v29.3",
-                            "commit": "b407e8416e3893036aee5af9a12bd9b6a0e2b2e6",
+                            "tag": "v30.1",
+                            "commit": "0d815c5b74281f081c1ee4b431a4d5bbb1615c97",
                             "x-checker-data": {
                                 "type": "git"
                             }
