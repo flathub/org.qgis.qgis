@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.40.3.tar.bz2",
-                    "sha256": "51135f0b0f82f2b76de4b89a0978396dbdab9baa3c9c03c4a53b7e2f48451076",
+                    "url": "https://qgis.org/downloads/qgis-3.42.1.tar.bz2",
+                    "sha256": "9d6a01b24712140c4159842fd00cd9c7532da8bc13625d1a3bf09abedd42c1e9",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -665,8 +665,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-25.02.0.tar.xz",
-                                    "sha256": "21234cb2a9647d73c752ce4031e65a79d11a511a835f2798284c2497b8701dee",
+                                    "url": "https://poppler.freedesktop.org/poppler-25.03.0.tar.xz",
+                                    "sha256": "97da4ff88517a6bbd729529f195f85c8d7a0c3bb4a3d57cb0c685cbb052fe837",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -915,11 +915,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
-                                    "tag": "v3.3.2",
+                                    "tag": "v3.3.3",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "55d1a1404cec5b4b187009d9f7fe55a5622ac4e5"
+                                    "commit": "da760aa4b6bee4b9d74b8c6a151221b035fc47b7"
                                 }
                             ],
                             "modules": [
@@ -1021,8 +1021,8 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/abseil/abseil-cpp.git",
-                                    "tag": "20250127.0",
-                                    "commit": "9ac7062b1860d895fb5a8cbf58c3e9ef8f674b5f",
+                                    "tag": "20250127.1",
+                                    "commit": "d9e4955c65cd4367dd6bf46f4ccb8cd3d100540b",
                                     "x-checker-data": {
                                         "type": "git",
                                         "tag-pattern": "^([\\d.]+)$"
@@ -1176,11 +1176,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v76.0.0",
+                            "tag": "v78.0.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "c11a4940deba04a6f8f8e1410686116f587f6f70"
+                            "commit": "6da75919dfe5796acf9c3cb7813c6b08a31d51ad"
                         }
                     ]
                 },
@@ -1313,8 +1313,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/46/52/bc0592d1ac02f93983f5e46b0e4872a0abcc498faa2727ff7c184b6bdb6c/trove_classifiers-2025.3.13.13-py3-none-any.whl",
-                            "sha256": "c1679d2876eef24584ad1619e3870177c216bab28bd5bc5b59ee78b491eb8a6b",
+                            "url": "https://files.pythonhosted.org/packages/40/f8/9c6d334002e7b4ff34a875d2f6fe76c6c1544bd7fde3e39cb7cd2593488f/trove_classifiers-2025.3.19.19-py3-none-any.whl",
+                            "sha256": "5fc02770ecd81588a605ac98b9d85d50a5a3f9daa30af2a6b1361a1999d75d07",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "trove-classifiers",
@@ -1563,8 +1563,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.6.tar.xz",
-                                    "sha256": "747b8c175be108c880d3adfb9c3537ea66e520e4ad2dccf5dce58003aeeca090",
+                                    "url": "https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.7.tar.xz",
+                                    "sha256": "6b452e4750590a2b5617adc40026f28d2f4903de15f1250e1d1c40bfd68ed55e",
                                     "x-checker-data": {
                                         "type": "gnome",
                                         "name": "libsecret",
