@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.40.3.tar.bz2",
-                    "sha256": "51135f0b0f82f2b76de4b89a0978396dbdab9baa3c9c03c4a53b7e2f48451076",
+                    "url": "https://qgis.org/downloads/qgis-3.42.1.tar.bz2",
+                    "sha256": "9d6a01b24712140c4159842fd00cd9c7532da8bc13625d1a3bf09abedd42c1e9",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -915,11 +915,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
-                                    "tag": "v3.3.2",
+                                    "tag": "v3.3.3",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "55d1a1404cec5b4b187009d9f7fe55a5622ac4e5"
+                                    "commit": "da760aa4b6bee4b9d74b8c6a151221b035fc47b7"
                                 }
                             ],
                             "modules": [
@@ -1176,11 +1176,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v78.0.0",
+                            "tag": "v78.0.2",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "6da75919dfe5796acf9c3cb7813c6b08a31d51ad"
+                            "commit": "3c88de1c62420c1e0161f48e34af6424ac009aa5"
                         }
                     ]
                 },
@@ -1255,8 +1255,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/5f/57/df1c9157c8d5a05117e455d66fd7cf6dbc46974f832b1058ed4856785d8a/pytz-2025.1.tar.gz",
-                            "sha256": "c2db42be2a2518b28e65f9207c4d05e6ff547d1efa4086469ef855e4ab70178e",
+                            "url": "https://files.pythonhosted.org/packages/f8/bf/abbd3cdfb8fbc7fb3d4d38d320f2441b1e7cbe29be4f23797b4a2b5d8aac/pytz-2025.2.tar.gz",
+                            "sha256": "360b9e3dbb49a209c21ad61809c7fb453643e048b38924c765813546746e81c3",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "pytz"
