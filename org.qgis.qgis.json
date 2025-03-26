@@ -465,12 +465,12 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/HEASARC/cfitsio.git",
-                                    "tag": "cfitsio-4.6.0",
+                                    "tag": "cfitsio-4.6.1",
                                     "x-checker-data": {
                                         "type": "git",
                                         "tag-pattern": "^(.+)$"
                                     },
-                                    "commit": "87f6441266c9ae97593daaadada101522b667df5"
+                                    "commit": "058781d4edc2a8832b6ff0dbabc8c2720bff85b0"
                                 }
                             ]
                         },
@@ -484,8 +484,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.4.0.tar.xz",
-                                    "sha256": "023242fd59071d98c75fb015fd3293c921132dc39bf46d221d4b059aae8d79f4",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.4.1.tar.xz",
+                                    "sha256": "26ce272bfdc8246c278e6f8cfa53777a1efb14ef196e88082fee05da1a463491",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -915,11 +915,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
-                                    "tag": "v3.3.2",
+                                    "tag": "v3.3.3",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "55d1a1404cec5b4b187009d9f7fe55a5622ac4e5"
+                                    "commit": "da760aa4b6bee4b9d74b8c6a151221b035fc47b7"
                                 }
                             ],
                             "modules": [
@@ -1176,11 +1176,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v78.0.0",
+                            "tag": "v78.1.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "6da75919dfe5796acf9c3cb7813c6b08a31d51ad"
+                            "commit": "6ead555c5fb29bc57fe6105b1bffc163f56fd558"
                         }
                     ]
                 },
@@ -1255,8 +1255,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/5f/57/df1c9157c8d5a05117e455d66fd7cf6dbc46974f832b1058ed4856785d8a/pytz-2025.1.tar.gz",
-                            "sha256": "c2db42be2a2518b28e65f9207c4d05e6ff547d1efa4086469ef855e4ab70178e",
+                            "url": "https://files.pythonhosted.org/packages/f8/bf/abbd3cdfb8fbc7fb3d4d38d320f2441b1e7cbe29be4f23797b4a2b5d8aac/pytz-2025.2.tar.gz",
+                            "sha256": "360b9e3dbb49a209c21ad61809c7fb453643e048b38924c765813546746e81c3",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "pytz"
@@ -1323,8 +1323,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/b5/0c/039f1ec352977330a372c783adcbc5c3773868fa71cb00bb7db7b428e76a/flit_core-3.11.0-py3-none-any.whl",
-                            "sha256": "fe464c086f630f106c0fc5001ee377980f45938f03f8f0d03da08a4841748541",
+                            "url": "https://files.pythonhosted.org/packages/f2/65/b6ba90634c984a4fcc02c7e3afe523fef500c4980fec67cc27536ee50acf/flit_core-3.12.0-py3-none-any.whl",
+                            "sha256": "e7a0304069ea895172e3c7bb703292e992c5d1555dd1233ab7b5621b5b69e62c",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "flit_core",
