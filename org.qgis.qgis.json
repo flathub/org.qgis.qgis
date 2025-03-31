@@ -527,18 +527,15 @@
                         },
                         {
                             "name": "sqlite3",
-                            "config-opts": [
-                                "--disable-static",
-                                "--disable-amalgamation",
-                                "--enable-rtree",
-                                "--enable-json1",
-                                "CFLAGS=-DSQLITE_ENABLE_COLUMN_METADATA=1"
+                            "buildsystem": "simple",
+                            "build-commands": [
+                                "CFLAGS='-O2 -DSQLITE_ENABLE_COLUMN_METADATA -DSQLITE_ENABLE_DBSTAT_VTAB -DSQLITE_ENABLE_ICU' CPPFLAGS=`icu-config --cppflags` LDFLAGS=`icu-config --ldflags` ./configure --disable-static --enable-rtree --prefix=/app && make && make install"
                             ],
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://www.sqlite.org/2024/sqlite-autoconf-3470000.tar.gz",
-                                    "sha256": "83eb21a6f6a649f506df8bd3aab85a08f7556ceed5dbd8dea743ea003fc3a957"
+                                    "url": "https://www.sqlite.org/2025/sqlite-autoconf-3490100.tar.gz",
+                                    "sha256": "106642d8ccb36c5f7323b64e4152e9b719f7c0215acf5bfeac3d5e7f97b59254"
                                 }
                             ]
                         }
