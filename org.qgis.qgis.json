@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.40.3.tar.bz2",
-                    "sha256": "51135f0b0f82f2b76de4b89a0978396dbdab9baa3c9c03c4a53b7e2f48451076",
+                    "url": "https://qgis.org/downloads/qgis-3.42.1.tar.bz2",
+                    "sha256": "9d6a01b24712140c4159842fd00cd9c7532da8bc13625d1a3bf09abedd42c1e9",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -662,8 +662,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-25.03.0.tar.xz",
-                                    "sha256": "97da4ff88517a6bbd729529f195f85c8d7a0c3bb4a3d57cb0c685cbb052fe837",
+                                    "url": "https://poppler.freedesktop.org/poppler-25.04.0.tar.xz",
+                                    "sha256": "b010c596dce127fba88532fd2f1043e55ea30601767952d0f2c0a80e7dc0da3d",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
