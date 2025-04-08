@@ -1,0 +1,28 @@
+From 487f0d81826edf437199155e155a8e6acd7d6f73 Mon Sep 17 00:00:00 2001
+From: Aleix Pol <aleixpol@kde.org>
+Date: Wed, 9 Apr 2025 02:14:44 +0200
+Subject: [PATCH] Fix QGIS 3.42 build
+
+See https://github.com/qgis/QGIS/issues/60882
+
+Needs GL_MAX_CLIP_PLANES
+---
+ src/3d/qgs3dutils.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/3d/qgs3dutils.cpp b/src/3d/qgs3dutils.cpp
+index 053c9458611..e8ffab7bbf6 100644
+--- a/src/3d/qgs3dutils.cpp
++++ b/src/3d/qgs3dutils.cpp
+@@ -45,7 +45,7 @@
+ #include <Qt3DRender/QRenderSettings>
+ #include <QOpenGLContext>
+ #include <QOpenGLFunctions>
+-
++#include <GL/gl.h>
+ 
+ #if QT_VERSION < QT_VERSION_CHECK( 6, 0, 0 )
+ #include <Qt3DRender/QBuffer>
+-- 
+2.49.0
+
