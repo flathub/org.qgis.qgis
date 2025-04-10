@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.40.3.tar.bz2",
-                    "sha256": "51135f0b0f82f2b76de4b89a0978396dbdab9baa3c9c03c4a53b7e2f48451076",
+                    "url": "https://qgis.org/downloads/qgis-3.42.1.tar.bz2",
+                    "sha256": "9d6a01b24712140c4159842fd00cd9c7532da8bc13625d1a3bf09abedd42c1e9",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -337,8 +337,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.10.2/gdal-3.10.2.tar.xz",
-                            "sha256": "67b4e08acd1cc4b6bd67b97d580be5a8118b586ad6a426b09d5853898deeada5",
+                            "url": "https://download.osgeo.org/gdal/3.10.3/gdal-3.10.3.tar.xz",
+                            "sha256": "335a8d2c7567d783563d3fed37e8b58d72d9c1723f6fd1d8c299fe4c0d936781",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -662,8 +662,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-25.03.0.tar.xz",
-                                    "sha256": "97da4ff88517a6bbd729529f195f85c8d7a0c3bb4a3d57cb0c685cbb052fe837",
+                                    "url": "https://poppler.freedesktop.org/poppler-25.04.0.tar.xz",
+                                    "sha256": "b010c596dce127fba88532fd2f1043e55ea30601767952d0f2c0a80e7dc0da3d",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -1350,8 +1350,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/c8/19/4ec628951a74043532ca2cf5d97b7b14863931476d117c471e8e2b1eb39f/urllib3-2.3.0-py3-none-any.whl",
-                            "sha256": "1cee9ad369867bfdbbb48b7dd50374c0967a0bb7710050facf0dd6911440e3df",
+                            "url": "https://files.pythonhosted.org/packages/6b/11/cc635220681e93a0183390e26485430ca2c7b5f9d33b15c74c2861cb8091/urllib3-2.4.0-py3-none-any.whl",
+                            "sha256": "4e16665048960a0900c702d4a66415956a584919c03361cac9f1df5c5dd7e813",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "urllib3",
@@ -1370,8 +1370,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/ef/f6/c15ca8e5646e937c148e147244817672cf920b56ac0bf2cc1512ae674be8/lxml-5.3.1.tar.gz",
-                            "sha256": "106b7b5d2977b339f1e97efe2778e2ab20e99994cbb0ec5e55771ed0795920c8",
+                            "url": "https://files.pythonhosted.org/packages/80/61/d3dc048cd6c7be6fe45b80cedcbdd4326ba4d550375f266d9f4246d0f4bc/lxml-5.3.2.tar.gz",
+                            "sha256": "773947d0ed809ddad824b7b14467e1a481b8976e87278ac4a730c2f7c7fcddc1",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "lxml"
