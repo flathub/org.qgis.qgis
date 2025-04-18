@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.42.1.tar.bz2",
-                    "sha256": "9d6a01b24712140c4159842fd00cd9c7532da8bc13625d1a3bf09abedd42c1e9",
+                    "url": "https://qgis.org/downloads/qgis-3.42.2.tar.bz2",
+                    "sha256": "ce63863990da409de09606651252a3811b1cbee017ce8e8fbf2fd20a64778883",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
