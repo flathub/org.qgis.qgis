@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.42.1.tar.bz2",
-                    "sha256": "9d6a01b24712140c4159842fd00cd9c7532da8bc13625d1a3bf09abedd42c1e9",
+                    "url": "https://qgis.org/downloads/qgis-3.42.2.tar.bz2",
+                    "sha256": "ce63863990da409de09606651252a3811b1cbee017ce8e8fbf2fd20a64778883",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -1177,11 +1177,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v78.1.0",
+                            "tag": "v79.0.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "6ead555c5fb29bc57fe6105b1bffc163f56fd558"
+                            "commit": "56962ec38bb53e1681de00dc5dc5b2e96b1b02b8"
                         }
                     ]
                 },
@@ -1374,8 +1374,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/80/61/d3dc048cd6c7be6fe45b80cedcbdd4326ba4d550375f266d9f4246d0f4bc/lxml-5.3.2.tar.gz",
-                            "sha256": "773947d0ed809ddad824b7b14467e1a481b8976e87278ac4a730c2f7c7fcddc1",
+                            "url": "https://files.pythonhosted.org/packages/76/3d/14e82fc7c8fb1b7761f7e748fd47e2ec8276d137b6acfe5a4bb73853e08f/lxml-5.4.0.tar.gz",
+                            "sha256": "d12832e1dbea4be280b22fd0ea7c9b87f0d8fc51ba06e92dc62d52f804f78ebd",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "lxml"
