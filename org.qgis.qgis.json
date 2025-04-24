@@ -49,10 +49,6 @@
                         "url-template": "https://qgis.org/downloads/qgis-$version.tar.bz2",
                         "stable-only": true
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "0001-Fix-QGIS-3.42-build.patch"
                 }
             ],
             "config-opts": [
