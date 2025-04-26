@@ -481,8 +481,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.4.1.tar.xz",
-                                    "sha256": "26ce272bfdc8246c278e6f8cfa53777a1efb14ef196e88082fee05da1a463491",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.4.2.tar.xz",
+                                    "sha256": "6dfddcfbd91e70679d7c11e94a5963a7efda002fec351e6f4875ac8e245c5117",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -1261,8 +1261,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/1c/ab/c9f1e32b7b1bf505bf26f0ef697775960db7932abeb7b516de930ba2705f/certifi-2025.1.31.tar.gz",
-                            "sha256": "3d5da6925056f6f18f119200434a4780a94263f10d1c21d032a6f6b2baa20651",
+                            "url": "https://files.pythonhosted.org/packages/e8/9e/c05b3920a3b7d20d3d3310465f50348e5b3694f4f88c6daf736eef3024c4/certifi-2025.4.26.tar.gz",
+                            "sha256": "0a816057ea3cdefcef70270d2c515e4506bbc954f417fa5ade2021213bb8f0c6",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "certifi"
