@@ -949,11 +949,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/strukturag/libheif.git",
-                                    "tag": "v1.19.7",
+                                    "tag": "v1.19.8",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "c22636155fc6848b71ad77971159e6e1cc349cce"
+                                    "commit": "5e9deb19fe6b3768af0bb8e9e5e8438b15171bf3"
                                 }
                             ]
                         },
@@ -1173,11 +1173,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v79.0.1",
+                            "tag": "v80.2.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "607f6be776db97d83c9cc54e0eaa578567dcc44c"
+                            "commit": "22f087ce5678e166bfba58b058908d9bb478d930"
                         }
                     ]
                 },
@@ -1261,8 +1261,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/1c/ab/c9f1e32b7b1bf505bf26f0ef697775960db7932abeb7b516de930ba2705f/certifi-2025.1.31.tar.gz",
-                            "sha256": "3d5da6925056f6f18f119200434a4780a94263f10d1c21d032a6f6b2baa20651",
+                            "url": "https://files.pythonhosted.org/packages/e8/9e/c05b3920a3b7d20d3d3310465f50348e5b3694f4f88c6daf736eef3024c4/certifi-2025.4.26.tar.gz",
+                            "sha256": "0a816057ea3cdefcef70270d2c515e4506bbc954f417fa5ade2021213bb8f0c6",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "certifi"
@@ -1280,8 +1280,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/0e/f6/65ecc6878a89bb1c23a086ea335ad4bf21a588990c3f535a227b9eea9108/charset_normalizer-3.4.1-py3-none-any.whl",
-                            "sha256": "d98b1668f06378c6dbefec3b92299716b931cd4e6061f3c875a71ced1780ab85",
+                            "url": "https://files.pythonhosted.org/packages/20/94/c5790835a017658cbfabd07f3bfb549140c3ac458cfc196323996b10095a/charset_normalizer-3.4.2-py3-none-any.whl",
+                            "sha256": "7f56930ab0abd1c45cd15be65cc741c28b1c9a34876ce8c17a2fa107810c0af0",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "charset-normalizer",
@@ -1310,8 +1310,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/70/7d/a2271b98b833680561ab3fcd60ab682478dc4f7cc023fab24991601ac8ac/trove_classifiers-2025.4.11.15-py3-none-any.whl",
-                            "sha256": "e7d98983f004df35293caf954bdfe944b139eb402677a97115450e320f0bd855",
+                            "url": "https://files.pythonhosted.org/packages/a7/dd/915b914cfbaf91a46560083519be825ee65d3f955a7797ecf0ecf271559d/trove_classifiers-2025.5.1.12-py3-none-any.whl",
+                            "sha256": "9ed1030cfcc8d0eb944155f05b4add4efaceba4ba6aca3f9f348a21f1e700404",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "trove-classifiers",
