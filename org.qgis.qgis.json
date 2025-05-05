@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.40.3.tar.bz2",
-                    "sha256": "51135f0b0f82f2b76de4b89a0978396dbdab9baa3c9c03c4a53b7e2f48451076",
+                    "url": "https://qgis.org/downloads/qgis-3.42.2.tar.bz2",
+                    "sha256": "ce63863990da409de09606651252a3811b1cbee017ce8e8fbf2fd20a64778883",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -649,8 +649,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.10.2/gdal-3.10.2.tar.xz",
-                            "sha256": "67b4e08acd1cc4b6bd67b97d580be5a8118b586ad6a426b09d5853898deeada5",
+                            "url": "https://download.osgeo.org/gdal/3.10.3/gdal-3.10.3.tar.xz",
+                            "sha256": "335a8d2c7567d783563d3fed37e8b58d72d9c1723f6fd1d8c299fe4c0d936781",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -675,8 +675,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "http://prdownloads.sourceforge.net/swig/swig-4.3.0.tar.gz",
-                                    "sha256": "f7203ef796f61af986c70c05816236cbd0d31b7aa9631e5ab53020ab7804aa9e",
+                                    "url": "http://prdownloads.sourceforge.net/swig/swig-4.3.1.tar.gz",
+                                    "sha256": "44fc829f70f1e17d635a2b4d69acab38896699ecc24aa023e516e0eabbec61b8",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 4919,
@@ -774,12 +774,12 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/HEASARC/cfitsio.git",
-                                    "tag": "cfitsio-4.6.0",
+                                    "tag": "cfitsio-4.6.2",
                                     "x-checker-data": {
                                         "type": "git",
                                         "tag-pattern": "^(.+)$"
                                     },
-                                    "commit": "87f6441266c9ae97593daaadada101522b667df5"
+                                    "commit": "1d2f37b1bc8e6d5e8cf8cd497314680322063468"
                                 }
                             ]
                         },
@@ -793,8 +793,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.4.0.tar.xz",
-                                    "sha256": "023242fd59071d98c75fb015fd3293c921132dc39bf46d221d4b059aae8d79f4",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.4.2.tar.xz",
+                                    "sha256": "6dfddcfbd91e70679d7c11e94a5963a7efda002fec351e6f4875ac8e245c5117",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -864,8 +864,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://downloads.sourceforge.net/project/boost/boost/1.87.0/boost_1_87_0.tar.bz2",
-                                    "sha256": "af57be25cb4c4f4b413ed692fe378affb4352ea50fbe294a11ef548f4d527d89",
+                                    "url": "https://downloads.sourceforge.net/project/boost/boost/1.88.0/boost_1_88_0.tar.bz2",
+                                    "sha256": "46d9d2c06637b219270877c9e16155cbd015b6dc84349af064c088e9b5b12f7b",
                                     "x-checker-data": {
                                         "type": "html",
                                         "url": "https://www.boost.org/feed/downloads.rss",
@@ -974,8 +974,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-25.03.0.tar.xz",
-                                    "sha256": "97da4ff88517a6bbd729529f195f85c8d7a0c3bb4a3d57cb0c685cbb052fe837",
+                                    "url": "https://poppler.freedesktop.org/poppler-25.04.0.tar.xz",
+                                    "sha256": "b010c596dce127fba88532fd2f1043e55ea30601767952d0f2c0a80e7dc0da3d",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -1224,11 +1224,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
-                                    "tag": "v3.3.2",
+                                    "tag": "v3.3.3",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "55d1a1404cec5b4b187009d9f7fe55a5622ac4e5"
+                                    "commit": "da760aa4b6bee4b9d74b8c6a151221b035fc47b7"
                                 }
                             ],
                             "modules": [
@@ -1284,12 +1284,12 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/libexpat/libexpat.git",
-                                    "tag": "R_2_7_0",
+                                    "tag": "R_2_7_1",
                                     "x-checker-data": {
                                         "type": "git",
                                         "tag-pattern": "^(R_[0-9_]+)$"
                                     },
-                                    "commit": "6d4ffe856df497ac2cae33537665c3fec7ec8a00"
+                                    "commit": "f9a3eeb3e09fbea04b1c451ffc422ab2f1e45744"
                                 }
                             ]
                         }
@@ -1485,11 +1485,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v78.0.0",
+                            "tag": "v79.0.1",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "6da75919dfe5796acf9c3cb7813c6b08a31d51ad"
+                            "commit": "607f6be776db97d83c9cc54e0eaa578567dcc44c"
                         }
                     ]
                 },
@@ -1564,8 +1564,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/5f/57/df1c9157c8d5a05117e455d66fd7cf6dbc46974f832b1058ed4856785d8a/pytz-2025.1.tar.gz",
-                            "sha256": "c2db42be2a2518b28e65f9207c4d05e6ff547d1efa4086469ef855e4ab70178e",
+                            "url": "https://files.pythonhosted.org/packages/f8/bf/abbd3cdfb8fbc7fb3d4d38d320f2441b1e7cbe29be4f23797b4a2b5d8aac/pytz-2025.2.tar.gz",
+                            "sha256": "360b9e3dbb49a209c21ad61809c7fb453643e048b38924c765813546746e81c3",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "pytz"
@@ -1622,8 +1622,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/40/f8/9c6d334002e7b4ff34a875d2f6fe76c6c1544bd7fde3e39cb7cd2593488f/trove_classifiers-2025.3.19.19-py3-none-any.whl",
-                            "sha256": "5fc02770ecd81588a605ac98b9d85d50a5a3f9daa30af2a6b1361a1999d75d07",
+                            "url": "https://files.pythonhosted.org/packages/70/7d/a2271b98b833680561ab3fcd60ab682478dc4f7cc023fab24991601ac8ac/trove_classifiers-2025.4.11.15-py3-none-any.whl",
+                            "sha256": "e7d98983f004df35293caf954bdfe944b139eb402677a97115450e320f0bd855",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "trove-classifiers",
@@ -1632,8 +1632,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/b5/0c/039f1ec352977330a372c783adcbc5c3773868fa71cb00bb7db7b428e76a/flit_core-3.11.0-py3-none-any.whl",
-                            "sha256": "fe464c086f630f106c0fc5001ee377980f45938f03f8f0d03da08a4841748541",
+                            "url": "https://files.pythonhosted.org/packages/f2/65/b6ba90634c984a4fcc02c7e3afe523fef500c4980fec67cc27536ee50acf/flit_core-3.12.0-py3-none-any.whl",
+                            "sha256": "e7a0304069ea895172e3c7bb703292e992c5d1555dd1233ab7b5621b5b69e62c",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "flit_core",
@@ -1662,8 +1662,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/c8/19/4ec628951a74043532ca2cf5d97b7b14863931476d117c471e8e2b1eb39f/urllib3-2.3.0-py3-none-any.whl",
-                            "sha256": "1cee9ad369867bfdbbb48b7dd50374c0967a0bb7710050facf0dd6911440e3df",
+                            "url": "https://files.pythonhosted.org/packages/6b/11/cc635220681e93a0183390e26485430ca2c7b5f9d33b15c74c2861cb8091/urllib3-2.4.0-py3-none-any.whl",
+                            "sha256": "4e16665048960a0900c702d4a66415956a584919c03361cac9f1df5c5dd7e813",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "urllib3",
@@ -1682,8 +1682,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/ef/f6/c15ca8e5646e937c148e147244817672cf920b56ac0bf2cc1512ae674be8/lxml-5.3.1.tar.gz",
-                            "sha256": "106b7b5d2977b339f1e97efe2778e2ab20e99994cbb0ec5e55771ed0795920c8",
+                            "url": "https://files.pythonhosted.org/packages/76/3d/14e82fc7c8fb1b7761f7e748fd47e2ec8276d137b6acfe5a4bb73853e08f/lxml-5.4.0.tar.gz",
+                            "sha256": "d12832e1dbea4be280b22fd0ea7c9b87f0d8fc51ba06e92dc62d52f804f78ebd",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "lxml"
@@ -1832,8 +1832,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v30.1",
-                            "commit": "0d815c5b74281f081c1ee4b431a4d5bbb1615c97",
+                            "tag": "v30.2",
+                            "commit": "43e1626812c1b543e56a7bec59dc09eb18248bd2",
                             "x-checker-data": {
                                 "type": "git"
                             }
