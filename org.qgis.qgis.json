@@ -238,8 +238,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://ftp.postgresql.org/pub/source/v17.4/postgresql-17.4.tar.bz2",
-                            "sha256": "c4605b73fea11963406699f949b966e5d173a7ee0ccaef8938dec0ca8a995fe7",
+                            "url": "https://ftp.postgresql.org/pub/source/v17.5/postgresql-17.5.tar.bz2",
+                            "sha256": "fcb7ab38e23b264d1902cb25e6adafb4525a6ebcbd015434aeef9eda80f528d8",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 5601,
@@ -337,8 +337,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.10.3/gdal-3.10.3.tar.xz",
-                            "sha256": "335a8d2c7567d783563d3fed37e8b58d72d9c1723f6fd1d8c299fe4c0d936781",
+                            "url": "https://download.osgeo.org/gdal/3.11.0/gdal-3.11.0.tar.xz",
+                            "sha256": "ba1a17a74428bfd5c789ce293f59b6a3d8bfabab747431c33331ac0ac579ea71",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -662,8 +662,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-25.04.0.tar.xz",
-                                    "sha256": "b010c596dce127fba88532fd2f1043e55ea30601767952d0f2c0a80e7dc0da3d",
+                                    "url": "https://poppler.freedesktop.org/poppler-25.05.0.tar.xz",
+                                    "sha256": "9b1627c5b76816ac5e4052a03f5b605ba40b45cf06b02cadd0479620b499ab38",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -754,8 +754,8 @@
                                     "sources": [
                                         {
                                             "type": "file",
-                                            "url": "https://files.pythonhosted.org/packages/67/66/91d242ea8dd1729addd36069318ba2cd03874872764f316c3bb51b633ed2/meson_python-0.17.1.tar.gz",
-                                            "sha256": "efb91f69f2e19eef7bc9a471ed2a4e730088cc6b39eacaf3e49fc4f930eb5f83",
+                                            "url": "https://files.pythonhosted.org/packages/26/bd/fdb26366443620f1a8a4d4ec7bfa37d1fbbe7bf737b257c205bbcf95ba95/meson_python-0.18.0.tar.gz",
+                                            "sha256": "c56a99ec9df669a40662fe46960321af6e4b14106c14db228709c1628e23848d",
                                             "x-checker-data": {
                                                 "type": "pypi",
                                                 "name": "meson-python"
@@ -773,11 +773,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/ebiggers/libdeflate.git",
-                                    "tag": "v1.23",
+                                    "tag": "v1.24",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "78051988f96dc8d8916310d8b24021f01bd9e102"
+                                    "commit": "96836d7d9d10e3e0d53e6edb54eb908514e336c4"
                                 }
                             ]
                         },
@@ -949,11 +949,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/strukturag/libheif.git",
-                                    "tag": "v1.19.7",
+                                    "tag": "v1.19.8",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "c22636155fc6848b71ad77971159e6e1cc349cce"
+                                    "commit": "5e9deb19fe6b3768af0bb8e9e5e8438b15171bf3"
                                 }
                             ]
                         },
@@ -1173,11 +1173,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v79.0.1",
+                            "tag": "v80.5.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "607f6be776db97d83c9cc54e0eaa578567dcc44c"
+                            "commit": "18bfe51deb8479bfca40e326697a4f9c1b94521f"
                         }
                     ]
                 },
@@ -1261,8 +1261,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/1c/ab/c9f1e32b7b1bf505bf26f0ef697775960db7932abeb7b516de930ba2705f/certifi-2025.1.31.tar.gz",
-                            "sha256": "3d5da6925056f6f18f119200434a4780a94263f10d1c21d032a6f6b2baa20651",
+                            "url": "https://files.pythonhosted.org/packages/e8/9e/c05b3920a3b7d20d3d3310465f50348e5b3694f4f88c6daf736eef3024c4/certifi-2025.4.26.tar.gz",
+                            "sha256": "0a816057ea3cdefcef70270d2c515e4506bbc954f417fa5ade2021213bb8f0c6",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "certifi"
@@ -1280,8 +1280,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/0e/f6/65ecc6878a89bb1c23a086ea335ad4bf21a588990c3f535a227b9eea9108/charset_normalizer-3.4.1-py3-none-any.whl",
-                            "sha256": "d98b1668f06378c6dbefec3b92299716b931cd4e6061f3c875a71ced1780ab85",
+                            "url": "https://files.pythonhosted.org/packages/20/94/c5790835a017658cbfabd07f3bfb549140c3ac458cfc196323996b10095a/charset_normalizer-3.4.2-py3-none-any.whl",
+                            "sha256": "7f56930ab0abd1c45cd15be65cc741c28b1c9a34876ce8c17a2fa107810c0af0",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "charset-normalizer",
@@ -1310,8 +1310,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/70/7d/a2271b98b833680561ab3fcd60ab682478dc4f7cc023fab24991601ac8ac/trove_classifiers-2025.4.11.15-py3-none-any.whl",
-                            "sha256": "e7d98983f004df35293caf954bdfe944b139eb402677a97115450e320f0bd855",
+                            "url": "https://files.pythonhosted.org/packages/92/ef/c6deb083748be3bcad6f471b6ae983950c161890bf5ae1b2af80cc56c530/trove_classifiers-2025.5.9.12-py3-none-any.whl",
+                            "sha256": "e381c05537adac78881c8fa345fd0e9970159f4e4a04fcc42cfd3129cca640ce",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "trove-classifiers",
