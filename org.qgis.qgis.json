@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.42.2.tar.bz2",
-                    "sha256": "ce63863990da409de09606651252a3811b1cbee017ce8e8fbf2fd20a64778883",
+                    "url": "https://qgis.org/downloads/qgis-3.42.3.tar.bz2",
+                    "sha256": "677d465a26be245a1230941f005c8e51567604dd6b42387bd41fc8b7eb7a8d3a",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -337,8 +337,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.10.3/gdal-3.10.3.tar.xz",
-                            "sha256": "335a8d2c7567d783563d3fed37e8b58d72d9c1723f6fd1d8c299fe4c0d936781",
+                            "url": "https://download.osgeo.org/gdal/3.11.0/gdal-3.11.0.tar.xz",
+                            "sha256": "ba1a17a74428bfd5c789ce293f59b6a3d8bfabab747431c33331ac0ac579ea71",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -662,8 +662,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-25.04.0.tar.xz",
-                                    "sha256": "b010c596dce127fba88532fd2f1043e55ea30601767952d0f2c0a80e7dc0da3d",
+                                    "url": "https://poppler.freedesktop.org/poppler-25.05.0.tar.xz",
+                                    "sha256": "9b1627c5b76816ac5e4052a03f5b605ba40b45cf06b02cadd0479620b499ab38",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -773,11 +773,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/ebiggers/libdeflate.git",
-                                    "tag": "v1.23",
+                                    "tag": "v1.24",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "78051988f96dc8d8916310d8b24021f01bd9e102"
+                                    "commit": "96836d7d9d10e3e0d53e6edb54eb908514e336c4"
                                 }
                             ]
                         },
@@ -1018,8 +1018,8 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/abseil/abseil-cpp.git",
-                                    "tag": "20250127.1",
-                                    "commit": "d9e4955c65cd4367dd6bf46f4ccb8cd3d100540b",
+                                    "tag": "20250512.0",
+                                    "commit": "bc257a88f7c1939f24e0379f14a3589e926c950c",
                                     "x-checker-data": {
                                         "type": "git",
                                         "tag-pattern": "^([\\d.]+)$"
@@ -1173,11 +1173,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v80.3.1",
+                            "tag": "v80.7.1",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "f37845bce6bb06ec25c24cf30210a485e945d21e"
+                            "commit": "12ca0186ba7d9bf387d65400bb05205d0bcf9e56"
                         }
                     ]
                 },
@@ -1300,8 +1300,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/88/5f/e351af9a41f866ac3f1fac4ca0613908d9a41741cfcf2228f4ad853b697d/pluggy-1.5.0-py3-none-any.whl",
-                            "sha256": "44e1ad92c8ca002de6377e165f3e0f1be63266ab4d554740532335b9d75ea669",
+                            "url": "https://files.pythonhosted.org/packages/54/20/4d324d65cc6d9205fabedc306948156824eb9f0ee1633355a8f7ec5c66bf/pluggy-1.6.0-py3-none-any.whl",
+                            "sha256": "e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "pluggy",
@@ -1520,8 +1520,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v30.2",
-                            "commit": "43e1626812c1b543e56a7bec59dc09eb18248bd2",
+                            "tag": "v31.0",
+                            "commit": "3d4adad5c4c4e6a6f9f038769b8c90716065b0e4",
                             "x-checker-data": {
                                 "type": "git"
                             }
