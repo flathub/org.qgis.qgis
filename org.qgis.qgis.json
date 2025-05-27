@@ -481,8 +481,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.4.2.tar.xz",
-                                    "sha256": "6dfddcfbd91e70679d7c11e94a5963a7efda002fec351e6f4875ac8e245c5117",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.4.3.tar.xz",
+                                    "sha256": "c3aadd59bdb0ea4339b056f29972f92ee19fdc52f68eb78d32d2e4caf4d80c3a",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -662,8 +662,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-25.04.0.tar.xz",
-                                    "sha256": "b010c596dce127fba88532fd2f1043e55ea30601767952d0f2c0a80e7dc0da3d",
+                                    "url": "https://poppler.freedesktop.org/poppler-25.05.0.tar.xz",
+                                    "sha256": "9b1627c5b76816ac5e4052a03f5b605ba40b45cf06b02cadd0479620b499ab38",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -1173,11 +1173,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v80.7.1",
+                            "tag": "v80.9.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "12ca0186ba7d9bf387d65400bb05205d0bcf9e56"
+                            "commit": "9c4d383631d3951fcae0afd73b5d08ff5a262976"
                         }
                     ]
                 },
