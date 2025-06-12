@@ -675,7 +675,7 @@
                         },
                         {
                             "name": "mariadb-libs",
-                            "comment": "for mysql-boost",
+                            "x-comment": "for mysql-boost",
                             "config-opts": [
                                 "-DCOMPILATION_COMMENT=\"Flathub - QGIS\"",
                                 "-DCMAKE_BUILD_TYPE=Release",
@@ -698,7 +698,7 @@
                                     "type": "archive",
                                     "url": "https://dlm.mariadb.com/3656685/MariaDB/mariadb-11.1.3/source/mariadb-11.1.3.tar.gz",
                                     "sha256": "ad3aa6ae478179275ecb28e3ed8a578f2004f084e14409727c0bf04975ace36c",
-                                    "FIXME-x-checker-data": {
+                                    "x-FIXME-x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 1887,
                                         "url-template": "https://rsync.osuosl.org/pub/mariadb/mariadb-$version/source/mariadb-$version.tar.gz",
@@ -718,8 +718,8 @@
                                     "type": "file",
                                     "url": "https://files.pythonhosted.org/packages/65/6e/09db70a523a96d25e115e71cc56a6f9031e7b8cd166c1ac8438307c14058/numpy-1.26.4.tar.gz",
                                     "sha256": "2a02aba9ed12e4ac4eb3ea9421c420301a0c6460d9830d74a9df87efa4912010",
-                                    "---x-checker-data": {
-                                        "comment": "commented because numpy 2.0 wants a newer python",
+                                    "x---x-checker-data": {
+                                        "x-comment": "commented because numpy 2.0 wants a newer python",
                                         "type": "pypi",
                                         "name": "numpy"
                                     }
@@ -959,7 +959,7 @@
                         },
                         {
                             "name": "expat",
-                            "comment": "This is on the FDO runtime, we need to bring it to work around https://github.com/libexpat/libexpat/issues/501",
+                            "x-comment": "This is on the FDO runtime, we need to bring it to work around https://github.com/libexpat/libexpat/issues/501",
                             "builddir": true,
                             "buildsystem": "cmake-ninja",
                             "subdir": "expat",
