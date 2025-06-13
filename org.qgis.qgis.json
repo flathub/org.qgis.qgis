@@ -78,12 +78,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/PROJ.git",
-                            "tag": "9.6.0",
+                            "tag": "9.6.2",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "cd190c47f33d7ea8bfc34b4cc217ea0db78959e4"
+                            "commit": "7c3d4a1fa9c1d5a3941b5eaee7c8d149f5936f54"
                         }
                     ]
                 },
@@ -481,8 +481,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.4.2.tar.xz",
-                                    "sha256": "6dfddcfbd91e70679d7c11e94a5963a7efda002fec351e6f4875ac8e245c5117",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.4.3.tar.xz",
+                                    "sha256": "c3aadd59bdb0ea4339b056f29972f92ee19fdc52f68eb78d32d2e4caf4d80c3a",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -662,8 +662,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-25.04.0.tar.xz",
-                                    "sha256": "b010c596dce127fba88532fd2f1043e55ea30601767952d0f2c0a80e7dc0da3d",
+                                    "url": "https://poppler.freedesktop.org/poppler-25.06.0.tar.xz",
+                                    "sha256": "8199532d38984fab46dbd0020ec9c40f20e928e33e9b4cc6043572603a821d83",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -858,11 +858,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/KhronosGroup/OpenCL-Headers.git",
-                                    "tag": "v2024.10.24",
+                                    "tag": "v2025.06.13",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "4ea6df132107e3b4b9407f903204b5522fdffcd6"
+                                    "commit": "2e30669d48718fd460f085b4b35b160dad51ce9d"
                                 }
                             ]
                         },
@@ -912,11 +912,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
-                                    "tag": "v3.3.3",
+                                    "tag": "v3.3.4",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "da760aa4b6bee4b9d74b8c6a151221b035fc47b7"
+                                    "commit": "7ec1cf59a0409d9d5c60ed111da9831890fa8296"
                                 }
                             ],
                             "modules": [
@@ -1173,11 +1173,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v80.7.1",
+                            "tag": "v80.9.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "12ca0186ba7d9bf387d65400bb05205d0bcf9e56"
+                            "commit": "9c4d383631d3951fcae0afd73b5d08ff5a262976"
                         }
                     ]
                 },
@@ -1360,8 +1360,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/f9/9b/335f9764261e915ed497fcdeb11df5dfd6f7bf257d4a6a2a686d80da4d54/requests-2.32.3-py3-none-any.whl",
-                            "sha256": "70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6",
+                            "url": "https://files.pythonhosted.org/packages/7c/e4/56027c4a6b4ae70ca9de302488c5ca95ad4a39e190093d6c1a8ace08341b/requests-2.32.4-py3-none-any.whl",
+                            "sha256": "27babd3cda2a6d50b30443204ee89830707d396671944c998b5975b031ac2b2c",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "requests",
@@ -1520,8 +1520,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v31.0",
-                            "commit": "3d4adad5c4c4e6a6f9f038769b8c90716065b0e4",
+                            "tag": "v31.1",
+                            "commit": "74211c0dfc2777318ab53c2cd2c317a2ef9012de",
                             "x-checker-data": {
                                 "type": "git"
                             }
