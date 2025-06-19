@@ -49,6 +49,10 @@
                         "url-template": "https://qgis.org/downloads/qgis-$version.tar.bz2",
                         "stable-only": true
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "qgis-sip-6.11.patch"
                 }
             ],
             "config-opts": [
