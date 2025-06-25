@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.42.3.tar.bz2",
-                    "sha256": "677d465a26be245a1230941f005c8e51567604dd6b42387bd41fc8b7eb7a8d3a",
+                    "url": "https://qgis.org/downloads/qgis-3.44.0.tar.bz2",
+                    "sha256": "81e5088060f38ab4e9835b05e5eec1ba7cc2eb903105830808b60215ae2cd320",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -390,12 +390,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/PROJ.git",
-                            "tag": "9.6.0",
+                            "tag": "9.6.2",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "cd190c47f33d7ea8bfc34b4cc217ea0db78959e4"
+                            "commit": "7c3d4a1fa9c1d5a3941b5eaee7c8d149f5936f54"
                         }
                     ]
                 },
@@ -793,8 +793,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.4.2.tar.xz",
-                                    "sha256": "6dfddcfbd91e70679d7c11e94a5963a7efda002fec351e6f4875ac8e245c5117",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.4.3.tar.xz",
+                                    "sha256": "c3aadd59bdb0ea4339b056f29972f92ee19fdc52f68eb78d32d2e4caf4d80c3a",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -974,8 +974,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-25.04.0.tar.xz",
-                                    "sha256": "b010c596dce127fba88532fd2f1043e55ea30601767952d0f2c0a80e7dc0da3d",
+                                    "url": "https://poppler.freedesktop.org/poppler-25.06.0.tar.xz",
+                                    "sha256": "8199532d38984fab46dbd0020ec9c40f20e928e33e9b4cc6043572603a821d83",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -987,7 +987,7 @@
                         },
                         {
                             "name": "mariadb-libs",
-                            "comment": "for mysql-boost",
+                            "x-comment": "for mysql-boost",
                             "config-opts": [
                                 "-DCOMPILATION_COMMENT=\"Flathub - QGIS\"",
                                 "-DCMAKE_BUILD_TYPE=Release",
@@ -1010,7 +1010,7 @@
                                     "type": "archive",
                                     "url": "https://dlm.mariadb.com/3656685/MariaDB/mariadb-11.1.3/source/mariadb-11.1.3.tar.gz",
                                     "sha256": "ad3aa6ae478179275ecb28e3ed8a578f2004f084e14409727c0bf04975ace36c",
-                                    "FIXME-x-checker-data": {
+                                    "x-FIXME-x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 1887,
                                         "url-template": "https://rsync.osuosl.org/pub/mariadb/mariadb-$version/source/mariadb-$version.tar.gz",
@@ -1030,8 +1030,8 @@
                                     "type": "file",
                                     "url": "https://files.pythonhosted.org/packages/65/6e/09db70a523a96d25e115e71cc56a6f9031e7b8cd166c1ac8438307c14058/numpy-1.26.4.tar.gz",
                                     "sha256": "2a02aba9ed12e4ac4eb3ea9421c420301a0c6460d9830d74a9df87efa4912010",
-                                    "---x-checker-data": {
-                                        "comment": "commented because numpy 2.0 wants a newer python",
+                                    "x---x-checker-data": {
+                                        "x-comment": "commented because numpy 2.0 wants a newer python",
                                         "type": "pypi",
                                         "name": "numpy"
                                     }
@@ -1170,11 +1170,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/KhronosGroup/OpenCL-Headers.git",
-                                    "tag": "v2024.10.24",
+                                    "tag": "v2025.06.13",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "4ea6df132107e3b4b9407f903204b5522fdffcd6"
+                                    "commit": "2e30669d48718fd460f085b4b35b160dad51ce9d"
                                 }
                             ]
                         },
@@ -1224,11 +1224,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
-                                    "tag": "v3.3.3",
+                                    "tag": "v3.3.4",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "da760aa4b6bee4b9d74b8c6a151221b035fc47b7"
+                                    "commit": "7ec1cf59a0409d9d5c60ed111da9831890fa8296"
                                 }
                             ],
                             "modules": [
@@ -1271,7 +1271,7 @@
                         },
                         {
                             "name": "expat",
-                            "comment": "This is on the FDO runtime, we need to bring it to work around https://github.com/libexpat/libexpat/issues/501",
+                            "x-comment": "This is on the FDO runtime, we need to bring it to work around https://github.com/libexpat/libexpat/issues/501",
                             "builddir": true,
                             "buildsystem": "cmake-ninja",
                             "subdir": "expat",
@@ -1330,8 +1330,8 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/abseil/abseil-cpp.git",
-                                    "tag": "20250512.0",
-                                    "commit": "bc257a88f7c1939f24e0379f14a3589e926c950c",
+                                    "tag": "20250512.1",
+                                    "commit": "76bb24329e8bf5f39704eb10d21b9a80befa7c81",
                                     "x-checker-data": {
                                         "type": "git",
                                         "tag-pattern": "^([\\d.]+)$"
@@ -1662,8 +1662,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/6b/11/cc635220681e93a0183390e26485430ca2c7b5f9d33b15c74c2861cb8091/urllib3-2.4.0-py3-none-any.whl",
-                            "sha256": "4e16665048960a0900c702d4a66415956a584919c03361cac9f1df5c5dd7e813",
+                            "url": "https://files.pythonhosted.org/packages/a7/c2/fe1e52489ae3122415c51f387e221dd0773709bad6c6cdaa599e8a2c5185/urllib3-2.5.0-py3-none-any.whl",
+                            "sha256": "e6b01673c0fa6a13e374b50871808eb3bf7046c4b125b216f6bf1cc604cff0dc",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "urllib3",
@@ -1672,8 +1672,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/f9/9b/335f9764261e915ed497fcdeb11df5dfd6f7bf257d4a6a2a686d80da4d54/requests-2.32.3-py3-none-any.whl",
-                            "sha256": "70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6",
+                            "url": "https://files.pythonhosted.org/packages/7c/e4/56027c4a6b4ae70ca9de302488c5ca95ad4a39e190093d6c1a8ace08341b/requests-2.32.4-py3-none-any.whl",
+                            "sha256": "27babd3cda2a6d50b30443204ee89830707d396671944c998b5975b031ac2b2c",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "requests",
@@ -1832,8 +1832,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v31.0",
-                            "commit": "3d4adad5c4c4e6a6f9f038769b8c90716065b0e4",
+                            "tag": "v31.1",
+                            "commit": "74211c0dfc2777318ab53c2cd2c317a2ef9012de",
                             "x-checker-data": {
                                 "type": "git"
                             }
