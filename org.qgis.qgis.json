@@ -337,8 +337,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.11.0/gdal-3.11.0.tar.xz",
-                            "sha256": "ba1a17a74428bfd5c789ce293f59b6a3d8bfabab747431c33331ac0ac579ea71",
+                            "url": "https://download.osgeo.org/gdal/3.11.1/gdal-3.11.1.tar.xz",
+                            "sha256": "21341b39a960295bd3194bcc5f119f773229b4701cd752499fbd850f3cc160fd",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -481,8 +481,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.4.3.tar.xz",
-                                    "sha256": "c3aadd59bdb0ea4339b056f29972f92ee19fdc52f68eb78d32d2e4caf4d80c3a",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.6.0.tar.xz",
+                                    "sha256": "d18ccdb78a5da88f18fc529d8a8d40fad455842be6b01c59796f47a6f5bc7fe5",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -949,11 +949,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/strukturag/libheif.git",
-                                    "tag": "v1.19.8",
+                                    "tag": "v1.20.0",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "5e9deb19fe6b3768af0bb8e9e5e8438b15171bf3"
+                                    "commit": "a6d433aef7c854ce3fcdb7662b55f8bbcaca36c2"
                                 }
                             ]
                         },
@@ -994,8 +994,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/PDAL/PDAL/releases/download/2.8.4/PDAL-2.8.4-src.tar.bz2",
-                            "sha256": "c27dc79af0b26f9cb3209b694703e9d576f1b0c8c05b36206fd5e310494e75b5",
+                            "url": "https://github.com/PDAL/PDAL/releases/download/2.9.0/PDAL-2.9.0-src.tar.bz2",
+                            "sha256": "f0be2f6575021d0c4751d5babd4c1096d4e5934f86f8461914e9f9c6dc63567d",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 138228,
@@ -1173,11 +1173,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v80.7.1",
+                            "tag": "v80.9.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "12ca0186ba7d9bf387d65400bb05205d0bcf9e56"
+                            "commit": "9c4d383631d3951fcae0afd73b5d08ff5a262976"
                         }
                     ]
                 },
@@ -1261,8 +1261,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/e8/9e/c05b3920a3b7d20d3d3310465f50348e5b3694f4f88c6daf736eef3024c4/certifi-2025.4.26.tar.gz",
-                            "sha256": "0a816057ea3cdefcef70270d2c515e4506bbc954f417fa5ade2021213bb8f0c6",
+                            "url": "https://files.pythonhosted.org/packages/73/f7/f14b46d4bcd21092d7d3ccef689615220d8a08fb25e564b65d20738e672e/certifi-2025.6.15.tar.gz",
+                            "sha256": "d747aa5a8b9bbbb1bb8c22bb13e22bd1f18e9796defa16bab421f7f7a317323b",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "certifi"
@@ -1370,8 +1370,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/76/3d/14e82fc7c8fb1b7761f7e748fd47e2ec8276d137b6acfe5a4bb73853e08f/lxml-5.4.0.tar.gz",
-                            "sha256": "d12832e1dbea4be280b22fd0ea7c9b87f0d8fc51ba06e92dc62d52f804f78ebd",
+                            "url": "https://files.pythonhosted.org/packages/c5/ed/60eb6fa2923602fba988d9ca7c5cdbd7cf25faa795162ed538b527a35411/lxml-6.0.0.tar.gz",
+                            "sha256": "032e65120339d44cdc3efc326c9f660f5f7205f3a535c1fdbf898b29ea01fb72",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "lxml"
