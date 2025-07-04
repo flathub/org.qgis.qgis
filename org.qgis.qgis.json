@@ -337,8 +337,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.11.0/gdal-3.11.0.tar.xz",
-                            "sha256": "ba1a17a74428bfd5c789ce293f59b6a3d8bfabab747431c33331ac0ac579ea71",
+                            "url": "https://download.osgeo.org/gdal/3.11.1/gdal-3.11.1.tar.xz",
+                            "sha256": "21341b39a960295bd3194bcc5f119f773229b4701cd752499fbd850f3cc160fd",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -481,8 +481,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.4.3.tar.xz",
-                                    "sha256": "c3aadd59bdb0ea4339b056f29972f92ee19fdc52f68eb78d32d2e4caf4d80c3a",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.6.0.tar.xz",
+                                    "sha256": "d18ccdb78a5da88f18fc529d8a8d40fad455842be6b01c59796f47a6f5bc7fe5",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -662,8 +662,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-25.06.0.tar.xz",
-                                    "sha256": "8199532d38984fab46dbd0020ec9c40f20e928e33e9b4cc6043572603a821d83",
+                                    "url": "https://poppler.freedesktop.org/poppler-25.07.0.tar.xz",
+                                    "sha256": "c504a9066dbdfebe377ad53cec641fd971ee96c4e1e8ca74e6c9c03d46d817ae",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -949,11 +949,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/strukturag/libheif.git",
-                                    "tag": "v1.19.8",
+                                    "tag": "v1.20.1",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "5e9deb19fe6b3768af0bb8e9e5e8438b15171bf3"
+                                    "commit": "f74700228336c8fa6d71f01d1fbbd8772985deea"
                                 }
                             ]
                         },
@@ -1370,8 +1370,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/76/3d/14e82fc7c8fb1b7761f7e748fd47e2ec8276d137b6acfe5a4bb73853e08f/lxml-5.4.0.tar.gz",
-                            "sha256": "d12832e1dbea4be280b22fd0ea7c9b87f0d8fc51ba06e92dc62d52f804f78ebd",
+                            "url": "https://files.pythonhosted.org/packages/c5/ed/60eb6fa2923602fba988d9ca7c5cdbd7cf25faa795162ed538b527a35411/lxml-6.0.0.tar.gz",
+                            "sha256": "032e65120339d44cdc3efc326c9f660f5f7205f3a535c1fdbf898b29ea01fb72",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "lxml"
