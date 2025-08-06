@@ -662,8 +662,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-25.07.0.tar.xz",
-                                    "sha256": "c504a9066dbdfebe377ad53cec641fd971ee96c4e1e8ca74e6c9c03d46d817ae",
+                                    "url": "https://poppler.freedesktop.org/poppler-25.08.0.tar.xz",
+                                    "sha256": "425ed4d4515a093bdcdbbaac6876f20617451edc710df6a4fd6c45dd67eb418d",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -949,11 +949,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/strukturag/libheif.git",
-                                    "tag": "v1.20.1",
+                                    "tag": "v1.20.2",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "f74700228336c8fa6d71f01d1fbbd8772985deea"
+                                    "commit": "35dad50a9145332a7bfdf1ff6aef6801fb613d68"
                                 }
                             ]
                         },
@@ -1042,8 +1042,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.kde.org/stable/qca/2.3.9/qca-2.3.9.tar.xz",
-                            "sha256": "c555d5298cdd7b6bafe2b1f96106f30cfa543a23d459d50c8a91eac33c476e4e",
+                            "url": "https://download.kde.org/stable/qca/2.3.10/qca-2.3.10.tar.xz",
+                            "sha256": "1c5b722da93d559365719226bb121c726ec3c0dc4c67dea34f1e50e4e0d14a02",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 13606,
@@ -1177,11 +1177,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v80.7.1",
+                            "tag": "v80.9.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "12ca0186ba7d9bf387d65400bb05205d0bcf9e56"
+                            "commit": "9c4d383631d3951fcae0afd73b5d08ff5a262976"
                         }
                     ]
                 },
@@ -1265,8 +1265,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/e8/9e/c05b3920a3b7d20d3d3310465f50348e5b3694f4f88c6daf736eef3024c4/certifi-2025.4.26.tar.gz",
-                            "sha256": "0a816057ea3cdefcef70270d2c515e4506bbc954f417fa5ade2021213bb8f0c6",
+                            "url": "https://files.pythonhosted.org/packages/dc/67/960ebe6bf230a96cda2e0abcf73af550ec4f090005363542f0765df162e0/certifi-2025.8.3.tar.gz",
+                            "sha256": "e564105f78ded564e3ae7c923924435e1daa7463faeab5bb932bc53ffae63407",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "certifi"
@@ -1314,8 +1314,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/92/ef/c6deb083748be3bcad6f471b6ae983950c161890bf5ae1b2af80cc56c530/trove_classifiers-2025.5.9.12-py3-none-any.whl",
-                            "sha256": "e381c05537adac78881c8fa345fd0e9970159f4e4a04fcc42cfd3129cca640ce",
+                            "url": "https://files.pythonhosted.org/packages/d5/44/323a87d78f04d5329092aada803af3612dd004a64b69ba8b13046601a8c9/trove_classifiers-2025.8.6.13-py3-none-any.whl",
+                            "sha256": "c4e7fc83012770d80b3ae95816111c32b085716374dccee0d3fbf5c235495f9f",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "trove-classifiers",
