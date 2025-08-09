@@ -481,8 +481,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.6.1.tar.xz",
-                                    "sha256": "bec67f368fc61673c4c9e9429d20135a42ba80a2c7f8592b912e5f97e289bfc0",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.6.2.tar.xz",
+                                    "sha256": "49ddb76670b1d1a142f760637e653ec5b20ba730e7630a2f3c2b13d324c37e08",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -662,8 +662,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-25.07.0.tar.xz",
-                                    "sha256": "c504a9066dbdfebe377ad53cec641fd971ee96c4e1e8ca74e6c9c03d46d817ae",
+                                    "url": "https://poppler.freedesktop.org/poppler-25.08.0.tar.xz",
+                                    "sha256": "425ed4d4515a093bdcdbbaac6876f20617451edc710df6a4fd6c45dd67eb418d",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -927,11 +927,11 @@
                                         {
                                             "type": "git",
                                             "url": "https://github.com/AcademySoftwareFoundation/Imath.git",
-                                            "tag": "v3.1.12",
+                                            "tag": "v3.2.0",
                                             "x-checker-data": {
                                                 "type": "git"
                                             },
-                                            "commit": "c0396a055a01bc537d32f435aee11a9b7ed6f0b5"
+                                            "commit": "9ff104bd3a40b8c3f811fdbd3f217c32d45e4a11"
                                         }
                                     ],
                                     "modules": []
@@ -949,11 +949,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/strukturag/libheif.git",
-                                    "tag": "v1.20.1",
+                                    "tag": "v1.20.2",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "f74700228336c8fa6d71f01d1fbbd8772985deea"
+                                    "commit": "35dad50a9145332a7bfdf1ff6aef6801fb613d68"
                                 }
                             ]
                         },
@@ -1042,8 +1042,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.kde.org/stable/qca/2.3.9/qca-2.3.9.tar.xz",
-                            "sha256": "c555d5298cdd7b6bafe2b1f96106f30cfa543a23d459d50c8a91eac33c476e4e",
+                            "url": "https://download.kde.org/stable/qca/2.3.10/qca-2.3.10.tar.xz",
+                            "sha256": "1c5b722da93d559365719226bb121c726ec3c0dc4c67dea34f1e50e4e0d14a02",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 13606,
