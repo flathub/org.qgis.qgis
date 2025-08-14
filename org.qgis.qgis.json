@@ -481,8 +481,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.6.2.tar.xz",
-                                    "sha256": "49ddb76670b1d1a142f760637e653ec5b20ba730e7630a2f3c2b13d324c37e08",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.6.3.tar.xz",
+                                    "sha256": "ad1e2aa5b90a389ab714e2d00972ce64da42582b17dd89c18935358551e6e205",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -1265,8 +1265,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/e8/9e/c05b3920a3b7d20d3d3310465f50348e5b3694f4f88c6daf736eef3024c4/certifi-2025.4.26.tar.gz",
-                            "sha256": "0a816057ea3cdefcef70270d2c515e4506bbc954f417fa5ade2021213bb8f0c6",
+                            "url": "https://files.pythonhosted.org/packages/dc/67/960ebe6bf230a96cda2e0abcf73af550ec4f090005363542f0765df162e0/certifi-2025.8.3.tar.gz",
+                            "sha256": "e564105f78ded564e3ae7c923924435e1daa7463faeab5bb932bc53ffae63407",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "certifi"
@@ -1284,8 +1284,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/20/94/c5790835a017658cbfabd07f3bfb549140c3ac458cfc196323996b10095a/charset_normalizer-3.4.2-py3-none-any.whl",
-                            "sha256": "7f56930ab0abd1c45cd15be65cc741c28b1c9a34876ce8c17a2fa107810c0af0",
+                            "url": "https://files.pythonhosted.org/packages/8a/1f/f041989e93b001bc4e44bb1669ccdcf54d3f00e628229a85b08d330615c5/charset_normalizer-3.4.3-py3-none-any.whl",
+                            "sha256": "ce571ab16d890d23b5c278547ba694193a45011ff86a9162a71307ed9f86759a",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "charset-normalizer",
@@ -1314,8 +1314,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/92/ef/c6deb083748be3bcad6f471b6ae983950c161890bf5ae1b2af80cc56c530/trove_classifiers-2025.5.9.12-py3-none-any.whl",
-                            "sha256": "e381c05537adac78881c8fa345fd0e9970159f4e4a04fcc42cfd3129cca640ce",
+                            "url": "https://files.pythonhosted.org/packages/d5/44/323a87d78f04d5329092aada803af3612dd004a64b69ba8b13046601a8c9/trove_classifiers-2025.8.6.13-py3-none-any.whl",
+                            "sha256": "c4e7fc83012770d80b3ae95816111c32b085716374dccee0d3fbf5c235495f9f",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "trove-classifiers",
