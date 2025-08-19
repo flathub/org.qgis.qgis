@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.44.1.tar.bz2",
-                    "sha256": "b228ef7093da0e9f7a594b93a57ef737cdefd8c07b84ccff251da1f7d2bb6f4b",
+                    "url": "https://qgis.org/downloads/qgis-3.44.2.tar.bz2",
+                    "sha256": "21f789e1b61384cf03432af306bc977b42d8c77c55ad48562ea1e914a5495961",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -222,8 +222,14 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://www.sqlite.org/2025/sqlite-autoconf-3490100.tar.gz",
-                                    "sha256": "106642d8ccb36c5f7323b64e4152e9b719f7c0215acf5bfeac3d5e7f97b59254"
+                                    "url": "https://www.sqlite.org/2025/sqlite-autoconf-3500400.tar.gz",
+                                    "sha256": "a3db587a1b92ee5ddac2f66b3edb41b26f9c867275782d46c3a088977d6a5b18",
+                                    "x-checker-data": {
+                                        "type": "anitya",
+                                        "project-id": 4877,
+                                        "stable-only": true,
+                                        "url-template": "https://www.sqlite.org/2025/sqlite-autoconf-${major}${minor}0${patch}00.tar.gz"
+                                    }
                                 }
                             ]
                         }
@@ -552,13 +558,12 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://downloads.sourceforge.net/project/boost/boost/1.88.0/boost_1_88_0.tar.bz2",
-                                    "sha256": "46d9d2c06637b219270877c9e16155cbd015b6dc84349af064c088e9b5b12f7b",
+                                    "url": "https://archives.boost.io/release/1.89.0/source/boost_1_89_0.tar.bz2",
+                                    "sha256": "85a33fa22621b4f314f8e85e1a5e2a9363d22e4f4992925d4bb3bc631b5a0c7a",
                                     "x-checker-data": {
-                                        "type": "html",
-                                        "url": "https://www.boost.org/feed/downloads.rss",
-                                        "version-pattern": "<link>https://www.boost.org/users/history/version_([\\d_]+).html</link>",
-                                        "url-template": "https://downloads.sourceforge.net/project/boost/boost/$version0.$version2.$version4/boost_$version.tar.bz2"
+                                        "type": "anitya",
+                                        "project-id": 6845,
+                                        "url-template": "https://archives.boost.io/release/$version/source/boost_${major}_${minor}_$patch.tar.bz2"
                                     }
                                 }
                             ]
@@ -927,11 +932,11 @@
                                         {
                                             "type": "git",
                                             "url": "https://github.com/AcademySoftwareFoundation/Imath.git",
-                                            "tag": "v3.2.0",
+                                            "tag": "v3.2.1",
                                             "x-checker-data": {
                                                 "type": "git"
                                             },
-                                            "commit": "9ff104bd3a40b8c3f811fdbd3f217c32d45e4a11"
+                                            "commit": "fbcfb9833fe78277299080e8700fcf749a468bb0"
                                         }
                                     ],
                                     "modules": []
@@ -1022,8 +1027,8 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/abseil/abseil-cpp.git",
-                                    "tag": "20250512.1",
-                                    "commit": "76bb24329e8bf5f39704eb10d21b9a80befa7c81",
+                                    "tag": "20250814.0",
+                                    "commit": "987c57f325f7fa8472fa84e1f885f7534d391b0d",
                                     "x-checker-data": {
                                         "type": "git",
                                         "tag-pattern": "^([\\d.]+)$"
@@ -1070,8 +1075,14 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://sourceforge.net/projects/qwt/files/qwt/6.1.5/qwt-6.1.5.zip",
-                            "sha256": "a1208783c2639101b11a9f359d98eaf007e95f7292f1c1df5514884dd8b4373d"
+                            "url": "https://sourceforge.net/projects/qwt/files/qwt/6.3.0/qwt-6.3.0.tar.bz2",
+                            "sha256": "dcb085896c28aaec5518cbc08c0ee2b4e60ada7ac929d82639f6189851a6129a",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 4147,
+                                "stable-only": true,
+                                "url-template": "https://sourceforge.net/projects/qwt/files/qwt/$version/qwt-$version.tar.bz2"
+                            }
                         },
                         {
                             "type": "shell",
@@ -1095,8 +1106,14 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://libzip.org/download/libzip-1.6.1.tar.xz",
-                            "sha256": "705dac7a671b3f440181481e607b0908129a9cf1ddfcba75d66436c0e7d33641"
+                            "url": "https://libzip.org/download/libzip-1.11.4.tar.xz",
+                            "sha256": "8a247f57d1e3e6f6d11413b12a6f28a9d388de110adc0ec608d893180ed7097b",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 10649,
+                                "stable-only": true,
+                                "url-template": "https://libzip.org/download/libzip-$version.tar.xz"
+                            }
                         }
                     ]
                 },
@@ -1105,8 +1122,14 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "http://ftp.halifax.rwth-aachen.de/gnu/gsl/gsl-2.6.tar.gz",
-                            "sha256": "b782339fc7a38fe17689cb39966c4d821236c28018b6593ddb6fd59ee40786a8"
+                            "url": "https://ftp.gnu.org/gnu/gsl/gsl-2.8.tar.gz",
+                            "sha256": "6a99eeed15632c6354895b1dd542ed5a855c0f15d9ad1326c6fe2b2c9e423190",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 1267,
+                                "stable-only": true,
+                                "url-template": "https://ftp.gnu.org/gnu/gsl/gsl-$version.tar.gz"
+                            }
                         }
                     ]
                 },
@@ -1364,8 +1387,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/7c/e4/56027c4a6b4ae70ca9de302488c5ca95ad4a39e190093d6c1a8ace08341b/requests-2.32.4-py3-none-any.whl",
-                            "sha256": "27babd3cda2a6d50b30443204ee89830707d396671944c998b5975b031ac2b2c",
+                            "url": "https://files.pythonhosted.org/packages/1e/db/4254e3eabe8020b458f1a747140d32277ec7a271daf1d235b70dc0b4e6e3/requests-2.32.5-py3-none-any.whl",
+                            "sha256": "2462f94637a34fd532264295e186976db0f5d453d1cdd31473c85a6a161affb6",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "requests",
@@ -1383,9 +1406,13 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://github.com/geopython/OWSLib/archive/refs/tags/0.29.3.tar.gz",
-                            "sha256": "e6e57c6dfe9200ad6cb5e77a4fbb9cf52828bcdb897f1555b89332c0d3213699",
-                            "dest-filename": "owslib.tar.gz"
+                            "url": "https://files.pythonhosted.org/packages/0d/4a/295df99278ec1c4f164baa9340ee58d5b2f637e60c23e4dae4cd945713b7/owslib-0.34.1.tar.gz",
+                            "sha256": "9c46d59dc03c753912fc3ef3136dbc843dad7572feb1af2cdf0fc5d1a0959028",
+                            "dest-filename": "owslib.tar.gz",
+                            "x-checker-data": {
+                                "type": "pypi",
+                                "name": "OWSLib"
+                            }
                         }
                     ]
                 },
