@@ -93,8 +93,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "http://download.osgeo.org/geos/geos-3.13.1.tar.bz2",
-                            "sha256": "df2c50503295f325e7c8d7b783aca8ba4773919cde984193850cf9e361dfd28c",
+                            "url": "http://download.osgeo.org/geos/geos-3.14.0.tar.bz2",
+                            "sha256": "fe85286b1977121894794b36a7464d05049361bedabf972e70d8f9bf1e3ce928",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 13493,
@@ -487,8 +487,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.6.3.tar.xz",
-                                    "sha256": "ad1e2aa5b90a389ab714e2d00972ce64da42582b17dd89c18935358551e6e205",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-15.0.1.tar.xz",
+                                    "sha256": "f520a0d50bbafccd7b9e793321cd7ffed374695c2e38bbdfd428841745e04c37",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -1219,11 +1219,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pyproj4/pyproj.git",
-                            "tag": "3.7.1",
+                            "tag": "3.7.2",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "0aa1b386790d9a0b6289a098bc6acd0d1f222984"
+                            "commit": "f16037d2c45c3274ef28b828998267c3390393c8"
                         }
                     ]
                 },
@@ -1288,8 +1288,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/e8/9e/c05b3920a3b7d20d3d3310465f50348e5b3694f4f88c6daf736eef3024c4/certifi-2025.4.26.tar.gz",
-                            "sha256": "0a816057ea3cdefcef70270d2c515e4506bbc954f417fa5ade2021213bb8f0c6",
+                            "url": "https://files.pythonhosted.org/packages/dc/67/960ebe6bf230a96cda2e0abcf73af550ec4f090005363542f0765df162e0/certifi-2025.8.3.tar.gz",
+                            "sha256": "e564105f78ded564e3ae7c923924435e1daa7463faeab5bb932bc53ffae63407",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "certifi"
