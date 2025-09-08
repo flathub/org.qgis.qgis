@@ -93,8 +93,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "http://download.osgeo.org/geos/geos-3.13.1.tar.bz2",
-                            "sha256": "df2c50503295f325e7c8d7b783aca8ba4773919cde984193850cf9e361dfd28c",
+                            "url": "http://download.osgeo.org/geos/geos-3.14.0.tar.bz2",
+                            "sha256": "fe85286b1977121894794b36a7464d05049361bedabf972e70d8f9bf1e3ce928",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 13493,
@@ -446,8 +446,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://github.com/uriparser/uriparser/releases/download/uriparser-0.9.8/uriparser-0.9.8.tar.bz2",
-                                    "sha256": "72d1b559be3a1806f788a3d9be34a1b063d42aa238b29ba4ee633d6effcd33bd",
+                                    "url": "https://github.com/uriparser/uriparser/releases/download/uriparser-0.9.9/uriparser-0.9.9.tar.bz2",
+                                    "sha256": "027b923c0ce89786d8cf7a842ef77dcfff3a6a097c0e67d241b447d1eae8db4c",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 10160,
@@ -487,8 +487,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-14.6.3.tar.xz",
-                                    "sha256": "ad1e2aa5b90a389ab714e2d00972ce64da42582b17dd89c18935358551e6e205",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-15.0.2.tar.xz",
+                                    "sha256": "990ab4ccb7eff1b6d70409e9aa7fa4119877ac5f5d10ba219e98460ab3e4d6eb",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -667,8 +667,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-25.08.0.tar.xz",
-                                    "sha256": "425ed4d4515a093bdcdbbaac6876f20617451edc710df6a4fd6c45dd67eb418d",
+                                    "url": "https://poppler.freedesktop.org/poppler-25.09.1.tar.xz",
+                                    "sha256": "0c1091d01d3dd1664a13816861e812d02b29201e96665454b81b52d261fad658",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -917,11 +917,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
-                                    "tag": "v3.3.5",
+                                    "tag": "v3.4.0",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "6661cb40c6fa8d332f142e660e25ac96675c15bd"
+                                    "commit": "20a65852895894434bea88613f6d29ac8e88bd6e"
                                 }
                             ],
                             "modules": [
@@ -999,8 +999,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/PDAL/PDAL/releases/download/2.9.0/PDAL-2.9.0-src.tar.bz2",
-                            "sha256": "f0be2f6575021d0c4751d5babd4c1096d4e5934f86f8461914e9f9c6dc63567d",
+                            "url": "https://github.com/PDAL/PDAL/releases/download/2.9.2/PDAL-2.9.2-src.tar.bz2",
+                            "sha256": "a74bbc7f4e4f709ed589dbbb851926a63c391c974e3fc40a4c3ff34f7923021b",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 138228,
@@ -1219,11 +1219,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pyproj4/pyproj.git",
-                            "tag": "3.7.1",
+                            "tag": "3.7.2",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "0aa1b386790d9a0b6289a098bc6acd0d1f222984"
+                            "commit": "f16037d2c45c3274ef28b828998267c3390393c8"
                         }
                     ]
                 },
@@ -1288,8 +1288,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/e8/9e/c05b3920a3b7d20d3d3310465f50348e5b3694f4f88c6daf736eef3024c4/certifi-2025.4.26.tar.gz",
-                            "sha256": "0a816057ea3cdefcef70270d2c515e4506bbc954f417fa5ade2021213bb8f0c6",
+                            "url": "https://files.pythonhosted.org/packages/dc/67/960ebe6bf230a96cda2e0abcf73af550ec4f090005363542f0765df162e0/certifi-2025.8.3.tar.gz",
+                            "sha256": "e564105f78ded564e3ae7c923924435e1daa7463faeab5bb932bc53ffae63407",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "certifi"
@@ -1337,8 +1337,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/d5/44/323a87d78f04d5329092aada803af3612dd004a64b69ba8b13046601a8c9/trove_classifiers-2025.8.6.13-py3-none-any.whl",
-                            "sha256": "c4e7fc83012770d80b3ae95816111c32b085716374dccee0d3fbf5c235495f9f",
+                            "url": "https://files.pythonhosted.org/packages/4a/40/d54944eeb5646fb4b1c98d4601fe5e0812dd2e7c0aa94d53fc46457effc8/trove_classifiers-2025.8.26.11-py3-none-any.whl",
+                            "sha256": "887fb0a402bdbecd4415a52c06e6728f8bdaa506a7143372d2b893e2c5e2d859",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "trove-classifiers",
@@ -1397,8 +1397,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/c5/ed/60eb6fa2923602fba988d9ca7c5cdbd7cf25faa795162ed538b527a35411/lxml-6.0.0.tar.gz",
-                            "sha256": "032e65120339d44cdc3efc326c9f660f5f7205f3a535c1fdbf898b29ea01fb72",
+                            "url": "https://files.pythonhosted.org/packages/8f/bd/f9d01fd4132d81c6f43ab01983caea69ec9614b913c290a26738431a015d/lxml-6.0.1.tar.gz",
+                            "sha256": "2b3a882ebf27dd026df3801a87cf49ff791336e0f94b0fad195db77e01240690",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "lxml"
@@ -1526,11 +1526,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/Exiv2/exiv2.git",
-                            "tag": "v0.28.5",
+                            "tag": "v0.28.7",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "907169fa643c2c74c14fd4106e55eaeee3634d9f"
+                            "commit": "afcb7a8ba84a7de36d2f1ee7689394e078697956"
                         }
                     ]
                 },
