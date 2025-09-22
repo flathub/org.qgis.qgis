@@ -913,6 +913,12 @@
                         {
                             "name": "openexr",
                             "buildsystem": "cmake-ninja",
+                            "config-opts": [
+                                "--trace-expand",
+                                "-DOPENEXR_BUILD_TOOLS=OFF",
+                                "-DOPENEXR_BUILD_EXAMPLES=OFF",
+                                "-DBUILD_TESTING=OFF"
+                            ],
                             "sources": [
                                 {
                                     "type": "git",
@@ -938,8 +944,25 @@
                                             },
                                             "commit": "fbcfb9833fe78277299080e8700fcf749a468bb0"
                                         }
+                                    ]
+                                },
+                                {
+                                    "name": "OpenJPH",
+                                    "buildsystem": "cmake-ninja",
+                                    "config-opts": [
+                                        "-DOJPH_ENABLE_TIFF_SUPPORT=OFF",
+                                        "-DOJPH_BUILD_EXECUTABLES=OFF"
                                     ],
-                                    "modules": []
+                                    "sources": [
+                                        {
+                                            "type": "git",
+                                            "url": "https://github.com/aous72/OpenJPH.git",
+                                            "tag": "0.22.0",
+                                            "x-checker-data": {
+                                                "type": "git"
+                                            }
+                                        }
+                                    ]
                                 }
                             ]
                         },
