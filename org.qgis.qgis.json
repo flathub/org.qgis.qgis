@@ -1278,7 +1278,7 @@
                         "pip3 install --prefix=/app hatchling-*",
                         "pip3 install --prefix=/app urllib3-*",
                         "pip3 install --prefix=/app idna-*",
-                        "pip3 install --prefix=/app certifi-*",
+                        "pip3 install --prefix=/app --no-build-isolation certifi-*",
                         "pip3 install --prefix=/app charset_normalizer-*",
                         "pip3 install --prefix=/app requests-*",
                         "pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"lxml\" --no-build-isolation",
