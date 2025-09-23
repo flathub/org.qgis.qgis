@@ -1030,10 +1030,6 @@
                                 "url-template": "https://github.com/PDAL/PDAL/releases/download/$version/PDAL-$version-src.tar.bz2",
                                 "stable-only": true
                             }
-                        },
-                        {
-                            "type": "patch",
-                            "path": "0001-Fix-build-without-googletest-when-WITH_TESTS-OFF-475.patch"
                         }
                     ],
                     "modules": [
