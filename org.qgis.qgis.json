@@ -957,10 +957,11 @@
                                         {
                                             "type": "git",
                                             "url": "https://github.com/aous72/OpenJPH.git",
-                                            "tag": "0.22.0",
+                                            "tag": "0.24.1",
                                             "x-checker-data": {
                                                 "type": "git"
-                                            }
+                                            },
+                                            "commit": "d806e58a5e09aa51ab5fc6f44626703b675cb301"
                                         }
                                     ]
                                 }
@@ -1000,12 +1001,12 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/libexpat/libexpat.git",
-                                    "tag": "R_2_7_2",
+                                    "tag": "R_2_7_3",
                                     "x-checker-data": {
                                         "type": "git",
                                         "tag-pattern": "^(R_[0-9_]+)$"
                                     },
-                                    "commit": "7643f96bd5b9f5d3b26ea112519e05e17ef91cfb"
+                                    "commit": "4575e52f83e0d6d7bd24939eab8952bbc7bc358f"
                                 }
                             ]
                         }
