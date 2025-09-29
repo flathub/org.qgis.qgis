@@ -957,10 +957,7 @@
                                         {
                                             "type": "git",
                                             "url": "https://github.com/aous72/OpenJPH.git",
-                                            "tag": "0.22.0",
-                                            "x-checker-data": {
-                                                "type": "git"
-                                            }
+                                            "tag": "0.22.0"
                                         }
                                     ]
                                 }
