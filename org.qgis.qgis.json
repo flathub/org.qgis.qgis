@@ -260,8 +260,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "http://www.unixodbc.org/unixODBC-2.3.12.tar.gz",
-                            "sha256": "f210501445ce21bf607ba51ef8c125e10e22dffdffec377646462df5f01915ec",
+                            "url": "http://www.unixodbc.org/unixODBC-2.3.13.tar.gz",
+                            "sha256": "119afef5f4cb04e780ca6cf763265b9fb2b99c4c11349a3f9cab14069d2c7c2b",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 7344,
@@ -468,12 +468,12 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/HEASARC/cfitsio.git",
-                                    "tag": "cfitsio-4.6.2",
+                                    "tag": "cfitsio-4.6.3",
                                     "x-checker-data": {
                                         "type": "git",
                                         "tag-pattern": "^(.+)$"
                                     },
-                                    "commit": "1d2f37b1bc8e6d5e8cf8cd497314680322063468"
+                                    "commit": "386e719ccc5e30ca497ec2df57c4ef1de5adbc3f"
                                 }
                             ]
                         },
@@ -667,8 +667,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-25.09.1.tar.xz",
-                                    "sha256": "0c1091d01d3dd1664a13816861e812d02b29201e96665454b81b52d261fad658",
+                                    "url": "https://poppler.freedesktop.org/poppler-25.10.0.tar.xz",
+                                    "sha256": "6b5e9bb64dabb15787a14db1675291c7afaf9387438cc93a4fb7f6aec4ee6fe0",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -1303,8 +1303,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/dc/67/960ebe6bf230a96cda2e0abcf73af550ec4f090005363542f0765df162e0/certifi-2025.8.3.tar.gz",
-                            "sha256": "e564105f78ded564e3ae7c923924435e1daa7463faeab5bb932bc53ffae63407",
+                            "url": "https://files.pythonhosted.org/packages/4c/5b/b6ce21586237c77ce67d01dc5507039d444b630dd76611bbca2d8e5dcd91/certifi-2025.10.5.tar.gz",
+                            "sha256": "47c09d31ccf2acf0be3f701ea53595ee7e0b8fa08801c6624be771df09ae7b43",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "certifi"
