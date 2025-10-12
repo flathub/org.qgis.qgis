@@ -468,12 +468,12 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/HEASARC/cfitsio.git",
-                                    "tag": "cfitsio-4.6.2",
+                                    "tag": "cfitsio-4.6.3",
                                     "x-checker-data": {
                                         "type": "git",
                                         "tag-pattern": "^(.+)$"
                                     },
-                                    "commit": "1d2f37b1bc8e6d5e8cf8cd497314680322063468"
+                                    "commit": "386e719ccc5e30ca497ec2df57c4ef1de5adbc3f"
                                 }
                             ]
                         },
@@ -923,11 +923,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
-                                    "tag": "v3.4.0",
+                                    "tag": "v3.4.1",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "20a65852895894434bea88613f6d29ac8e88bd6e"
+                                    "commit": "3923db9c4aef34d67783e7bc64f6b6eb7028268f"
                                 }
                             ],
                             "modules": [
@@ -938,11 +938,11 @@
                                         {
                                             "type": "git",
                                             "url": "https://github.com/AcademySoftwareFoundation/Imath.git",
-                                            "tag": "v3.2.1",
+                                            "tag": "v3.2.2",
                                             "x-checker-data": {
                                                 "type": "git"
                                             },
-                                            "commit": "fbcfb9833fe78277299080e8700fcf749a468bb0"
+                                            "commit": "1e480d11cb98b032a2dece9b9a8730512effc7f6"
                                         }
                                     ]
                                 },
@@ -1303,8 +1303,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/dc/67/960ebe6bf230a96cda2e0abcf73af550ec4f090005363542f0765df162e0/certifi-2025.8.3.tar.gz",
-                            "sha256": "e564105f78ded564e3ae7c923924435e1daa7463faeab5bb932bc53ffae63407",
+                            "url": "https://files.pythonhosted.org/packages/4c/5b/b6ce21586237c77ce67d01dc5507039d444b630dd76611bbca2d8e5dcd91/certifi-2025.10.5.tar.gz",
+                            "sha256": "47c09d31ccf2acf0be3f701ea53595ee7e0b8fa08801c6624be771df09ae7b43",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "certifi"
@@ -1312,8 +1312,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/76/c6/c88e154df9c4e1a2a66ccf0005a88dfb2650c1dffb6f5ce603dfbd452ce3/idna-3.10-py3-none-any.whl",
-                            "sha256": "946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3",
+                            "url": "https://files.pythonhosted.org/packages/0e/61/66938bbb5fc52dbdf84594873d5b51fb1f7c7794e9c0f5bd885f30bc507b/idna-3.11-py3-none-any.whl",
+                            "sha256": "771a87f49d9defaf64091e6e6fe9c18d4833f140bd19464795bc32d966ca37ea",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "idna",
@@ -1432,11 +1432,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/psycopg/psycopg2.git",
-                            "tag": "2.9.10",
+                            "tag": "2.9.11",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "a805acf59f402f554e95624b5e27518169ca7715"
+                            "commit": "fd9ae8cad2bcfc3e7e9410e7b6f07cda8f4f05ec"
                         }
                     ]
                 },
