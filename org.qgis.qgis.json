@@ -1,9 +1,9 @@
 {
     "id": "org.qgis.qgis",
     "base": "com.riverbankcomputing.PyQt.BaseApp",
-    "base-version": "5.15-24.08",
+    "base-version": "6.9",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-24.08",
+    "runtime-version": "6.9",
     "sdk": "org.kde.Sdk",
     "command": "qgis",
     "rename-icon": "qgis",
@@ -52,6 +52,7 @@
                 }
             ],
             "config-opts": [
+                "-DBUILD_WITH_QT6=TRUE",
                 "-DENABLE_TESTS=FALSE",
                 "-DWITH_3D=TRUE",
                 "-DGRASS_PREFIX8=/app/grass84",
@@ -62,9 +63,6 @@
                 "-DWITH_QUICK=ON",
                 "-DWITH_PDAL=TRUE",
                 "-DWITH_QTWEBKIT=FALSE",
-                "-DHAS_KDE_QT5_PDF_TRANSFORM_FIX=TRUE",
-                "-DHAS_KDE_QT5_SMALL_CAPS_FIX=TRUE",
-                "-DHAS_KDE_QT5_FONT_STRETCH_FIX=TRUE",
                 "-DSIP_BUILD_EXTRA_OPTIONS=--target-dir=/app/lib/python3.12/site-packages"
             ],
             "modules": [
@@ -655,7 +653,8 @@
                                 "-DENABLE_GLIB=OFF",
                                 "-DENABLE_GOBJECT_INTROSPECTION=OFF",
                                 "-DENABLE_UTILS=OFF",
-                                "-DENABLE_QT6=OFF",
+                                "-DENABLE_QT6=ON",
+                                "-DENABLE_QT5=OFF",
                                 "-DENABLE_LIBOPENJPEG=openjpeg2"
                             ],
                             "cleanup": [
@@ -1058,7 +1057,8 @@
                     "name": "qca",
                     "buildsystem": "cmake-ninja",
                     "config-opts": [
-                        "-DBUILD_TESTS=OFF"
+                        "-DBUILD_TESTS=OFF",
+                        "-DBUILD_WITH_QT6=ON"
                     ],
                     "sources": [
                         {
@@ -1568,6 +1568,7 @@
                     "name": "qtkeychain",
                     "buildsystem": "cmake-ninja",
                     "config-opts": [
+                        "-DBUILD_WITH_QT6=ON",
                         "-DCMAKE_INSTALL_LIBDIR=/app/lib",
                         "-DLIB_INSTALL_DIR=/app/lib",
                         "-DBUILD_TRANSLATIONS=NO"
