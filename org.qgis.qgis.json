@@ -369,8 +369,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "http://prdownloads.sourceforge.net/swig/swig-4.3.1.tar.gz",
-                                    "sha256": "44fc829f70f1e17d635a2b4d69acab38896699ecc24aa023e516e0eabbec61b8",
+                                    "url": "http://prdownloads.sourceforge.net/swig/swig-4.4.0.tar.gz",
+                                    "sha256": "c3f8e5dcd68c18aa19847b33b0a1bb92f07e904c53ae9cf5ae4ff8727a72927e",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 4919,
@@ -487,8 +487,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-15.0.3.tar.xz",
-                                    "sha256": "9f55ec10f0a91fb6479ab4ed2b37a52445aee917706a238d170b5220c022fe43",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-15.2.0.tar.xz",
+                                    "sha256": "2f71c0661fc4a46e2dd56b7651cf3bb5928b499a4b10df31efc1a4241edf0043",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -667,8 +667,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-25.09.1.tar.xz",
-                                    "sha256": "0c1091d01d3dd1664a13816861e812d02b29201e96665454b81b52d261fad658",
+                                    "url": "https://poppler.freedesktop.org/poppler-25.10.0.tar.xz",
+                                    "sha256": "6b5e9bb64dabb15787a14db1675291c7afaf9387438cc93a4fb7f6aec4ee6fe0",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
