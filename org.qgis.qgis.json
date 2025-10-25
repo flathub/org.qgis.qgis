@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.44.3.tar.bz2",
-                    "sha256": "fb8f1407a0cf2ac776e16bfbc7576217fe1760d1e0789446187c5df8e381b69d",
+                    "url": "https://qgis.org/downloads/qgis-3.44.4.tar.bz2",
+                    "sha256": "e54d407c5fe921f31ec69104f8d4abbed310b277379e0a5e20af21d46565da0d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -369,8 +369,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "http://prdownloads.sourceforge.net/swig/swig-4.3.1.tar.gz",
-                                    "sha256": "44fc829f70f1e17d635a2b4d69acab38896699ecc24aa023e516e0eabbec61b8",
+                                    "url": "http://prdownloads.sourceforge.net/swig/swig-4.4.0.tar.gz",
+                                    "sha256": "c3f8e5dcd68c18aa19847b33b0a1bb92f07e904c53ae9cf5ae4ff8727a72927e",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 4919,
@@ -487,8 +487,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-15.0.3.tar.xz",
-                                    "sha256": "9f55ec10f0a91fb6479ab4ed2b37a52445aee917706a238d170b5220c022fe43",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-15.2.0.tar.xz",
+                                    "sha256": "2f71c0661fc4a46e2dd56b7651cf3bb5928b499a4b10df31efc1a4241edf0043",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
