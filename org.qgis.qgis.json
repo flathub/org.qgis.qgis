@@ -114,11 +114,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/libspatialindex/libspatialindex.git",
-                            "commit": "175b56a9541e76982d13dbbf0c9b8f0b8d752619",
-                            "tag": "2.1.0",
-                            "x-checker-data": {
-                                "type": "git"
-                            }
+                            "commit": "4a3bd449b9f2858d31a4619ba60bae6d1d30b77d",
+                            "tag": "2.0.0"
                         }
                     ]
                 },
