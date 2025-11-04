@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.44.3.tar.bz2",
-                    "sha256": "fb8f1407a0cf2ac776e16bfbc7576217fe1760d1e0789446187c5df8e381b69d",
+                    "url": "https://qgis.org/downloads/qgis-3.44.4.tar.bz2",
+                    "sha256": "e54d407c5fe921f31ec69104f8d4abbed310b277379e0a5e20af21d46565da0d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -93,8 +93,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "http://download.osgeo.org/geos/geos-3.14.0.tar.bz2",
-                            "sha256": "fe85286b1977121894794b36a7464d05049361bedabf972e70d8f9bf1e3ce928",
+                            "url": "http://download.osgeo.org/geos/geos-3.14.1.tar.bz2",
+                            "sha256": "3c20919cda9a505db07b5216baa980bacdaa0702da715b43f176fb07eff7e716",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 13493,
@@ -343,8 +343,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.11.4/gdal-3.11.4.tar.xz",
-                            "sha256": "6401eba2bb63f5ef7a08d2157f240194f06d508d096898a705637aeea9d3bbe8",
+                            "url": "https://download.osgeo.org/gdal/3.11.5/gdal-3.11.5.tar.xz",
+                            "sha256": "79f66756f1c843b5ee52c8482d4f6bd2a8b7706d6161cc11f0b27c83d638796a",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -369,8 +369,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "http://prdownloads.sourceforge.net/swig/swig-4.3.1.tar.gz",
-                                    "sha256": "44fc829f70f1e17d635a2b4d69acab38896699ecc24aa023e516e0eabbec61b8",
+                                    "url": "http://prdownloads.sourceforge.net/swig/swig-4.4.0.tar.gz",
+                                    "sha256": "c3f8e5dcd68c18aa19847b33b0a1bb92f07e904c53ae9cf5ae4ff8727a72927e",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 4919,
@@ -487,8 +487,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-15.0.3.tar.xz",
-                                    "sha256": "9f55ec10f0a91fb6479ab4ed2b37a52445aee917706a238d170b5220c022fe43",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-15.2.1.tar.xz",
+                                    "sha256": "a5b8109da3c169802f51a14d3bd1246395c24bbca55601760b0c96a3c0b2f8fa",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -667,8 +667,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-25.09.1.tar.xz",
-                                    "sha256": "0c1091d01d3dd1664a13816861e812d02b29201e96665454b81b52d261fad658",
+                                    "url": "https://poppler.freedesktop.org/poppler-25.11.0.tar.xz",
+                                    "sha256": "63f155142b77349e2bccaef148e754e7506ab1641e713b83af4f54a8f8b15369",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -778,11 +778,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/ebiggers/libdeflate.git",
-                                    "tag": "v1.24",
+                                    "tag": "v1.25",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "96836d7d9d10e3e0d53e6edb54eb908514e336c4"
+                                    "commit": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3"
                                 }
                             ]
                         },
@@ -1411,8 +1411,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/0d/4a/295df99278ec1c4f164baa9340ee58d5b2f637e60c23e4dae4cd945713b7/owslib-0.34.1.tar.gz",
-                            "sha256": "9c46d59dc03c753912fc3ef3136dbc843dad7572feb1af2cdf0fc5d1a0959028",
+                            "url": "https://files.pythonhosted.org/packages/bf/03/5df0b995a3a6eefc24cc2320e3fe830d95e76ee6b0b1c6c9d0f1d4040bbe/owslib-0.35.0.tar.gz",
+                            "sha256": "0182f377bb30d25b78284bbaf82a12dece97902ed844cee88791ff38665b9b00",
                             "dest-filename": "owslib.tar.gz",
                             "x-checker-data": {
                                 "type": "pypi",
