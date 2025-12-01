@@ -219,8 +219,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://www.sqlite.org/2025/sqlite-autoconf-3510000.tar.gz",
-                                    "sha256": "42e26dfdd96aa2e6b1b1be5c88b0887f9959093f650d693cb02eb9c36d146ca5",
+                                    "url": "https://www.sqlite.org/2025/sqlite-autoconf-3510100.tar.gz",
+                                    "sha256": "4f2445cd70479724d32ad015ec7fd37fbb6f6130013bd4bfbc80c32beb42b7e0",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 4877,
@@ -1016,8 +1016,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/PDAL/PDAL/releases/download/2.9.2/PDAL-2.9.2-src.tar.bz2",
-                            "sha256": "a74bbc7f4e4f709ed589dbbb851926a63c391c974e3fc40a4c3ff34f7923021b",
+                            "url": "https://github.com/PDAL/PDAL/releases/download/2.9.3/PDAL-2.9.3-src.tar.bz2",
+                            "sha256": "22e90c8b9653e2bd0eb24efbe071b6c281e972145b47c0ccfdc329d73c188d9c",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 138228,
@@ -1359,8 +1359,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/08/e7/ae38d7a6dfba0533684e0b2136817d667588ae3ec984c1a4e5df5eb88482/hatchling-1.27.0-py3-none-any.whl",
-                            "sha256": "d3a2f3567c4f926ea39849cdf924c7e99e6686c9c8e288ae1037c8fa2a5d937b",
+                            "url": "https://files.pythonhosted.org/packages/0d/a5/48cb7efb8b4718b1a4c0c331e3364a3a33f614ff0d6afd2b93ee883d3c47/hatchling-1.28.0-py3-none-any.whl",
+                            "sha256": "dc48722b68b3f4bbfa3ff618ca07cdea6750e7d03481289ffa8be1521d18a961",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "hatchling",
@@ -1408,8 +1408,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/0d/4a/295df99278ec1c4f164baa9340ee58d5b2f637e60c23e4dae4cd945713b7/owslib-0.34.1.tar.gz",
-                            "sha256": "9c46d59dc03c753912fc3ef3136dbc843dad7572feb1af2cdf0fc5d1a0959028",
+                            "url": "https://files.pythonhosted.org/packages/bf/03/5df0b995a3a6eefc24cc2320e3fe830d95e76ee6b0b1c6c9d0f1d4040bbe/owslib-0.35.0.tar.gz",
+                            "sha256": "0182f377bb30d25b78284bbaf82a12dece97902ed844cee88791ff38665b9b00",
                             "dest-filename": "owslib.tar.gz",
                             "x-checker-data": {
                                 "type": "pypi",
