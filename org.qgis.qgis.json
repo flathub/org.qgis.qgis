@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.44.4.tar.bz2",
-                    "sha256": "e54d407c5fe921f31ec69104f8d4abbed310b277379e0a5e20af21d46565da0d",
+                    "url": "https://qgis.org/downloads/qgis-3.44.5.tar.bz2",
+                    "sha256": "f1e4d52789b65cd5678a6e9b9c10bdf04df930b847a827bbf8f873db98019f2f",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -796,8 +796,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-15.2.1.tar.xz",
-                                    "sha256": "a5b8109da3c169802f51a14d3bd1246395c24bbca55601760b0c96a3c0b2f8fa",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-15.2.2.tar.xz",
+                                    "sha256": "8ee01cd4da55bc07b7bc7d3cba702ac6e8137d384d7e7185f3f4ae1f0c79704f",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -1049,8 +1049,8 @@
                                     "sources": [
                                         {
                                             "type": "file",
-                                            "url": "https://files.pythonhosted.org/packages/7e/b1/8e63033b259e0a4e40dd1ec4a9fee17718016845048b43a36ec67d62e6fe/pyproject_metadata-0.9.1-py3-none-any.whl",
-                                            "sha256": "ee5efde548c3ed9b75a354fc319d5afd25e9585fa918a34f62f904cc731973ad",
+                                            "url": "https://files.pythonhosted.org/packages/c0/57/e69a1de45ec7a99a707e9f1a5defa035a48de0cae2d8582451c72d2db456/pyproject_metadata-0.10.0-py3-none-any.whl",
+                                            "sha256": "b1e439a9f7560f9792ee5975dcf5e89d2510b1fc84a922d7e5d665aa9102d966",
                                             "x-checker-data": {
                                                 "type": "pypi",
                                                 "name": "pyproject_metadata",
@@ -1232,11 +1232,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
-                                    "tag": "v3.4.3",
+                                    "tag": "v3.4.4",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "042c83d28dc8ad754f970800a651509ca61a0570"
+                                    "commit": "741ecb82ccdb291ce5b04713fc6c03208753575e"
                                 }
                             ],
                             "modules": [
@@ -1772,12 +1772,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/grass.git",
-                            "tag": "8.4.1",
+                            "tag": "8.4.2",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "45ca3179ab0c450329d5ea410fce1b47b6bffbc8"
+                            "commit": "9519c048f6781f6ed5dedbcf6aa8d16bb67a2f26"
                         }
                     ],
                     "modules": [
