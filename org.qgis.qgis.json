@@ -416,7 +416,7 @@
                             "name": "hdf5",
                             "buildsystem": "cmake-ninja",
                             "subdir": "hdf5-1.14.6",
-                            "builddir": "true",
+                            "builddir": true,
                             "sources": [
                                 {
                                     "type": "archive",
