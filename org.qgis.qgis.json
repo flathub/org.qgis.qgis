@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.44.5.tar.bz2",
-                    "sha256": "f1e4d52789b65cd5678a6e9b9c10bdf04df930b847a827bbf8f873db98019f2f",
+                    "url": "https://qgis.org/downloads/qgis-3.44.6.tar.bz2",
+                    "sha256": "6a7a0ad471b325f0ac364a7256b415013fc23e3ede3e6b152005739a8d273cd3",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -340,8 +340,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.12.0/gdal-3.12.0.tar.xz",
-                            "sha256": "428c19fff818bbb4136766cfee86fae2eebd3620806aa40af21844f4f0b2dbcf",
+                            "url": "https://download.osgeo.org/gdal/3.12.1/gdal-3.12.1.tar.xz",
+                            "sha256": "2a4fd3170ff81def93db60f7f61f2842a2ae7ad0335e4ed4ba305252f05835de",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -366,8 +366,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "http://prdownloads.sourceforge.net/swig/swig-4.4.0.tar.gz",
-                                    "sha256": "c3f8e5dcd68c18aa19847b33b0a1bb92f07e904c53ae9cf5ae4ff8727a72927e",
+                                    "url": "http://prdownloads.sourceforge.net/swig/swig-4.4.1.tar.gz",
+                                    "sha256": "40162a706c56f7592d08fd52ef5511cb7ac191f3593cf07306a0a554c6281fcf",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 4919,
@@ -443,8 +443,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://github.com/uriparser/uriparser/releases/download/uriparser-0.9.9/uriparser-0.9.9.tar.bz2",
-                                    "sha256": "027b923c0ce89786d8cf7a842ef77dcfff3a6a097c0e67d241b447d1eae8db4c",
+                                    "url": "https://github.com/uriparser/uriparser/releases/download/uriparser-1.0.0/uriparser-1.0.0.tar.bz2",
+                                    "sha256": "0606f62fa9522ae208173bae5258a0d3357961044417ae5ef18dad5ad26b74b1",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 10160,
@@ -484,8 +484,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-15.2.2.tar.xz",
-                                    "sha256": "8ee01cd4da55bc07b7bc7d3cba702ac6e8137d384d7e7185f3f4ae1f0c79704f",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-15.2.3.tar.xz",
+                                    "sha256": "0182d67d6949e4347a0bc62fc8c2793be7eb203c71f19edff93f8c45fd4a8190",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -555,8 +555,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://archives.boost.io/release/1.89.0/source/boost_1_89_0.tar.bz2",
-                                    "sha256": "85a33fa22621b4f314f8e85e1a5e2a9363d22e4f4992925d4bb3bc631b5a0c7a",
+                                    "url": "https://archives.boost.io/release/1.90.0/source/boost_1_90_0.tar.bz2",
+                                    "sha256": "49551aff3b22cbc5c5a9ed3dbc92f0e23ea50a0f7325b0d198b705e8ee3fc305",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 6845,
@@ -1379,8 +1379,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/56/1a/9ffe814d317c5224166b23e7c47f606d6e473712a2fad0f704ea9b99f246/urllib3-2.6.0-py3-none-any.whl",
-                            "sha256": "c90f7a39f716c572c4e3e58509581ebd83f9b59cced005b7db7ad2d22b0db99f",
+                            "url": "https://files.pythonhosted.org/packages/6d/b9/4095b668ea3678bf6a0af005527f39de12fb026516fb3df17495a733b7f8/urllib3-2.6.2-py3-none-any.whl",
+                            "sha256": "ec21cddfe7724fc7cb4ba4bea7aa8e2ef36f607a4bab81aa6ce42a13dc3f03dd",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "urllib3",
@@ -1408,8 +1408,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/0d/4a/295df99278ec1c4f164baa9340ee58d5b2f637e60c23e4dae4cd945713b7/owslib-0.34.1.tar.gz",
-                            "sha256": "9c46d59dc03c753912fc3ef3136dbc843dad7572feb1af2cdf0fc5d1a0959028",
+                            "url": "https://files.pythonhosted.org/packages/bf/03/5df0b995a3a6eefc24cc2320e3fe830d95e76ee6b0b1c6c9d0f1d4040bbe/owslib-0.35.0.tar.gz",
+                            "sha256": "0182f377bb30d25b78284bbaf82a12dece97902ed844cee88791ff38665b9b00",
                             "dest-filename": "owslib.tar.gz",
                             "x-checker-data": {
                                 "type": "pypi",
