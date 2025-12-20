@@ -1,9 +1,9 @@
 {
     "id": "org.qgis.qgis",
     "base": "com.riverbankcomputing.PyQt.BaseApp",
-    "base-version": "5.15-24.08",
+    "base-version": "5.15-25.08",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-24.08",
+    "runtime-version": "5.15-25.08",
     "sdk": "org.kde.Sdk",
     "command": "qgis",
     "rename-icon": "qgis",
@@ -20,7 +20,7 @@
     "separate-locales": false,
     "build-options": {
         "env": {
-            "PYTHONPATH": "/app/lib/python3.12/site-packages:/usr/lib/python3.12/site-packages"
+            "PYTHONPATH": "/app/lib/python3.13/site-packages:/usr/lib/python3.13/site-packages"
         }
     },
     "cleanup": [
@@ -65,7 +65,7 @@
                 "-DHAS_KDE_QT5_PDF_TRANSFORM_FIX=TRUE",
                 "-DHAS_KDE_QT5_SMALL_CAPS_FIX=TRUE",
                 "-DHAS_KDE_QT5_FONT_STRETCH_FIX=TRUE",
-                "-DSIP_BUILD_EXTRA_OPTIONS=--target-dir=/app/lib/python3.12/site-packages"
+                "-DSIP_BUILD_EXTRA_OPTIONS=--target-dir=/app/lib/python3.13/site-packages"
             ],
             "modules": [
                 {
@@ -114,8 +114,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/libspatialindex/libspatialindex.git",
-                            "commit": "4a3bd449b9f2858d31a4619ba60bae6d1d30b77d",
-                            "tag": "2.0.0"
+                            "commit": "175b56a9541e76982d13dbbf0c9b8f0b8d752619",
+                            "tag": "2.1.0"
                         }
                     ]
                 },
@@ -135,10 +135,11 @@
                             }
                         },
                         {
-                            "type": "shell",
+                            "type": "script",
+                            "dest": "contrib/minizip",
+                            "dest-filename": "autogen.sh",
                             "commands": [
-                                "echo \"autoreconf -ifv $@\" > contrib/minizip/autogen.sh",
-                                "chmod a+x contrib/minizip/autogen.sh"
+                                "autoreconf -vfi"
                             ]
                         }
                     ]
@@ -413,22 +414,14 @@
                         },
                         {
                             "name": "hdf5",
-                            "config-opts": [
-                                "--disable-static",
-                                "--disable-sharedlib-rpath",
-                                "--enable-build-mode=production",
-                                "--enable-hl",
-                                "--enable-cxx",
-                                "--with-pic",
-                                "--with-zlib",
-                                "--with-szlib"
-                            ],
-                            "no-autogen": true,
+                            "buildsystem": "cmake-ninja",
+                            "subdir": "hdf5-1.14.6",
+                            "builddir": "true",
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.12/hdf5-1.12.1/src/hdf5-1.12.1.tar.bz2",
-                                    "sha256": "aaf9f532b3eda83d3d3adc9f8b40a9b763152218fa45349c3bc77502ca1f8f1c"
+                                    "url": "https://github.com/HDFGroup/hdf5/releases/download/hdf5_1.14.6/hdf5-1.14.6.tar.gz",
+                                    "sha256": "e4defbac30f50d64e1556374aa49e574417c9e72c6b1de7a4ff88c4b1bea6e9b"
                                 }
                             ]
                         },
@@ -484,8 +477,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-15.2.2.tar.xz",
-                                    "sha256": "8ee01cd4da55bc07b7bc7d3cba702ac6e8137d384d7e7185f3f4ae1f0c79704f",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-15.2.3.tar.xz",
+                                    "sha256": "0182d67d6949e4347a0bc62fc8c2793be7eb203c71f19edff93f8c45fd4a8190",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -1163,7 +1156,7 @@
                         "sed -e 's|\\(qsci.path\\) = .*|\\1 = /app/share/qt|' -i src/qscintilla.pro",
                         "sed -e 's|\\(features.path\\) = .*|\\1 = /app/lib/qt/mkspecs/features|' -i src/qscintilla.pro",
                         "cd src/ && QMAKEFEATURES=$PWD/src/features/ qmake && qmake -set prefix /app && make -j ${FLATPAK_BUILDER_N_JOBS:-`nproc`} && PREFIX=/app DESTDIR=/banana make install",
-                        "cd Python && mv pyproject{-qt5,}.toml && sip-build --no-make --qsci-features-dir ../src/features --qsci-include-dir ../src --qsci-library-dir ../src --api-dir /app/share/qt/qsci/api/python --target-dir=/app/lib/python3.12/site-packages && make -C build -j ${FLATPAK_BUILDER_N_JOBS:-`nproc`} && make -C build install"
+                        "cd Python && mv pyproject{-qt5,}.toml && sip-build --no-make --qsci-features-dir ../src/features --qsci-include-dir ../src --qsci-library-dir ../src --api-dir /app/share/qt/qsci/api/python --target-dir=/app/lib/python3.13/site-packages && make -C build -j ${FLATPAK_BUILDER_N_JOBS:-`nproc`} && make -C build install"
                     ]
                 },
                 {
@@ -1408,8 +1401,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/0d/4a/295df99278ec1c4f164baa9340ee58d5b2f637e60c23e4dae4cd945713b7/owslib-0.34.1.tar.gz",
-                            "sha256": "9c46d59dc03c753912fc3ef3136dbc843dad7572feb1af2cdf0fc5d1a0959028",
+                            "url": "https://files.pythonhosted.org/packages/bf/03/5df0b995a3a6eefc24cc2320e3fe830d95e76ee6b0b1c6c9d0f1d4040bbe/owslib-0.35.0.tar.gz",
+                            "sha256": "0182f377bb30d25b78284bbaf82a12dece97902ed844cee88791ff38665b9b00",
                             "dest-filename": "owslib.tar.gz",
                             "x-checker-data": {
                                 "type": "pypi",
@@ -1578,30 +1571,6 @@
                                 "type": "git"
                             },
                             "commit": "ad7344c45a86a4f66cbafc4b081b5f7b876cb0b7"
-                        }
-                    ],
-                    "modules": [
-                        {
-                            "name": "libsecret",
-                            "buildsystem": "meson",
-                            "config-opts": [
-                                "-Dmanpage=false",
-                                "-Dvapi=false",
-                                "-Dgtk_doc=false",
-                                "-Dintrospection=false"
-                            ],
-                            "sources": [
-                                {
-                                    "type": "archive",
-                                    "url": "https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.7.tar.xz",
-                                    "sha256": "6b452e4750590a2b5617adc40026f28d2f4903de15f1250e1d1c40bfd68ed55e",
-                                    "x-checker-data": {
-                                        "type": "gnome",
-                                        "name": "libsecret",
-                                        "stable-only": true
-                                    }
-                                }
-                            ]
                         }
                     ]
                 },
