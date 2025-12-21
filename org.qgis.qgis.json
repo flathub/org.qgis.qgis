@@ -849,6 +849,9 @@
                         {
                             "name": "json-c",
                             "buildsystem": "cmake-ninja",
+                            "config-opts": [
+                                "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
+                            ],
                             "builddir": true,
                             "sources": [
                                 {
