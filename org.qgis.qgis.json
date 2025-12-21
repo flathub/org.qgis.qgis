@@ -684,7 +684,8 @@
                                 "-DWITH_ZLIB=system",
                                 "-DWITH_UNIT_TESTS=OFF",
                                 "-DPLUGIN_FEDERATED=NO",
-                                "-DWITHOUT_SERVER=ON"
+                                "-DWITHOUT_SERVER=ON",
+                                "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
                             ],
                             "cleanup": [
                                 "/bin"
