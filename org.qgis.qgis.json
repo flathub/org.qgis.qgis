@@ -1223,7 +1223,7 @@
                     "name": "python-future",
                     "buildsystem": "simple",
                     "build-commands": [
-                        "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} future"
+                        "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} --no-build-isolation future"
                     ],
                     "sources": [
                         {
