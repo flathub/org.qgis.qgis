@@ -915,6 +915,10 @@
                                         "type": "git"
                                     },
                                     "commit": "616f4b7343a8479f7e71dd3d7025bd92c9a6bbd0"
+                                },
+                                {
+                                    "type": "patch",
+                                    "path": "blosc-gcc15.patch"
                                 }
                             ]
                         },
