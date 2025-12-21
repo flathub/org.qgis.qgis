@@ -927,7 +927,8 @@
                                 "-DJPEGXL_ENABLE_PLUGINS:BOOL=ON",
                                 "-DJPEGXL_ENABLE_VIEWERS:BOOL=OFF",
                                 "-DJPEGXL_FORCE_SYSTEM_BROTLI:BOOL=ON",
-                                "-DJPEGXL_BUNDLE_LIBPNG:BOOL=OFF"
+                                "-DJPEGXL_BUNDLE_LIBPNG:BOOL=OFF",
+                                "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
                             ],
                             "sources": [
                                 {
