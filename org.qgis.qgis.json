@@ -682,6 +682,7 @@
                                 "-DWITH_PCRE2=system",
                                 "-DWITH_SSL=system",
                                 "-DWITH_ZLIB=system",
+                                "-DWITH_LIBFMT=system",
                                 "-DWITH_UNIT_TESTS=OFF",
                                 "-DPLUGIN_FEDERATED=NO",
                                 "-DWITHOUT_SERVER=ON",
@@ -695,14 +696,41 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://dlm.mariadb.com/3656685/MariaDB/mariadb-11.1.3/source/mariadb-11.1.3.tar.gz",
-                                    "sha256": "ad3aa6ae478179275ecb28e3ed8a578f2004f084e14409727c0bf04975ace36c",
-                                    "x-FIXME-x-checker-data": {
+                                    "url": "https://archive.mariadb.org/mariadb-11.8.5/source/mariadb-11.8.5.tar.gz",
+                                    "sha256": "bcb7394569c08877c283e1649869504531bee8caafa30288f078e30d99fcb9f6",
+                                    "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 1887,
-                                        "url-template": "https://rsync.osuosl.org/pub/mariadb/mariadb-$version/source/mariadb-$version.tar.gz",
-                                        "stable-only": true
+                                        "stable-only": true,
+                                        "url-template": "https://archive.mariadb.org/mariadb-$version/source/mariadb-$version.tar.gz",
+                                        "versions": {
+                                            "<": "12.0"
+                                        }
                                     }
+                                }
+                            ],
+                            "modules": [
+                                {
+                                    "name": "fmt",
+                                    "buildsystem": "cmake-ninja",
+                                    "builddir": true,
+                                    "config-opts": [
+                                        "-DFMT_DOC=OFF",
+                                        "-DFMT_TEST=OFF"
+                                    ],
+                                    "sources": [
+                                        {
+                                            "type": "archive",
+                                            "url": "https://github.com/fmtlib/fmt/releases/download/12.1.0/fmt-12.1.0.zip",
+                                            "sha256": "695fd197fa5aff8fc67b5f2bbc110490a875cdf7a41686ac8512fb480fa8ada7",
+                                            "x-checker-data": {
+                                                "type": "anitya",
+                                                "project-id": 11526,
+                                                "stable-only": true,
+                                                "url-template": "https://github.com/fmtlib/fmt/releases/download/$version/fmt-$version.zip"
+                                            }
+                                        }
+                                    ]
                                 }
                             ]
                         },
