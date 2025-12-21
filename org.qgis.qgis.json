@@ -1299,7 +1299,7 @@
                     "buildsystem": "simple",
                     "build-commands": [
                         "pip3 install --prefix=/app *dateutil-*",
-                        "pip3 install --prefix=/app pytz-*",
+                        "pip3 install --prefix=/app --no-build-isolation pytz-*",
                         "pip3 install --prefix=/app pathspec-*",
                         "pip3 install --prefix=/app editables-*",
                         "pip3 install --prefix=/app pluggy-*",
@@ -1311,7 +1311,7 @@
                         "pip3 install --prefix=/app charset_normalizer-*",
                         "pip3 install --prefix=/app requests-*",
                         "pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"lxml\" --no-build-isolation",
-                        "pip3 install --prefix=/app owslib*"
+                        "pip3 install --prefix=/app --no-build-isolation owslib*"
                     ],
                     "sources": [
                         {
