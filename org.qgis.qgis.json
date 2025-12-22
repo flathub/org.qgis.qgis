@@ -843,31 +843,6 @@
                             ]
                         },
                         {
-                            "name": "libjxl",
-                            "buildsystem": "cmake-ninja",
-                            "config-opts": [
-                                "-DJPEGXL_ENABLE_BENCHMARK:BOOL=OFF",
-                                "-DJPEGXL_ENABLE_EXAMPLES:BOOL=OFF",
-                                "-DJPEGXL_ENABLE_FUZZERS:BOOL=OFF",
-                                "-DJPEGXL_ENABLE_PLUGINS:BOOL=ON",
-                                "-DJPEGXL_ENABLE_VIEWERS:BOOL=OFF",
-                                "-DJPEGXL_FORCE_SYSTEM_BROTLI:BOOL=ON",
-                                "-DJPEGXL_BUNDLE_LIBPNG:BOOL=OFF",
-                                "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
-                            ],
-                            "sources": [
-                                {
-                                    "type": "git",
-                                    "url": "https://github.com/libjxl/libjxl.git",
-                                    "tag": "v0.11.1",
-                                    "x-checker-data": {
-                                        "type": "git"
-                                    },
-                                    "commit": "794a5dcf0d54f9f0b20d288a12e87afb91d20dfc"
-                                }
-                            ]
-                        },
-                        {
                             "name": "openexr",
                             "buildsystem": "cmake-ninja",
                             "config-opts": [
