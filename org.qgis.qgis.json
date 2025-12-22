@@ -894,29 +894,6 @@
                                     ]
                                 }
                             ]
-                        {
-                            "name": "expat",
-                            "x-comment": "This is on the FDO runtime, we need to bring it to work around https://github.com/libexpat/libexpat/issues/501",
-                            "builddir": true,
-                            "buildsystem": "cmake-ninja",
-                            "subdir": "expat",
-                            "config-opts": [
-                                "-DEXPAT_BUILD_EXAMPLES=OFF",
-                                "-DEXPAT_BUILD_DOCS=OFF",
-                                "-DEXPAT_BUILD_TESTS=OFF"
-                            ],
-                            "sources": [
-                                {
-                                    "type": "git",
-                                    "url": "https://github.com/libexpat/libexpat.git",
-                                    "tag": "R_2_7_3",
-                                    "x-checker-data": {
-                                        "type": "git",
-                                        "tag-pattern": "^(R_[0-9_]+)$"
-                                    },
-                                    "commit": "4575e52f83e0d6d7bd24939eab8952bbc7bc358f"
-                                }
-                            ]
                         }
                     ]
                 },
