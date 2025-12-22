@@ -821,25 +821,6 @@
                             ]
                         },
                         {
-                            "name": "opencl-headers",
-                            "buildsystem": "simple",
-                            "build-commands": [
-                                "cp -av CL /app/include/",
-                                "install -p -D -m 0644 LICENSE -t ${FLATPAK_DEST}/share/licenses/opencl-headers/"
-                            ],
-                            "sources": [
-                                {
-                                    "type": "git",
-                                    "url": "https://github.com/KhronosGroup/OpenCL-Headers.git",
-                                    "tag": "v2025.07.22",
-                                    "x-checker-data": {
-                                        "type": "git"
-                                    },
-                                    "commit": "8a97ebc88daa3495d6f57ec10bb515224400186f"
-                                }
-                            ]
-                        },
-                        {
                             "name": "blosc",
                             "buildsystem": "cmake-ninja",
                             "config-opts": [
