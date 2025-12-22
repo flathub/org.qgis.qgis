@@ -577,28 +577,6 @@
                             ]
                         },
                         {
-                            "name": "openjpeg2",
-                            "buildsystem": "cmake-ninja",
-                            "builddir": true,
-                            "sources": [
-                                {
-                                    "type": "git",
-                                    "url": "https://github.com/uclouvain/openjpeg.git",
-                                    "tag": "v2.5.4",
-                                    "x-checker-data": {
-                                        "type": "git"
-                                    },
-                                    "commit": "6c4a29b00211eb0430fa0e5e890f1ce5c80f409f"
-                                }
-                            ],
-                            "cleanup": [
-                                "/bin",
-                                "/include",
-                                "/lib/openjpeg-*",
-                                "/lib/pkgconfig"
-                            ]
-                        },
-                        {
                             "name": "poppler",
                             "modules": [
                                 {
