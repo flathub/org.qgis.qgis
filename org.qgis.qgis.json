@@ -211,26 +211,6 @@
                                     }
                                 }
                             ]
-                        },
-                        {
-                            "name": "sqlite3",
-                            "buildsystem": "simple",
-                            "build-commands": [
-                                "CFLAGS='-O2 -DSQLITE_ENABLE_COLUMN_METADATA -DSQLITE_ENABLE_DBSTAT_VTAB -DSQLITE_ENABLE_ICU' CPPFLAGS=`icu-config --cppflags` LDFLAGS=`icu-config --ldflags` ./configure --disable-static --enable-rtree --prefix=/app && make && make install"
-                            ],
-                            "sources": [
-                                {
-                                    "type": "archive",
-                                    "url": "https://www.sqlite.org/2025/sqlite-autoconf-3510100.tar.gz",
-                                    "sha256": "4f2445cd70479724d32ad015ec7fd37fbb6f6130013bd4bfbc80c32beb42b7e0",
-                                    "x-checker-data": {
-                                        "type": "anitya",
-                                        "project-id": 4877,
-                                        "stable-only": true,
-                                        "url-template": "https://www.sqlite.org/2025/sqlite-autoconf-${major}${minor}0${patch}00.tar.gz"
-                                    }
-                                }
-                            ]
                         }
                     ]
                 },
