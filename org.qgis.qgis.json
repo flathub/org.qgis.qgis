@@ -784,24 +784,6 @@
                                         "stable-only": true
                                     }
                                 }
-                            ],
-                            "modules": [
-                                {
-                                    "name": "libtiff",
-                                    "buildsystem": "cmake-ninja",
-                                    "builddir": true,
-                                    "sources": [
-                                        {
-                                            "type": "git",
-                                            "url": "https://gitlab.com/libtiff/libtiff.git",
-                                            "tag": "v4.7.1",
-                                            "x-checker-data": {
-                                                "type": "git"
-                                            },
-                                            "commit": "5fe20d0e9aba49a6a350ed533459d1505203838f"
-                                        }
-                                    ]
-                                }
                             ]
                         },
                         {
