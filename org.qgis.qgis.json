@@ -623,8 +623,7 @@
                                 "-DWITH_LIBFMT=system",
                                 "-DWITH_UNIT_TESTS=OFF",
                                 "-DPLUGIN_FEDERATED=NO",
-                                "-DWITHOUT_SERVER=ON",
-                                "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
+                                "-DWITHOUT_SERVER=ON"
                             ],
                             "cleanup": [
                                 "/bin"
@@ -634,16 +633,13 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://archive.mariadb.org/mariadb-11.8.5/source/mariadb-11.8.5.tar.gz",
-                                    "sha256": "bcb7394569c08877c283e1649869504531bee8caafa30288f078e30d99fcb9f6",
+                                    "url": "https://archive.mariadb.org/mariadb-12.2.1/source/mariadb-12.2.1.tar.gz",
+                                    "sha256": "331fd389094789bde1ae789889cb7125b34584755056c8212a92e648eb2e515b",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 1887,
                                         "stable-only": true,
-                                        "url-template": "https://archive.mariadb.org/mariadb-$version/source/mariadb-$version.tar.gz",
-                                        "versions": {
-                                            "<": "12.0"
-                                        }
+                                        "url-template": "https://archive.mariadb.org/mariadb-$version/source/mariadb-$version.tar.gz"
                                     }
                                 }
                             ],
