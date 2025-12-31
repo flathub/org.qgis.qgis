@@ -484,8 +484,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-15.2.2.tar.xz",
-                                    "sha256": "8ee01cd4da55bc07b7bc7d3cba702ac6e8137d384d7e7185f3f4ae1f0c79704f",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-15.2.3.tar.xz",
+                                    "sha256": "0182d67d6949e4347a0bc62fc8c2793be7eb203c71f19edff93f8c45fd4a8190",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -971,11 +971,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/strukturag/libheif.git",
-                                    "tag": "v1.20.2",
+                                    "tag": "v1.21.1",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "35dad50a9145332a7bfdf1ff6aef6801fb613d68"
+                                    "commit": "3a2a8a2aace708d420aa3122e317209437f6917e"
                                 }
                             ]
                         },
@@ -1408,8 +1408,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/0d/4a/295df99278ec1c4f164baa9340ee58d5b2f637e60c23e4dae4cd945713b7/owslib-0.34.1.tar.gz",
-                            "sha256": "9c46d59dc03c753912fc3ef3136dbc843dad7572feb1af2cdf0fc5d1a0959028",
+                            "url": "https://files.pythonhosted.org/packages/bf/03/5df0b995a3a6eefc24cc2320e3fe830d95e76ee6b0b1c6c9d0f1d4040bbe/owslib-0.35.0.tar.gz",
+                            "sha256": "0182f377bb30d25b78284bbaf82a12dece97902ed844cee88791ff38665b9b00",
                             "dest-filename": "owslib.tar.gz",
                             "x-checker-data": {
                                 "type": "pypi",
