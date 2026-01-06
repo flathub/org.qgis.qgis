@@ -1144,8 +1144,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/a2/8c/58f469717fa48465e4a50c014a0400602d3c437d7c0c468e17ada824da3a/certifi-2025.11.12.tar.gz",
-                            "sha256": "d8ab5478f2ecd78af242878415affce761ca6bc54a22a27e026d7c25357c3316",
+                            "url": "https://files.pythonhosted.org/packages/e0/2d/a891ca51311197f6ad14a7ef42e2399f36cf2f9bd44752b3dc4eab60fdc5/certifi-2026.1.4.tar.gz",
+                            "sha256": "ac726dd470482006e014ad384921ed6438c457018f4b3d204aea4281258b2120",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "certifi"
@@ -1213,8 +1213,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/cc/20/ff623b09d963f88bfde16306a54e12ee5ea43e9b597108672ff3a408aad6/pathspec-0.12.1-py3-none-any.whl",
-                            "sha256": "a0d503e138a4c123b27490a4f7beda6a01c6f288df0e4a8b79c7eb0dc7b4cc08",
+                            "url": "https://files.pythonhosted.org/packages/05/bb/39e6768529454cc2b57e1e2fa0a0a18ff64397a16303270e215a3e03285f/pathspec-1.0.0-py3-none-any.whl",
+                            "sha256": "1373719036e64a2b9de3b8ddd9e30afb082a915619f07265ed76d9ae507800ae",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "pathspec",
