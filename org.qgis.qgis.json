@@ -598,8 +598,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-25.12.0.tar.xz",
-                                    "sha256": "c18b40eb36b1a0c5b86e29ca054bf0770304583da4f2cdd42fe86eca6a20de48",
+                                    "url": "https://poppler.freedesktop.org/poppler-26.01.0.tar.xz",
+                                    "sha256": "1cb944a4b88847f5fb6551683bc799db59f04990f5d8be07aba2acbf38601089",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -1193,8 +1193,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/4f/7e/bc19996fa86cad8801e8ffe6f1bba5836ca0160df76d0410d27432193712/trove_classifiers-2025.12.1.14-py3-none-any.whl",
-                            "sha256": "a8206978ede95937b9959c3aff3eb258bbf7b07dff391ddd4ea7e61f316635ab",
+                            "url": "https://files.pythonhosted.org/packages/7e/c3/4b74a82b58dbfb0a4dafa8149fc60f20ce5228be5d133ca0c3f2e90f6e7d/trove_classifiers-2026.1.12.15-py3-none-any.whl",
+                            "sha256": "8832dfbc226fc4df986666b9cb3a018818b1498aeb79f5f66a31a918b47a98f1",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "trove-classifiers",
@@ -1213,8 +1213,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/d2/fe/2257c71721aeab6a6e8aa1f00d01f2a20f58547d249a6c8fef5791f559fc/pathspec-1.0.1-py3-none-any.whl",
-                            "sha256": "8870061f22c58e6d83463cfce9a7dd6eca0512c772c1001fb09ac64091816721",
+                            "url": "https://files.pythonhosted.org/packages/32/2b/121e912bd60eebd623f873fd090de0e84f322972ab25a7f9044c056804ed/pathspec-1.0.3-py3-none-any.whl",
+                            "sha256": "e80767021c1cc524aa3fb14bedda9c34406591343cc42797b386ce7b9354fb6c",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "pathspec",
@@ -1223,8 +1223,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/6d/b9/4095b668ea3678bf6a0af005527f39de12fb026516fb3df17495a733b7f8/urllib3-2.6.2-py3-none-any.whl",
-                            "sha256": "ec21cddfe7724fc7cb4ba4bea7aa8e2ef36f607a4bab81aa6ce42a13dc3f03dd",
+                            "url": "https://files.pythonhosted.org/packages/39/08/aaaad47bc4e9dc8c725e68f9d04865dbcb2052843ff09c97b08904852d84/urllib3-2.6.3-py3-none-any.whl",
+                            "sha256": "bf272323e553dfb2e87d9bfd225ca7b0f467b919d7bbd355436d3fd37cb0acd4",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "urllib3",
@@ -1397,8 +1397,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v33.2",
-                            "commit": "7ccf2060af4cd13c44a8659d0999be6c7a98fcc1",
+                            "tag": "v33.3",
+                            "commit": "5a5c44c0cfb4926249e2ae6024acdda513cbd3ff",
                             "x-checker-data": {
                                 "type": "git"
                             }
