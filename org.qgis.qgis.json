@@ -599,8 +599,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-25.12.0.tar.xz",
-                                    "sha256": "c18b40eb36b1a0c5b86e29ca054bf0770304583da4f2cdd42fe86eca6a20de48",
+                                    "url": "https://poppler.freedesktop.org/poppler-26.01.0.tar.xz",
+                                    "sha256": "1cb944a4b88847f5fb6551683bc799db59f04990f5d8be07aba2acbf38601089",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -1049,11 +1049,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v80.10.1",
+                            "tag": "v80.10.2",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "adfb0c9e3d1789587d609228d9ea1d79272e4107"
+                            "commit": "5cf2d085186f2c8053940076db99045b826ec22a"
                         }
                     ]
                 },
@@ -1205,8 +1205,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/32/2b/121e912bd60eebd623f873fd090de0e84f322972ab25a7f9044c056804ed/pathspec-1.0.3-py3-none-any.whl",
-                            "sha256": "e80767021c1cc524aa3fb14bedda9c34406591343cc42797b386ce7b9354fb6c",
+                            "url": "https://files.pythonhosted.org/packages/ef/3c/2c197d226f9ea224a9ab8d197933f9da0ae0aac5b6e0f884e2b8d9c8e9f7/pathspec-1.0.4-py3-none-any.whl",
+                            "sha256": "fb6ae2fd4e7c921a165808a552060e722767cfa526f99ca5156ed2ce45a5c723",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "pathspec",
