@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.44.6.tar.bz2",
-                    "sha256": "6a7a0ad471b325f0ac364a7256b415013fc23e3ede3e6b152005739a8d273cd3",
+                    "url": "https://qgis.org/downloads/qgis-3.44.7.tar.bz2",
+                    "sha256": "1ab06f40600c84e928b4fe22a66997d80973201b10769e7a636e5be83459b814",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -275,6 +275,7 @@
                         "-DGDAL_USE_JSONC=ON",
                         "-DGDAL_USE_JXL=ON",
                         "-DGDAL_USE_LIBLZMA=ON",
+                        "-DGDAL_USE_LERC=ON",
                         "-DGDAL_USE_LIBXML2=ON",
                         "-DGDAL_USE_LZ4=ON",
                         "-DGDAL_USE_MYSQL=ON",
@@ -642,30 +643,6 @@
                                         "url-template": "https://archive.mariadb.org/mariadb-$version/source/mariadb-$version.tar.gz"
                                     }
                                 }
-                            ],
-                            "modules": [
-                                {
-                                    "name": "fmt",
-                                    "buildsystem": "cmake-ninja",
-                                    "builddir": true,
-                                    "config-opts": [
-                                        "-DFMT_DOC=OFF",
-                                        "-DFMT_TEST=OFF"
-                                    ],
-                                    "sources": [
-                                        {
-                                            "type": "archive",
-                                            "url": "https://github.com/fmtlib/fmt/releases/download/12.1.0/fmt-12.1.0.zip",
-                                            "sha256": "695fd197fa5aff8fc67b5f2bbc110490a875cdf7a41686ac8512fb480fa8ada7",
-                                            "x-checker-data": {
-                                                "type": "anitya",
-                                                "project-id": 11526,
-                                                "stable-only": true,
-                                                "url-template": "https://github.com/fmtlib/fmt/releases/download/$version/fmt-$version.zip"
-                                            }
-                                        }
-                                    ]
-                                }
                             ]
                         },
                         {
@@ -696,8 +673,8 @@
                                     "sources": [
                                         {
                                             "type": "file",
-                                            "url": "https://files.pythonhosted.org/packages/c0/57/e69a1de45ec7a99a707e9f1a5defa035a48de0cae2d8582451c72d2db456/pyproject_metadata-0.10.0-py3-none-any.whl",
-                                            "sha256": "b1e439a9f7560f9792ee5975dcf5e89d2510b1fc84a922d7e5d665aa9102d966",
+                                            "url": "https://files.pythonhosted.org/packages/1d/0b/da4851b1e2d9c40c9bd74c0abd94510a7d797da9ccde0a90e8953751ed4a/pyproject_metadata-0.11.0-py3-none-any.whl",
+                                            "sha256": "85bbecca8694e2c00f63b492c96921d6c228454057c88e7c352b2077fcaa4096",
                                             "x-checker-data": {
                                                 "type": "pypi",
                                                 "name": "pyproject_metadata",
@@ -868,6 +845,21 @@
                                             "tag": "0.22.0"
                                         }
                                     ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "lerc",
+                            "buildsystem": "cmake-ninja",
+                            "sources": [
+                                {
+                                    "type": "git",
+                                    "url": "https://github.com/Esri/lerc.git",
+                                    "tag": "v4.0.0",
+                                    "x-checker-data": {
+                                        "type": "git"
+                                    },
+                                    "commit": "fbeb481120b79d05163f8544c645e9975920526f"
                                 }
                             ]
                         }
@@ -1057,11 +1049,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v80.9.0",
+                            "tag": "v82.0.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "9c4d383631d3951fcae0afd73b5d08ff5a262976"
+                            "commit": "03f3615362c4eb19c770b71be5bd58e38f235528"
                         }
                     ]
                 },
@@ -1213,8 +1205,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/32/2b/121e912bd60eebd623f873fd090de0e84f322972ab25a7f9044c056804ed/pathspec-1.0.3-py3-none-any.whl",
-                            "sha256": "e80767021c1cc524aa3fb14bedda9c34406591343cc42797b386ce7b9354fb6c",
+                            "url": "https://files.pythonhosted.org/packages/ef/3c/2c197d226f9ea224a9ab8d197933f9da0ae0aac5b6e0f884e2b8d9c8e9f7/pathspec-1.0.4-py3-none-any.whl",
+                            "sha256": "fb6ae2fd4e7c921a165808a552060e722767cfa526f99ca5156ed2ce45a5c723",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "pathspec",
@@ -1396,9 +1388,8 @@
                     "sources": [
                         {
                             "type": "git",
-                            "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v33.4",
-                            "commit": "edaa823d8b36a8656d7b2b9241b7d0bfe50af878",
+                            "tag": "v33.5",
+                            "commit": "b6f9284da830b69be787732ffdaa35049d20a088",
                             "x-checker-data": {
                                 "type": "git"
                             }
