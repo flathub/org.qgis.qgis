@@ -78,12 +78,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/PROJ.git",
-                            "tag": "9.7.1",
+                            "tag": "9.8.0",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "e37c81729a6c52e3ee49ad6ae5bed8f1ab7826e5"
+                            "commit": "2b60ecbe948a29bfd0d6901911560b0515cc96c7"
                         }
                     ]
                 },
@@ -221,8 +221,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://ftp.postgresql.org/pub/source/v18.2/postgresql-18.2.tar.bz2",
-                            "sha256": "5245bd1b79700d55b8e0575be0325ef61e7bbef627e6a616e4cf36ad4687be36",
+                            "url": "https://ftp.postgresql.org/pub/source/v18.3/postgresql-18.3.tar.bz2",
+                            "sha256": "d95663fbbf3a80f81a9d98d895266bdcb74ba274bcc04ef6d76630a72dee016f",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 5601,
@@ -544,8 +544,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://github.com/Unidata/netcdf-c/archive/v4.9.3.tar.gz",
-                                    "sha256": "990f46d49525d6ab5dc4249f8684c6deeaf54de6fec63a187e9fb382cc0ffdff",
+                                    "url": "https://github.com/Unidata/netcdf-c/archive/v4.10.0.tar.gz",
+                                    "sha256": "ce160f9c1483b32d1ba8b7633d7984510259e4e439c48a218b95a023dc02fd4c",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 10354,
@@ -806,11 +806,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
-                                    "tag": "v3.4.4",
+                                    "tag": "v3.4.6",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "741ecb82ccdb291ce5b04713fc6c03208753575e"
+                                    "commit": "d7605f5990900cff8024f1fb36ffb0912d340b52"
                                 }
                             ],
                             "modules": [
@@ -1047,11 +1047,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v82.0.0",
+                            "tag": "v82.0.1",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "03f3615362c4eb19c770b71be5bd58e38f235528"
+                            "commit": "5a13876673a41e3cd21d4d6e587f53d0fb4fd8e5"
                         }
                     ]
                 },
@@ -1125,8 +1125,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/f8/bf/abbd3cdfb8fbc7fb3d4d38d320f2441b1e7cbe29be4f23797b4a2b5d8aac/pytz-2025.2.tar.gz",
-                            "sha256": "360b9e3dbb49a209c21ad61809c7fb453643e048b38924c765813546746e81c3",
+                            "url": "https://files.pythonhosted.org/packages/56/db/b8721d71d945e6a8ac63c0fc900b2067181dbb50805958d4d4661cf7d277/pytz-2026.1.post1.tar.gz",
+                            "sha256": "3378dde6a0c3d26719182142c56e60c7f9af7e968076f31aae569d72a0358ee1",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "pytz"
@@ -1134,8 +1134,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/e0/2d/a891ca51311197f6ad14a7ef42e2399f36cf2f9bd44752b3dc4eab60fdc5/certifi-2026.1.4.tar.gz",
-                            "sha256": "ac726dd470482006e014ad384921ed6438c457018f4b3d204aea4281258b2120",
+                            "url": "https://files.pythonhosted.org/packages/af/2d/7bf41579a8986e348fa033a31cdd0e4121114f6bce2457e8876010b092dd/certifi-2026.2.25.tar.gz",
+                            "sha256": "e887ab5cee78ea814d3472169153c2d12cd43b14bd03329a39a9c6e2e80bfba7",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "certifi"
@@ -1153,8 +1153,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/0a/4c/925909008ed5a988ccbb72dcc897407e5d6d3bd72410d69e051fc0c14647/charset_normalizer-3.4.4-py3-none-any.whl",
-                            "sha256": "7a32c560861a02ff789ad905a2fe94e3f840803362c84fecf1851cb4cf3dc37f",
+                            "url": "https://files.pythonhosted.org/packages/c5/60/3a621758945513adfd4db86827a5bafcc615f913dbd0b4c2ed64a65731be/charset_normalizer-3.4.5-py3-none-any.whl",
+                            "sha256": "9db5e3fcdcee89a78c04dffb3fe33c79f77bd741a624946db2591c81b2fc85b0",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "charset-normalizer",
@@ -1193,8 +1193,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/0d/a5/48cb7efb8b4718b1a4c0c331e3364a3a33f614ff0d6afd2b93ee883d3c47/hatchling-1.28.0-py3-none-any.whl",
-                            "sha256": "dc48722b68b3f4bbfa3ff618ca07cdea6750e7d03481289ffa8be1521d18a961",
+                            "url": "https://files.pythonhosted.org/packages/d3/8a/44032265776062a89171285ede55a0bdaadc8ac00f27f0512a71a9e3e1c8/hatchling-1.29.0-py3-none-any.whl",
+                            "sha256": "50af9343281f34785fab12da82e445ed987a6efb34fd8c2fc0f6e6630dbcc1b0",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "hatchling",
@@ -1362,11 +1362,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/Exiv2/exiv2.git",
-                            "tag": "v0.28.7",
+                            "tag": "v0.28.8",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "afcb7a8ba84a7de36d2f1ee7689394e078697956"
+                            "commit": "2cd987a731236037b6b78cbff897d08685a8ef49"
                         }
                     ]
                 },
@@ -1387,8 +1387,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v33.5",
-                            "commit": "b6f9284da830b69be787732ffdaa35049d20a088",
+                            "tag": "v34.0",
+                            "commit": "6a6cd88c262ffdb1738167a47d5fcc7a3eb4edac",
                             "x-checker-data": {
                                 "type": "git"
                             }
