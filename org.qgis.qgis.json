@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.44.7.tar.bz2",
-                    "sha256": "1ab06f40600c84e928b4fe22a66997d80973201b10769e7a636e5be83459b814",
+                    "url": "https://qgis.org/downloads/qgis-4.0.0.tar.bz2",
+                    "sha256": "b07377af3193cc980c03f6e0022d028590ece6d0e85d04fee03e8761472484f3",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -127,11 +127,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/madler/zlib",
-                            "tag": "v1.3.1",
+                            "tag": "v1.3.2",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^v(.+)$"
-                            }
+                            },
+                            "commit": "da607da739fa6047df13e66a2af6b8bec7c2a498"
                         },
                         {
                             "type": "script",
@@ -300,8 +301,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.12.2/gdal-3.12.2.tar.xz",
-                            "sha256": "21c5e0f91974383b4c5692b7103650f176f2f54f1b0d449787f444b89881e9b4",
+                            "url": "https://download.osgeo.org/gdal/3.12.3/gdal-3.12.3.tar.xz",
+                            "sha256": "398a5a32ee6e75040598a7f8e895126a8225118317f272d715867c844f932848",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -436,8 +437,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-15.2.3.tar.xz",
-                                    "sha256": "0182d67d6949e4347a0bc62fc8c2793be7eb203c71f19edff93f8c45fd4a8190",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-15.2.4.tar.xz",
+                                    "sha256": "bb03a16da6b2cca43962b65a2890faf4e6b16607220cf60270436a11e09e6f46",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -597,8 +598,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-25.12.0.tar.xz",
-                                    "sha256": "c18b40eb36b1a0c5b86e29ca054bf0770304583da4f2cdd42fe86eca6a20de48",
+                                    "url": "https://poppler.freedesktop.org/poppler-26.03.0.tar.xz",
+                                    "sha256": "8b3c5e2a9f2ab4c3ec5029f28af1b433c6b71f0d1e7b3997aa561cf1c0ca4ebe",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -806,11 +807,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
-                                    "tag": "v3.4.6",
+                                    "tag": "v3.4.7",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "d7605f5990900cff8024f1fb36ffb0912d340b52"
+                                    "commit": "6768d5da78af4ba5b91bf3820ed11258f72743b0"
                                 }
                             ],
                             "modules": [
@@ -853,11 +854,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/Esri/lerc.git",
-                                    "tag": "v4.0.0",
+                                    "tag": "v4.1.0",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "fbeb481120b79d05163f8544c645e9975920526f"
+                                    "commit": "fa0ae1b00903cc55e321d5c0165746310092adf8"
                                 }
                             ]
                         }
@@ -1153,8 +1154,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/c5/60/3a621758945513adfd4db86827a5bafcc615f913dbd0b4c2ed64a65731be/charset_normalizer-3.4.5-py3-none-any.whl",
-                            "sha256": "9db5e3fcdcee89a78c04dffb3fe33c79f77bd741a624946db2591c81b2fc85b0",
+                            "url": "https://files.pythonhosted.org/packages/2a/68/687187c7e26cb24ccbd88e5069f5ef00eba804d36dde11d99aad0838ab45/charset_normalizer-3.4.6-py3-none-any.whl",
+                            "sha256": "947cf925bc916d90adba35a64c82aace04fa39b46b52d4630ece166655905a69",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "charset-normalizer",
@@ -1387,8 +1388,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v34.0",
-                            "commit": "6a6cd88c262ffdb1738167a47d5fcc7a3eb4edac",
+                            "tag": "v34.1",
+                            "commit": "4b0c3aacf0657fbf38253b38918d3358dd4319ec",
                             "x-checker-data": {
                                 "type": "git"
                             }
