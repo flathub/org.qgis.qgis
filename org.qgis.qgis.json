@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-3.44.7.tar.bz2",
-                    "sha256": "1ab06f40600c84e928b4fe22a66997d80973201b10769e7a636e5be83459b814",
+                    "url": "https://qgis.org/downloads/qgis-4.0.1.tar.bz2",
+                    "sha256": "b827501c58c0c271e7ef3cffcb2204adfeef3eaf9ff7a0ab607f0873de2b7eaf",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -78,12 +78,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/PROJ.git",
-                            "tag": "9.8.0",
+                            "tag": "9.8.1",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "2b60ecbe948a29bfd0d6901911560b0515cc96c7"
+                            "commit": "f08fa86c478c4bbbf003b1ec751dd84aa6eca486"
                         }
                     ]
                 },
@@ -127,11 +127,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/madler/zlib",
-                            "tag": "v1.3.1",
+                            "tag": "v1.3.2",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^v(.+)$"
-                            }
+                            },
+                            "commit": "da607da739fa6047df13e66a2af6b8bec7c2a498"
                         },
                         {
                             "type": "script",
@@ -436,8 +437,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-15.2.3.tar.xz",
-                                    "sha256": "0182d67d6949e4347a0bc62fc8c2793be7eb203c71f19edff93f8c45fd4a8190",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-15.2.6.tar.xz",
+                                    "sha256": "97cb8ef708541f632e861d005a462dd0367240f81ff96f8e63ebbdd75c8ce55f",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -597,8 +598,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-25.12.0.tar.xz",
-                                    "sha256": "c18b40eb36b1a0c5b86e29ca054bf0770304583da4f2cdd42fe86eca6a20de48",
+                                    "url": "https://poppler.freedesktop.org/poppler-26.04.0.tar.xz",
+                                    "sha256": "b0955163114af96bc0106f68cb24daf973a629462453d8b82775f81b0d4e0693",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -806,11 +807,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
-                                    "tag": "v3.4.6",
+                                    "tag": "v3.4.10",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "d7605f5990900cff8024f1fb36ffb0912d340b52"
+                                    "commit": "67de2bffbd7da508f75fbdc56e6e551a4e31fb83"
                                 }
                             ],
                             "modules": [
@@ -853,11 +854,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/Esri/lerc.git",
-                                    "tag": "v4.0.0",
+                                    "tag": "v4.1.0",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "fbeb481120b79d05163f8544c645e9975920526f"
+                                    "commit": "fa0ae1b00903cc55e321d5c0165746310092adf8"
                                 }
                             ]
                         }
@@ -874,8 +875,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/PDAL/PDAL/releases/download/2.10.0/PDAL-2.10.0-src.tar.bz2",
-                            "sha256": "65eba26e24a2cb1752d3542cc84e8035ecb8dc890b72145128f9b33bd184f2f5",
+                            "url": "https://github.com/PDAL/PDAL/releases/download/2.10.1/PDAL-2.10.1-src.tar.bz2",
+                            "sha256": "78765f1d06584c8e9b3b4a5b58c0ebea478d42ad21f1432717b31c20def05522",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 138228,
@@ -1153,8 +1154,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/c5/60/3a621758945513adfd4db86827a5bafcc615f913dbd0b4c2ed64a65731be/charset_normalizer-3.4.5-py3-none-any.whl",
-                            "sha256": "9db5e3fcdcee89a78c04dffb3fe33c79f77bd741a624946db2591c81b2fc85b0",
+                            "url": "https://files.pythonhosted.org/packages/db/8f/61959034484a4a7c527811f4721e75d02d653a35afb0b6054474d8185d4c/charset_normalizer-3.4.7-py3-none-any.whl",
+                            "sha256": "3dce51d0f5e7951f8bb4900c257dad282f49190fdbebecd4ba99bcc41fef404d",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "charset-normalizer",
@@ -1163,8 +1164,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/6b/be/0f2f4a5e8adc114a02b63d92bf8edbfa24db6fc602fca83c885af2479e0e/editables-0.5-py3-none-any.whl",
-                            "sha256": "61e5ffa82629e0d8bfe09bc44a07db3c1ab8ed1ce78a6980732870f19b5e7d4c",
+                            "url": "https://files.pythonhosted.org/packages/cc/0e/d095533037fc9468f947b19f2da53f869804632b508808de41e86e801797/editables-0.6-py3-none-any.whl",
+                            "sha256": "d70e4698078a1d033e7786d9c64e5be070d058a67c21417024d38a58ac20aa43",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "editables",
@@ -1223,8 +1224,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/1e/db/4254e3eabe8020b458f1a747140d32277ec7a271daf1d235b70dc0b4e6e3/requests-2.32.5-py3-none-any.whl",
-                            "sha256": "2462f94637a34fd532264295e186976db0f5d453d1cdd31473c85a6a161affb6",
+                            "url": "https://files.pythonhosted.org/packages/d7/8e/7540e8a2036f79a125c1d2ebadf69ed7901608859186c856fa0388ef4197/requests-2.33.1-py3-none-any.whl",
+                            "sha256": "4e6d1ef462f3626a1f0a0a9c42dd93c63bad33f9f1c1937509b8c5c8718ab56a",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "requests",
@@ -1233,8 +1234,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/aa/88/262177de60548e5a2bfc46ad28232c9e9cbde697bd94132aeb80364675cb/lxml-6.0.2.tar.gz",
-                            "sha256": "cd79f3367bd74b317dda655dc8fcfa304d9eb6e4fb06b7168c5cf27f96e0cd62",
+                            "url": "https://files.pythonhosted.org/packages/28/30/9abc9e34c657c33834eaf6cd02124c61bdf5944d802aa48e69be8da3585d/lxml-6.1.0.tar.gz",
+                            "sha256": "bfd57d8008c4965709a919c3e9a98f76c2c7cb319086b3d26858250620023b13",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "lxml"
@@ -1387,8 +1388,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v34.0",
-                            "commit": "6a6cd88c262ffdb1738167a47d5fcc7a3eb4edac",
+                            "tag": "v34.1",
+                            "commit": "4b0c3aacf0657fbf38253b38918d3358dd4319ec",
                             "x-checker-data": {
                                 "type": "git"
                             }
