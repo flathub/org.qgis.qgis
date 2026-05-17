@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-4.0.1.tar.bz2",
-                    "sha256": "b827501c58c0c271e7ef3cffcb2204adfeef3eaf9ff7a0ab607f0873de2b7eaf",
+                    "url": "https://qgis.org/downloads/qgis-4.0.2.tar.bz2",
+                    "sha256": "e1f017c3bc1881a5f534d89188e4d16d4d1bb1413278ea27aef4604ff35b090a",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -219,8 +219,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://ftp.postgresql.org/pub/source/v18.3/postgresql-18.3.tar.bz2",
-                            "sha256": "d95663fbbf3a80f81a9d98d895266bdcb74ba274bcc04ef6d76630a72dee016f",
+                            "url": "https://ftp.postgresql.org/pub/source/v18.4/postgresql-18.4.tar.bz2",
+                            "sha256": "81a81ec695fb0c7901407defaa1d2f7973617154cf27ba74e3a7ab8e64436094",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 5601,
@@ -298,8 +298,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.12.2/gdal-3.12.2.tar.xz",
-                            "sha256": "21c5e0f91974383b4c5692b7103650f176f2f54f1b0d449787f444b89881e9b4",
+                            "url": "https://download.osgeo.org/gdal/3.13.0/gdal-3.13.0.tar.xz",
+                            "sha256": "1c537dd2f4d66f05534ae419bc2af495c2204ce13bb266c8cbd867dd6705f0c7",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -393,8 +393,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://github.com/uriparser/uriparser/releases/download/uriparser-1.0.0/uriparser-1.0.0.tar.bz2",
-                                    "sha256": "0606f62fa9522ae208173bae5258a0d3357961044417ae5ef18dad5ad26b74b1",
+                                    "url": "https://github.com/uriparser/uriparser/releases/download/uriparser-1.0.2/uriparser-1.0.2.tar.bz2",
+                                    "sha256": "dd2e4843f43de6f5aedf430e530f1e2d159eba8ca4d64c2787af1c20f707a9e4",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 10160,
@@ -415,12 +415,12 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/HEASARC/cfitsio.git",
-                                    "tag": "cfitsio-4.6.3",
+                                    "tag": "cfitsio-4.6.4",
                                     "x-checker-data": {
                                         "type": "git",
                                         "tag-pattern": "^(.+)$"
                                     },
-                                    "commit": "386e719ccc5e30ca497ec2df57c4ef1de5adbc3f"
+                                    "commit": "7768589025af98f2ed49c6818bb62bd7c0bfddb2"
                                 }
                             ]
                         },
@@ -805,11 +805,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
-                                    "tag": "v3.4.10",
+                                    "tag": "v3.4.11",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "67de2bffbd7da508f75fbdc56e6e551a4e31fb83"
+                                    "commit": "d25e2a83b5a5f0eb9e350de8218fa27c348da203"
                                 }
                             ],
                             "modules": [
@@ -1125,8 +1125,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/56/db/b8721d71d945e6a8ac63c0fc900b2067181dbb50805958d4d4661cf7d277/pytz-2026.1.post1.tar.gz",
-                            "sha256": "3378dde6a0c3d26719182142c56e60c7f9af7e968076f31aae569d72a0358ee1",
+                            "url": "https://files.pythonhosted.org/packages/ff/46/dd499ec9038423421951e4fad73051febaa13d2df82b4064f87af8b8c0c3/pytz-2026.2.tar.gz",
+                            "sha256": "0e60b47b29f21574376f218fe21abc009894a2321ea16c6754f3cad6eb7cdd6a",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "pytz"
@@ -1134,8 +1134,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/af/2d/7bf41579a8986e348fa033a31cdd0e4121114f6bce2457e8876010b092dd/certifi-2026.2.25.tar.gz",
-                            "sha256": "e887ab5cee78ea814d3472169153c2d12cd43b14bd03329a39a9c6e2e80bfba7",
+                            "url": "https://files.pythonhosted.org/packages/25/ee/6caf7a40c36a1220410afe15a1cc64993a1f864871f698c0f93acb72842a/certifi-2026.4.22.tar.gz",
+                            "sha256": "8d455352a37b71bf76a79caa83a3d6c25afee4a385d632127b6afb3963f1c580",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "certifi"
@@ -1143,8 +1143,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/0e/61/66938bbb5fc52dbdf84594873d5b51fb1f7c7794e9c0f5bd885f30bc507b/idna-3.11-py3-none-any.whl",
-                            "sha256": "771a87f49d9defaf64091e6e6fe9c18d4833f140bd19464795bc32d966ca37ea",
+                            "url": "https://files.pythonhosted.org/packages/d2/23/408243171aa9aaba178d3e2559159c24c1171a641aa83b67bdd3394ead8e/idna-3.15-py3-none-any.whl",
+                            "sha256": "048adeaf8c2d788c40fee287673ccaa74c24ffd8dcf09ffa555a2fbb59f10ac8",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "idna",
@@ -1153,8 +1153,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/c5/60/3a621758945513adfd4db86827a5bafcc615f913dbd0b4c2ed64a65731be/charset_normalizer-3.4.5-py3-none-any.whl",
-                            "sha256": "9db5e3fcdcee89a78c04dffb3fe33c79f77bd741a624946db2591c81b2fc85b0",
+                            "url": "https://files.pythonhosted.org/packages/db/8f/61959034484a4a7c527811f4721e75d02d653a35afb0b6054474d8185d4c/charset_normalizer-3.4.7-py3-none-any.whl",
+                            "sha256": "3dce51d0f5e7951f8bb4900c257dad282f49190fdbebecd4ba99bcc41fef404d",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "charset-normalizer",
@@ -1163,8 +1163,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/6b/be/0f2f4a5e8adc114a02b63d92bf8edbfa24db6fc602fca83c885af2479e0e/editables-0.5-py3-none-any.whl",
-                            "sha256": "61e5ffa82629e0d8bfe09bc44a07db3c1ab8ed1ce78a6980732870f19b5e7d4c",
+                            "url": "https://files.pythonhosted.org/packages/cc/0e/d095533037fc9468f947b19f2da53f869804632b508808de41e86e801797/editables-0.6-py3-none-any.whl",
+                            "sha256": "d70e4698078a1d033e7786d9c64e5be070d058a67c21417024d38a58ac20aa43",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "editables",
@@ -1183,8 +1183,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/bb/4a/2e5583e544bc437d5e8e54b47db87430df9031b29b48d17f26d129fa60c0/trove_classifiers-2026.1.14.14-py3-none-any.whl",
-                            "sha256": "1f9553927f18d0513d8e5ff80ab8980b8202ce37ecae0e3274ed2ef11880e74d",
+                            "url": "https://files.pythonhosted.org/packages/7b/e3/d81b065a2d866a33a541ac63a2a4cc5737e03ce2379ac3191c98bb8867e3/trove_classifiers-2026.5.7.17-py3-none-any.whl",
+                            "sha256": "5ec0800de5e2ddbd7c663cb4c0c15328f132dc168813897c18866c5c7b93db33",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "trove-classifiers",
@@ -1203,8 +1203,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/ef/3c/2c197d226f9ea224a9ab8d197933f9da0ae0aac5b6e0f884e2b8d9c8e9f7/pathspec-1.0.4-py3-none-any.whl",
-                            "sha256": "fb6ae2fd4e7c921a165808a552060e722767cfa526f99ca5156ed2ce45a5c723",
+                            "url": "https://files.pythonhosted.org/packages/f1/d9/7fb5aa316bc299258e68c73ba3bddbc499654a07f151cba08f6153988714/pathspec-1.1.1-py3-none-any.whl",
+                            "sha256": "a00ce642f577bf7f473932318056212bc4f8bfdf53128c78bbd5af0b9b20b189",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "pathspec",
@@ -1213,8 +1213,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/39/08/aaaad47bc4e9dc8c725e68f9d04865dbcb2052843ff09c97b08904852d84/urllib3-2.6.3-py3-none-any.whl",
-                            "sha256": "bf272323e553dfb2e87d9bfd225ca7b0f467b919d7bbd355436d3fd37cb0acd4",
+                            "url": "https://files.pythonhosted.org/packages/7f/3e/5db95bcf282c52709639744ca2a8b149baccf648e39c8cc87553df9eae0c/urllib3-2.7.0-py3-none-any.whl",
+                            "sha256": "9fb4c81ebbb1ce9531cce37674bbc6f1360472bc18ca9a553ede278ef7276897",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "urllib3",
@@ -1223,8 +1223,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/1e/db/4254e3eabe8020b458f1a747140d32277ec7a271daf1d235b70dc0b4e6e3/requests-2.32.5-py3-none-any.whl",
-                            "sha256": "2462f94637a34fd532264295e186976db0f5d453d1cdd31473c85a6a161affb6",
+                            "url": "https://files.pythonhosted.org/packages/a0/f4/c67b0b3f1b9245e8d266f0f112c500d50e5b4e83cb6f3b71b6528104182a/requests-2.34.2-py3-none-any.whl",
+                            "sha256": "2a0d60c172f83ac6ab31e4554906c0f3b3588d37b5cb939b1c061f4907e278e0",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "requests",
@@ -1233,8 +1233,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/aa/88/262177de60548e5a2bfc46ad28232c9e9cbde697bd94132aeb80364675cb/lxml-6.0.2.tar.gz",
-                            "sha256": "cd79f3367bd74b317dda655dc8fcfa304d9eb6e4fb06b7168c5cf27f96e0cd62",
+                            "url": "https://files.pythonhosted.org/packages/28/30/9abc9e34c657c33834eaf6cd02124c61bdf5944d802aa48e69be8da3585d/lxml-6.1.0.tar.gz",
+                            "sha256": "bfd57d8008c4965709a919c3e9a98f76c2c7cb319086b3d26858250620023b13",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "lxml"
@@ -1294,12 +1294,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/grass.git",
-                            "tag": "8.4.2",
+                            "tag": "8.5.0",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "9519c048f6781f6ed5dedbcf6aa8d16bb67a2f26"
+                            "commit": "8d6ceba290a2f0059a7301b9d4944455f313da72"
                         }
                     ],
                     "modules": [
@@ -1408,11 +1408,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/frankosterfeld/qtkeychain/",
-                            "tag": "0.15.0",
+                            "tag": "0.16.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "ad7344c45a86a4f66cbafc4b081b5f7b876cb0b7"
+                            "commit": "aa6da344e1a20b9194e12bace3665caeea6b6304"
                         }
                     ]
                 },
