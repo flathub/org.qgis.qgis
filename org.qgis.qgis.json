@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-4.0.2.tar.bz2",
-                    "sha256": "e1f017c3bc1881a5f534d89188e4d16d4d1bb1413278ea27aef4604ff35b090a",
+                    "url": "https://qgis.org/downloads/qgis-4.0.3.tar.bz2",
+                    "sha256": "e3c1d06d6b195aba99daf0a0562331d62359afd728666634ce4095ce99a844f4",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -735,8 +735,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-15.2.6.tar.xz",
-                                    "sha256": "97cb8ef708541f632e861d005a462dd0367240f81ff96f8e63ebbdd75c8ce55f",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-15.2.7.tar.xz",
+                                    "sha256": "029230b29c3745924ea850c7046efd1db74b863fdfead8b1aaba3bdd5b0cf895",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -932,8 +932,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://archive.mariadb.org/mariadb-12.3.1/source/mariadb-12.3.1.tar.gz",
-                                    "sha256": "2da62b57da70975d0865d4a1ae4ae4cf422e1b7dcc709eba855cf14f5104617e",
+                                    "url": "https://archive.mariadb.org/mariadb-13.0.1/source/mariadb-13.0.1.tar.gz",
+                                    "sha256": "cc681a84cc24d2852b93c5bf5fe199084edd553ee72656e10d4b50ec476aa33c",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 1887,
@@ -1106,11 +1106,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
-                                    "tag": "v3.4.11",
+                                    "tag": "v3.4.12",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "d25e2a83b5a5f0eb9e350de8218fa27c348da203"
+                                    "commit": "4d22f773b88673eea92cdc57c2391fe9dceeabd5"
                                 }
                             ],
                             "modules": [
@@ -1435,8 +1435,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/25/ee/6caf7a40c36a1220410afe15a1cc64993a1f864871f698c0f93acb72842a/certifi-2026.4.22.tar.gz",
-                            "sha256": "8d455352a37b71bf76a79caa83a3d6c25afee4a385d632127b6afb3963f1c580",
+                            "url": "https://files.pythonhosted.org/packages/f3/ce/ee2ecad540810a79593028e88299baeae54d346cc7a0d94b6199988b89b1/certifi-2026.5.20.tar.gz",
+                            "sha256": "69dea482ab64caa7b9f6aba1c6bf48bb6a5448d1c0f1b17ab42ad8c763a5344d",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "certifi"
@@ -1444,8 +1444,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/d2/23/408243171aa9aaba178d3e2559159c24c1171a641aa83b67bdd3394ead8e/idna-3.15-py3-none-any.whl",
-                            "sha256": "048adeaf8c2d788c40fee287673ccaa74c24ffd8dcf09ffa555a2fbb59f10ac8",
+                            "url": "https://files.pythonhosted.org/packages/de/a7/f76514cc40ad6234098ecdebda08732d75964776c51a42845b7da10649e2/idna-3.17-py3-none-any.whl",
+                            "sha256": "466e48829084efe2548012b855df21540b96f2e20e51bd124c851536556a592c",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "idna",
@@ -1484,8 +1484,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/7b/e3/d81b065a2d866a33a541ac63a2a4cc5737e03ce2379ac3191c98bb8867e3/trove_classifiers-2026.5.7.17-py3-none-any.whl",
-                            "sha256": "5ec0800de5e2ddbd7c663cb4c0c15328f132dc168813897c18866c5c7b93db33",
+                            "url": "https://files.pythonhosted.org/packages/c9/02/9a14d3048ffa4f45b7c60956a9b22688dd925d6de50f6baf7e55f3664942/trove_classifiers-2026.5.22.10-py3-none-any.whl",
+                            "sha256": "01fe864225726e03efb843827ecabfe319fc4dee8dd66d65b8996cb09be46e2c",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "trove-classifiers",
@@ -1534,8 +1534,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/28/30/9abc9e34c657c33834eaf6cd02124c61bdf5944d802aa48e69be8da3585d/lxml-6.1.0.tar.gz",
-                            "sha256": "bfd57d8008c4965709a919c3e9a98f76c2c7cb319086b3d26858250620023b13",
+                            "url": "https://files.pythonhosted.org/packages/05/3b/aab6728cae887456f409b4d75e8a01856e4f04bd510de38052a47768b680/lxml-6.1.1.tar.gz",
+                            "sha256": "ba96ae44888e0185281e937633a743ea90d5a196c6000f82565ebb0580012d40",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "lxml"
