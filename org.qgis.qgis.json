@@ -125,11 +125,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/madler/zlib",
-                            "tag": "v1.3.1",
+                            "tag": "v1.3.2",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^v(.+)$"
-                            }
+                            },
+                            "commit": "da607da739fa6047df13e66a2af6b8bec7c2a498"
                         },
                         {
                             "type": "script",
@@ -298,8 +299,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.13.0/gdal-3.13.0.tar.xz",
-                            "sha256": "1c537dd2f4d66f05534ae419bc2af495c2204ce13bb266c8cbd867dd6705f0c7",
+                            "url": "https://download.osgeo.org/gdal/3.13.1/gdal-3.13.1.tar.xz",
+                            "sha256": "7398fb132753140740fac4f099f0dbe49d1ad074c4162290c308e067c46b7f92",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -596,8 +597,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-25.12.0.tar.xz",
-                                    "sha256": "c18b40eb36b1a0c5b86e29ca054bf0770304583da4f2cdd42fe86eca6a20de48",
+                                    "url": "https://poppler.freedesktop.org/poppler-26.06.0.tar.xz",
+                                    "sha256": "4cb4e5a3dc8cb5eec751c8a23c8ba19f61f96dedc0cd07d2aee6b0c8e2cf6ba4",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -689,8 +690,8 @@
                                     "sources": [
                                         {
                                             "type": "file",
-                                            "url": "https://files.pythonhosted.org/packages/32/98/7fe5d1bf741c03c6eea04b6245737dbd79657d4f9200e82fcbb4cc12637b/meson_python-0.19.0.tar.gz",
-                                            "sha256": "9959d198aa69b57fcfd354a34518c6f795b781a73ed0656f4d01660160cc2553",
+                                            "url": "https://files.pythonhosted.org/packages/8b/f0/d794d7ed8a843a8a8947768f3b329d1e8601222dc95d930f4a5f9706cd6c/meson_python-0.20.0.tar.gz",
+                                            "sha256": "6d9726ae6cd37e22f210c74b364b30180a68c20442e97ff09f3c566a414af738",
                                             "x-checker-data": {
                                                 "type": "pypi",
                                                 "name": "meson-python"
@@ -873,8 +874,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/PDAL/PDAL/releases/download/2.10.1/PDAL-2.10.1-src.tar.bz2",
-                            "sha256": "78765f1d06584c8e9b3b4a5b58c0ebea478d42ad21f1432717b31c20def05522",
+                            "url": "https://github.com/PDAL/PDAL/releases/download/2.10.2/PDAL-2.10.2-src.tar.bz2",
+                            "sha256": "882b97aa3ae5db682c3b2dc8edef4e29bcc7ecea51c70592e71bc1f34112ad00",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 138228,
@@ -1143,8 +1144,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/de/a7/f76514cc40ad6234098ecdebda08732d75964776c51a42845b7da10649e2/idna-3.17-py3-none-any.whl",
-                            "sha256": "466e48829084efe2548012b855df21540b96f2e20e51bd124c851536556a592c",
+                            "url": "https://files.pythonhosted.org/packages/1e/5e/d4e9f1a599fb8e573b7b87160658329fbf28d19eac2718f51fc3def3aa5a/idna-3.18-py3-none-any.whl",
+                            "sha256": "7f952cbe720b688055e3f87de14f5c3e5fdaa8bc3928985c4077ca689de849a2",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "idna",
@@ -1183,8 +1184,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/c9/02/9a14d3048ffa4f45b7c60956a9b22688dd925d6de50f6baf7e55f3664942/trove_classifiers-2026.5.22.10-py3-none-any.whl",
-                            "sha256": "01fe864225726e03efb843827ecabfe319fc4dee8dd66d65b8996cb09be46e2c",
+                            "url": "https://files.pythonhosted.org/packages/7c/a4/81502f486f01db95bc8320646a8a12511f5e556cb63d5e224d91816605c4/trove_classifiers-2026.6.1.19-py3-none-any.whl",
+                            "sha256": "ab4c4ec93cc4a4e7815fa759906e05e6bb3f2fbd92ea0f897288c6a43efd15b3",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "trove-classifiers",
@@ -1193,8 +1194,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/d3/8a/44032265776062a89171285ede55a0bdaadc8ac00f27f0512a71a9e3e1c8/hatchling-1.29.0-py3-none-any.whl",
-                            "sha256": "50af9343281f34785fab12da82e445ed987a6efb34fd8c2fc0f6e6630dbcc1b0",
+                            "url": "https://files.pythonhosted.org/packages/56/49/2797ec0ef88008a653a8867bb8d1e5c223cd2df8e40390dd5c6a0279cbc5/hatchling-1.30.1-py3-none-any.whl",
+                            "sha256": "161eacafb3c6f91526e92116d21426369f2c36e98c36a864f11a96345ad4ee31",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "hatchling",
@@ -1242,8 +1243,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/bf/03/5df0b995a3a6eefc24cc2320e3fe830d95e76ee6b0b1c6c9d0f1d4040bbe/owslib-0.35.0.tar.gz",
-                            "sha256": "0182f377bb30d25b78284bbaf82a12dece97902ed844cee88791ff38665b9b00",
+                            "url": "https://files.pythonhosted.org/packages/10/5d/f2b14a61454bc290c48786c1521f7c9e60996cb0d207b544feb722c82dee/owslib-0.36.0.tar.gz",
+                            "sha256": "b1ea352ee84f37a1a8ae44122b13cbd3b5b7bf9af0f74d84fe9ed7d9613b9543",
                             "dest-filename": "owslib.tar.gz",
                             "x-checker-data": {
                                 "type": "pypi",
@@ -1387,8 +1388,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v34.1",
-                            "commit": "4b0c3aacf0657fbf38253b38918d3358dd4319ec",
+                            "tag": "v35.1",
+                            "commit": "35cd01f9fe9afbeea38cc7b979a3b6bfcde82c03",
                             "x-checker-data": {
                                 "type": "git"
                             }
