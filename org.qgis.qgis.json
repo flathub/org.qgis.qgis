@@ -791,7 +791,6 @@
                             "name": "openexr",
                             "buildsystem": "cmake-ninja",
                             "config-opts": [
-                                "--trace-expand",
                                 "-DOPENEXR_BUILD_TOOLS=OFF",
                                 "-DOPENEXR_BUILD_EXAMPLES=OFF",
                                 "-DBUILD_TESTING=OFF"
