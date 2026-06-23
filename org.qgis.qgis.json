@@ -120,6 +120,8 @@
                 },
                 {
                     "name": "minizip",
+                    "buildsystem": "cmake-ninja",
+                    "config-opts": [ "-DZLIB_BUILD_MINIZIP=ON", "-DMINIZIP_INSTALL=ON" ],
                     "subdir": "contrib/minizip",
                     "sources": [
                         {
@@ -131,14 +133,6 @@
                                 "tag-pattern": "^v(.+)$"
                             },
                             "commit": "da607da739fa6047df13e66a2af6b8bec7c2a498"
-                        },
-                        {
-                            "type": "script",
-                            "dest": "contrib/minizip",
-                            "dest-filename": "autogen.sh",
-                            "commands": [
-                                "autoreconf -vfi"
-                            ]
                         }
                     ]
                 },
