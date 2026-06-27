@@ -121,7 +121,10 @@
                 {
                     "name": "minizip",
                     "buildsystem": "cmake-ninja",
-                    "config-opts": [ "-DZLIB_BUILD_MINIZIP=ON", "-DMINIZIP_INSTALL=ON" ],
+                    "config-opts": [
+                        "-DZLIB_BUILD_MINIZIP=ON",
+                        "-DMINIZIP_INSTALL=ON"
+                    ],
                     "subdir": "contrib/minizip",
                     "sources": [
                         {
@@ -742,12 +745,12 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/json-c/json-c",
-                                    "tag": "json-c-0.18-20240915",
+                                    "tag": "json-c-0.19-20260627",
                                     "x-checker-data": {
                                         "type": "git",
                                         "tag-pattern": "^json-c-([\\d.]+)-[\\d]+$"
                                     },
-                                    "commit": "41a55cfcedb54d9c1874f2f0eb07b504091d7e37"
+                                    "commit": "aa716cd8d663c976b99b0f30f102ee1d8ef63146"
                                 }
                             ]
                         },
