@@ -67,6 +67,307 @@
             ],
             "modules": [
                 {
+                    "name": "arrow",
+                    "buildsystem": "simple",
+                    "subdir": "cpp",
+                    "sources": [
+                        {
+                            "type": "git",
+                            "url": "https://github.com/apache/arrow.git",
+                            "tag": "apache-arrow-23.0.1",
+                            "x-checker-data": {
+                                "type": "git",
+                                "tag-pattern": "^apache-arrow-([0-9.]+)$"
+                            },
+                            "commit": "82a374e5f3de5b744f26591e6cd96de6349c76d9"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/abseil/abseil-cpp/archive/20211102.0.tar.gz",
+                            "sha256": "dcf71b9cba8dc0ca9940c4b316a0c796be8fab42b070bb6b7cab62b48f0e66c4",
+                            "dest-filename": "absl-20211102.0.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/awslabs/aws-c-auth/archive/v0.9.0.tar.gz",
+                            "sha256": "aa6e98864fefb95c249c100da4ae7aed36ba13a8a91415791ec6fad20bec0427",
+                            "dest-filename": "aws-c-auth-v0.9.0.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/awslabs/aws-c-cal/archive/v0.9.2.tar.gz",
+                            "sha256": "f9f3bc6a069e2efe25fcdf73e4d2b16b5608c327d2eb57c8f7a8524e9e1fcad0",
+                            "dest-filename": "aws-c-cal-v0.9.2.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/awslabs/aws-c-common/archive/v0.12.4.tar.gz",
+                            "sha256": "0b7705a4d115663c3f485d353a75ed86e37583157585e5825d851af634b57fe3",
+                            "dest-filename": "aws-c-common-v0.12.4.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/awslabs/aws-c-compression/archive/v0.3.1.tar.gz",
+                            "sha256": "d89fca17a37de762dc34f332d2da402343078da8dbd2224c46a11a88adddf754",
+                            "dest-filename": "aws-c-compression-v0.3.1.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/awslabs/aws-c-event-stream/archive/v0.5.4.tar.gz",
+                            "sha256": "cef8b78e362836d15514110fb43a0a0c7a86b0a210d5fe25fd248a82027a7272",
+                            "dest-filename": "aws-c-event-stream-v0.5.4.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/awslabs/aws-c-http/archive/v0.10.2.tar.gz",
+                            "sha256": "048d9d683459ade363fd7cc448c2b6329c78f67a2a0c0cb61c16de4634a2fc6b",
+                            "dest-filename": "aws-c-http-v0.10.2.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/awslabs/aws-c-io/archive/v0.19.1.tar.gz",
+                            "sha256": "f2fea0c066924f7fe3c2b1c7b2fa9be640f5b16a6514854226330e63a1faacd0",
+                            "dest-filename": "aws-c-io-v0.19.1.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/awslabs/aws-c-mqtt/archive/v0.13.1.tar.gz",
+                            "sha256": "c54d02c1e46f55bae8d5e6f9c4b0d78d84c1c9d9ac16ba8d78c3361edcd8b5bb",
+                            "dest-filename": "aws-c-mqtt-v0.13.1.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/awslabs/aws-c-s3/archive/v0.8.1.tar.gz",
+                            "sha256": "c8b09780691d2b94e50d101c68f01fa2d1c3debb0ff3aed313d93f0d3c9af663",
+                            "dest-filename": "aws-c-s3-v0.8.1.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/awslabs/aws-c-sdkutils/archive/v0.2.4.tar.gz",
+                            "sha256": "493cbed4fa57e0d4622fcff044e11305eb4fc12445f32c8861025597939175fc",
+                            "dest-filename": "aws-c-sdkutils-v0.2.4.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/awslabs/aws-checksums/archive/v0.2.7.tar.gz",
+                            "sha256": "178e8398d98111f29150f7813a70c20ad97ab30be0de02525440355fe84ccb1d",
+                            "dest-filename": "aws-checksums-v0.2.7.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/awslabs/aws-crt-cpp/archive/v0.32.8.tar.gz",
+                            "sha256": "db44260452a0296341fb8e7b987e4c328f08f7829b9f1c740fed9c963e081e93",
+                            "dest-filename": "aws-crt-cpp-v0.32.8.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/awslabs/aws-lc/archive/v1.52.1.tar.gz",
+                            "sha256": "fe552e3c3522f73afc3c30011745c431c633f7b4e25dcd7b38325f194a7b3b75",
+                            "dest-filename": "aws-lc-v1.52.1.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/aws/aws-sdk-cpp/archive/1.11.587.tar.gz",
+                            "sha256": "b9944ba9905a68d6e53abb4f36ab2b3bd18ac88d8571647bb9f2b8026b76f8cd",
+                            "dest-filename": "aws-sdk-cpp-1.11.587.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/Azure/azure-sdk-for-cpp/archive/refs/tags/azure-identity_1.9.0.tar.gz",
+                            "sha256": "97065bfc971ac8df450853ce805f820f52b59457bd7556510186a1569502e4a1",
+                            "dest-filename": "azure-identity_1.9.0.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/boostorg/boost/releases/download/boost-1.88.0/boost-1.88.0-cmake.tar.gz",
+                            "sha256": "dcea50f40ba1ecfc448fdf886c0165cf3e525fef2c9e3e080b9804e8117b9694",
+                            "mirror-urls": [],
+                            "dest-filename": "boost-1_88_0.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/google/brotli/archive/v1.0.9.tar.gz",
+                            "sha256": "f9e8d81d0405ba66d181529af42a3354f838c939095ff99930da6aa9cdf6fe46",
+                            "dest-filename": "brotli-v1.0.9.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz",
+                            "sha256": "ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269",
+                            "dest-filename": "bzip2-1.0.8.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/c-ares/c-ares/releases/download/cares-1_17_2/c-ares-1.17.2.tar.gz",
+                            "sha256": "4803c844ce20ce510ef0eb83f8ea41fa24ecaae9d280c468c582d2bb25b3913d",
+                            "dest-filename": "cares-1.17.2.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/google/crc32c/archive/refs/tags/1.1.2.tar.gz",
+                            "sha256": "ac07840513072b7fcebda6e821068aa04889018f24e10e46181068fb214d7e56",
+                            "dest-filename": "crc32c-1.1.2.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/google/benchmark/archive/v1.8.3.tar.gz",
+                            "sha256": "6bc180a57d23d4d9515519f92b0c83d61b05b5bab188961f36ac7b06b0d9e9ce",
+                            "dest-filename": "gbenchmark-v1.8.3.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/gflags/gflags/archive/v2.2.2.tar.gz",
+                            "sha256": "34af2f15cf7367513b352bdcd2493ab14ce43692d2dcd9dfc499492966c64dcf",
+                            "dest-filename": "gflags-v2.2.2.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/google/glog/archive/v0.5.0.tar.gz",
+                            "sha256": "eede71f28371bf39aa69b45de23b329d37214016e2055269b3b5e7cfd40b59f5",
+                            "dest-filename": "glog-v0.5.0.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/googleapis/google-cloud-cpp/archive/v2.22.0.tar.gz",
+                            "sha256": "0c68782e57959c82e0c81def805c01460a042c1aae0c2feee905acaa2a2dc9bf",
+                            "dest-filename": "google-cloud-cpp-v2.22.0.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/grpc/grpc/archive/v1.46.3.tar.gz",
+                            "sha256": "d6cbf22cb5007af71b61c6be316a79397469c58c82a942552a62e708bce60964",
+                            "dest-filename": "grpc-v1.46.3.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/google/googletest/archive/refs/tags/v1.17.0.tar.gz",
+                            "sha256": "65fab701d9829d38cb77c14acdc431d2108bfdbf8979e40eb8ae567edf10b27c",
+                            "dest-filename": "gtest-1.17.0.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://apache.jfrog.io/artifactory/arrow/thirdparty/7.0.0/jemalloc-5.3.0.tar.bz2",
+                            "sha256": "2db82d1e7119df3e71b7640219b6dfe84789bc0537983c3b7ac4f7189aecfeaa",
+                            "mirror-urls": [
+                                "https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2"
+                            ],
+                            "dest-filename": "jemalloc-5.3.0.tar.bz2"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/lz4/lz4/releases/download/v1.10.0/lz4-1.10.0.tar.gz",
+                            "sha256": "537512904744b35e232912055ccf8ec66d768639ff3abe5788d90d792ec5f48b",
+                            "dest-filename": "lz4-1.10.0.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/microsoft/mimalloc/archive/v3.1.5.tar.gz",
+                            "sha256": "1c6949032069d5ebea438ec5cedd602d06f40a92ddf0f0d9dcff0993e5f6635c",
+                            "mirror-urls": [],
+                            "dest-filename": "mimalloc-v3.1.5.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/nlohmann/json/archive/refs/tags/v3.12.0.tar.gz",
+                            "sha256": "4b92eb0c06d10683f7447ce9406cb97cd4b453be18d7279320f7b2f025c10187",
+                            "dest-filename": "nlohmann-json-v3.12.0.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/open-telemetry/opentelemetry-cpp/archive/refs/tags/v1.21.0.tar.gz",
+                            "sha256": "98e5546f577a11b52a57faed1f4cc60d8c1daa44760eba393f43eab5a8ec46a2",
+                            "dest-filename": "opentelemetry-cpp-v1.21.0.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/open-telemetry/opentelemetry-proto/archive/refs/tags/v1.7.0.tar.gz",
+                            "sha256": "11330d850f5e24d34c4246bc8cb21fcd311e7565d219195713455a576bb11bed",
+                            "dest-filename": "opentelemetry-proto-v1.7.0.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://archive.apache.org/dist/orc/orc-2.2.1/orc-2.2.1.tar.gz",
+                            "sha256": "52fc762332442e8b05d7182f8c035f9e04d945b9a52be22ab69f28b3f37d4500",
+                            "dest-filename": "orc-2.2.1.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/google/protobuf/releases/download/v21.3/protobuf-all-21.3.tar.gz",
+                            "sha256": "2f723218f6cb709ae4cdc4fb5ed56a5951fc5d466f0128ce4c946b8c78c8c49f",
+                            "dest-filename": "protobuf-21.3.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/miloyip/rapidjson/archive/232389d4f1012dddec4ef84861face2d2ba85709.tar.gz",
+                            "sha256": "b9290a9a6d444c8e049bd589ab804e0ccf2b05dc5984a19ed5ae75d090064806",
+                            "dest-filename": "rapidjson-232389d4f1012dddec4ef84861face2d2ba85709.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/google/re2/archive/2023-03-01.tar.gz",
+                            "sha256": "7a9a4824958586980926a300b4717202485c4b4115ac031822e29aa4ef207e48",
+                            "dest-filename": "re2-2023-03-01.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/aws/s2n-tls/archive/v1.5.23.tar.gz",
+                            "sha256": "81961ea5ae9313c987edfa579306ad4500bedfbf10caf84d8a5dcfc42aaf591f",
+                            "dest-filename": "s2n-v1.5.23.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/google/snappy/archive/1.2.2.tar.gz",
+                            "sha256": "90f74bc1fbf78a6c56b3c4a082a05103b3a56bb17bca1a27e052ea11723292dc",
+                            "dest-filename": "snappy-1.2.2.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/substrait-io/substrait/archive/v0.44.0.tar.gz",
+                            "sha256": "f989a862f694e7dbb695925ddb7c4ce06aa6c51aca945105c075139aed7e55a2",
+                            "dest-filename": "substrait_v0.44.0.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://archive.apache.org/dist/thrift/0.22.0/thrift-0.22.0.tar.gz",
+                            "sha256": "794a0e455787960d9f27ab92c38e34da27e8deeda7a5db0e59dc64a00df8a1e5",
+                            "dest-filename": "thrift-0.22.0.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/JuliaStrings/utf8proc/archive/v2.10.0.tar.gz",
+                            "sha256": "6f4f1b639daa6dca9f80bc5db1233e9cbaa31a67790887106160b33ef743f136",
+                            "mirror-urls": [
+                                "https://github.com/JuliaStrings/utf8proc/archive/refs/tags/v2.10.0.tar.gz"
+                            ],
+                            "dest-filename": "utf8proc-v2.10.0.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/xtensor-stack/xsimd/archive/14.0.0.tar.gz",
+                            "sha256": "17de0236954955c10c09d6938d4c5f3a3b92d31be5dadd1d5d09fc1b15490dce",
+                            "mirror-urls": [
+                                "https://github.com/xtensor-stack/xsimd/archive/refs/tags/14.0.0.tar.gz"
+                            ],
+                            "dest-filename": "xsimd-14.0.0.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://zlib.net/fossils/zlib-1.3.1.tar.gz",
+                            "sha256": "9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23",
+                            "dest-filename": "zlib-1.3.1.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/facebook/zstd/releases/download/v1.5.7/zstd-1.5.7.tar.gz",
+                            "sha256": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3",
+                            "dest-filename": "zstd-1.5.7.tar.gz"
+                        }
+                    ],
+                    "build-commands": [
+                        "export ARROW_ABSL_URL=/run/build/arrow/absl-20211102.0.tar.gz && export ARROW_AWS_C_AUTH_URL=/run/build/arrow/aws-c-auth-v0.9.0.tar.gz && export ARROW_AWS_C_CAL_URL=/run/build/arrow/aws-c-cal-v0.9.2.tar.gz && export ARROW_AWS_C_COMMON_URL=/run/build/arrow/aws-c-common-v0.12.4.tar.gz && export ARROW_AWS_C_COMPRESSION_URL=/run/build/arrow/aws-c-compression-v0.3.1.tar.gz && export ARROW_AWS_C_EVENT_STREAM_URL=/run/build/arrow/aws-c-event-stream-v0.5.4.tar.gz && export ARROW_AWS_C_HTTP_URL=/run/build/arrow/aws-c-http-v0.10.2.tar.gz && export ARROW_AWS_C_IO_URL=/run/build/arrow/aws-c-io-v0.19.1.tar.gz && export ARROW_AWS_C_MQTT_URL=/run/build/arrow/aws-c-mqtt-v0.13.1.tar.gz && export ARROW_AWS_C_S3_URL=/run/build/arrow/aws-c-s3-v0.8.1.tar.gz && export ARROW_AWS_C_SDKUTILS_URL=/run/build/arrow/aws-c-sdkutils-v0.2.4.tar.gz && export ARROW_AWS_CHECKSUMS_URL=/run/build/arrow/aws-checksums-v0.2.7.tar.gz && export ARROW_AWS_CRT_CPP_URL=/run/build/arrow/aws-crt-cpp-v0.32.8.tar.gz && export ARROW_AWS_LC_URL=/run/build/arrow/aws-lc-v1.52.1.tar.gz && export ARROW_AWSSDK_URL=/run/build/arrow/aws-sdk-cpp-1.11.587.tar.gz && export ARROW_AZURE_SDK_URL=/run/build/arrow/azure-identity_1.9.0.tar.gz && export ARROW_BOOST_URL=/run/build/arrow/boost-1_88_0.tar.gz && export ARROW_BROTLI_URL=/run/build/arrow/brotli-v1.0.9.tar.gz && export ARROW_BZIP2_URL=/run/build/arrow/bzip2-1.0.8.tar.gz && export ARROW_CARES_URL=/run/build/arrow/cares-1.17.2.tar.gz && export ARROW_CRC32C_URL=/run/build/arrow/crc32c-1.1.2.tar.gz && export ARROW_GBENCHMARK_URL=/run/build/arrow/gbenchmark-v1.8.3.tar.gz && export ARROW_GFLAGS_URL=/run/build/arrow/gflags-v2.2.2.tar.gz && export ARROW_GLOG_URL=/run/build/arrow/glog-v0.5.0.tar.gz && export ARROW_GOOGLE_CLOUD_CPP_URL=/run/build/arrow/google-cloud-cpp-v2.22.0.tar.gz && export ARROW_GRPC_URL=/run/build/arrow/grpc-v1.46.3.tar.gz && export ARROW_GTEST_URL=/run/build/arrow/gtest-1.17.0.tar.gz && export ARROW_JEMALLOC_URL=/run/build/arrow/jemalloc-5.3.0.tar.bz2 && export ARROW_LZ4_URL=/run/build/arrow/lz4-1.10.0.tar.gz && export ARROW_MIMALLOC_URL=/run/build/arrow/mimalloc-v3.1.5.tar.gz && export ARROW_NLOHMANN_JSON_URL=/run/build/arrow/nlohmann-json-v3.12.0.tar.gz && export ARROW_OPENTELEMETRY_URL=/run/build/arrow/opentelemetry-cpp-v1.21.0.tar.gz && export ARROW_OPENTELEMETRY_PROTO_URL=/run/build/arrow/opentelemetry-proto-v1.7.0.tar.gz && export ARROW_ORC_URL=/run/build/arrow/orc-2.2.1.tar.gz && export ARROW_PROTOBUF_URL=/run/build/arrow/protobuf-21.3.tar.gz && export ARROW_RAPIDJSON_URL=/run/build/arrow/rapidjson-232389d4f1012dddec4ef84861face2d2ba85709.tar.gz && export ARROW_RE2_URL=/run/build/arrow/re2-2023-03-01.tar.gz && export ARROW_S2N_TLS_URL=/run/build/arrow/s2n-v1.5.23.tar.gz && export ARROW_SNAPPY_URL=/run/build/arrow/snappy-1.2.2.tar.gz && export ARROW_SUBSTRAIT_URL=/run/build/arrow/substrait_v0.44.0.tar.gz && export ARROW_THRIFT_URL=/run/build/arrow/thrift-0.22.0.tar.gz && export ARROW_UCX_URL=/run/build/arrow/ucx-1.12.1.tar.gz && export ARROW_UTF8PROC_URL=/run/build/arrow/utf8proc-v2.10.0.tar.gz && export ARROW_XSIMD_URL=/run/build/arrow/xsimd-14.0.0.tar.gz && export ARROW_ZLIB_URL=/run/build/arrow/zlib-1.3.1.tar.gz && export ARROW_ZSTD_URL=/run/build/arrow/zstd-1.5.7.tar.gz && export CMAKE_POLICY_VERSION_MINIMUM=3.5 && cmake -GNinja --preset ninja-release -DCMAKE_INSTALL_PREFIX=/app -DCMAKE_INSTALL_LIBDIR=/app/lib && cmake --build . && ninja && ninja install"
+                    ]
+                },
+                {
                     "name": "proj",
                     "buildsystem": "cmake-ninja",
                     "config-opts": [
@@ -252,7 +553,7 @@
                         "-DENABLE_IPO=ON",
                         "-DBUILD_PYTHON_BINDINGS=ON",
                         "-DGDAL_ENABLE_PLUGINS=ON",
-                        "-DGDAL_USE_ARROW=OFF",
+                        "-DGDAL_USE_ARROW=ON",
                         "-DGDAL_USE_BLOSC=ON",
                         "-DGDAL_USE_CFITSIO=ON",
                         "-DGDAL_USE_CURL=ON",
@@ -279,7 +580,7 @@
                         "-DGDAL_USE_OPENEXR=ON",
                         "-DGDAL_USE_OPENJPEG=ON",
                         "-DGDAL_USE_OPENSSL=ON",
-                        "-DGDAL_USE_PARQUET=OFF",
+                        "-DGDAL_USE_PARQUET=ON",
                         "-DGDAL_USE_PCRE2=ON",
                         "-DGDAL_USE_PNG=ON",
                         "-DGDAL_USE_POPPLER=ON",
