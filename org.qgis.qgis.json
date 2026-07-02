@@ -849,11 +849,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/Esri/lerc.git",
-                                    "tag": "v4.1.0",
+                                    "tag": "v4.1.1",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "fa0ae1b00903cc55e321d5c0165746310092adf8"
+                                    "commit": "8b32de31d3b023454fd402b0c0460431ae5435a6"
                                 }
                             ]
                         }
