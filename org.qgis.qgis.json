@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-4.0.3.tar.bz2",
-                    "sha256": "e3c1d06d6b195aba99daf0a0562331d62359afd728666634ce4095ce99a844f4",
+                    "url": "https://qgis.org/downloads/qgis-4.2.0.tar.bz2",
+                    "sha256": "1e53c74d80ce6e32b2aa6e015c36dde1fd08669ef9cfda334b29bd2091c7904e",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -594,8 +594,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-26.06.0.tar.xz",
-                                    "sha256": "4cb4e5a3dc8cb5eec751c8a23c8ba19f61f96dedc0cd07d2aee6b0c8e2cf6ba4",
+                                    "url": "https://poppler.freedesktop.org/poppler-26.07.0.tar.xz",
+                                    "sha256": "304832f48f8a47fdca90c6b6d1f684e68f37c10c9a0726f345f4ca9df4ca01e2",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -849,11 +849,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/Esri/lerc.git",
-                                    "tag": "v4.1.0",
+                                    "tag": "v4.1.1",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "fa0ae1b00903cc55e321d5c0165746310092adf8"
+                                    "commit": "8b32de31d3b023454fd402b0c0460431ae5435a6"
                                 }
                             ]
                         }
