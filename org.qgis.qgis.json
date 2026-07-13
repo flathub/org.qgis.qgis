@@ -93,13 +93,13 @@
                     "//": "Bundled dependency tarballs must match cpp/thirdparty/versions.txt of the pinned Arrow version. Substrait is disabled (nothing here consumes it) and Boost/codecs come from the boost module / KDE runtime, so Arrow does not build its own protobuf, boost, zlib, zstd, lz4, bz2 or brotli.",
                     "build-options": {
                         "env": {
-                            "ARROW_MIMALLOC_URL": "/run/build/arrow/mimalloc-v3.1.5.tar.gz",
+                            "ARROW_MIMALLOC_URL": "/run/build/arrow/mimalloc-v3.3.1.tar.gz",
                             "ARROW_RAPIDJSON_URL": "/run/build/arrow/rapidjson-232389d4f1012dddec4ef84861face2d2ba85709.tar.gz",
                             "ARROW_RE2_URL": "/run/build/arrow/re2-2023-03-01.tar.gz",
                             "ARROW_SNAPPY_URL": "/run/build/arrow/snappy-1.2.2.tar.gz",
                             "ARROW_THRIFT_URL": "/run/build/arrow/thrift-0.22.0.tar.gz",
                             "ARROW_UTF8PROC_URL": "/run/build/arrow/utf8proc-v2.10.0.tar.gz",
-                            "ARROW_XSIMD_URL": "/run/build/arrow/xsimd-14.0.0.tar.gz",
+                            "ARROW_XSIMD_URL": "/run/build/arrow/xsimd-14.2.0.tar.gz",
                             "CMAKE_POLICY_VERSION_MINIMUM": "3.5"
                         }
                     },
@@ -107,19 +107,19 @@
                         {
                             "type": "git",
                             "url": "https://github.com/apache/arrow.git",
-                            "tag": "apache-arrow-23.0.1",
+                            "tag": "apache-arrow-25.0.0",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^apache-arrow-([0-9.]+)$"
                             },
-                            "commit": "82a374e5f3de5b744f26591e6cd96de6349c76d9"
+                            "commit": "59bea6ec485e7fe351d1aa6753f964f6a6bc353a"
                         },
                         {
                             "type": "file",
-                            "url": "https://github.com/microsoft/mimalloc/archive/v3.1.5.tar.gz",
-                            "sha256": "1c6949032069d5ebea438ec5cedd602d06f40a92ddf0f0d9dcff0993e5f6635c",
+                            "url": "https://github.com/microsoft/mimalloc/archive/v3.3.1.tar.gz",
+                            "sha256": "42c16914168ac6741eeb407e83b93a12b2b7ee25a7e14e6b4807fab8b577a540",
                             "mirror-urls": [],
-                            "dest-filename": "mimalloc-v3.1.5.tar.gz"
+                            "dest-filename": "mimalloc-v3.3.1.tar.gz"
                         },
                         {
                             "type": "file",
@@ -156,12 +156,12 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://github.com/xtensor-stack/xsimd/archive/14.0.0.tar.gz",
-                            "sha256": "17de0236954955c10c09d6938d4c5f3a3b92d31be5dadd1d5d09fc1b15490dce",
+                            "url": "https://github.com/xtensor-stack/xsimd/archive/14.2.0.tar.gz",
+                            "sha256": "21e841ab684b05331e81e7f782431753a029ef7b7d9d6d3ddab837e7782a40ee",
                             "mirror-urls": [
-                                "https://github.com/xtensor-stack/xsimd/archive/refs/tags/14.0.0.tar.gz"
+                                "https://github.com/xtensor-stack/xsimd/archive/refs/tags/14.2.0.tar.gz"
                             ],
-                            "dest-filename": "xsimd-14.0.0.tar.gz"
+                            "dest-filename": "xsimd-14.2.0.tar.gz"
                         }
                     ],
                     "build-commands": [
