@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-4.2.0.tar.bz2",
-                    "sha256": "1e53c74d80ce6e32b2aa6e015c36dde1fd08669ef9cfda334b29bd2091c7904e",
+                    "url": "https://qgis.org/downloads/qgis-4.2.1.tar.bz2",
+                    "sha256": "96a9d229f527b31090cedf5e6068eab8e48d366bdae35dcfc1dbd81db6b70457",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -296,8 +296,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.13.1/gdal-3.13.1.tar.xz",
-                            "sha256": "7398fb132753140740fac4f099f0dbe49d1ad074c4162290c308e067c46b7f92",
+                            "url": "https://download.osgeo.org/gdal/3.13.2/gdal-3.13.2.tar.xz",
+                            "sha256": "0200b7878d837a7f475ff4070121d0e601f8ef801c2fd83a64294c544f609211",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -322,8 +322,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "http://prdownloads.sourceforge.net/swig/swig-4.4.1.tar.gz",
-                                    "sha256": "40162a706c56f7592d08fd52ef5511cb7ac191f3593cf07306a0a554c6281fcf",
+                                    "url": "http://prdownloads.sourceforge.net/swig/swig-4.5.0.tar.gz",
+                                    "sha256": "22ae0e887f8cca8031a325c67d005207653200b40e71edb3f88780e28e47d0ff",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 4919,
@@ -432,8 +432,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-15.4.1.tar.xz",
-                                    "sha256": "12781baf33c71b622c2f040fd27143479d120ec89d40f889621f0b1bb6232e27",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-15.4.2.tar.xz",
+                                    "sha256": "58fa258d0e1f93074c9afa792027fc259b85cb974ccc0b932b061d4ada5bd83a",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -594,8 +594,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-26.07.0.tar.xz",
-                                    "sha256": "304832f48f8a47fdca90c6b6d1f684e68f37c10c9a0726f345f4ca9df4ca01e2",
+                                    "url": "https://poppler.freedesktop.org/poppler-26.08.0.tar.xz",
+                                    "sha256": "dc906e68cea698109706ac6aa3d2c9d4512fcfcac42d90b8afcda486d1b9abd0",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -802,11 +802,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
-                                    "tag": "v3.4.13",
+                                    "tag": "v3.4.14",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "c1194b2cb23a1bdf76fe5e756b22e8436b9a98c9"
+                                    "commit": "777d231a179de1711d2a942810d9559216ab3f4c"
                                 }
                             ],
                             "modules": [
@@ -849,11 +849,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/Esri/lerc.git",
-                                    "tag": "v4.1.1",
+                                    "tag": "v4.2.0",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "8b32de31d3b023454fd402b0c0460431ae5435a6"
+                                    "commit": "e534980e11992cc5f11864b0dcff1af6a27cee0d"
                                 }
                             ]
                         }
@@ -1122,8 +1122,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/ff/46/dd499ec9038423421951e4fad73051febaa13d2df82b4064f87af8b8c0c3/pytz-2026.2.tar.gz",
-                            "sha256": "0e60b47b29f21574376f218fe21abc009894a2321ea16c6754f3cad6eb7cdd6a",
+                            "url": "https://files.pythonhosted.org/packages/fb/48/fb042503b6ca6cd271261dc559fd6432f7d8c713153e9ec5c591af4dfc1c/pytz-2026.3.post1.tar.gz",
+                            "sha256": "2211d3fcf9a797d3405cac96ac7f61d80e6a644f72a3309607282fe8a2010c5d",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "pytz"
