@@ -322,8 +322,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "http://prdownloads.sourceforge.net/swig/swig-4.4.1.tar.gz",
-                                    "sha256": "40162a706c56f7592d08fd52ef5511cb7ac191f3593cf07306a0a554c6281fcf",
+                                    "url": "http://prdownloads.sourceforge.net/swig/swig-4.5.0.tar.gz",
+                                    "sha256": "22ae0e887f8cca8031a325c67d005207653200b40e71edb3f88780e28e47d0ff",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 4919,
@@ -802,11 +802,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
-                                    "tag": "v3.4.13",
+                                    "tag": "v3.4.14",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "c1194b2cb23a1bdf76fe5e756b22e8436b9a98c9"
+                                    "commit": "777d231a179de1711d2a942810d9559216ab3f4c"
                                 }
                             ],
                             "modules": [
@@ -1044,11 +1044,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v83.0.0",
+                            "tag": "v84.0.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "6519f728c6f23c992df81a5691ef7655184a20eb"
+                            "commit": "72e919a8b10aaafc041205d4e3ae0e6a2e1e5f87"
                         }
                     ]
                 },
@@ -1190,8 +1190,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/64/e2/2c0af0a52d16be74a4f194564fcdc417521ed863e9b65e4bc9052dacba6f/hatchling-1.31.0-py3-none-any.whl",
-                            "sha256": "aac80bec8b6fe35e8480f1c335be8910fa210a0e6f735a139be205dadcacb544",
+                            "url": "https://files.pythonhosted.org/packages/a9/84/1798b6d85ecde0e31546004efd25c5de1b1f49250644a60cce460e12593a/hatchling-1.32.0-py3-none-any.whl",
+                            "sha256": "0e17c9c3b9aa7c625acc8d0f5b622f107d5049af9ecf5ada4de1aada5be7cdbc",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "hatchling",
