@@ -217,8 +217,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://ftp.postgresql.org/pub/source/v18.4/postgresql-18.4.tar.bz2",
-                            "sha256": "81a81ec695fb0c7901407defaa1d2f7973617154cf27ba74e3a7ab8e64436094",
+                            "url": "https://ftp.postgresql.org/pub/source/v18.6/postgresql-18.6.tar.bz2",
+                            "sha256": "555610c24d53e4316da5b7d3fc25c279d96856d5e0e23ee308c328c5fa881d9f",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 5601,
@@ -296,8 +296,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.osgeo.org/gdal/3.13.2/gdal-3.13.2.tar.xz",
-                            "sha256": "0200b7878d837a7f475ff4070121d0e601f8ef801c2fd83a64294c544f609211",
+                            "url": "https://download.osgeo.org/gdal/3.13.3/gdal-3.13.3.tar.xz",
+                            "sha256": "a3348c2102dd91962290007d7c293b467bb1b0cd89f086f24bb97b9b653a9804",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 881,
@@ -413,12 +413,12 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/HEASARC/cfitsio.git",
-                                    "tag": "cfitsio-4.6.4",
+                                    "tag": "cfitsio-4.7.0",
                                     "x-checker-data": {
                                         "type": "git",
                                         "tag-pattern": "^(.+)$"
                                     },
-                                    "commit": "7768589025af98f2ed49c6818bb62bd7c0bfddb2"
+                                    "commit": "d6d27653740864a0483e74cff23c53e34e1dceee"
                                 }
                             ]
                         },
@@ -503,8 +503,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://archives.boost.io/release/1.90.0/source/boost_1_90_0.tar.bz2",
-                                    "sha256": "49551aff3b22cbc5c5a9ed3dbc92f0e23ea50a0f7325b0d198b705e8ee3fc305",
+                                    "url": "https://archives.boost.io/release/1.92.0/source/boost_1_92_0.tar.bz2",
+                                    "sha256": "5c1d40cb8e19adbf740a4ec2da35b3e58f3f5804b1dce44deb53df72193cbc6c",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 6845,
@@ -817,11 +817,11 @@
                                         {
                                             "type": "git",
                                             "url": "https://github.com/AcademySoftwareFoundation/Imath.git",
-                                            "tag": "v3.2.2",
+                                            "tag": "v3.2.3",
                                             "x-checker-data": {
                                                 "type": "git"
                                             },
-                                            "commit": "1e480d11cb98b032a2dece9b9a8730512effc7f6"
+                                            "commit": "5f27ba266d3ea1565e912570c30b5eafc89959f1"
                                         }
                                     ]
                                 },
@@ -1044,11 +1044,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v83.0.0",
+                            "tag": "v84.0.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "6519f728c6f23c992df81a5691ef7655184a20eb"
+                            "commit": "72e919a8b10aaafc041205d4e3ae0e6a2e1e5f87"
                         }
                     ]
                 },
@@ -1140,8 +1140,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/1e/5e/d4e9f1a599fb8e573b7b87160658329fbf28d19eac2718f51fc3def3aa5a/idna-3.18-py3-none-any.whl",
-                            "sha256": "7f952cbe720b688055e3f87de14f5c3e5fdaa8bc3928985c4077ca689de849a2",
+                            "url": "https://files.pythonhosted.org/packages/57/b0/0e52c878c53f245edd3a11020f20979b3f490f245af532c7cae3027754b5/idna-3.19-py3-none-any.whl",
+                            "sha256": "815e7be7a7806d54abb586dc943addc79e8b2ee16915059658cbeff4b1b43bf4",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "idna",
@@ -1150,8 +1150,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/98/2b/f97f1c193fb855c345d678f5077d6926034db0722df74c8f057020e05a25/charset_normalizer-3.4.9-py3-none-any.whl",
-                            "sha256": "68e5f26a1ad57ded6d1cfb85331d1c1a195314756471d97758c48498bb4dcdf5",
+                            "url": "https://files.pythonhosted.org/packages/cc/61/d01fc49b8dea277640b55a9e15960dbca9fdc8c9fde18e572d39c59f4019/charset_normalizer-3.5.1-py3-none-any.whl",
+                            "sha256": "6df0ec430f9a831772c23ca5a224cba36517a58a84bb32c32bb59a9fa67c47f6",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "charset-normalizer",
@@ -1190,8 +1190,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/64/e2/2c0af0a52d16be74a4f194564fcdc417521ed863e9b65e4bc9052dacba6f/hatchling-1.31.0-py3-none-any.whl",
-                            "sha256": "aac80bec8b6fe35e8480f1c335be8910fa210a0e6f735a139be205dadcacb544",
+                            "url": "https://files.pythonhosted.org/packages/a9/84/1798b6d85ecde0e31546004efd25c5de1b1f49250644a60cce460e12593a/hatchling-1.32.0-py3-none-any.whl",
+                            "sha256": "0e17c9c3b9aa7c625acc8d0f5b622f107d5049af9ecf5ada4de1aada5be7cdbc",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "hatchling",
@@ -1230,8 +1230,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/05/3b/aab6728cae887456f409b4d75e8a01856e4f04bd510de38052a47768b680/lxml-6.1.1.tar.gz",
-                            "sha256": "ba96ae44888e0185281e937633a743ea90d5a196c6000f82565ebb0580012d40",
+                            "url": "https://files.pythonhosted.org/packages/ad/a9/970b8fa0ecc4fbf1dfaed0d89bbc1fc1421b25ec26a2038c91e872dc6c8e/lxml-6.1.2.tar.gz",
+                            "sha256": "1055241852f2b02068af4a625a5d32c087db193c12251928af2562ecd2239f18",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "lxml"
