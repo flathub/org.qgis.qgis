@@ -67,6 +67,108 @@
             ],
             "modules": [
                 {
+                    "name": "boost",
+                    "buildsystem": "simple",
+                    "build-commands": [
+                        "./bootstrap.sh --prefix=${FLATPAK_DEST} --with-icu",
+                        "./b2 install -j ${FLATPAK_BUILDER_N_JOBS} headers variant=release threading=multi --layout=system"
+                    ],
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://archives.boost.io/release/1.90.0/source/boost_1_90_0.tar.bz2",
+                            "sha256": "49551aff3b22cbc5c5a9ed3dbc92f0e23ea50a0f7325b0d198b705e8ee3fc305",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 6845,
+                                "url-template": "https://archives.boost.io/release/$version/source/boost_${major}_${minor}_$patch.tar.bz2"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "arrow",
+                    "buildsystem": "simple",
+                    "subdir": "cpp",
+                    "//": "Bundled dependency tarballs must match cpp/thirdparty/versions.txt of the pinned Arrow version. Substrait is disabled (nothing here consumes it) and Boost/codecs come from the boost module / KDE runtime, so Arrow does not build its own protobuf, boost, zlib, zstd, lz4, bz2 or brotli.",
+                    "build-options": {
+                        "env": {
+                            "ARROW_MIMALLOC_URL": "/run/build/arrow/mimalloc-v3.3.1.tar.gz",
+                            "ARROW_RAPIDJSON_URL": "/run/build/arrow/rapidjson-232389d4f1012dddec4ef84861face2d2ba85709.tar.gz",
+                            "ARROW_RE2_URL": "/run/build/arrow/re2-2023-03-01.tar.gz",
+                            "ARROW_SNAPPY_URL": "/run/build/arrow/snappy-1.2.2.tar.gz",
+                            "ARROW_THRIFT_URL": "/run/build/arrow/thrift-0.22.0.tar.gz",
+                            "ARROW_UTF8PROC_URL": "/run/build/arrow/utf8proc-v2.10.0.tar.gz",
+                            "ARROW_XSIMD_URL": "/run/build/arrow/xsimd-14.2.0.tar.gz",
+                            "CMAKE_POLICY_VERSION_MINIMUM": "3.5"
+                        }
+                    },
+                    "sources": [
+                        {
+                            "type": "git",
+                            "url": "https://github.com/apache/arrow.git",
+                            "tag": "apache-arrow-25.0.0",
+                            "x-checker-data": {
+                                "type": "git",
+                                "tag-pattern": "^apache-arrow-([0-9.]+)$"
+                            },
+                            "commit": "59bea6ec485e7fe351d1aa6753f964f6a6bc353a"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/microsoft/mimalloc/archive/v3.3.1.tar.gz",
+                            "sha256": "42c16914168ac6741eeb407e83b93a12b2b7ee25a7e14e6b4807fab8b577a540",
+                            "mirror-urls": [],
+                            "dest-filename": "mimalloc-v3.3.1.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/miloyip/rapidjson/archive/232389d4f1012dddec4ef84861face2d2ba85709.tar.gz",
+                            "sha256": "b9290a9a6d444c8e049bd589ab804e0ccf2b05dc5984a19ed5ae75d090064806",
+                            "dest-filename": "rapidjson-232389d4f1012dddec4ef84861face2d2ba85709.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/google/re2/archive/2023-03-01.tar.gz",
+                            "sha256": "7a9a4824958586980926a300b4717202485c4b4115ac031822e29aa4ef207e48",
+                            "dest-filename": "re2-2023-03-01.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/google/snappy/archive/1.2.2.tar.gz",
+                            "sha256": "90f74bc1fbf78a6c56b3c4a082a05103b3a56bb17bca1a27e052ea11723292dc",
+                            "dest-filename": "snappy-1.2.2.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://archive.apache.org/dist/thrift/0.22.0/thrift-0.22.0.tar.gz",
+                            "sha256": "794a0e455787960d9f27ab92c38e34da27e8deeda7a5db0e59dc64a00df8a1e5",
+                            "dest-filename": "thrift-0.22.0.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/JuliaStrings/utf8proc/archive/v2.10.0.tar.gz",
+                            "sha256": "6f4f1b639daa6dca9f80bc5db1233e9cbaa31a67790887106160b33ef743f136",
+                            "mirror-urls": [
+                                "https://github.com/JuliaStrings/utf8proc/archive/refs/tags/v2.10.0.tar.gz"
+                            ],
+                            "dest-filename": "utf8proc-v2.10.0.tar.gz"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://github.com/xtensor-stack/xsimd/archive/14.2.0.tar.gz",
+                            "sha256": "21e841ab684b05331e81e7f782431753a029ef7b7d9d6d3ddab837e7782a40ee",
+                            "mirror-urls": [
+                                "https://github.com/xtensor-stack/xsimd/archive/refs/tags/14.2.0.tar.gz"
+                            ],
+                            "dest-filename": "xsimd-14.2.0.tar.gz"
+                        }
+                    ],
+                    "build-commands": [
+                        "cmake -GNinja --preset ninja-release -DARROW_SUBSTRAIT=OFF -DBoost_SOURCE=SYSTEM -DCMAKE_INSTALL_PREFIX=/app -DCMAKE_INSTALL_LIBDIR=/app/lib && cmake --build . && ninja install"
+                    ]
+                },
+                {
                     "name": "proj",
                     "buildsystem": "cmake-ninja",
                     "config-opts": [
@@ -252,7 +354,7 @@
                         "-DENABLE_IPO=ON",
                         "-DBUILD_PYTHON_BINDINGS=ON",
                         "-DGDAL_ENABLE_PLUGINS=ON",
-                        "-DGDAL_USE_ARROW=OFF",
+                        "-DGDAL_USE_ARROW=ON",
                         "-DGDAL_USE_BLOSC=ON",
                         "-DGDAL_USE_CFITSIO=ON",
                         "-DGDAL_USE_CURL=ON",
@@ -279,7 +381,7 @@
                         "-DGDAL_USE_OPENEXR=ON",
                         "-DGDAL_USE_OPENJPEG=ON",
                         "-DGDAL_USE_OPENSSL=ON",
-                        "-DGDAL_USE_PARQUET=OFF",
+                        "-DGDAL_USE_PARQUET=ON",
                         "-DGDAL_USE_PCRE2=ON",
                         "-DGDAL_USE_PNG=ON",
                         "-DGDAL_USE_POPPLER=ON",
@@ -489,26 +591,6 @@
                                         "project-id": 14487,
                                         "stable-only": true,
                                         "url-template": "https://github.com/weidai11/cryptopp/archive/CRYPTOPP_${major}_${minor}_$patch.tar.gz"
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "name": "boost",
-                            "buildsystem": "simple",
-                            "build-commands": [
-                                "./bootstrap.sh --prefix=${FLATPAK_DEST} --with-icu",
-                                "./b2 install -j ${FLATPAK_BUILDER_N_JOBS} headers variant=release threading=multi --layout=system"
-                            ],
-                            "sources": [
-                                {
-                                    "type": "archive",
-                                    "url": "https://archives.boost.io/release/1.90.0/source/boost_1_90_0.tar.bz2",
-                                    "sha256": "49551aff3b22cbc5c5a9ed3dbc92f0e23ea50a0f7325b0d198b705e8ee3fc305",
-                                    "x-checker-data": {
-                                        "type": "anitya",
-                                        "project-id": 6845,
-                                        "url-template": "https://archives.boost.io/release/$version/source/boost_${major}_${minor}_$patch.tar.bz2"
                                     }
                                 }
                             ]
