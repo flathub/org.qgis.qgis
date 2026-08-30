@@ -1044,11 +1044,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pypa/setuptools.git",
-                            "tag": "v83.0.0",
+                            "tag": "v84.0.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "6519f728c6f23c992df81a5691ef7655184a20eb"
+                            "commit": "72e919a8b10aaafc041205d4e3ae0e6a2e1e5f87"
                         }
                     ]
                 },
