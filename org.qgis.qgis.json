@@ -91,8 +91,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "http://download.osgeo.org/geos/geos-3.14.1.tar.bz2",
-                            "sha256": "3c20919cda9a505db07b5216baa980bacdaa0702da715b43f176fb07eff7e716",
+                            "url": "http://download.osgeo.org/geos/geos-3.15.0.tar.bz2",
+                            "sha256": "d5e5192a686d065eaed082de14dd26244c5c8e02bff16b2c6cce3265f648e00e",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 13493,
@@ -1063,11 +1063,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/pyproj4/pyproj.git",
-                            "tag": "3.7.2",
+                            "tag": "3.8.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "f16037d2c45c3274ef28b828998267c3390393c8"
+                            "commit": "a7a12db5d325c1389fe460f4dabbaeca23fa131e"
                         }
                     ]
                 },
@@ -1241,8 +1241,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/ad/a9/970b8fa0ecc4fbf1dfaed0d89bbc1fc1421b25ec26a2038c91e872dc6c8e/lxml-6.1.2.tar.gz",
-                            "sha256": "1055241852f2b02068af4a625a5d32c087db193c12251928af2562ecd2239f18",
+                            "url": "https://files.pythonhosted.org/packages/23/ad/28ecd7cb894d172f3c9c80a075eeeb2017ac62e3632cee05a5f9493547eb/lxml-6.1.3.tar.gz",
+                            "sha256": "45222d94ddd511536f3b2f7d9deae3b2339b4ce0f075f1ca25703b07cad9dd21",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "lxml"
@@ -1395,8 +1395,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v36.0",
-                            "commit": "3f17acbf7ffbda81db8be17505554c726e558bb2",
+                            "tag": "v36.1",
+                            "commit": "f377bfefc5e2cfab68b816903c25b23e091c439d",
                             "x-checker-data": {
                                 "type": "git"
                             }
