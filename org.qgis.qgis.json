@@ -1271,11 +1271,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/psycopg/psycopg2.git",
-                            "tag": "2.9.12",
+                            "tag": "2.9.13",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "3a6d9d6ddc6b53eaa80b712f5fa6b23abbdc38db"
+                            "commit": "f650e7afed0c94f596594e8328a0c7fa65a9d0e5"
                         }
                     ]
                 },
