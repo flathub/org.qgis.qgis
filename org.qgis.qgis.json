@@ -687,8 +687,8 @@
                                     "sources": [
                                         {
                                             "type": "file",
-                                            "url": "https://files.pythonhosted.org/packages/52/08/c57125a1d29b719aa4268df29fa41bb3d384d7751046624480bd8a094489/meson_python-0.21.0.tar.gz",
-                                            "sha256": "595c2f40b76692c78274c87b733379d86562583e9ffb975487b9eafada03055b",
+                                            "url": "https://files.pythonhosted.org/packages/ed/f2/ab554fe4f020ec5f0ab4e4af04318e6ab99660f8d8d14e3d064db2b786a6/meson_python-0.21.1.tar.gz",
+                                            "sha256": "78b3345dcbc0fed7b939e7e37a9faab35bddaae07bf62e7542c8ad479c395af5",
                                             "x-checker-data": {
                                                 "type": "pypi",
                                                 "name": "meson-python"
@@ -1271,11 +1271,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/psycopg/psycopg2.git",
-                            "tag": "2.9.12",
+                            "tag": "2.9.13",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "3a6d9d6ddc6b53eaa80b712f5fa6b23abbdc38db"
+                            "commit": "f650e7afed0c94f596594e8328a0c7fa65a9d0e5"
                         }
                     ]
                 },
