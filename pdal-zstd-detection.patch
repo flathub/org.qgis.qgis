@@ -1,0 +1,62 @@
+From 724be5260fc6daf4d9d65bf898b18d57ebf0904b Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Tomasz=20Tara=C5=9B?= <tomasztaras@outlook.com>
+Date: Sat, 19 Sep 2026 17:48:53 +0200
+Subject: [PATCH] cmake: Fix zstd detection and only link zstd::libzstd when
+ found
+
+cmake/zstd.cmake uses find_package(zstd CONFIG), which sets zstd_FOUND,
+but then checks ZSTD_FOUND. CMake variables are case-sensitive and
+zstd's own zstdConfig.cmake does not set the uppercase name, so
+PDAL_HAVE_ZSTD was never set by PDAL's own lookup.
+
+CMakeLists.txt also guarded the zstd::libzstd link with ZSTD_FOUND.
+Since curl 8.21, CURLConfig.cmake resolves curl's dependencies through
+its bundled FindZstd.cmake, which sets ZSTD_FOUND (a pkg-config hit is
+enough) but defines CURL::zstd, not zstd::libzstd. find_package(CURL)
+runs after zstd.cmake (via arbiter.cmake), so on systems without a zstd
+CMake config, configuration failed with:
+
+  Target "pdalcpp" links to:
+    zstd::libzstd
+  but the target was not found.
+
+Set PDAL_HAVE_ZSTD from zstd_FOUND and the presence of the imported
+target, and use PDAL_HAVE_ZSTD for the link as well, so linking agrees
+with the source selection and pdal_features.hpp.
+
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
+---
+ CMakeLists.txt   | 2 +-
+ cmake/zstd.cmake | 4 ++--
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 09eb3b0..37a01f4 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -272,7 +272,7 @@ target_link_libraries(${PDAL_LIB_NAME}
+         ${WINSOCK_LIBRARY}
+ )
+ 
+-if (ZSTD_FOUND)
++if (PDAL_HAVE_ZSTD)
+     target_link_libraries(${PDAL_LIB_NAME}
+         PRIVATE
+         zstd::libzstd)
+diff --git a/cmake/zstd.cmake b/cmake/zstd.cmake
+index 8ae6cdf..d9c5d24 100644
+--- a/cmake/zstd.cmake
++++ b/cmake/zstd.cmake
+@@ -7,7 +7,7 @@ if (WITH_ZSTD)
+     find_package(zstd CONFIG QUIET)
+     set_package_properties(ZSTD PROPERTIES TYPE
+         PURPOSE "General compression support")
+-    if (ZSTD_FOUND)
++    if (zstd_FOUND AND TARGET zstd::libzstd)
+         set(PDAL_HAVE_ZSTD 1)
+-    endif(ZSTD_FOUND)
++    endif()
+ endif(WITH_ZSTD)
+-- 
+2.43.0
+
