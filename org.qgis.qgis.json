@@ -76,12 +76,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/PROJ.git",
-                            "tag": "9.8.1",
+                            "tag": "9.9.0",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "f08fa86c478c4bbbf003b1ec751dd84aa6eca486"
+                            "commit": "1df2be61c0e4732aa1326126113776b291ae7657"
                         }
                     ]
                 },
@@ -629,8 +629,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://archive.mariadb.org/mariadb-13.0.1/source/mariadb-13.0.1.tar.gz",
-                                    "sha256": "cc681a84cc24d2852b93c5bf5fe199084edd553ee72656e10d4b50ec476aa33c",
+                                    "url": "https://archive.mariadb.org/mariadb-13.1.1/source/mariadb-13.1.1.tar.gz",
+                                    "sha256": "6d6b69bddcf6d33935064f23ed3d47948f6d19438711b2a81087eb28d9d255c7",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 1887,
@@ -687,8 +687,8 @@
                                     "sources": [
                                         {
                                             "type": "file",
-                                            "url": "https://files.pythonhosted.org/packages/52/08/c57125a1d29b719aa4268df29fa41bb3d384d7751046624480bd8a094489/meson_python-0.21.0.tar.gz",
-                                            "sha256": "595c2f40b76692c78274c87b733379d86562583e9ffb975487b9eafada03055b",
+                                            "url": "https://files.pythonhosted.org/packages/ed/f2/ab554fe4f020ec5f0ab4e4af04318e6ab99660f8d8d14e3d064db2b786a6/meson_python-0.21.1.tar.gz",
+                                            "sha256": "78b3345dcbc0fed7b939e7e37a9faab35bddaae07bf62e7542c8ad479c395af5",
                                             "x-checker-data": {
                                                 "type": "pypi",
                                                 "name": "meson-python"
@@ -1141,8 +1141,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/57/b0/0e52c878c53f245edd3a11020f20979b3f490f245af532c7cae3027754b5/idna-3.19-py3-none-any.whl",
-                            "sha256": "815e7be7a7806d54abb586dc943addc79e8b2ee16915059658cbeff4b1b43bf4",
+                            "url": "https://files.pythonhosted.org/packages/58/a2/bb081bab032533a855d44de1d56f8e8426114ff1ba5d1f07a438a0a654f8/idna-3.20-py3-none-any.whl",
+                            "sha256": "ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "idna",
@@ -1201,8 +1201,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/a9/84/1798b6d85ecde0e31546004efd25c5de1b1f49250644a60cce460e12593a/hatchling-1.32.0-py3-none-any.whl",
-                            "sha256": "0e17c9c3b9aa7c625acc8d0f5b622f107d5049af9ecf5ada4de1aada5be7cdbc",
+                            "url": "https://files.pythonhosted.org/packages/f6/89/268c7e4b2bcf2071047366c4c3b4b0e89f640e13ea7bfdaf1df6c40e5140/hatchling-1.32.3-py3-none-any.whl",
+                            "sha256": "d05b350af5d9aa5bf7b34b434a45a742b99e67d0b48ea67d240cfeab98e13945",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "hatchling",
@@ -1221,8 +1221,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/7f/3e/5db95bcf282c52709639744ca2a8b149baccf648e39c8cc87553df9eae0c/urllib3-2.7.0-py3-none-any.whl",
-                            "sha256": "9fb4c81ebbb1ce9531cce37674bbc6f1360472bc18ca9a553ede278ef7276897",
+                            "url": "https://files.pythonhosted.org/packages/92/9d/c4e665119135114480843e7ab388fa94d8480650450e6f8e26b70d323a4c/urllib3-2.8.0-py3-none-any.whl",
+                            "sha256": "0cf3cae568d36aa9576b28dfb35f11328f1cb974ca7647d9475ebb86c75ac6e3",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "urllib3",
@@ -1271,11 +1271,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/psycopg/psycopg2.git",
-                            "tag": "2.9.12",
+                            "tag": "2.9.13",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "3a6d9d6ddc6b53eaa80b712f5fa6b23abbdc38db"
+                            "commit": "f650e7afed0c94f596594e8328a0c7fa65a9d0e5"
                         }
                     ]
                 },
@@ -1395,8 +1395,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v36.1",
-                            "commit": "f377bfefc5e2cfab68b816903c25b23e091c439d",
+                            "tag": "v36.2",
+                            "commit": "2c74169b34066ceb8ddb6b882fcb3fb32d737a55",
                             "x-checker-data": {
                                 "type": "git"
                             }
