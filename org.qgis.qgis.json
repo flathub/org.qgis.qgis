@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-4.2.2.tar.bz2",
-                    "sha256": "45c3a85b359ec1acd11725a9af8c66b90ee7ca0e85f14df18ed9792f1b9becf0",
+                    "url": "https://qgis.org/downloads/qgis-4.2.3.tar.bz2",
+                    "sha256": "b044889d895c07d9355512cba76973822830153f6f15feb0d5e00077d3d76e59",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -76,12 +76,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/OSGeo/PROJ.git",
-                            "tag": "9.8.1",
+                            "tag": "9.9.0",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([0-9.]+)$"
                             },
-                            "commit": "f08fa86c478c4bbbf003b1ec751dd84aa6eca486"
+                            "commit": "1df2be61c0e4732aa1326126113776b291ae7657"
                         }
                     ]
                 },
@@ -629,8 +629,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://archive.mariadb.org/mariadb-13.0.1/source/mariadb-13.0.1.tar.gz",
-                                    "sha256": "cc681a84cc24d2852b93c5bf5fe199084edd553ee72656e10d4b50ec476aa33c",
+                                    "url": "https://archive.mariadb.org/mariadb-13.1.1/source/mariadb-13.1.1.tar.gz",
+                                    "sha256": "6d6b69bddcf6d33935064f23ed3d47948f6d19438711b2a81087eb28d9d255c7",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 1887,
@@ -687,8 +687,8 @@
                                     "sources": [
                                         {
                                             "type": "file",
-                                            "url": "https://files.pythonhosted.org/packages/52/08/c57125a1d29b719aa4268df29fa41bb3d384d7751046624480bd8a094489/meson_python-0.21.0.tar.gz",
-                                            "sha256": "595c2f40b76692c78274c87b733379d86562583e9ffb975487b9eafada03055b",
+                                            "url": "https://files.pythonhosted.org/packages/82/14/1bafca9db7691ff05767570686cd775bddec57c7358e78504cbfd35ec996/meson_python-0.22.0.tar.gz",
+                                            "sha256": "9c819d0d4efa746edadfaae4663c0e9c75659186ef7e5bab12330bfe22964dfc",
                                             "x-checker-data": {
                                                 "type": "pypi",
                                                 "name": "meson-python"
@@ -802,11 +802,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
-                                    "tag": "v3.4.15",
+                                    "tag": "v3.5.1",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "e71cdd5d30a146dcb56c5e4c576d9e9d3c45f4fb"
+                                    "commit": "490f4cb496ac1db9f675dae7bad689f676a8256f"
                                 }
                             ],
                             "modules": [
@@ -1123,8 +1123,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/fb/48/fb042503b6ca6cd271261dc559fd6432f7d8c713153e9ec5c591af4dfc1c/pytz-2026.3.post1.tar.gz",
-                            "sha256": "2211d3fcf9a797d3405cac96ac7f61d80e6a644f72a3309607282fe8a2010c5d",
+                            "url": "https://files.pythonhosted.org/packages/b0/ed/fa23d28713004418bbf2407127f80f385bfb0bf4e677bef02c25c27b00ee/pytz-2026.4.tar.gz",
+                            "sha256": "464303645bafafd72418898368b2429458f709cf1eb6a15372fbcc396b64da63",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "pytz"
@@ -1141,8 +1141,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/57/b0/0e52c878c53f245edd3a11020f20979b3f490f245af532c7cae3027754b5/idna-3.19-py3-none-any.whl",
-                            "sha256": "815e7be7a7806d54abb586dc943addc79e8b2ee16915059658cbeff4b1b43bf4",
+                            "url": "https://files.pythonhosted.org/packages/58/a2/bb081bab032533a855d44de1d56f8e8426114ff1ba5d1f07a438a0a654f8/idna-3.20-py3-none-any.whl",
+                            "sha256": "ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "idna",
@@ -1151,8 +1151,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/cc/61/d01fc49b8dea277640b55a9e15960dbca9fdc8c9fde18e572d39c59f4019/charset_normalizer-3.5.1-py3-none-any.whl",
-                            "sha256": "6df0ec430f9a831772c23ca5a224cba36517a58a84bb32c32bb59a9fa67c47f6",
+                            "url": "https://files.pythonhosted.org/packages/fc/ad/d07d7862a62ffa6d79d68074d14823243dd235a77c45262acbf6adeb28bf/charset_normalizer-3.5.2-py3-none-any.whl",
+                            "sha256": "b6b751274acb69d77b3323d6b7dbaa3c7fdfc1eb829b7eb61d262f32e1af9685",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "charset-normalizer",
@@ -1181,8 +1181,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/7c/a4/81502f486f01db95bc8320646a8a12511f5e556cb63d5e224d91816605c4/trove_classifiers-2026.6.1.19-py3-none-any.whl",
-                            "sha256": "ab4c4ec93cc4a4e7815fa759906e05e6bb3f2fbd92ea0f897288c6a43efd15b3",
+                            "url": "https://files.pythonhosted.org/packages/30/81/0da8afb52a71d0a4f2bd3152357b1a441e393b286374802b9d3addab4ab5/trove_classifiers-2026.9.21.13-py3-none-any.whl",
+                            "sha256": "8b1ff4f9c191b1040b71c37f1e445ab99732911e3cd91de52838453a854d7a17",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "trove-classifiers",
@@ -1201,8 +1201,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/a9/84/1798b6d85ecde0e31546004efd25c5de1b1f49250644a60cce460e12593a/hatchling-1.32.0-py3-none-any.whl",
-                            "sha256": "0e17c9c3b9aa7c625acc8d0f5b622f107d5049af9ecf5ada4de1aada5be7cdbc",
+                            "url": "https://files.pythonhosted.org/packages/5f/80/91f51f439c05d4ec4623c22928ce16a938d6d793bf709477830823497859/hatchling-1.32.4-py3-none-any.whl",
+                            "sha256": "08ecf7548fb48205e7f213d70c71e67b8271b7242093dc3f1da578b42c734a2c",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "hatchling",
@@ -1221,8 +1221,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/7f/3e/5db95bcf282c52709639744ca2a8b149baccf648e39c8cc87553df9eae0c/urllib3-2.7.0-py3-none-any.whl",
-                            "sha256": "9fb4c81ebbb1ce9531cce37674bbc6f1360472bc18ca9a553ede278ef7276897",
+                            "url": "https://files.pythonhosted.org/packages/92/9d/c4e665119135114480843e7ab388fa94d8480650450e6f8e26b70d323a4c/urllib3-2.8.0-py3-none-any.whl",
+                            "sha256": "0cf3cae568d36aa9576b28dfb35f11328f1cb974ca7647d9475ebb86c75ac6e3",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "urllib3",
@@ -1271,11 +1271,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/psycopg/psycopg2.git",
-                            "tag": "2.9.12",
+                            "tag": "2.9.13",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "3a6d9d6ddc6b53eaa80b712f5fa6b23abbdc38db"
+                            "commit": "f650e7afed0c94f596594e8328a0c7fa65a9d0e5"
                         }
                     ]
                 },
@@ -1395,8 +1395,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/protocolbuffers/protobuf.git",
-                            "tag": "v36.1",
-                            "commit": "f377bfefc5e2cfab68b816903c25b23e091c439d",
+                            "tag": "v36.2",
+                            "commit": "2c74169b34066ceb8ddb6b882fcb3fb32d737a55",
                             "x-checker-data": {
                                 "type": "git"
                             }
