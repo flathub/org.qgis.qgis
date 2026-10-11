@@ -960,10 +960,6 @@
                                 "url-template": "https://github.com/PDAL/PDAL/releases/download/$version/PDAL-$version-src.tar.bz2",
                                 "stable-only": true
                             }
-                        },
-                        {
-                            "type": "patch",
-                            "path": "pdal-zstd-detection.patch"
                         }
                     ]
                 },
