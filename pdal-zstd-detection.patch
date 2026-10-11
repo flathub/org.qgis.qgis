@@ -1,0 +1,37 @@
+From 46501a95fb5aea98fba6ede3a98d3ccb064f179d Mon Sep 17 00:00:00 2001
+From: Howard Butler <hobu.inc@gmail.com>
+Date: Mon, 21 Sep 2026 14:30:42 -0500
+Subject: [PATCH] Add patch in #5134 to detect zstd dependency more accurately
+
+---
+ CMakeLists.txt   | 2 +-
+ cmake/zstd.cmake | 4 ++--
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 29c342ec0c..72951f17c5 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -272,7 +272,7 @@ target_link_libraries(${PDAL_LIB_NAME}
+         ${WINSOCK_LIBRARY}
+ )
+ 
+-if (ZSTD_FOUND)
++if (PDAL_HAVE_ZSTD)
+     target_link_libraries(${PDAL_LIB_NAME}
+         PRIVATE
+         zstd::libzstd)
+diff --git a/cmake/zstd.cmake b/cmake/zstd.cmake
+index 8ae6cdff1c..d9c5d2497d 100644
+--- a/cmake/zstd.cmake
++++ b/cmake/zstd.cmake
+@@ -7,7 +7,7 @@ if (WITH_ZSTD)
+     find_package(zstd CONFIG QUIET)
+     set_package_properties(ZSTD PROPERTIES TYPE
+         PURPOSE "General compression support")
+-    if (ZSTD_FOUND)
++    if (zstd_FOUND AND TARGET zstd::libzstd)
+         set(PDAL_HAVE_ZSTD 1)
+-    endif(ZSTD_FOUND)
++    endif()
+ endif(WITH_ZSTD)
