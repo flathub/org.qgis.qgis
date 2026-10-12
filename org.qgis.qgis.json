@@ -322,8 +322,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "http://prdownloads.sourceforge.net/swig/swig-4.5.0.tar.gz",
-                                    "sha256": "22ae0e887f8cca8031a325c67d005207653200b40e71edb3f88780e28e47d0ff",
+                                    "url": "http://prdownloads.sourceforge.net/swig/swig-4.5.1.tar.gz",
+                                    "sha256": "7fec50b27deddab5455a9633780b6341eddfb96215a7619e93a76eb27178f653",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 4919,
@@ -432,8 +432,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-15.4.2.tar.xz",
-                                    "sha256": "58fa258d0e1f93074c9afa792027fc259b85cb974ccc0b932b061d4ada5bd83a",
+                                    "url": "https://sourceforge.net/projects/arma/files/armadillo-15.6.1.tar.xz",
+                                    "sha256": "23fe3b3848e2929ab39089ad6e8e445d3a24cc39d36c018a253b97e56ba88c2c",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7006,
@@ -594,8 +594,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-26.08.0.tar.xz",
-                                    "sha256": "dc906e68cea698109706ac6aa3d2c9d4512fcfcac42d90b8afcda486d1b9abd0",
+                                    "url": "https://poppler.freedesktop.org/poppler-26.10.0.tar.xz",
+                                    "sha256": "6792cb7c69205007ad87d2e936cecc5b3a31fac29ab54ffc3175fdb6b2a6ce35",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -954,8 +954,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://libzip.org/download/libzip-1.11.4.tar.xz",
-                            "sha256": "8a247f57d1e3e6f6d11413b12a6f28a9d388de110adc0ec608d893180ed7097b",
+                            "url": "https://libzip.org/download/libzip-1.12.tar.xz",
+                            "sha256": "376908d0f0fda13180a19fdc4f7062a1abfb59e09ca07a392d361253b8e60c2b",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 10649,
@@ -1127,8 +1127,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/b0/ed/fa23d28713004418bbf2407127f80f385bfb0bf4e677bef02c25c27b00ee/pytz-2026.4.tar.gz",
-                            "sha256": "464303645bafafd72418898368b2429458f709cf1eb6a15372fbcc396b64da63",
+                            "url": "https://files.pythonhosted.org/packages/14/21/d83d6ef28c4c912c4bb4d1dcf591f7b8c6bde87b9c66f9f454677314e16d/pytz-2026.5.tar.gz",
+                            "sha256": "fa23724b9c486543b9ff54a327ee7569ac83ade54bb9afd0fc18676620401c86",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "pytz"
