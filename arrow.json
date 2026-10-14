@@ -1,0 +1,186 @@
+{
+    "name": "arrow",
+    "buildsystem": "cmake-ninja",
+    "subdir": "cpp",
+    "config-opts": [
+        "-DARROW_DEPENDENCY_SOURCE=SYSTEM",
+        "-DARROW_BUILD_STATIC=OFF",
+        "-DARROW_PARQUET=ON",
+        "-DARROW_DATASET=ON",
+        "-DARROW_COMPUTE=ON",
+        "-DARROW_MIMALLOC=OFF",
+        "-DARROW_WITH_BROTLI=ON",
+        "-DARROW_WITH_BZ2=ON",
+        "-DARROW_WITH_LZ4=ON",
+        "-DARROW_WITH_SNAPPY=ON",
+        "-DARROW_WITH_ZLIB=ON",
+        "-DARROW_WITH_ZSTD=ON"
+    ],
+    "sources": [
+        {
+            "type": "archive",
+            "url": "https://archive.apache.org/dist/arrow/arrow-25.0.0/apache-arrow-25.0.0.tar.gz",
+            "sha256": "12afc2dc8137bdd4a68876cec939f664c9d55cfc7b75f55b45163ebb4e344d81",
+            "x-checker-data": {
+                "type": "html",
+                "url": "https://archive.apache.org/dist/arrow/",
+                "version-pattern": "href=\"arrow-([0-9.]+)/\"",
+                "url-template": "https://archive.apache.org/dist/arrow/arrow-$version/apache-arrow-$version.tar.gz"
+            }
+        }
+    ],
+    "modules": [
+        {
+            "name": "boost",
+            "buildsystem": "simple",
+            "build-commands": [
+                "./bootstrap.sh --prefix=${FLATPAK_DEST} --with-icu",
+                "./b2 install --with-headers -j ${FLATPAK_BUILDER_N_JOBS} headers variant=release threading=multi --layout=system"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://archives.boost.io/release/1.92.0/source/boost_1_92_0.tar.bz2",
+                    "sha256": "5c1d40cb8e19adbf740a4ec2da35b3e58f3f5804b1dce44deb53df72193cbc6c",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 6845,
+                        "url-template": "https://archives.boost.io/release/$version/source/boost_${major}_${minor}_$patch.tar.bz2"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "rapidjson",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DRAPIDJSON_BUILD_DOC=OFF",
+                "-DRAPIDJSON_BUILD_EXAMPLES=OFF",
+                "-DRAPIDJSON_BUILD_TESTS=OFF",
+                "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/miloyip/rapidjson/archive/232389d4f1012dddec4ef84861face2d2ba85709.tar.gz",
+                    "sha256": "b9290a9a6d444c8e049bd589ab804e0ccf2b05dc5984a19ed5ae75d090064806"
+                }
+            ]
+        },
+        {
+            "name": "thrift",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_SHARED_LIBS=ON",
+                "-DBUILD_COMPILER=OFF",
+                "-DBUILD_TESTING=OFF",
+                "-DBUILD_TUTORIALS=OFF",
+                "-DWITH_AS3=OFF",
+                "-DWITH_C_GLIB=OFF",
+                "-DWITH_JAVA=OFF",
+                "-DWITH_JAVASCRIPT=OFF",
+                "-DWITH_NODEJS=OFF",
+                "-DWITH_PYTHON=OFF",
+                "-DWITH_LIBEVENT=OFF",
+                "-DWITH_OPENSSL=OFF",
+                "-DWITH_QT5=OFF",
+                "-DWITH_ZLIB=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://archive.apache.org/dist/thrift/0.22.0/thrift-0.22.0.tar.gz",
+                    "sha256": "794a0e455787960d9f27ab92c38e34da27e8deeda7a5db0e59dc64a00df8a1e5",
+                    "x-checker-data": {
+                        "type": "html",
+                        "url": "https://archive.apache.org/dist/thrift/",
+                        "version-pattern": "href=\"([0-9.]+)/\"",
+                        "url-template": "https://archive.apache.org/dist/thrift/$version/thrift-$version.tar.gz"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "snappy",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_SHARED_LIBS=ON",
+                "-DSNAPPY_BUILD_TESTS=OFF",
+                "-DSNAPPY_BUILD_BENCHMARKS=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/google/snappy/archive/1.2.2.tar.gz",
+                    "sha256": "90f74bc1fbf78a6c56b3c4a082a05103b3a56bb17bca1a27e052ea11723292dc",
+                    "x-checker-data": {
+                        "type": "html",
+                        "url": "https://github.com/google/snappy/tags",
+                        "version-pattern": "/releases/tag/([0-9.]+)",
+                        "url-template": "https://github.com/google/snappy/archive/$version.tar.gz"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "utf8proc",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_SHARED_LIBS=ON",
+                "-DUTF8PROC_ENABLE_TESTING=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/JuliaStrings/utf8proc/archive/v2.10.0.tar.gz",
+                    "sha256": "6f4f1b639daa6dca9f80bc5db1233e9cbaa31a67790887106160b33ef743f136",
+                    "x-checker-data": {
+                        "type": "html",
+                        "url": "https://github.com/JuliaStrings/utf8proc/tags",
+                        "version-pattern": "/releases/tag/v([0-9.]+)",
+                        "url-template": "https://github.com/JuliaStrings/utf8proc/archive/v$version.tar.gz"
+                    }
+                }
+            ],
+            "builddir": true
+        },
+        {
+            "name": "re2",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_SHARED_LIBS=ON",
+                "-DRE2_BUILD_TESTING=OFF",
+                "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/google/re2/archive/2023-03-01.tar.gz",
+                    "sha256": "7a9a4824958586980926a300b4717202485c4b4115ac031822e29aa4ef207e48"
+                }
+            ],
+            "//": "Keep the last release before RE2 added an Abseil dependency; Arrow supports this version."
+        },
+        {
+            "name": "xsimd",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_TESTS=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/xtensor-stack/xsimd/archive/14.2.0.tar.gz",
+                    "sha256": "21e841ab684b05331e81e7f782431753a029ef7b7d9d6d3ddab837e7782a40ee",
+                    "x-checker-data": {
+                        "type": "html",
+                        "url": "https://github.com/xtensor-stack/xsimd/tags",
+                        "version-pattern": "/releases/tag/([0-9.]+)",
+                        "url-template": "https://github.com/xtensor-stack/xsimd/archive/$version.tar.gz"
+                    }
+                }
+            ]
+        }
+    ],
+    "builddir": true
+}
