@@ -19,8 +19,8 @@
     "sources": [
         {
             "type": "archive",
-            "url": "https://archive.apache.org/dist/arrow/arrow-25.0.0/apache-arrow-25.0.0.tar.gz",
-            "sha256": "12afc2dc8137bdd4a68876cec939f664c9d55cfc7b75f55b45163ebb4e344d81",
+            "url": "https://archive.apache.org/dist/arrow/arrow-26.0.0/apache-arrow-26.0.0.tar.gz",
+            "sha256": "b153ef472dd89ef4cb84867ca238f2a3a9347d8f4a78913d16ca2201606f0425",
             "x-checker-data": {
                 "type": "html",
                 "url": "https://archive.apache.org/dist/arrow/",
@@ -89,8 +89,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://archive.apache.org/dist/thrift/0.22.0/thrift-0.22.0.tar.gz",
-                    "sha256": "794a0e455787960d9f27ab92c38e34da27e8deeda7a5db0e59dc64a00df8a1e5",
+                    "url": "https://archive.apache.org/dist/thrift/0.25.0/thrift-0.25.0.tar.gz",
+                    "sha256": "66da4707214c54c94bac082103dc67adaf9e08925662700f269170a7b534b214",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://archive.apache.org/dist/thrift/",
