@@ -19,8 +19,8 @@
     "sources": [
         {
             "type": "archive",
-            "url": "https://archive.apache.org/dist/arrow/arrow-25.0.0/apache-arrow-25.0.0.tar.gz",
-            "sha256": "12afc2dc8137bdd4a68876cec939f664c9d55cfc7b75f55b45163ebb4e344d81",
+            "url": "https://archive.apache.org/dist/arrow/arrow-26.0.0/apache-arrow-26.0.0.tar.gz",
+            "sha256": "b153ef472dd89ef4cb84867ca238f2a3a9347d8f4a78913d16ca2201606f0425",
             "x-checker-data": {
                 "type": "html",
                 "url": "https://archive.apache.org/dist/arrow/",
@@ -89,8 +89,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://archive.apache.org/dist/thrift/0.22.0/thrift-0.22.0.tar.gz",
-                    "sha256": "794a0e455787960d9f27ab92c38e34da27e8deeda7a5db0e59dc64a00df8a1e5",
+                    "url": "https://archive.apache.org/dist/thrift/0.25.0/thrift-0.25.0.tar.gz",
+                    "sha256": "66da4707214c54c94bac082103dc67adaf9e08925662700f269170a7b534b214",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://archive.apache.org/dist/thrift/",
@@ -111,8 +111,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/google/snappy/archive/1.2.2.tar.gz",
-                    "sha256": "90f74bc1fbf78a6c56b3c4a082a05103b3a56bb17bca1a27e052ea11723292dc",
+                    "url": "https://github.com/google/snappy/archive/1.3.1.tar.gz",
+                    "sha256": "893f708a0bf4b5529d555ffcee390e940e932fcf90261f682604475a76cd0247",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://github.com/google/snappy/tags",
@@ -132,8 +132,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/JuliaStrings/utf8proc/archive/v2.10.0.tar.gz",
-                    "sha256": "6f4f1b639daa6dca9f80bc5db1233e9cbaa31a67790887106160b33ef743f136",
+                    "url": "https://github.com/JuliaStrings/utf8proc/archive/v2.12.0.tar.gz",
+                    "sha256": "f564011d38b2888d583d510b08e69ffa15aa117155db1b9b49ef1dfe1fa25111",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://github.com/JuliaStrings/utf8proc/tags",
@@ -170,8 +170,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/xtensor-stack/xsimd/archive/14.2.0.tar.gz",
-                    "sha256": "21e841ab684b05331e81e7f782431753a029ef7b7d9d6d3ddab837e7782a40ee",
+                    "url": "https://github.com/xtensor-stack/xsimd/archive/14.3.0.tar.gz",
+                    "sha256": "b3d50e7a73fbf4642ceef30131c93414901d69eee41c2a5302db650b03e2c792",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://github.com/xtensor-stack/xsimd/tags",
