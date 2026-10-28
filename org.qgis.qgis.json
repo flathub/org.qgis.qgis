@@ -386,28 +386,6 @@
                             ]
                         },
                         {
-                            "name": "uriparser",
-                            "buildsystem": "cmake-ninja",
-                            "config-opts": [
-                                "-DURIPARSER_BUILD_TESTS=OFF",
-                                "-DURIPARSER_BUILD_DOCS=OFF"
-                            ],
-                            "builddir": true,
-                            "sources": [
-                                {
-                                    "type": "archive",
-                                    "url": "https://github.com/uriparser/uriparser/releases/download/uriparser-1.0.2/uriparser-1.0.2.tar.bz2",
-                                    "sha256": "dd2e4843f43de6f5aedf430e530f1e2d159eba8ca4d64c2787af1c20f707a9e4",
-                                    "x-checker-data": {
-                                        "type": "anitya",
-                                        "project-id": 10160,
-                                        "url-template": "https://github.com/uriparser/uriparser/releases/download/uriparser-$version/uriparser-$version.tar.bz2",
-                                        "stable-only": true
-                                    }
-                                }
-                            ]
-                        },
-                        {
                             "name": "cfitsio",
                             "buildsystem": "cmake-ninja",
                             "config-opts": [
@@ -1083,6 +1061,7 @@
                     "name": "python-owslib",
                     "buildsystem": "simple",
                     "build-commands": [
+                        "pip3 install --prefix=/app --no-index tzdata-*",
                         "pip3 install --prefix=/app *dateutil-*",
                         "pip3 install --prefix=/app --no-build-isolation pytz-*",
                         "pip3 install --prefix=/app pathspec-*",
@@ -1100,6 +1079,16 @@
                         "pip3 install --prefix=/app --no-build-isolation owslib*"
                     ],
                     "sources": [
+                        {
+                            "type": "file",
+                            "url": "https://files.pythonhosted.org/packages/0a/66/9a06c2227fedfd4919f0eaaa8b94377d9730882a7e4f95823c9a331ab5e1/tzdata-2026.6-py2.py3-none-any.whl",
+                            "sha256": "0a10eec6e13ef16b627fabed9a5f2ba61a62b1c67f327305f4e7e412a70b4aec",
+                            "x-checker-data": {
+                                "type": "pypi",
+                                "name": "tzdata",
+                                "packagetype": "bdist_wheel"
+                            }
+                        },
                         {
                             "type": "file",
                             "url": "https://files.pythonhosted.org/packages/5a/17/cebee01d1c0c1441174cf0456ddc91b280d79acb65340c05e41d77866ee8/python_dateutil-3.0.0-py2.py3-none-any.whl",
