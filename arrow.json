@@ -31,6 +31,28 @@
     ],
     "modules": [
         {
+            "name": "simdjson",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "config-opts": [
+                "-DBUILD_SHARED_LIBS=ON",
+                "-DSIMDJSON_ALLOW_DOWNLOADS=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/simdjson/simdjson/archive/v5.0.5.tar.gz",
+                    "sha256": "50bb17769e1054ff1bfcd5dbbfcf33544c77f6ebdb31a318436ea0e47f78f571",
+                    "x-checker-data": {
+                        "type": "html",
+                        "url": "https://github.com/simdjson/simdjson/tags",
+                        "version-pattern": "/releases/tag/v([0-9.]+)",
+                        "url-template": "https://github.com/simdjson/simdjson/archive/v$version.tar.gz"
+                    }
+                }
+            ]
+        },
+        {
             "name": "boost",
             "buildsystem": "simple",
             "build-commands": [
@@ -177,6 +199,28 @@
                         "url": "https://github.com/xtensor-stack/xsimd/tags",
                         "version-pattern": "/releases/tag/([0-9.]+)",
                         "url-template": "https://github.com/xtensor-stack/xsimd/archive/$version.tar.gz"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "uriparser",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DURIPARSER_BUILD_TESTS=OFF",
+                "-DURIPARSER_BUILD_DOCS=OFF"
+            ],
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/uriparser/uriparser/releases/download/uriparser-1.0.2/uriparser-1.0.2.tar.bz2",
+                    "sha256": "dd2e4843f43de6f5aedf430e530f1e2d159eba8ca4d64c2787af1c20f707a9e4",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 10160,
+                        "url-template": "https://github.com/uriparser/uriparser/releases/download/uriparser-$version/uriparser-$version.tar.bz2",
+                        "stable-only": true
                     }
                 }
             ]
