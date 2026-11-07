@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/simdjson/simdjson/archive/v5.0.5.tar.gz",
-                    "sha256": "50bb17769e1054ff1bfcd5dbbfcf33544c77f6ebdb31a318436ea0e47f78f571",
+                    "url": "https://github.com/simdjson/simdjson/archive/v5.1.1.tar.gz",
+                    "sha256": "d669fa399613c20bbf7705f057a72984331b223cd5e8d20666ef063dbf97f3e6",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://github.com/simdjson/simdjson/tags",
@@ -214,8 +214,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/uriparser/uriparser/releases/download/uriparser-1.0.2/uriparser-1.0.2.tar.bz2",
-                    "sha256": "dd2e4843f43de6f5aedf430e530f1e2d159eba8ca4d64c2787af1c20f707a9e4",
+                    "url": "https://github.com/uriparser/uriparser/releases/download/uriparser-1.0.3/uriparser-1.0.3.tar.bz2",
+                    "sha256": "5daa0757f9866af8535398e7a49278faa6af1ff81695c9280c3a5a424bb328c6",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10160,
