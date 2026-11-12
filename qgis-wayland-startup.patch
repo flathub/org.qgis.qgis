@@ -1,0 +1,35 @@
+From 3570e300310e962d819dda3f37c0163f034ce4fa Mon Sep 17 00:00:00 2001
+From: Trygve <trygve@posteo.net>
+Date: Wed, 4 Nov 2026 10:50:24 +0100
+Subject: [PATCH] [Application] Fix startup on Wayland-only sessions
+
+QGIS flatpak was not starting on fedora 45 because main() was hardcoded
+to check to the DISPLAY enviroment variable. Fedora only sets
+WAYLAND_DISPLAY now, so the application silently aborted. Fix is to also
+check WAYLAND_DISPLAY.
+---
+ src/app/main.cpp | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/src/app/main.cpp b/src/app/main.cpp
+index 2ef99282459a..106d9ffba15c 100644
+--- a/src/app/main.cpp
++++ b/src/app/main.cpp
+@@ -1031,7 +1031,7 @@ int main( int argc, char *argv[] )
+ 
+ 
+ #if defined( Q_OS_UNIX ) && !defined( Q_OS_MACOS ) && !defined( ANDROID )
+-  bool myUseGuiFlag = nullptr != getenv( "DISPLAY" );
++  bool myUseGuiFlag = nullptr != getenv( "DISPLAY" ) || nullptr != getenv( "WAYLAND_DISPLAY" );
+ #else
+   bool myUseGuiFlag = true;
+ #endif
+@@ -1040,7 +1040,7 @@ int main( int argc, char *argv[] )
+     std::cerr << QObject::tr(
+                    "QGIS starting in non-interactive mode not supported.\n"
+                    "You are seeing this message most likely because you "
+-                   "have no DISPLAY environment variable set.\n"
++                   "have no DISPLAY or WAYLAND_DISPLAY environment variable set.\n"
+     )
+                    .toUtf8()
+                    .constData();
