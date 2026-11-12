@@ -130,12 +130,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/madler/zlib",
-                            "tag": "v1.3.2",
+                            "tag": "v1.4",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^v(.+)$"
                             },
-                            "commit": "da607da739fa6047df13e66a2af6b8bec7c2a498"
+                            "commit": "99623ef7097352da7993ba614161fd6a311e046e"
                         }
                     ]
                 },
@@ -217,8 +217,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://ftp.postgresql.org/pub/source/v18.6/postgresql-18.6.tar.bz2",
-                            "sha256": "555610c24d53e4316da5b7d3fc25c279d96856d5e0e23ee308c328c5fa881d9f",
+                            "url": "https://ftp.postgresql.org/pub/source/v18.7/postgresql-18.7.tar.bz2",
+                            "sha256": "441dfae4280cae3e0425e5f876f80559fb0731c140f1aae22b3e5a54d0411bfd",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 5601,
@@ -557,8 +557,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://poppler.freedesktop.org/poppler-26.10.0.tar.xz",
-                                    "sha256": "6792cb7c69205007ad87d2e936cecc5b3a31fac29ab54ffc3175fdb6b2a6ce35",
+                                    "url": "https://poppler.freedesktop.org/poppler-26.11.0.tar.xz",
+                                    "sha256": "41c32680160addf5a8dd7a830e4869c01e9f6bee1abb91e44fabd1ba9d7828fb",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 3686,
@@ -741,11 +741,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/Blosc/c-blosc.git",
-                                    "tag": "v1.21.6",
+                                    "tag": "v1.21.7",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "616f4b7343a8479f7e71dd3d7025bd92c9a6bbd0"
+                                    "commit": "34c47e36ac3edcb1954d0eab9c38d7efd8816e7c"
                                 },
                                 {
                                     "type": "patch",
@@ -765,11 +765,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/AcademySoftwareFoundation/openexr.git",
-                                    "tag": "v3.5.2",
+                                    "tag": "v3.5.4",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "69b2604fc76e370615438bdc8d2cd95b9349c12e"
+                                    "commit": "86687e5f34e3a164820c5e280259550e3ca87c92"
                                 }
                             ],
                             "modules": [
@@ -813,11 +813,11 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/Esri/lerc.git",
-                                    "tag": "v4.2.0",
+                                    "tag": "v4.3.0",
                                     "x-checker-data": {
                                         "type": "git"
                                     },
-                                    "commit": "e534980e11992cc5f11864b0dcff1af6a27cee0d"
+                                    "commit": "bbd9531494ac54e49134a19acf4faab4d5cbb7cd"
                                 }
                             ]
                         }
@@ -1092,8 +1092,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/5a/17/cebee01d1c0c1441174cf0456ddc91b280d79acb65340c05e41d77866ee8/python_dateutil-3.0.0-py2.py3-none-any.whl",
-                            "sha256": "3c79630202e4152c6add678446984236efe4f57e84d8e892aab0637bab82e9fd",
+                            "url": "https://files.pythonhosted.org/packages/2f/a9/52b89563d154433d79b51ed1eb4842bf7334cb2696891a7fe135618853d7/python_dateutil-4.0.0-py3-none-any.whl",
+                            "sha256": "a5e246f79eb80475e691bf93862cead98decd8a498cf53ba0516fcdc0f50dc1c",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "python-dateutil",
@@ -1102,8 +1102,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://files.pythonhosted.org/packages/14/21/d83d6ef28c4c912c4bb4d1dcf591f7b8c6bde87b9c66f9f454677314e16d/pytz-2026.5.tar.gz",
-                            "sha256": "fa23724b9c486543b9ff54a327ee7569ac83ade54bb9afd0fc18676620401c86",
+                            "url": "https://files.pythonhosted.org/packages/f5/b0/168030b0bfcc334cf09fa3313afdb888d892c8a0027324683d1de0ec277e/pytz-2026.6.tar.gz",
+                            "sha256": "3b0fc2727707663d6e517936f444fd8a8b240f1fc32f4bf7ee03274245945284",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "pytz"
@@ -1395,11 +1395,11 @@
                         {
                             "type": "git",
                             "url": "https://github.com/frankosterfeld/qtkeychain/",
-                            "tag": "0.17.0",
+                            "tag": "0.18.0",
                             "x-checker-data": {
                                 "type": "git"
                             },
-                            "commit": "875f77d9f61bd97fd84cca47ce3bc71186dfbd09"
+                            "commit": "e86bc3cbb50b172be61ed857803a372412b6ad85"
                         }
                     ]
                 },
