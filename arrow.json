@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/simdjson/simdjson/archive/v5.1.1.tar.gz",
-                    "sha256": "d669fa399613c20bbf7705f057a72984331b223cd5e8d20666ef063dbf97f3e6",
+                    "url": "https://github.com/simdjson/simdjson/archive/v5.3.0.tar.gz",
+                    "sha256": "5e59df8bd3fa760937e6a2ca68193399c85b52b5042716700b149a734737dced",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://github.com/simdjson/simdjson/tags",
