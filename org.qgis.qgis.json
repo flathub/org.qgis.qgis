@@ -8,7 +8,7 @@
     "command": "qgis",
     "rename-icon": "qgis",
     "finish-args": [
-        "--env=LD_LIBRARY_PATH=/app/lib:/app/grass84/lib",
+        "--env=LD_LIBRARY_PATH=/app/lib:/app/grass85/lib",
         "--env=PROJ_LIB=/app/share/proj/",
         "--share=ipc",
         "--share=network",
@@ -38,6 +38,7 @@
         {
             "name": "qgis",
             "buildsystem": "cmake-ninja",
+            "builddir": true,
             "sources": [
                 {
                     "type": "archive",
@@ -52,17 +53,13 @@
                 }
             ],
             "config-opts": [
-                "-DBUILD_WITH_QT6=TRUE",
                 "-DENABLE_TESTS=FALSE",
                 "-DWITH_3D=TRUE",
-                "-DGRASS_PREFIX8=/app/grass84",
+                "-DGRASS_PREFIX8=/app/grass85",
                 "-DQWT_LIBRARY=/app/lib/libqwt.so",
-                "-DSQLITE3_INCLUDE_DIR=/app/include",
-                "-DSQLITE3_LIBRARY=/app/lib/libsqlite3.so",
                 "-DUSE_OPENCL=ON",
                 "-DWITH_QUICK=ON",
                 "-DWITH_PDAL=TRUE",
-                "-DWITH_QTWEBKIT=FALSE",
                 "-DSIP_BUILD_EXTRA_OPTIONS=--target-dir=/app/lib/python3.12/site-packages"
             ],
             "modules": [
