@@ -6,6 +6,7 @@
     "runtime-version": "6.11",
     "sdk": "org.kde.Sdk",
     "command": "qgis",
+    "rename-appdata-file": "org.qgis.qgis.appdata.xml",
     "rename-icon": "qgis",
     "finish-args": [
         "--env=LD_LIBRARY_PATH=/app/lib:/app/grass85/lib",
