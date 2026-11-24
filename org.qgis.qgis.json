@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://qgis.org/downloads/qgis-4.2.3.tar.bz2",
-                    "sha256": "b044889d895c07d9355512cba76973822830153f6f15feb0d5e00077d3d76e59",
+                    "url": "https://qgis.org/downloads/qgis-4.4.0.tar.bz2",
+                    "sha256": "1080c2c27e90c77d149ed3fee4f7098847ce4ecb37aec599ed296cd549bda454",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5779,
@@ -95,8 +95,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "http://download.osgeo.org/geos/geos-3.15.0.tar.bz2",
-                            "sha256": "d5e5192a686d065eaed082de14dd26244c5c8e02bff16b2c6cce3265f648e00e",
+                            "url": "http://download.osgeo.org/geos/geos-3.15.1.tar.bz2",
+                            "sha256": "8eb6dc2ea78b00c2f5109c6b0dba9e028c60bad42d7b1b0cc9952b12dc71f571",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 13493,
